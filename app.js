@@ -341,12 +341,18 @@ const singleResult = document.getElementById('singleResult');
 // Populate team dropdown
 function populateTeamDropdown() {
     teamSelect.innerHTML = '<option value="">Select a Team</option>';
-    predictor.teams.forEach(team => {
+    
+    // Sort teams alphabetically
+    const sortedTeams = [...predictor.teams].sort();
+    
+    sortedTeams.forEach(team => {
         const option = document.createElement('option');
         option.value = team;
         option.textContent = team;
         teamSelect.appendChild(option);
     });
+    
+    console.log(`Populated dropdown with ${sortedTeams.length} teams in alphabetical order`);
 }
 
 // Find team's opponent for selected week
