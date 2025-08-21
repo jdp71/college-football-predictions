@@ -36,10 +36,10 @@ This College Football Prediction System combines **machine learning algorithms**
 
 ## 🌐 Live Demo
 
-**Main Predictor:** [https://your-username.github.io/college-football-predictions](https://your-username.github.io/college-football-predictions)
+**Main Predictor:** [https://jdp71.github.io/college-football-predictions](https://jdp71.github.io/college-football-predictions)
 
 **Weekly Performance Trackers:**
-- [Week 1 Results](https://your-username.github.io/college-football-predictions/week1/) - Baseline accuracy tracking
+- [Week 1 Results](https://jdp71.github.io/college-football-predictions/week1/) - Baseline accuracy tracking
 
 ## 🧠 Model Architecture
 
