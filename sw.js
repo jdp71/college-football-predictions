@@ -1,5 +1,5 @@
 // Simple Service Worker for College Football Predictor PWA
-const CACHE_NAME = 'cfb-predictor-v1';
+const CACHE_NAME = 'cfb-predictor-v2';
 const urlsToCache = [
   '/',
   '/index.html',
