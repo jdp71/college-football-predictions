@@ -551,36 +551,6 @@
         </div>
         
         <div class="content">
-            <!-- Navigation to Weekly Trackers -->
-            <div class="prediction-card">
-                <div class="card-header">
-                    <h3><i class="fas fa-calendar-check"></i> Weekly Performance Tracking</h3>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="alert alert-info">
-                            <h5><i class="fas fa-chart-bar"></i> Model Performance</h5>
-                            <p class="mb-2">Track your ML model's accuracy week by week:</p>
-                            <a href="./week1/" class="btn btn-primary me-2" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Week 1 Results
-                            </a>
-                            <span class="badge bg-secondary">More weeks coming soon...</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="alert alert-warning">
-                            <h5><i class="fas fa-info-circle"></i> How to Track</h5>
-                            <p class="mb-0">
-                                1. Make predictions here<br>
-                                2. Record actual results in weekly trackers<br>
-                                3. Monitor accuracy improvements over time
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Weekly Team Prediction -->
             <div class="prediction-card">
                 <div class="card-header">
