@@ -8738,16 +8738,16 @@ class MLPredictionSystem {
         // Combine all factors
         let homeProb = 0.50; // Start at 50%
         
-        // Team strength difference
+        // Team strength difference (increased multiplier for more realistic predictions)
         const strengthDiff = (homeStrength - awayStrength) / 100;
-        homeProb += strengthDiff * 0.20;
+        homeProb += strengthDiff * 0.40; // Increased from 0.20 to 0.40
         
         // Offensive vs defensive matchup
         const matchupDiff = (homeOffenseVsAwayDefense - awayOffenseVsHomeDefense) / 100;
-        homeProb += matchupDiff * 0.15;
+        homeProb += matchupDiff * 0.25; // Increased from 0.15 to 0.25
         
         // Efficiency advantage
-        homeProb += homeEfficiency * 0.10;
+        homeProb += homeEfficiency * 0.15; // Increased from 0.10 to 0.15
         
         // Home field advantage
         homeProb += 0.05;
@@ -8757,14 +8757,14 @@ class MLPredictionSystem {
             homeProb += 0.02;
         }
         
-        // Add some randomness for realistic variation
+        // Add some randomness for realistic variation (reduced randomness)
         const gameKey = `${homeTeam}_${awayTeam}_${week}`;
         const hash = this.hashCode(gameKey);
-        const randomFactor = (hash % 1000 / 1000 - 0.5) * 0.10;
+        const randomFactor = (hash % 1000 / 1000 - 0.5) * 0.05; // Reduced from 0.10 to 0.05
         homeProb += randomFactor;
         
-        // Clamp to reasonable range
-        homeProb = Math.max(0.20, Math.min(0.85, homeProb));
+        // Clamp to reasonable range (increased max probability)
+        homeProb = Math.max(0.15, Math.min(0.95, homeProb)); // Increased max from 0.85 to 0.95
         const awayProb = 1 - homeProb;
         
         const winner = homeProb > awayProb ? homeTeam : awayTeam;
