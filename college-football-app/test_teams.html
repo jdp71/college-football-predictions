@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Teams Loading</title>
+</head>
+<body>
+    <h1>Test Teams Loading</h1>
+    <div id="output"></div>
+    
+    <script>
+        async function testTeamsLoading() {
+            try {
+                const response = await fetch('teams.json');
+                const data = await response.json();
+                
+                const output = document.getElementById('output');
+                output.innerHTML = `
+                    <h2>Teams Loaded: ${data.teams.length}</h2>
+                    <h3>Sample Teams:</h3>
+                `;
+                
+                // Show first 5 teams with their stats
+                data.teams.slice(0, 5).forEach(team => {
+                    output.innerHTML += `
+                        <div style="border: 1px solid #ccc; margin: 10px; padding: 10px;">
+                            <h4>${team.name} (${team.conference})</h4>
+                            <p>Offensive Rating: ${team.stats.offensiveRating}</p>
+                            <p>Defensive Rating: ${team.stats.defensiveRating}</p>
+                            <p>Points Per Play: ${team.stats.pointsPerPlay}</p>
+                            <p>Yards Per Play: ${team.stats.yardsPerPlay}</p>
+                        </div>
+                    `;
+                });
+                
+                // Test prediction calculation
+                const georgia = data.teams.find(t => t.name === 'Georgia');
+                const marshall = data.teams.find(t => t.name === 'Marshall');
+                
+                if (georgia && marshall) {
+                    const georgiaStrength = (100 - georgia.stats.offensiveRating) * 0.3 + 
+                                          (100 - georgia.stats.defensiveRating) * 0.3 + 
+                                          (100 - georgia.stats.efficiencyRating) * 0.2 + 
+                                          (100 - georgia.stats.advancedRating) * 0.2;
+                    
+                    const marshallStrength = (100 - marshall.stats.offensiveRating) * 0.3 + 
+                                            (100 - marshall.stats.defensiveRating) * 0.3 + 
+                                            (100 - marshall.stats.efficiencyRating) * 0.2 + 
+                                            (100 - marshall.stats.advancedRating) * 0.2;
+                    
+                    const strengthDiff = (georgiaStrength - marshallStrength) / 100;
+                    let homeProb = 0.50 + strengthDiff * 0.20 + 0.05; // Home field advantage
+                    homeProb = Math.max(0.20, Math.min(0.85, homeProb));
+                    
+                    output.innerHTML += `
+                        <h3>Test Prediction: Georgia vs Marshall</h3>
+                        <p>Georgia Strength: ${georgiaStrength.toFixed(1)}</p>
+                        <p>Marshall Strength: ${marshallStrength.toFixed(1)}</p>
+                        <p>Georgia Win Probability: ${(homeProb * 100).toFixed(1)}%</p>
+                    `;
+                }
+                
+            } catch (error) {
+                document.getElementById('output').innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+            }
+        }
+        
+        testTeamsLoading();
+    </script>
+</body>
+</html>
