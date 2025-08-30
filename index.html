@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Football Prediction System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .prediction-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .prediction-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px 15px 0 0;
+            padding: 20px;
+            margin: -30px -30px 30px -30px;
+        }
+        
+        .card-header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .form-select, .form-control {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .form-select:focus, .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 10px;
+            padding: 12px 30px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+        }
+        
+        .loading i {
+            font-size: 2rem;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .game-result {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .game-details {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin-bottom: 15px;
+        }
+        
+        .game-details i {
+            color: #007bff;
+            width: 16px;
+            margin-right: 5px;
+        }
+        
+        .game-details .row {
+            margin: 0;
+        }
+        
+        .game-details .col-md-6 {
+            padding: 5px 10px;
+        }
+        
+        .confidence-high {
+            border-left-color: #28a745;
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+        }
+        
+        .confidence-medium {
+            border-left-color: #ffc107;
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+        }
+        
+        .confidence-low {
+            border-left-color: #dc3545;
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+        }
+        
+        .winner {
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .alert {
+            border-radius: 10px;
+            border: none;
+            padding: 15px 20px;
+        }
+        
+        .alert-info {
+            background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+            color: #0c5460;
+        }
+        
+        .badge {
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 0 0 20px 20px;
+            text-align: center;
+            color: #6c757d;
+        }
+        
+        .github-badge {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .github-badge:hover {
+            background: #555;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1><i class="fas fa-football-ball"></i> College Football Predictions</h1>
+            <p>AI-Powered Game Predictions for the 2025 Season</p>
+        </div>
+        
+        <div class="content">
+            <!-- Weekly Team Prediction -->
+            <div class="prediction-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-calendar-week"></i> Weekly Team Prediction</h3>
+                </div>
+                
+                <form id="singleGameForm">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="form-label">Week</label>
+                            <select class="form-select" id="singleWeek" required>
+                                <option value="">Select Week</option>
+                                <option value="1">Week 1</option>
+                                <option value="2">Week 2</option>
+                                <option value="3">Week 3</option>
+                                <option value="4">Week 4</option>
+                                <option value="5">Week 5</option>
+                                <option value="6">Week 6</option>
+                                <option value="7">Week 7</option>
+                                <option value="8">Week 8</option>
+                                <option value="9">Week 9</option>
+                                <option value="10">Week 10</option>
+                                <option value="11">Week 11</option>
+                                <option value="12">Week 12</option>
+                                <option value="13">Week 13</option>
+                                <option value="14">Week 14</option>
+                                <option value="15">Week 15</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <label class="form-label">Select a Team</label>
+                            <select class="form-select" id="teamSelect" required>
+                                <option value="">Select a Team</option>
+                            </select>
+                            <small class="text-muted">
+                                <i class="fas fa-info-circle"></i>
+                                <strong>Smart Team Selection:</strong> Select any team and the system will automatically find their scheduled opponent for that week!
+                            </small>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3" id="matchupDisplay" style="display: none;">
+                        <div class="alert alert-info">
+                            <i class="fas fa-calendar"></i>
+                            <strong>Matchup:</strong> <span id="matchupText"></span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-magic"></i> Predict Game
+                    </button>
+                </form>
+                
+                <div id="singleLoading" class="loading" style="display: none;">
+                    <i class="fas fa-spinner"></i>
+                    <p>Analyzing matchup and generating prediction...</p>
+                </div>
+                
+                <div id="singleResult" style="display: none;"></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 College Football Prediction System</p>
+            <a href="https://github.com/jdp71/college-football-predictions" class="github-badge" target="_blank">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
