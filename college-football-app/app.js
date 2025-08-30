@@ -12,7 +12,7 @@ class MLPredictionSystem {
     async loadTeamData() {
         try {
             // Load team data from the collected stats
-            const response = await fetch('./teams.json');
+            const response = await fetch('teams.json');
             const data = await response.json();
             
             console.log('Raw data structure:', Object.keys(data));
