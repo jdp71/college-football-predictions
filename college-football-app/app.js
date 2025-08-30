@@ -154,7 +154,7 @@ class MLPredictionSystem {
             },
             { 
                 home: 'Arizona', 
-                away: 'Hawai'i', 
+                away: 'Hawai\'i', 
                 location: 'Arizona Stadium, Tucson, AZ',
                 time: '11:00 PM ET',
                 tv: 'CBS',
@@ -379,7 +379,7 @@ class MLPredictionSystem {
             { 
                 home: 'Fresno State', 
                 away: 'Georgia Southern', 
-                location: 'Valley Children's Stadium, Fresno, CA',
+                location: 'Valley Children\'s Stadium, Fresno, CA',
                 time: '3:30 PM ET',
                 tv: 'Mountain West Network',
                 date: 'Saturday, August 30, 2025'
@@ -737,9 +737,9 @@ class MLPredictionSystem {
                 date: 'Saturday, August 30, 2025'
             },
             { 
-                home: 'Hawai'i', 
+                home: 'Hawai\'i', 
                 away: 'Stanford', 
-                location: 'Hawai'i Stadium',
+                location: 'Hawai\'i Stadium',
                 time: '12:30 PM ET',
                 tv: 'FOX',
                 date: 'Saturday, August 30, 2025'
@@ -1110,7 +1110,7 @@ class MLPredictionSystem {
             { 
                 home: 'Fresno State', 
                 away: 'Georgia Southern', 
-                location: 'Valley Children's Stadium, Fresno, CA',
+                location: 'Valley Children\'s Stadium, Fresno, CA',
                 time: '4:00 PM ET',
                 tv: 'SEC Network',
                 date: 'Saturday, September 06, 2025'
@@ -2207,9 +2207,9 @@ class MLPredictionSystem {
                 date: 'Saturday, September 13, 2025'
             },
             { 
-                home: 'Hawai'i', 
+                home: 'Hawai\'i', 
                 away: 'Sam Houston', 
-                location: 'Hawai'i Stadium',
+                location: 'Hawai\'i Stadium',
                 time: '12:00 PM ET',
                 tv: 'FOX',
                 date: 'Saturday, September 13, 2025'
@@ -2371,7 +2371,7 @@ class MLPredictionSystem {
         schedule[4] = [
             { 
                 home: 'Air Force', 
-                away: 'Hawai'i', 
+                away: 'Hawai\'i', 
                 location: 'Falcon Stadium, Colorado Springs, CO',
                 time: '10:30 PM ET',
                 tv: 'Big Ten Network',
@@ -2620,7 +2620,7 @@ class MLPredictionSystem {
             { 
                 home: 'Fresno State', 
                 away: 'Southern', 
-                location: 'Valley Children's Stadium, Fresno, CA',
+                location: 'Valley Children\'s Stadium, Fresno, CA',
                 time: '6:00 PM ET',
                 tv: 'Pac-12 Network',
                 date: 'Saturday, September 20, 2025'
@@ -3389,9 +3389,9 @@ class MLPredictionSystem {
                 date: 'Saturday, September 27, 2025'
             },
             { 
-                home: 'Hawai'i', 
+                home: 'Hawai\'i', 
                 away: 'Fresno State', 
-                location: 'Hawai'i Stadium',
+                location: 'Hawai\'i Stadium',
                 time: '7:00 PM ET',
                 tv: 'FOX',
                 date: 'Saturday, September 27, 2025'
@@ -3639,7 +3639,7 @@ class MLPredictionSystem {
             { 
                 home: 'Fresno State', 
                 away: 'Nevada', 
-                location: 'Valley Children's Stadium, Fresno, CA',
+                location: 'Valley Children\'s Stadium, Fresno, CA',
                 time: '11:00 PM ET',
                 tv: 'NBC',
                 date: 'Saturday, September 27, 2025'
@@ -4082,7 +4082,7 @@ class MLPredictionSystem {
             { 
                 home: 'Fresno State', 
                 away: 'Nevada', 
-                location: 'Valley Children's Stadium, Fresno, CA',
+                location: 'Valley Children\'s Stadium, Fresno, CA',
                 time: '10:30 PM ET',
                 tv: 'ACC Network',
                 date: 'Saturday, October 04, 2025'
@@ -4512,9 +4512,9 @@ class MLPredictionSystem {
                 date: 'Saturday, October 04, 2025'
             },
             { 
-                home: 'Hawai'i', 
+                home: 'Hawai\'i', 
                 away: 'Utah State', 
-                location: 'Hawai'i Stadium',
+                location: 'Hawai\'i Stadium',
                 time: '12:30 PM ET',
                 tv: 'CBS Sports Network',
                 date: 'Saturday, October 04, 2025'
@@ -4772,7 +4772,7 @@ class MLPredictionSystem {
             },
             { 
                 home: 'Colorado State', 
-                away: 'Hawai'i', 
+                away: 'Hawai\'i', 
                 location: 'Canvas Stadium, Fort Collins, CO',
                 time: '7:30 PM ET',
                 tv: 'Big Ten Network',
@@ -5181,7 +5181,7 @@ class MLPredictionSystem {
             { 
                 home: 'Fresno State', 
                 away: 'San Diego State', 
-                location: 'Valley Children's Stadium, Fresno, CA',
+                location: 'Valley Children\'s Stadium, Fresno, CA',
                 time: '12:30 PM ET',
                 tv: 'NBC',
                 date: 'Saturday, October 11, 2025'
@@ -5504,7 +5504,7 @@ class MLPredictionSystem {
             { 
                 home: 'Fresno State', 
                 away: 'San Diego State', 
-                location: 'Valley Children's Stadium, Fresno, CA',
+                location: 'Valley Children\'s Stadium, Fresno, CA',
                 time: '7:30 PM ET',
                 tv: 'SEC Network',
                 date: 'Saturday, October 18, 2025'
@@ -5839,7 +5839,7 @@ class MLPredictionSystem {
             },
             { 
                 home: 'San Jose State', 
-                away: 'Hawai'i', 
+                away: 'Hawai\'i', 
                 location: 'CEFCU Stadium, San Jose, CA',
                 time: '3:30 PM ET',
                 tv: 'Pac-12 Network',
@@ -6521,9 +6521,9 @@ class MLPredictionSystem {
                 date: 'Saturday, October 25, 2025'
             },
             { 
-                home: 'Hawai'i', 
+                home: 'Hawai\'i', 
                 away: 'San Diego State', 
-                location: 'Hawai'i Stadium',
+                location: 'Hawai\'i Stadium',
                 time: '8:00 PM ET',
                 tv: 'Big 12 Network',
                 date: 'Saturday, October 25, 2025'
@@ -6918,7 +6918,7 @@ class MLPredictionSystem {
             { 
                 home: 'Fresno State', 
                 away: 'Wyoming', 
-                location: 'Valley Children's Stadium, Fresno, CA',
+                location: 'Valley Children\'s Stadium, Fresno, CA',
                 time: '12:00 PM ET',
                 tv: 'Big 12 Network',
                 date: 'Saturday, November 01, 2025'
@@ -7633,7 +7633,7 @@ class MLPredictionSystem {
             { 
                 home: 'Fresno State', 
                 away: 'Utah State', 
-                location: 'Valley Children's Stadium, Fresno, CA',
+                location: 'Valley Children\'s Stadium, Fresno, CA',
                 time: '7:00 PM ET',
                 tv: 'ESPN+',
                 date: 'Saturday, November 08, 2025'
@@ -8032,7 +8032,7 @@ class MLPredictionSystem {
             },
             { 
                 home: 'UNLV', 
-                away: 'Hawai'i', 
+                away: 'Hawai\'i', 
                 location: 'Allegiant Stadium, Las Vegas, NV',
                 time: '11:00 PM ET',
                 tv: 'Mountain West Network',
@@ -8658,9 +8658,9 @@ class MLPredictionSystem {
                 date: 'Saturday, November 15, 2025'
             },
             { 
-                home: 'Hawai'i', 
+                home: 'Hawai\'i', 
                 away: 'Wyoming', 
-                location: 'Hawai'i Stadium',
+                location: 'Hawai\'i Stadium',
                 time: '4:00 PM ET',
                 tv: 'ESPN',
                 date: 'Saturday, November 15, 2025'
