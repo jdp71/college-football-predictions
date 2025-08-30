@@ -1,0 +1,27 @@
+
+COLLEGE FOOTBALL 2025 PREDICTION REPORT
+==================================================
+
+MODEL PERFORMANCE:
+- Best Model: Logistic Regression
+- Test Accuracy: 0.852
+- AUC Score: 0.935
+
+PREDICTION SUMMARY:
+- Total Games Predicted: 16
+- Predicted Home Wins: 10.388531512046328
+- Predicted Away Wins: 5.6114684879536725
+- Average Confidence: 0.854
+- High Confidence Games (>70%): 12
+
+TOP 10 MOST CONFIDENT PREDICTIONS:
+ 1. Alabama beats Unknown (99.9%)
+ 2. Baylor beats Unknown (99.9%)
+ 3. Penn State beats Unknown (99.5%)
+ 4. Arizona State beats Unknown (99.0%)
+ 5. Ohio State beats Unknown (98.7%)
+ 6. Texas beats Unknown (98.7%)
+ 7. Arkansas beats Unknown (98.6%)
+ 8. Notre Dame beats Unknown (93.6%)
+ 9. Boise State beats Unknown (91.8%)
+10. BYU beats Unknown (90.5%)

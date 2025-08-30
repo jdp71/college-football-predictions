@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Football Predictions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            padding: 2rem 0;
+        }
+        
+        .prediction-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .prediction-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 1.5rem;
+        }
+        
+        .card-body {
+            padding: 2rem;
+        }
+        
+        .btn-predict {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-predict:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+            color: white;
+        }
+        
+        .form-select, .form-control {
+            border-radius: 10px;
+            border: 2px solid #e1e5f2;
+            padding: 12px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-select:focus, .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        
+        .result-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            display: none;
+        }
+        
+        .game-result {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            backdrop-filter: blur(5px);
+        }
+        
+        .winner {
+            font-weight: bold;
+            color: #ffd700;
+        }
+        
+        .confidence-high { border-left: 5px solid #28a745; }
+        .confidence-medium { border-left: 5px solid #ffc107; }
+        .confidence-low { border-left: 5px solid #dc3545; }
+        
+        .auto-populate-hint {
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 8px;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #667eea;
+        }
+        
+        .feature-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .spinner-border {
+            color: #667eea;
+        }
+        
+        .header-title {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .icon-large {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+            text-align: center;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container main-container">
+        <h1 class="header-title">
+            <i class="fas fa-football-ball"></i>
+            College Football Predictions 2025
+        </h1>
+        
+        <div class="row">
+            <!-- Single Game Prediction -->
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="prediction-card">
+                    <div class="card-header">
+                        <i class="fas fa-versus icon-large"></i>
+                        <h4 class="mb-0 text-center">Single Game Prediction</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="auto-populate-hint">
+                            <i class="fas fa-magic"></i> 
+                            <strong>Auto-Populate Feature:</strong> Select a home team and the away team will automatically populate based on the 2025 schedule!
+                        </div>
+                        
+                        <form id="singleGameForm">
+                            <div class="mb-3">
+                                <label class="form-label">Week</label>
+                                <select class="form-select" id="singleWeek">
+                                    <option value="1">Week 1</option>
+                                    <option value="2">Week 2</option>
+                                    <option value="3">Week 3</option>
+                                    <option value="4">Week 4</option>
+                                    <option value="5">Week 5</option>
+                                    <option value="6">Week 6</option>
+                                    <option value="7">Week 7</option>
+                                    <option value="8">Week 8</option>
+                                    <option value="9">Week 9</option>
+                                    <option value="10">Week 10</option>
+                                    <option value="11">Week 11</option>
+                                    <option value="12">Week 12</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Home Team</label>
+                                <select class="form-select" id="homeTeam" required>
+                                    <option value="">Select Home Team</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Away Team</label>
+                                <select class="form-select" id="awayTeam" required>
+                                    <option value="">Select Away Team</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-predict w-100">
+                                <i class="fas fa-magic"></i> Predict Game
+                            </button>
+                        </form>
+                        
+                        <div class="loading" id="singleLoading">
+                            <div class="spinner-border" role="status"></div>
+                            <p class="mt-2">Analyzing matchup...</p>
+                        </div>
+                        
+                        <div class="result-card" id="singleResult"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Conference Predictions -->
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="prediction-card">
+                    <div class="card-header">
+                        <i class="fas fa-trophy icon-large"></i>
+                        <h4 class="mb-0 text-center">Conference Predictions</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="auto-populate-hint">
+                            <i class="fas fa-trophy"></i> 
+                            <strong>Conference Predictions:</strong> Get predictions for all conference games in a specific week. Games are ranked by confidence!
+                        </div>
+                        
+                        <form id="conferenceForm">
+                            <div class="mb-3">
+                                <label class="form-label">Week</label>
+                                <select class="form-select" id="conferenceWeek">
+                                    <option value="1">Week 1</option>
+                                    <option value="2">Week 2</option>
+                                    <option value="3">Week 3</option>
+                                    <option value="4">Week 4</option>
+                                    <option value="5">Week 5</option>
+                                    <option value="6">Week 6</option>
+                                    <option value="7">Week 7</option>
+                                    <option value="8">Week 8</option>
+                                    <option value="9">Week 9</option>
+                                    <option value="10">Week 10</option>
+                                    <option value="11">Week 11</option>
+                                    <option value="12">Week 12</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Conference</label>
+                                <select class="form-select" id="conferenceSelect" required>
+                                    <option value="">Select Conference</option>
+                                    <option value="SEC">SEC</option>
+                                    <option value="Big Ten">Big Ten</option>
+                                    <option value="ACC">ACC</option>
+                                    <option value="Big 12">Big 12</option>
+                                    <option value="Pac-12">Pac-12</option>
+                                    <option value="Mountain West">Mountain West</option>
+                                    <option value="American">American</option>
+                                    <option value="Conference USA">Conference USA</option>
+                                    <option value="MAC">MAC</option>
+                                    <option value="Sun Belt">Sun Belt</option>
+                                    <option value="Independents">Independents</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-predict w-100">
+                                <i class="fas fa-chart-bar"></i> Predict Conference Games
+                            </button>
+                        </form>
+                        
+                        <div class="loading" id="conferenceLoading">
+                            <div class="spinner-border" role="status"></div>
+                            <p class="mt-2">Analyzing conference matchups...</p>
+                        </div>
+                        
+                        <div class="result-card" id="conferenceResult"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- All Games Predictions -->
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="prediction-card">
+                    <div class="card-header">
+                        <i class="fas fa-calendar-alt icon-large"></i>
+                        <h4 class="mb-0 text-center">All Week Predictions</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="auto-populate-hint">
+                            <i class="fas fa-calendar-alt"></i> 
+                            <strong>All Week Predictions:</strong> Get predictions for every game scheduled in a specific week, organized by confidence level!
+                        </div>
+                        
+                        <form id="allGamesForm">
+                            <div class="mb-3">
+                                <label class="form-label">Week</label>
+                                <select class="form-select" id="allGamesWeek">
+                                    <option value="1">Week 1</option>
+                                    <option value="2">Week 2</option>
+                                    <option value="3">Week 3</option>
+                                    <option value="4">Week 4</option>
+                                    <option value="5">Week 5</option>
+                                    <option value="6">Week 6</option>
+                                    <option value="7">Week 7</option>
+                                    <option value="8">Week 8</option>
+                                    <option value="9">Week 9</option>
+                                    <option value="10">Week 10</option>
+                                    <option value="11">Week 11</option>
+                                    <option value="12">Week 12</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-predict w-100">
+                                <i class="fas fa-list"></i> Predict All Games
+                            </button>
+                        </form>
+                        
+                        <div class="loading" id="allGamesLoading">
+                            <div class="spinner-border" role="status"></div>
+                            <p class="mt-2">Analyzing all matchups...</p>
+                        </div>
+                        
+                        <div class="result-card" id="allGamesResult"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- System Status Row -->
+        <div class="row">
+            <div class="col-12 mb-4">
+                <div class="prediction-card">
+                    <div class="card-header">
+                        <i class="fas fa-check-circle icon-large"></i>
+                        <h4 class="mb-0 text-center">System Status</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Status: <span id="systemStatus">Loading...</span></p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Teams: <span id="teamCount">-</span></p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Week 1 Games: <span id="gameCount">-</span></p>
+                            </div>
+                        </div>
+                        
+                        <button onclick="testSystem()" class="btn btn-outline-primary mt-3">
+                            <i class="fas fa-test-tube"></i> Test System
+                        </button>
+                        
+                        <div id="testResults" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let weekMatchups = {};
+        let allTeams = [];
+        let currentWeek = 1;
+        
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            loadTeams();
+            loadWeekMatchups(1);
+            setupEventListeners();
+        });
+        
+        async function loadTeams() {
+            try {
+                console.log('Loading teams...');
+                // Load all teams from the new endpoint
+                const response = await fetch('/get_all_teams');
+                const data = await response.json();
+                
+                if (response.ok) {
+                    allTeams = data.teams.sort();
+                    console.log('Loaded', allTeams.length, 'teams:', allTeams.slice(0, 5));
+                    populateTeamDropdowns();
+                    
+                    document.getElementById('systemStatus').textContent = '✅ Working';
+                    document.getElementById('teamCount').textContent = allTeams.length;
+                    
+                    // Also load Week 1 matchups for game count
+                    const weekResponse = await fetch('/get_week_matchups/1');
+                    const weekData = await weekResponse.json();
+                    if (weekResponse.ok) {
+                        document.getElementById('gameCount').textContent = weekData.matchups.length;
+                    }
+                } else {
+                    console.error('Failed to load teams:', data);
+                    document.getElementById('systemStatus').textContent = '❌ Error';
+                }
+            } catch (error) {
+                console.error('Error loading teams:', error);
+                document.getElementById('systemStatus').textContent = '❌ Connection Error';
+            }
+        }
+        
+        function populateTeamDropdowns() {
+            const homeSelect = document.getElementById('homeTeam');
+            const awaySelect = document.getElementById('awayTeam');
+            
+            console.log('Populating dropdowns with', allTeams.length, 'teams');
+            
+            // Clear existing options (keep placeholder)
+            homeSelect.innerHTML = '<option value="">Select Home Team</option>';
+            awaySelect.innerHTML = '<option value="">Select Away Team</option>';
+            
+            // Add all teams
+            allTeams.forEach(team => {
+                const homeOption = document.createElement('option');
+                homeOption.value = team;
+                homeOption.textContent = team;
+                homeSelect.appendChild(homeOption);
+                
+                const awayOption = document.createElement('option');
+                awayOption.value = team;
+                awayOption.textContent = team;
+                awaySelect.appendChild(awayOption);
+            });
+            
+            console.log('Dropdowns populated. Home options:', homeSelect.options.length, 'Away options:', awaySelect.options.length);
+        }
+        
+        async function loadWeekMatchups(week) {
+            try {
+                const response = await fetch(`/get_week_matchups/${week}`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    weekMatchups[week] = data.matchups || [];
+                    console.log(`Week ${week}: ${weekMatchups[week].length} games`);
+                } else {
+                    weekMatchups[week] = [];
+                }
+            } catch (error) {
+                console.error('Error loading matchups:', error);
+                weekMatchups[week] = [];
+            }
+        }
+        
+        function setupEventListeners() {
+            const homeSelect = document.getElementById('homeTeam');
+            const awaySelect = document.getElementById('awayTeam');
+            const weekSelect = document.getElementById('singleWeek');
+            
+            // Week change
+            weekSelect.addEventListener('change', async function() {
+                const week = parseInt(this.value);
+                currentWeek = week;
+                
+                if (!weekMatchups[week]) {
+                    await loadWeekMatchups(week);
+                }
+                
+                // Reset selections
+                homeSelect.value = '';
+                awaySelect.value = '';
+                populateTeamDropdowns();
+            });
+            
+            // Home team change - Auto-populate away team
+            homeSelect.addEventListener('change', function() {
+                const homeTeam = this.value;
+                const week = parseInt(weekSelect.value);
+                
+                if (homeTeam) {
+                    autoPopulateAwayTeam(homeTeam, week);
+                } else {
+                    populateTeamDropdowns();
+                }
+            });
+            
+            // Away team change - Auto-populate home team
+            awaySelect.addEventListener('change', function() {
+                const awayTeam = this.value;
+                const week = parseInt(weekSelect.value);
+                
+                if (awayTeam) {
+                    autoPopulateHomeTeam(awayTeam, week);
+                } else {
+                    populateTeamDropdowns();
+                }
+            });
+            
+            // Form submissions
+            document.getElementById('singleGameForm').addEventListener('submit', handlePrediction);
+            document.getElementById('conferenceForm').addEventListener('submit', handleConferencePrediction);
+            document.getElementById('allGamesForm').addEventListener('submit', handleAllGamesPrediction);
+        }
+        
+        function autoPopulateAwayTeam(homeTeam, week) {
+            const awaySelect = document.getElementById('awayTeam');
+            const matchups = weekMatchups[week] || [];
+            
+            const matchup = matchups.find(m => m.home_team === homeTeam);
+            
+            if (matchup) {
+                // Clear and rebuild options with only the valid opponent
+                awaySelect.innerHTML = '<option value="">Select Away Team</option>';
+                const option = document.createElement('option');
+                option.value = matchup.away_team;
+                option.textContent = matchup.away_team;
+                awaySelect.appendChild(option);
+                
+                // Auto-select the opponent
+                awaySelect.value = matchup.away_team;
+                
+                console.log(`✅ Auto-populated: ${homeTeam} vs ${matchup.away_team} (Week ${week})`);
+            } else {
+                // If no matchup found, show all teams but highlight the issue
+                populateTeamDropdowns();
+                console.log(`⚠️ No scheduled game found for ${homeTeam} in Week ${week}`);
+            }
+        }
+        
+        function autoPopulateHomeTeam(awayTeam, week) {
+            const homeSelect = document.getElementById('homeTeam');
+            const matchups = weekMatchups[week] || [];
+            
+            const matchup = matchups.find(m => m.away_team === awayTeam);
+            
+            if (matchup) {
+                // Clear and rebuild options with only the valid opponent
+                homeSelect.innerHTML = '<option value="">Select Home Team</option>';
+                const option = document.createElement('option');
+                option.value = matchup.home_team;
+                option.textContent = matchup.home_team;
+                homeSelect.appendChild(option);
+                
+                // Auto-select the opponent
+                homeSelect.value = matchup.home_team;
+                
+                console.log(`✅ Auto-populated: ${matchup.home_team} vs ${awayTeam} (Week ${week})`);
+            } else {
+                // If no matchup found, show all teams but highlight the issue
+                populateTeamDropdowns();
+                console.log(`⚠️ No scheduled game found for ${awayTeam} in Week ${week}`);
+            }
+        }
+        
+        async function handlePrediction(e) {
+            e.preventDefault();
+            
+            const homeTeam = document.getElementById('homeTeam').value;
+            const awayTeam = document.getElementById('awayTeam').value;
+            const week = document.getElementById('singleWeek').value;
+            
+            if (!homeTeam || !awayTeam) {
+                alert('Please select both teams');
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const response = await fetch('/predict_single', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        home_team: homeTeam, 
+                        away_team: awayTeam, 
+                        week: week 
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult(data);
+                } else {
+                    showError(data.error);
+                }
+            } catch (error) {
+                showError('Network error occurred');
+            }
+            
+            hideLoading();
+        }
+        
+        function showLoading() {
+            document.getElementById('singleLoading').style.display = 'block';
+            document.getElementById('singleResult').style.display = 'none';
+        }
+        
+        function hideLoading() {
+            document.getElementById('singleLoading').style.display = 'none';
+        }
+        
+        function showResult(data) {
+            const resultDiv = document.getElementById('singleResult');
+            const confidence = getConfidenceClass(data.confidence);
+            
+            resultDiv.innerHTML = `
+                <div class="game-result ${confidence}">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            <strong>${data.home_team}</strong> vs <strong>${data.away_team}</strong>
+                            <br>
+                            <span class="winner">Winner: ${data.winner}</span>
+                        </div>
+                        <div class="col-4 text-end">
+                            <div style="font-size: 1.2rem; font-weight: bold;">
+                                ${(data.confidence * 100).toFixed(1)}%
+                            </div>
+                            <small>Confidence</small>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <small>
+                            ${data.home_team}: ${(data.home_win_probability * 100).toFixed(1)}% | 
+                            ${data.away_team}: ${(data.away_win_probability * 100).toFixed(1)}%
+                            <br>
+                            Spread: ${data.home_team} ${data.spread_estimate > 0 ? '+' : ''}${data.spread_estimate.toFixed(1)}
+                        </small>
+                    </div>
+                </div>
+            `;
+            
+            resultDiv.style.display = 'block';
+        }
+        
+        function showError(message) {
+            const resultDiv = document.getElementById('singleResult');
+            resultDiv.innerHTML = `<div class="alert alert-danger">${message}</div>`;
+            resultDiv.style.display = 'block';
+        }
+        
+        function getConfidenceClass(confidence) {
+            if (confidence > 0.75) return 'confidence-high';
+            if (confidence > 0.6) return 'confidence-medium';
+            return 'confidence-low';
+        }
+        
+        async function handleConferencePrediction(e) {
+            e.preventDefault();
+            
+            const conference = document.getElementById('conferenceSelect').value;
+            const week = document.getElementById('conferenceWeek').value;
+            
+            if (!conference) {
+                alert('Please select a conference');
+                return;
+            }
+            
+            showConferenceLoading();
+            
+            try {
+                const response = await fetch('/predict_conference', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        conference: conference, 
+                        week: week 
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showConferenceResult(data);
+                } else {
+                    showConferenceError(data.error);
+                }
+            } catch (error) {
+                showConferenceError('Network error occurred');
+            }
+            
+            hideConferenceLoading();
+        }
+        
+        async function handleAllGamesPrediction(e) {
+            e.preventDefault();
+            
+            const week = document.getElementById('allGamesWeek').value;
+            
+            showAllGamesLoading();
+            
+            try {
+                const response = await fetch('/predict_all_games', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        week: week 
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showAllGamesResult(data);
+                } else {
+                    showAllGamesError(data.error);
+                }
+            } catch (error) {
+                showAllGamesError('Network error occurred');
+            }
+            
+            hideAllGamesLoading();
+        }
+        
+        function showConferenceLoading() {
+            document.getElementById('conferenceLoading').style.display = 'block';
+            document.getElementById('conferenceResult').style.display = 'none';
+        }
+        
+        function hideConferenceLoading() {
+            document.getElementById('conferenceLoading').style.display = 'none';
+        }
+        
+        function showAllGamesLoading() {
+            document.getElementById('allGamesLoading').style.display = 'block';
+            document.getElementById('allGamesResult').style.display = 'none';
+        }
+        
+        function hideAllGamesLoading() {
+            document.getElementById('allGamesLoading').style.display = 'none';
+        }
+        
+        function showConferenceResult(data) {
+            const resultDiv = document.getElementById('conferenceResult');
+            let html = `
+                <h5><i class="fas fa-trophy"></i> ${data.conference} - Week ${data.week} Predictions</h5>
+                <div class="mb-3">
+                    <small class="text-muted">
+                        <i class="fas fa-info-circle"></i> 
+                        Showing all ${data.conference} conference games for Week ${data.week}
+                    </small>
+                </div>
+            `;
+            
+            if (data.predictions && data.predictions.length > 0) {
+                // Sort predictions by confidence (highest first)
+                const sortedPredictions = data.predictions.sort((a, b) => b.confidence - a.confidence);
+                
+                sortedPredictions.forEach((prediction, index) => {
+                    const confidence = getConfidenceClass(prediction.confidence);
+                    const isTopPick = index === 0;
+                    const topPickClass = isTopPick ? 'border-warning border-2' : '';
+                    
+                    html += `
+                        <div class="game-result ${confidence} mb-2 ${topPickClass}">
+                            ${isTopPick ? '<div class="badge bg-warning text-dark mb-1">🏆 Top Pick</div>' : ''}
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <strong>${prediction.home_team}</strong> vs <strong>${prediction.away_team}</strong>
+                                    <br>
+                                    <span class="winner">Winner: ${prediction.winner}</span>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <div style="font-size: 1rem; font-weight: bold;">
+                                        ${(prediction.confidence * 100).toFixed(1)}%
+                                    </div>
+                                    <small>Confidence</small>
+                                </div>
+                            </div>
+                            <div class="mt-1">
+                                <small>
+                                    <i class="fas fa-chart-line"></i> Spread: ${prediction.home_team} ${prediction.spread_estimate > 0 ? '+' : ''}${prediction.spread_estimate.toFixed(1)}
+                                    <br>
+                                    <i class="fas fa-percentage"></i> ${prediction.home_team}: ${(prediction.home_win_probability * 100).toFixed(1)}% | ${prediction.away_team}: ${(prediction.away_win_probability * 100).toFixed(1)}%
+                                </small>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                // Add summary
+                const avgConfidence = (data.predictions.reduce((sum, p) => sum + p.confidence, 0) / data.predictions.length * 100).toFixed(1);
+                html += `
+                    <div class="alert alert-info mt-3">
+                        <strong>Summary:</strong> ${data.predictions.length} games predicted with ${avgConfidence}% average confidence
+                    </div>
+                `;
+            } else {
+                html += `
+                    <div class="alert alert-info">
+                        <i class="fas fa-calendar-times"></i> 
+                        No ${data.conference} conference games scheduled for Week ${data.week}
+                    </div>
+                `;
+            }
+            
+            resultDiv.innerHTML = html;
+            resultDiv.style.display = 'block';
+        }
+        
+        function showAllGamesResult(data) {
+            const resultDiv = document.getElementById('allGamesResult');
+            let html = `
+                <h5><i class="fas fa-calendar-alt"></i> Week ${data.week} - All Games Predictions</h5>
+                <div class="mb-3">
+                    <small class="text-muted">
+                        <i class="fas fa-info-circle"></i> 
+                        Showing all scheduled games for Week ${data.week} (${data.predictions ? data.predictions.length : 0} games)
+                    </small>
+                </div>
+            `;
+            
+            if (data.predictions && data.predictions.length > 0) {
+                // Sort predictions by confidence (highest first)
+                const sortedPredictions = data.predictions.sort((a, b) => b.confidence - a.confidence);
+                
+                // Group by confidence levels
+                const highConfidence = sortedPredictions.filter(p => p.confidence > 0.75);
+                const mediumConfidence = sortedPredictions.filter(p => p.confidence > 0.6 && p.confidence <= 0.75);
+                const lowConfidence = sortedPredictions.filter(p => p.confidence <= 0.6);
+                
+                if (highConfidence.length > 0) {
+                    html += `<h6 class="text-success"><i class="fas fa-star"></i> High Confidence Picks (${highConfidence.length})</h6>`;
+                    highConfidence.forEach(prediction => {
+                        html += createGameResultHTML(prediction, 'confidence-high');
+                    });
+                }
+                
+                if (mediumConfidence.length > 0) {
+                    html += `<h6 class="text-warning"><i class="fas fa-star-half-alt"></i> Medium Confidence Picks (${mediumConfidence.length})</h6>`;
+                    mediumConfidence.forEach(prediction => {
+                        html += createGameResultHTML(prediction, 'confidence-medium');
+                    });
+                }
+                
+                if (lowConfidence.length > 0) {
+                    html += `<h6 class="text-danger"><i class="fas fa-exclamation-triangle"></i> Low Confidence Picks (${lowConfidence.length})</h6>`;
+                    lowConfidence.forEach(prediction => {
+                        html += createGameResultHTML(prediction, 'confidence-low');
+                    });
+                }
+                
+                // Add summary statistics
+                const avgConfidence = (data.predictions.reduce((sum, p) => sum + p.confidence, 0) / data.predictions.length * 100).toFixed(1);
+                const homeWins = data.predictions.filter(p => p.winner === p.home_team).length;
+                const awayWins = data.predictions.length - homeWins;
+                
+                html += `
+                    <div class="alert alert-info mt-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <strong>Total Games:</strong> ${data.predictions.length}
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Avg Confidence:</strong> ${avgConfidence}%
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Home Wins:</strong> ${homeWins} | <strong>Away Wins:</strong> ${awayWins}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                html += `
+                    <div class="alert alert-info">
+                        <i class="fas fa-calendar-times"></i> 
+                        No games scheduled for Week ${data.week}
+                    </div>
+                `;
+            }
+            
+            resultDiv.innerHTML = html;
+            resultDiv.style.display = 'block';
+        }
+        
+        function createGameResultHTML(prediction, confidenceClass) {
+            return `
+                <div class="game-result ${confidenceClass} mb-2">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            <strong>${prediction.home_team}</strong> vs <strong>${prediction.away_team}</strong>
+                            <br>
+                            <span class="winner">Winner: ${prediction.winner}</span>
+                        </div>
+                        <div class="col-4 text-end">
+                            <div style="font-size: 1rem; font-weight: bold;">
+                                ${(prediction.confidence * 100).toFixed(1)}%
+                            </div>
+                            <small>Confidence</small>
+                        </div>
+                    </div>
+                    <div class="mt-1">
+                        <small>
+                            <i class="fas fa-chart-line"></i> Spread: ${prediction.home_team} ${prediction.spread_estimate > 0 ? '+' : ''}${prediction.spread_estimate.toFixed(1)}
+                            <br>
+                            <i class="fas fa-percentage"></i> ${prediction.home_team}: ${(prediction.home_win_probability * 100).toFixed(1)}% | ${prediction.away_team}: ${(prediction.away_win_probability * 100).toFixed(1)}%
+                        </small>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function showConferenceError(message) {
+            const resultDiv = document.getElementById('conferenceResult');
+            resultDiv.innerHTML = `<div class="alert alert-danger">${message}</div>`;
+            resultDiv.style.display = 'block';
+        }
+        
+        function showAllGamesError(message) {
+            const resultDiv = document.getElementById('allGamesResult');
+            resultDiv.innerHTML = `<div class="alert alert-danger">${message}</div>`;
+            resultDiv.style.display = 'block';
+        }
+        
+        async function testSystem() {
+            const testDiv = document.getElementById('testResults');
+            testDiv.innerHTML = '<div class="spinner-border spinner-border-sm"></div> Testing...';
+            
+            try {
+                // Test UCLA vs Utah
+                const response = await fetch('/predict_single', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        home_team: 'UCLA', 
+                        away_team: 'Utah', 
+                        week: 1 
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    testDiv.innerHTML = `
+                        <div class="alert alert-success">
+                            <strong>✅ Test Passed!</strong><br>
+                            UCLA vs Utah: ${data.winner} wins<br>
+                            Confidence: ${(data.confidence * 100).toFixed(1)}%
+                        </div>
+                    `;
+                } else {
+                    testDiv.innerHTML = `<div class="alert alert-danger">❌ Test Failed: ${data.error}</div>`;
+                }
+            } catch (error) {
+                testDiv.innerHTML = `<div class="alert alert-danger">❌ Connection Error</div>`;
+            }
+        }
+    </script>
+</body>
+</html>
