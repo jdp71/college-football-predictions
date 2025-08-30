@@ -8740,7 +8740,7 @@ class MLPredictionSystem {
         
         // Team strength difference (increased multiplier for more realistic predictions)
         const strengthDiff = (homeStrength - awayStrength) / 100;
-        homeProb += strengthDiff * 0.40; // Increased from 0.20 to 0.40
+        homeProb += strengthDiff * 0.60; // Increased from 0.40 to 0.60 for more aggressive predictions
         
         // Offensive vs defensive matchup
         const matchupDiff = (homeOffenseVsAwayDefense - awayOffenseVsHomeDefense) / 100;
@@ -8762,6 +8762,11 @@ class MLPredictionSystem {
         const hash = this.hashCode(gameKey);
         const randomFactor = (hash % 1000 / 1000 - 0.5) * 0.05; // Reduced from 0.10 to 0.05
         homeProb += randomFactor;
+        
+        // Special case for very mismatched games
+        if (strengthDiff > 0.25) { // If strength difference is more than 25%
+            homeProb = Math.max(homeProb, 0.80); // Ensure at least 80% probability
+        }
         
         // Clamp to reasonable range (increased max probability)
         homeProb = Math.max(0.15, Math.min(0.95, homeProb)); // Increased max from 0.85 to 0.95
