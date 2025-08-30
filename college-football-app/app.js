@@ -64,30 +64,30 @@ class MLPredictionSystem {
         
         return {
             // Offensive stats
-            offensiveRating: this.parseRating(stats.offense?.offense_rating),
-            offensivePredictive: this.parseNumber(stats.offense?.offense_predictive),
-            pointsPerPlay: this.parseNumber(stats.offense?.offense_pointsplay),
-            yardsPerPlay: this.parseNumber(stats.offense?.offense_yardsplay),
-            completionRate: this.parsePercentage(stats.offense?.offense_completion_),
-            thirdDownRate: this.parsePercentage(stats.offense?.offense_3d_conv_),
-            redZoneRate: this.parsePercentage(stats.offense?.offense_rz_scoring_),
+            offensiveRating: this.parseNumber(stats.offensiveRating),
+            offensivePredictive: this.parseNumber(stats.offensiveRating), // Use same as rating for now
+            pointsPerPlay: this.parseNumber(stats.pointsPerPlay),
+            yardsPerPlay: this.parseNumber(stats.yardsPerPlay),
+            completionRate: this.parseNumber(stats.completionRate),
+            thirdDownRate: this.parseNumber(stats.thirdDownRate),
+            redZoneRate: this.parseNumber(stats.redZoneRate),
             
             // Defensive stats
-            defensiveRating: this.parseRating(stats.defense?.defense_rating),
-            defensivePredictive: this.parseNumber(stats.defense?.defense_predictive),
-            oppPointsPerPlay: this.parseNumber(stats.defense?.defense_opp_pointsplay),
-            oppYardsPerPlay: this.parseNumber(stats.defense?.defense_opp_yardsplay),
-            oppCompletionRate: this.parsePercentage(stats.defense?.defense_opp_completion_),
-            oppThirdDownRate: this.parsePercentage(stats.defense?.defense_opp_3d_conv_),
-            oppRedZoneRate: this.parsePercentage(stats.defense?.defense_opp_rz_scoring_),
+            defensiveRating: this.parseNumber(stats.defensiveRating),
+            defensivePredictive: this.parseNumber(stats.defensiveRating), // Use same as rating for now
+            oppPointsPerPlay: this.parseNumber(stats.oppPointsPerPlay),
+            oppYardsPerPlay: this.parseNumber(stats.oppYardsPerPlay),
+            oppCompletionRate: this.parseNumber(stats.oppCompletionRate),
+            oppThirdDownRate: this.parseNumber(stats.oppThirdDownRate),
+            oppRedZoneRate: this.parseNumber(stats.oppRedZoneRate),
             
             // Efficiency stats
-            efficiencyRating: this.parseRating(stats.efficiency?.efficiency_rating),
-            efficiencyPredictive: this.parseNumber(stats.efficiency?.efficiency_predictive),
+            efficiencyRating: this.parseNumber(stats.efficiencyRating),
+            efficiencyPredictive: this.parseNumber(stats.efficiencyRating), // Use same as rating for now
             
             // Advanced stats
-            advancedRating: this.parseRating(stats['advanced-stats']?.['advanced-stats_rating']),
-            advancedPredictive: this.parseNumber(stats['advanced-stats']?.['advanced-stats_predictive']),
+            advancedRating: this.parseNumber(stats.advancedRating),
+            advancedPredictive: this.parseNumber(stats.advancedRating), // Use same as rating for now
             
             // Conference strength (if available)
             conference: team.conference || 'Unknown'
