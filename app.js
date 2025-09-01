@@ -9177,6 +9177,16 @@ function populateWeek1Results() {
         return;
     }
     
+    // Clear old Week 1 data first
+    if (window.performanceTracker.actualResults[1]) {
+        delete window.performanceTracker.actualResults[1];
+        if (window.performanceTracker.performanceMetrics[1]) {
+            delete window.performanceTracker.performanceMetrics[1];
+        }
+        window.performanceTracker.saveToStorage();
+        console.log('Cleared old Week 1 data');
+    }
+    
     // Week 1 actual results from our analysis - All ~90 games
     const week1Results = [
         { home: 'Air Force', away: 'Bucknell', homeScore: 45, awayScore: 10 },
@@ -9280,12 +9290,26 @@ function populateWeek1Results() {
         { home: 'Wyoming', away: 'Akron', homeScore: 24, awayScore: 17 }
     ];
     
+    console.log(`Adding ${week1Results.length} Week 1 games to performance tracker...`);
+    
+    let addedCount = 0;
     week1Results.forEach(result => {
-        window.performanceTracker.recordGameResult(1, result.home, result.away, result.homeScore, result.awayScore);
+        try {
+            window.performanceTracker.recordGameResult(1, result.home, result.away, result.homeScore, result.awayScore);
+            addedCount++;
+        } catch (error) {
+            console.error(`Error adding game ${result.home} vs ${result.away}:`, error);
+        }
     });
     
+    console.log(`Successfully added ${addedCount} games. Total Week 1 games in tracker:`, 
+                Object.keys(window.performanceTracker.actualResults[1] || {}).length);
+    
+    // Force save and update
+    window.performanceTracker.saveToStorage();
     updatePerformanceDashboard();
-    alert(`Added ${week1Results.length} Week 1 results! Check the performance dashboard.`);
+    
+    alert(`Added ${addedCount} Week 1 results! Check the performance dashboard.`);
 }
 
 // Initialize performance dashboard when page loads
@@ -9450,7 +9474,7 @@ async function handlePrediction(e) {
             const awayTeam = window.currentGame.away;
             const homeWinProbability = prediction.homeWinProbability;
             const confidence = prediction.confidence;
-            
+
             window.performanceTracker.storePrediction(
                 week, 
                 homeTeam, 
