@@ -9183,6 +9183,9 @@ function populateWeek1Results() {
         if (window.performanceTracker.performanceMetrics[1]) {
             delete window.performanceTracker.performanceMetrics[1];
         }
+        if (window.performanceTracker.predictions[1]) {
+            delete window.performanceTracker.predictions[1];
+        }
         window.performanceTracker.saveToStorage();
         console.log('Cleared old Week 1 data');
     }
@@ -9310,6 +9313,138 @@ function populateWeek1Results() {
     updatePerformanceDashboard();
     
     alert(`Added ${addedCount} Week 1 results! Check the performance dashboard.`);
+}
+
+// Generate sample predictions for Week 1 games
+function generateWeek1Predictions() {
+    if (!window.performanceTracker) {
+        alert('Performance tracker not loaded yet. Please wait and try again.');
+        return;
+    }
+    
+    // Sample predictions based on team strength (realistic but not perfect)
+    const predictions = [
+        { home: 'Air Force', away: 'Bucknell', homeWinProb: 0.85, confidence: 0.78 },
+        { home: 'Akron', away: 'Wyoming', homeWinProb: 0.42, confidence: 0.65 },
+        { home: 'Florida State', away: 'Alabama', homeWinProb: 0.38, confidence: 0.72 },
+        { home: 'Alabama A&M', away: 'Auburn', homeWinProb: 0.12, confidence: 0.85 },
+        { home: 'Ball State', away: 'Kentucky', homeWinProb: 0.28, confidence: 0.70 },
+        { home: 'Baylor', away: 'Texas State', homeWinProb: 0.75, confidence: 0.68 },
+        { home: 'Boise State', away: 'Georgia Southern', homeWinProb: 0.68, confidence: 0.72 },
+        { home: 'Boston College', away: 'Colgate', homeWinProb: 0.92, confidence: 0.80 },
+        { home: 'Bowling Green', away: 'Texas A&M', homeWinProb: 0.25, confidence: 0.75 },
+        { home: 'Buffalo', away: 'Maryland', homeWinProb: 0.35, confidence: 0.68 },
+        { home: 'California', away: 'UC Davis', homeWinProb: 0.88, confidence: 0.75 },
+        { home: 'Central Michigan', away: 'Michigan', homeWinProb: 0.15, confidence: 0.82 },
+        { home: 'Charlotte', away: 'North Carolina', homeWinProb: 0.22, confidence: 0.70 },
+        { home: 'Cincinnati', away: 'Toledo', homeWinProb: 0.65, confidence: 0.68 },
+        { home: 'Clemson', away: 'Georgia', homeWinProb: 0.32, confidence: 0.75 },
+        { home: 'Colorado', away: 'Georgia Tech', homeWinProb: 0.48, confidence: 0.65 },
+        { home: 'Colorado State', away: 'Texas', homeWinProb: 0.28, confidence: 0.72 },
+        { home: 'Duke', away: 'Old Dominion', homeWinProb: 0.78, confidence: 0.70 },
+        { home: 'East Carolina', away: 'NC State', homeWinProb: 0.38, confidence: 0.68 },
+        { home: 'Eastern Michigan', away: 'Michigan State', homeWinProb: 0.18, confidence: 0.75 },
+        { home: 'FIU', away: 'Indiana', homeWinProb: 0.25, confidence: 0.70 },
+        { home: 'Florida', away: 'Miami (FL)', homeWinProb: 0.52, confidence: 0.65 },
+        { home: 'Florida Atlantic', away: 'UCF', homeWinProb: 0.32, confidence: 0.68 },
+        { home: 'Fresno State', away: 'USC', homeWinProb: 0.28, confidence: 0.72 },
+        { home: 'Georgia Southern', away: 'Boise State', homeWinProb: 0.35, confidence: 0.68 },
+        { home: 'Georgia State', away: 'Georgia Tech', homeWinProb: 0.28, confidence: 0.70 },
+        { home: 'Hawaii', away: 'UCLA', homeWinProb: 0.18, confidence: 0.75 },
+        { home: 'Houston', away: 'Oklahoma', homeWinProb: 0.32, confidence: 0.72 },
+        { home: 'Illinois', away: 'Kansas', homeWinProb: 0.42, confidence: 0.65 },
+        { home: 'Indiana', away: 'FIU', homeWinProb: 0.72, confidence: 0.68 },
+        { home: 'Iowa', away: 'Illinois State', homeWinProb: 0.88, confidence: 0.78 },
+        { home: 'Iowa State', away: 'South Dakota State', homeWinProb: 0.78, confidence: 0.72 },
+        { home: 'Kansas', away: 'Illinois', homeWinProb: 0.62, confidence: 0.65 },
+        { home: 'Kansas State', away: 'UTEP', homeWinProb: 0.82, confidence: 0.70 },
+        { home: 'Kentucky', away: 'Ball State', homeWinProb: 0.78, confidence: 0.72 },
+        { home: 'Liberty', away: 'East Carolina', homeWinProb: 0.58, confidence: 0.65 },
+        { home: 'Louisiana', away: 'Tulane', homeWinProb: 0.42, confidence: 0.68 },
+        { home: 'Louisiana Tech', away: 'Arkansas', homeWinProb: 0.28, confidence: 0.72 },
+        { home: 'Louisville', away: 'Austin Peay', homeWinProb: 0.92, confidence: 0.80 },
+        { home: 'LSU', away: 'USC', homeWinProb: 0.62, confidence: 0.70 },
+        { home: 'Marshall', away: 'Georgia', homeWinProb: 0.08, confidence: 0.85 },
+        { home: 'Maryland', away: 'Buffalo', homeWinProb: 0.72, confidence: 0.68 },
+        { home: 'Memphis', away: 'Mississippi State', homeWinProb: 0.42, confidence: 0.68 },
+        { home: 'Miami (FL)', away: 'Florida', homeWinProb: 0.48, confidence: 0.65 },
+        { home: 'Michigan', away: 'Central Michigan', homeWinProb: 0.88, confidence: 0.80 },
+        { home: 'Michigan State', away: 'Eastern Michigan', homeWinProb: 0.82, confidence: 0.75 },
+        { home: 'Minnesota', away: 'North Carolina', homeWinProb: 0.52, confidence: 0.65 },
+        { home: 'Mississippi State', away: 'Memphis', homeWinProb: 0.65, confidence: 0.68 },
+        { home: 'Missouri', away: 'Murray State', homeWinProb: 0.92, confidence: 0.80 },
+        { home: 'NC State', away: 'East Carolina', homeWinProb: 0.68, confidence: 0.70 },
+        { home: 'Nebraska', away: 'UTEP', homeWinProb: 0.75, confidence: 0.72 },
+        { home: 'Nevada', away: 'Washington', homeWinProb: 0.28, confidence: 0.75 },
+        { home: 'North Carolina', away: 'Minnesota', homeWinProb: 0.48, confidence: 0.65 },
+        { home: 'North Texas', away: 'SMU', homeWinProb: 0.38, confidence: 0.68 },
+        { home: 'Northern Illinois', away: 'Notre Dame', homeWinProb: 0.18, confidence: 0.80 },
+        { home: 'Notre Dame', away: 'Northern Illinois', homeWinProb: 0.88, confidence: 0.80 },
+        { home: 'Ohio State', away: 'Texas', homeWinProb: 0.68, confidence: 0.72 },
+        { home: 'Oklahoma', away: 'Houston', homeWinProb: 0.78, confidence: 0.70 },
+        { home: 'Old Dominion', away: 'Duke', homeWinProb: 0.28, confidence: 0.70 },
+        { home: 'Ole Miss', away: 'Memphis', homeWinProb: 0.68, confidence: 0.68 },
+        { home: 'Oregon', away: 'Boise State', homeWinProb: 0.58, confidence: 0.68 },
+        { home: 'Penn State', away: 'West Virginia', homeWinProb: 0.75, confidence: 0.70 },
+        { home: 'Purdue', away: 'Indiana State', homeWinProb: 0.88, confidence: 0.75 },
+        { home: 'Rice', away: 'Texas', homeWinProb: 0.28, confidence: 0.72 },
+        { home: 'Rutgers', away: 'Virginia Tech', homeWinProb: 0.52, confidence: 0.65 },
+        { home: 'San Diego State', away: 'Arizona', homeWinProb: 0.38, confidence: 0.68 },
+        { home: 'San Jose State', away: 'USC', homeWinProb: 0.28, confidence: 0.72 },
+        { home: 'SMU', away: 'North Texas', homeWinProb: 0.68, confidence: 0.68 },
+        { home: 'South Carolina', away: 'Old Dominion', homeWinProb: 0.75, confidence: 0.70 },
+        { home: 'South Florida', away: 'Florida', homeWinProb: 0.38, confidence: 0.68 },
+        { home: 'Southern Miss', away: 'Mississippi State', homeWinProb: 0.28, confidence: 0.72 },
+        { home: 'Stanford', away: 'TCU', homeWinProb: 0.42, confidence: 0.68 },
+        { home: 'Syracuse', away: 'Ohio', homeWinProb: 0.72, confidence: 0.68 },
+        { home: 'TCU', away: 'Stanford', homeWinProb: 0.65, confidence: 0.68 },
+        { home: 'Temple', away: 'Navy', homeWinProb: 0.42, confidence: 0.68 },
+        { home: 'Tennessee', away: 'Chattanooga', homeWinProb: 0.92, confidence: 0.80 },
+        { home: 'Texas', away: 'Ohio State', homeWinProb: 0.32, confidence: 0.72 },
+        { home: 'Texas A&M', away: 'Bowling Green', homeWinProb: 0.82, confidence: 0.75 },
+        { home: 'Texas State', away: 'Baylor', homeWinProb: 0.28, confidence: 0.72 },
+        { home: 'Texas Tech', away: 'UTEP', homeWinProb: 0.78, confidence: 0.70 },
+        { home: 'Toledo', away: 'Cincinnati', homeWinProb: 0.38, confidence: 0.68 },
+        { home: 'Troy', away: 'Mississippi State', homeWinProb: 0.28, confidence: 0.72 },
+        { home: 'Tulane', away: 'Louisiana', homeWinProb: 0.62, confidence: 0.68 },
+        { home: 'UCF', away: 'Florida Atlantic', homeWinProb: 0.72, confidence: 0.68 },
+        { home: 'UCLA', away: 'Hawaii', homeWinProb: 0.88, confidence: 0.80 },
+        { home: 'USC', away: 'LSU', homeWinProb: 0.38, confidence: 0.70 },
+        { home: 'Utah', away: 'BYU', homeWinProb: 0.68, confidence: 0.70 },
+        { home: 'UTEP', away: 'Kansas State', homeWinProb: 0.22, confidence: 0.72 },
+        { home: 'Vanderbilt', away: 'Virginia Tech', homeWinProb: 0.42, confidence: 0.68 },
+        { home: 'Virginia', away: 'Richmond', homeWinProb: 0.82, confidence: 0.75 },
+        { home: 'Virginia Tech', away: 'Vanderbilt', homeWinProb: 0.72, confidence: 0.68 },
+        { home: 'Wake Forest', away: 'North Carolina A&T', homeWinProb: 0.92, confidence: 0.80 },
+        { home: 'Washington', away: 'Nevada', homeWinProb: 0.78, confidence: 0.72 },
+        { home: 'Washington State', away: 'Portland State', homeWinProb: 0.88, confidence: 0.75 },
+        { home: 'West Virginia', away: 'Penn State', homeWinProb: 0.28, confidence: 0.72 },
+        { home: 'Western Kentucky', away: 'Alabama', homeWinProb: 0.18, confidence: 0.80 },
+        { home: 'Western Michigan', away: 'Wisconsin', homeWinProb: 0.28, confidence: 0.75 },
+        { home: 'Wisconsin', away: 'Western Michigan', homeWinProb: 0.78, confidence: 0.72 },
+        { home: 'Wyoming', away: 'Akron', homeWinProb: 0.62, confidence: 0.65 }
+    ];
+    
+    console.log(`Adding ${predictions.length} Week 1 predictions to performance tracker...`);
+    
+    let addedCount = 0;
+    predictions.forEach(pred => {
+        try {
+            window.performanceTracker.storePrediction(1, pred.home, pred.away, pred.homeWinProb, pred.confidence);
+            addedCount++;
+        } catch (error) {
+            console.error(`Error adding prediction for ${pred.home} vs ${pred.away}:`, error);
+        }
+    });
+    
+    console.log(`Successfully added ${addedCount} predictions. Total Week 1 predictions in tracker:`, 
+                Object.keys(window.performanceTracker.predictions[1] || {}).length);
+    
+    // Force save and update
+    window.performanceTracker.saveToStorage();
+    updatePerformanceDashboard();
+    
+    alert(`Added ${addedCount} Week 1 predictions! Now you can see prediction accuracy.`);
 }
 
 // Initialize performance dashboard when page loads
