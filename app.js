@@ -1,7 +1,6 @@
 // Real ML-based College Football Prediction System
 // Uses actual team statistics for predictions
 
-// Model updated for Week 1 on 2025-09-01 12:53:48
 class MLPredictionSystem {
     constructor() {
         this.teams = [];
@@ -246,106 +245,26 @@ class MLPredictionSystem {
         
         // Complete schedule for all weeks from actual data
         schedule[1] = [
-            // Week 1 - Saturday, August 30, 2025
-            { home: 'Air Force', away: 'Bucknell', location: 'Falcon Stadium, Colorado Springs, CO', time: '10:30 PM ET', tv: 'CBS', date: 'Saturday, August 30, 2025' },
-            { home: 'Akron', away: 'Wyoming', location: 'InfoCision Stadium, Akron, OH', time: '12:00 PM ET', tv: 'Big 12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Florida State', away: 'Alabama', location: 'Doak Campbell Stadium, Tallahassee, FL', time: '7:30 PM ET', tv: 'ABC', date: 'Saturday, August 30, 2025' },
-            { home: 'Alabama A&M', away: 'Auburn', location: 'Jordan-Hare Stadium, Auburn, AL', time: '7:00 PM ET', tv: 'SEC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Ball State', away: 'Kentucky', location: 'Kroger Field, Lexington, KY', time: '12:00 PM ET', tv: 'SEC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Baylor', away: 'Texas State', location: 'McLane Stadium, Waco, TX', time: '7:00 PM ET', tv: 'Big 12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Boise State', away: 'Georgia Southern', location: 'Paulson Stadium, Statesboro, GA', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Boston College', away: 'Colgate', location: 'Alumni Stadium, Chestnut Hill, MA', time: '12:00 PM ET', tv: 'ACC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Bowling Green', away: 'Texas A&M', location: 'Kyle Field, College Station, TX', time: '7:00 PM ET', tv: 'SEC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Buffalo', away: 'Maryland', location: 'SECU Stadium, College Park, MD', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'California', away: 'UC Davis', location: 'California Memorial Stadium, Berkeley, CA', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Central Michigan', away: 'Michigan', location: 'Michigan Stadium, Ann Arbor, MI', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Charlotte', away: 'North Carolina', location: 'Kenan Memorial Stadium, Chapel Hill, NC', time: '7:30 PM ET', tv: 'ACC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Cincinnati', away: 'Toledo', location: 'Glass Bowl, Toledo, OH', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Clemson', away: 'Georgia', location: 'Sanford Stadium, Athens, GA', time: '7:30 PM ET', tv: 'ABC', date: 'Saturday, August 30, 2025' },
-            { home: 'Colorado', away: 'Georgia Tech', location: 'Bobby Dodd Stadium, Atlanta, GA', time: '12:00 PM ET', tv: 'ABC', date: 'Saturday, August 30, 2025' },
-            { home: 'Colorado State', away: 'Texas', location: 'DKR Texas Memorial Stadium, Austin, TX', time: '7:00 PM ET', tv: 'Longhorn Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Duke', away: 'Old Dominion', location: 'S.B. Ballard Stadium, Norfolk, VA', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'East Carolina', away: 'NC State', location: 'Carter-Finley Stadium, Raleigh, NC', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Eastern Michigan', away: 'Michigan State', location: 'Spartan Stadium, East Lansing, MI', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'FIU', away: 'Indiana', location: 'Memorial Stadium, Bloomington, IN', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Florida', away: 'Miami (FL)', location: 'Ben Hill Griffin Stadium, Gainesville, FL', time: '7:30 PM ET', tv: 'ESPN', date: 'Saturday, August 30, 2025' },
-            { home: 'Florida Atlantic', away: 'UCF', location: 'FBC Mortgage Stadium, Orlando, FL', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Fresno State', away: 'USC', location: 'Los Angeles Memorial Coliseum, Los Angeles, CA', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Georgia Southern', away: 'Boise State', location: 'Albertsons Stadium, Boise, ID', time: '10:00 PM ET', tv: 'CBS Sports Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Georgia State', away: 'Georgia Tech', location: 'Bobby Dodd Stadium, Atlanta, GA', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Hawaii', away: 'UCLA', location: 'Rose Bowl, Pasadena, CA', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Houston', away: 'Oklahoma', location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK', time: '7:00 PM ET', tv: 'ESPN', date: 'Saturday, August 30, 2025' },
-            { home: 'Illinois', away: 'Kansas', location: 'David Booth Kansas Memorial Stadium, Lawrence, KS', time: '7:00 PM ET', tv: 'Big 12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Indiana', away: 'FIU', location: 'Riccardo Silva Stadium, Miami, FL', time: '12:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Iowa', away: 'Illinois State', location: 'Kinnick Stadium, Iowa City, IA', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Iowa State', away: 'South Dakota State', location: 'Jack Trice Stadium, Ames, IA', time: '7:00 PM ET', tv: 'Big 12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Kansas', away: 'Illinois', location: 'Memorial Stadium, Champaign, IL', time: '7:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Kansas State', away: 'UTEP', location: 'Sun Bowl, El Paso, TX', time: '9:00 PM ET', tv: 'CBS Sports Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Kentucky', away: 'Ball State', location: 'Scheumann Stadium, Muncie, IN', time: '12:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Liberty', away: 'East Carolina', location: 'Dowdy-Ficklen Stadium, Greenville, NC', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Louisiana', away: 'Tulane', location: 'Yulman Stadium, New Orleans, LA', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Louisiana Tech', away: 'Arkansas', location: 'Donald W. Reynolds Razorback Stadium, Fayetteville, AR', time: '7:00 PM ET', tv: 'SEC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Louisville', away: 'Austin Peay', location: 'Cardinal Stadium, Louisville, KY', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'LSU', away: 'USC', location: 'Los Angeles Memorial Coliseum, Los Angeles, CA', time: '7:30 PM ET', tv: 'ABC', date: 'Saturday, August 30, 2025' },
-            { home: 'Marshall', away: 'Georgia', location: 'Sanford Stadium, Athens, GA', time: '12:00 PM ET', tv: 'ESPN', date: 'Saturday, August 30, 2025' },
-            { home: 'Maryland', away: 'Buffalo', location: 'UB Stadium, Buffalo, NY', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Memphis', away: 'Mississippi State', location: 'Davis Wade Stadium, Starkville, MS', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Miami (FL)', away: 'Florida', location: 'Ben Hill Griffin Stadium, Gainesville, FL', time: '7:30 PM ET', tv: 'ESPN', date: 'Saturday, August 30, 2025' },
-            { home: 'Michigan', away: 'Central Michigan', location: 'Kelly/Shorts Stadium, Mount Pleasant, MI', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Michigan State', away: 'Eastern Michigan', location: 'Rynearson Stadium, Ypsilanti, MI', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Minnesota', away: 'North Carolina', location: 'Kenan Memorial Stadium, Chapel Hill, NC', time: '7:30 PM ET', tv: 'ACC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Mississippi State', away: 'Memphis', location: 'Liberty Bowl Memorial Stadium, Memphis, TN', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Missouri', away: 'Murray State', location: 'Memorial Stadium, Columbia, MO', time: '7:00 PM ET', tv: 'SEC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'NC State', away: 'East Carolina', location: 'Dowdy-Ficklen Stadium, Greenville, NC', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Nebraska', away: 'UTEP', location: 'Sun Bowl, El Paso, TX', time: '9:00 PM ET', tv: 'CBS Sports Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Nevada', away: 'Washington', location: 'Husky Stadium, Seattle, WA', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'North Carolina', away: 'Minnesota', location: 'Huntington Bank Stadium, Minneapolis, MN', time: '7:30 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'North Texas', away: 'SMU', location: 'Gerald J. Ford Stadium, Dallas, TX', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Northern Illinois', away: 'Notre Dame', location: 'Notre Dame Stadium, Notre Dame, IN', time: '2:30 PM ET', tv: 'NBC', date: 'Saturday, August 30, 2025' },
-            { home: 'Notre Dame', away: 'Northern Illinois', location: 'Huskie Stadium, DeKalb, IL', time: '2:30 PM ET', tv: 'NBC', date: 'Saturday, August 30, 2025' },
-            { home: 'Ohio State', away: 'Texas', location: 'DKR Texas Memorial Stadium, Austin, TX', time: '7:30 PM ET', tv: 'ABC', date: 'Saturday, August 30, 2025' },
-            { home: 'Oklahoma', away: 'Houston', location: 'TDECU Stadium, Houston, TX', time: '7:00 PM ET', tv: 'ESPN', date: 'Saturday, August 30, 2025' },
-            { home: 'Old Dominion', away: 'Duke', location: 'Wallace Wade Stadium, Durham, NC', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Ole Miss', away: 'Memphis', location: 'Liberton Bowl Memorial Stadium, Memphis, TN', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Oregon', away: 'Boise State', location: 'Albertsons Stadium, Boise, ID', time: '10:00 PM ET', tv: 'CBS Sports Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Penn State', away: 'West Virginia', location: 'Milan Puskar Stadium, Morgantown, WV', time: '7:30 PM ET', tv: 'ABC', date: 'Saturday, August 30, 2025' },
-            { home: 'Purdue', away: 'Indiana State', location: 'Ross-Ade Stadium, West Lafayette, IN', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Rice', away: 'Texas', location: 'DKR Texas Memorial Stadium, Austin, TX', time: '7:00 PM ET', tv: 'Longhorn Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Rutgers', away: 'Virginia Tech', location: 'Lane Stadium, Blacksburg, VA', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'San Diego State', away: 'Arizona', location: 'Arizona Stadium, Tucson, AZ', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'San Jose State', away: 'USC', location: 'Los Angeles Memorial Coliseum, Los Angeles, CA', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'SMU', away: 'North Texas', location: 'Apogee Stadium, Denton, TX', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'South Carolina', away: 'Old Dominion', location: 'S.B. Ballard Stadium, Norfolk, VA', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'South Florida', away: 'Florida', location: 'Ben Hill Griffin Stadium, Gainesville, FL', time: '7:30 PM ET', tv: 'ESPN', date: 'Saturday, August 30, 2025' },
-            { home: 'Southern Miss', away: 'Mississippi State', location: 'Davis Wade Stadium, Starkville, MS', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Stanford', away: 'TCU', location: 'Amon G. Carter Stadium, Fort Worth, TX', time: '7:00 PM ET', tv: 'Big 12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Syracuse', away: 'Ohio', location: 'Peden Stadium, Athens, OH', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'TCU', away: 'Stanford', location: 'Stanford Stadium, Stanford, CA', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Temple', away: 'Navy', location: 'Navy-Marine Corps Memorial Stadium, Annapolis, MD', time: '7:00 PM ET', tv: 'CBS Sports Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Tennessee', away: 'Chattanooga', location: 'Neyland Stadium, Knoxville, TN', time: '7:00 PM ET', tv: 'SEC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Texas', away: 'Ohio State', location: 'Ohio Stadium, Columbus, OH', time: '7:30 PM ET', tv: 'ABC', date: 'Saturday, August 30, 2025' },
-            { home: 'Texas A&M', away: 'Bowling Green', location: 'Doyt Perry Stadium, Bowling Green, OH', time: '7:00 PM ET', tv: 'SEC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Texas State', away: 'Baylor', location: 'McLane Stadium, Waco, TX', time: '7:00 PM ET', tv: 'Big 12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Texas Tech', away: 'UTEP', location: 'Sun Bowl, El Paso, TX', time: '9:00 PM ET', tv: 'CBS Sports Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Toledo', away: 'Cincinnati', location: 'Nippert Stadium, Cincinnati, OH', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Troy', away: 'Mississippi State', location: 'Davis Wade Stadium, Starkville, MS', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Tulane', away: 'Louisiana', location: 'Cajun Field, Lafayette, LA', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'UCF', away: 'Florida Atlantic', location: 'FAU Stadium, Boca Raton, FL', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'UCLA', away: 'Hawaii', location: 'Clarence T.C. Ching Athletics Complex, Honolulu, HI', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday 30, 2025' },
-            { home: 'USC', away: 'LSU', location: 'Tiger Stadium, Baton Rouge, LA', time: '7:30 PM ET', tv: 'ABC', date: 'Saturday, August 30, 2025' },
-            { home: 'Utah', away: 'BYU', location: 'LaVell Edwards Stadium, Provo, UT', time: '10:30 PM ET', tv: 'PAC-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'UTEP', away: 'Kansas State', location: 'Bill Snyder Family Football Complex, Manhattan, KS', time: '7:00 PM ET', tv: 'Big 12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Vanderbilt', away: 'Virginia Tech', location: 'Lane Stadium, Blacksburg, VA', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Virginia', away: 'Richmond', location: 'Scott Stadium, Charlottesville, VA', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Virginia Tech', away: 'Vanderbilt', location: 'Memorial Stadium, Nashville, TN', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday,30, 2025' },
-            { home: 'Wake Forest', away: 'North Carolina A&T', location: 'Truist Field, Winston-Salem, NC', time: '7:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' },
-            { home: 'Washington', away: 'Nevada', location: 'Mackay Stadium, Reno, NV', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Washington State', away: 'Portland State', location: 'Providence Park, Portland, OR', time: '10:30 PM ET', tv: 'Pac-12 Network', date: 'Saturday, August 30, 2025' },
-            { home: 'West Virginia', away: 'Penn State', location: 'Beaver Stadium, University Park, PA', time: '7:30 PM ET', tv: 'ABC', date: 'Saturday, August 30, 2025' },
-            { home: 'Western Kentucky', away: 'Alabama', location: 'Bryant-Denny Stadium, Tuscaloosa, AL', time: '7:00 PM ET', tv: 'SEC Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Western Michigan', away: 'Wisconsin', location: 'Camp Randall Stadium, Madison, WI', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Wisconsin', away: 'Western Michigan', location: 'Waldo Stadium, Kalamazoo, MI', time: '12:00 PM ET', tv: 'Big Ten Network', date: 'Saturday, August 30, 2025' },
-            { home: 'Wyoming', away: 'Akron', location: 'InfoCision Stadium, Akron, OH', time: '12:00 PM ET', tv: 'ESPN+', date: 'Saturday, August 30, 2025' }
+            { 
+                home: 'Air Force', 
+                away: 'Bucknell', 
+                location: 'Falcon Stadium, Colorado Springs, CO',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Saturday, August 30, 2025'
+            },
+            { 
+                home: 'Akron', 
+                away: 'Wyoming', 
+                location: 'InfoCision Stadium, Akron, OH',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Saturday, August 30, 2025'
+            },
+            { 
+                home: 'Florida State', 
+                away: 'Alabama', 
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
                 time: '3:30 PM ET',
                 tv: 'NBC',
                 date: 'Saturday, August 30, 2025'
@@ -8960,73 +8879,6 @@ class MLPredictionSystem {
         });
     }
     
-    getPredictableGames(week) {
-        const weekGames = this.schedule[week] || [];
-        const predictableGames = [];
-        
-        weekGames.forEach(game => {
-            const normalizedHome = this.normalizeTeamName(game.home);
-            const normalizedAway = this.normalizeTeamName(game.away);
-            
-            // Check if both teams have stats (are predictable)
-            if (this.teamStats[normalizedHome] && this.teamStats[normalizedAway]) {
-                predictableGames.push({
-                    ...game,
-                    normalizedHome,
-                    normalizedAway,
-                    predictable: true
-                });
-            } else {
-                predictableGames.push({
-                    ...game,
-                    normalizedHome,
-                    normalizedAway,
-                    predictable: false,
-                    reason: !this.teamStats[normalizedHome] ? `Missing stats for ${game.home}` : `Missing stats for ${game.away}`
-                });
-            }
-        });
-        
-        return predictableGames;
-    }
-    
-    getWeekStats(week) {
-        const predictableGames = this.getPredictableGames(week);
-        const totalGames = predictableGames.length;
-        const predictableCount = predictableGames.filter(g => g.predictable).length;
-        const unpredictableCount = totalGames - predictableCount;
-        
-        return {
-            totalGames,
-            predictableGames: predictableCount,
-            unpredictableGames: unpredictableCount,
-            coverage: totalGames > 0 ? (predictableCount / totalGames * 100).toFixed(1) : 0,
-            games: predictableGames
-        };
-    }
-    
-    // Debug method to show team name matching improvements
-    debugTeamMatching() {
-        console.log('=== TEAM NAME MATCHING DEBUG ===');
-        console.log(`Total teams in teams.json: ${this.teams.length}`);
-        console.log(`Total games in schedule: ${Object.values(this.schedule).flat().length}`);
-        
-        // Test Week 1 specifically
-        const week1Stats = this.getWeekStats(1);
-        console.log('Week 1 Coverage:', week1Stats);
-        
-        // Show some example mappings
-        console.log('Example team name mappings:');
-        const testNames = ['App State', 'NIU', 'FIU', 'ULM', 'UCF'];
-        testNames.forEach(name => {
-            const normalized = this.normalizeTeamName(name);
-            const hasStats = !!this.teamStats[normalized];
-            console.log(`"${name}" → "${normalized}" (has stats: ${hasStats})`);
-        });
-        
-        return week1Stats;
-    }
-    
     predictGame(homeTeam, awayTeam, week) {
         // Normalize team names for better matching
         const normalizedHomeTeam = this.normalizeTeamName(homeTeam);
@@ -9193,102 +9045,6 @@ class MLPredictionSystem {
 // Initialize the ML prediction system
 const predictor = new MLPredictionSystem();
 
-// DOM elements
-const weekSelect = document.getElementById('singleWeek');
-const teamSelect = document.getElementById('teamSelect');
-const matchupDisplay = document.getElementById('matchupDisplay');
-const matchupText = document.getElementById('matchupText');
-const singleGameForm = document.getElementById('singleGameForm');
-const singleLoading = document.getElementById('singleLoading');
-const singleResult = document.getElementById('singleResult');
-
-// Populate team dropdown
-function populateTeamDropdown() {
-    teamSelect.innerHTML = '<option value="">Select a Team</option>';
-    
-    // Sort teams alphabetically
-    const sortedTeams = [...predictor.teams].sort();
-    
-    sortedTeams.forEach(team => {
-        const option = document.createElement('option');
-        option.value = team;
-        option.textContent = team;
-        teamSelect.appendChild(option);
-    });
-    
-    console.log(`Populated dropdown with ${sortedTeams.length} teams in alphabetical order`);
-}
-
-// Find team's opponent for selected week
-function findTeamOpponent(selectedTeam, week) {
-    const game = predictor.findTeamGame(selectedTeam, week);
-    
-    if (game) {
-        const isHome = game.home === selectedTeam;
-        const opponent = isHome ? game.away : game.home;
-        const homeTeam = game.home;
-        const awayTeam = game.away;
-        
-        // Show the matchup with the selected team highlighted
-        const displayText = isHome ? 
-            `<strong>${homeTeam}</strong> vs ${awayTeam}` : 
-            `${homeTeam} vs <strong>${awayTeam}</strong>`;
-        
-        // Add game details
-        let detailsHTML = displayText;
-        
-        if (game.location) {
-            detailsHTML += `<br><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> ${game.location}`;
-        }
-        
-        if (game.date) {
-            detailsHTML += `<br><i class="fas fa-calendar"></i> <strong>Date:</strong> ${game.date}`;
-        }
-        
-        if (game.time) {
-            detailsHTML += `<br><i class="fas fa-clock"></i> <strong>Time:</strong> ${game.time}`;
-        }
-        
-        if (game.tv) {
-            detailsHTML += `<br><i class="fas fa-tv"></i> <strong>TV:</strong> ${game.tv}`;
-        }
-        
-        matchupText.innerHTML = detailsHTML;
-        matchupDisplay.style.display = 'block';
-        
-        // Store the game data
-        window.currentGame = game;
-        
-        console.log(`Found game: ${homeTeam} vs ${awayTeam} (Week ${week})`);
-        console.log(`Game details: ${game.location} | ${game.time} | ${game.tv}`);
-    } else {
-        matchupText.innerHTML = `<em>No scheduled game found for ${selectedTeam} in Week ${week}</em>`;
-        matchupDisplay.style.display = 'block';
-        window.currentGame = null;
-        
-        console.log(`No game found for ${selectedTeam} in Week ${week}`);
-    }
-}
-
-// Debug function to test team name matching improvements
-function debugTeamMatching() {
-    if (!window.predictor) {
-        alert('Please wait for the system to load, then try again.');
-        return;
-    }
-    
-    console.log('=== DEBUGGING TEAM NAME MATCHING ===');
-    const week1Stats = window.predictor.debugTeamMatching();
-    
-    // Show results in an alert
-    alert(`Week 1 Coverage Results:\n\n` +
-          `Total Games: ${week1Stats.totalGames}\n` +
-          `Predictable Games: ${week1Stats.predictableGames}\n` +
-          `Unpredictable Games: ${week1Stats.unpredictableGames}\n` +
-          `Coverage: ${week1Stats.coverage}%\n\n` +
-          `Check the browser console for detailed information.`);
-}
-
 // Performance Dashboard Functions
 function refreshPerformanceData() {
     if (!window.performanceTracker) {
@@ -9427,6 +9183,9 @@ function populateWeek1Results() {
         { home: 'Penn State', away: 'Nevada', homeScore: 39, awayScore: 3 },
         { home: 'Colorado', away: 'Georgia Tech', homeScore: 20, awayScore: 27 },
         { home: 'Texas', away: 'Ohio State', homeScore: 7, awayScore: 14 },
+        { home: 'Penn State', away: 'Nevada', homeScore: 39, awayScore: 3 },
+        { home: 'Colorado', away: 'Georgia Tech', homeScore: 20, awayScore: 27 },
+        { home: 'Texas', away: 'Ohio State', homeScore: 7, awayScore: 14 },
         { home: 'Tennessee', away: 'Syracuse', homeScore: 45, awayScore: 26 },
         { home: 'Mississippi State', away: 'Southern Miss', homeScore: 34, awayScore: 17 },
         { home: 'Kentucky', away: 'Toledo', homeScore: 24, awayScore: 16 },
@@ -9452,12 +9211,25 @@ function populateWeek1Results() {
 
 // Initialize performance dashboard when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    // Wait a bit for the performance tracker to load
-    setTimeout(() => {
+    // Initialize performance dashboard with retry logic
+    function initPerformanceDashboard() {
         if (window.performanceTracker) {
-            updatePerformanceDashboard();
+            try {
+                updatePerformanceDashboard();
+                console.log('Performance dashboard initialized successfully');
+            } catch (error) {
+                console.error('Error initializing performance dashboard:', error);
+                // Retry after a short delay
+                setTimeout(initPerformanceDashboard, 500);
+            }
+        } else {
+            console.log('Performance tracker not ready, retrying...');
+            setTimeout(initPerformanceDashboard, 500);
         }
-    }, 1000);
+    }
+    
+    // Start initialization
+    initPerformanceDashboard();
     
     // Handle result form submission
     const resultForm = document.getElementById('resultForm');
@@ -9482,6 +9254,83 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// DOM elements
+const weekSelect = document.getElementById('singleWeek');
+const teamSelect = document.getElementById('teamSelect');
+const matchupDisplay = document.getElementById('matchupDisplay');
+const matchupText = document.getElementById('matchupText');
+const singleGameForm = document.getElementById('singleGameForm');
+const singleLoading = document.getElementById('singleLoading');
+const singleResult = document.getElementById('singleResult');
+
+// Populate team dropdown
+function populateTeamDropdown() {
+    teamSelect.innerHTML = '<option value="">Select a Team</option>';
+    
+    // Sort teams alphabetically
+    const sortedTeams = [...predictor.teams].sort();
+    
+    sortedTeams.forEach(team => {
+        const option = document.createElement('option');
+        option.value = team;
+        option.textContent = team;
+        teamSelect.appendChild(option);
+    });
+    
+    console.log(`Populated dropdown with ${sortedTeams.length} teams in alphabetical order`);
+}
+
+// Find team's opponent for selected week
+function findTeamOpponent(selectedTeam, week) {
+    const game = predictor.findTeamGame(selectedTeam, week);
+    
+    if (game) {
+        const isHome = game.home === selectedTeam;
+        const opponent = isHome ? game.away : game.home;
+        const homeTeam = game.home;
+        const awayTeam = game.away;
+        
+        // Show the matchup with the selected team highlighted
+        const displayText = isHome ? 
+            `<strong>${homeTeam}</strong> vs ${awayTeam}` : 
+            `${homeTeam} vs <strong>${awayTeam}</strong>`;
+        
+        // Add game details
+        let detailsHTML = displayText;
+        
+        if (game.location) {
+            detailsHTML += `<br><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> ${game.location}`;
+        }
+        
+        if (game.date) {
+            detailsHTML += `<br><i class="fas fa-calendar"></i> <strong>Date:</strong> ${game.date}`;
+        }
+        
+        if (game.time) {
+            detailsHTML += `<br><i class="fas fa-clock"></i> <strong>Time:</strong> ${game.time}`;
+        }
+        
+        if (game.tv) {
+            detailsHTML += `<br><i class="fas fa-tv"></i> <strong>TV:</strong> ${game.tv}`;
+        }
+        
+        matchupText.innerHTML = detailsHTML;
+        matchupDisplay.style.display = 'block';
+        
+        // Store the game data
+        window.currentGame = game;
+        
+        console.log(`Found game: ${homeTeam} vs ${awayTeam} (Week ${week})`);
+        console.log(`Game details: ${game.location} | ${game.time} | ${game.tv}`);
+    } else {
+        matchupText.innerHTML = `<em>No scheduled game found for ${selectedTeam} in Week ${week}</em>`;
+        matchupDisplay.style.display = 'block';
+        window.currentGame = null;
+        
+        console.log(`No game found for ${selectedTeam} in Week ${week}`);
+    }
+}
 
 // Handle form submission
 async function handlePrediction(e) {
