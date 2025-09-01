@@ -59,9 +59,11 @@ class PerformanceTracker {
         let correctPredictions = 0;
         let totalConfidence = 0;
         let gamesWithResults = 0;
+        let gamesWithPredictions = 0;
         
         const gameResults = [];
         
+        // First, process games with both predictions and results
         Object.keys(weekPredictions).forEach(gameKey => {
             const prediction = weekPredictions[gameKey];
             const result = weekResults[gameKey];
@@ -69,6 +71,7 @@ class PerformanceTracker {
             if (result) {
                 totalGames++;
                 gamesWithResults++;
+                gamesWithPredictions++;
                 
                 const isCorrect = prediction.predictedWinner === result.actualWinner;
                 if (isCorrect) {
@@ -83,18 +86,42 @@ class PerformanceTracker {
                     actual: `${result.actualWinner} (${result.homeScore}-${result.awayScore})`,
                     correct: isCorrect,
                     confidence: prediction.confidence,
-                    margin: result.margin
+                    margin: result.margin,
+                    hasPrediction: true
                 });
             }
         });
         
-        const accuracy = totalGames > 0 ? (correctPredictions / totalGames * 100) : 0;
-        const averageConfidence = gamesWithResults > 0 ? (totalConfidence / gamesWithResults) : 0;
+        // Then, add games that only have results (no predictions)
+        Object.keys(weekResults).forEach(gameKey => {
+            const result = weekResults[gameKey];
+            const prediction = weekPredictions[gameKey];
+            
+            if (!prediction) {
+                totalGames++;
+                gamesWithResults++;
+                
+                gameResults.push({
+                    game: `${result.homeTeam} vs ${result.awayTeam}`,
+                    prediction: 'No prediction made',
+                    actual: `${result.actualWinner} (${result.homeScore}-${result.awayScore})`,
+                    correct: null,
+                    confidence: 0,
+                    margin: result.margin,
+                    hasPrediction: false
+                });
+            }
+        });
+        
+        const accuracy = gamesWithPredictions > 0 ? (correctPredictions / gamesWithPredictions * 100) : 0;
+        const averageConfidence = gamesWithPredictions > 0 ? (totalConfidence / gamesWithPredictions) : 0;
         
         this.performanceMetrics[week] = {
             totalGames,
             correctPredictions,
-            incorrectPredictions: totalGames - correctPredictions,
+            incorrectPredictions: gamesWithPredictions - correctPredictions,
+            gamesWithPredictions,
+            gamesWithResults,
             accuracy: accuracy.toFixed(1),
             averageConfidence: averageConfidence.toFixed(3),
             gameResults,
@@ -106,7 +133,7 @@ class PerformanceTracker {
     
     // Calculate overall season performance
     calculateSeasonPerformance() {
-        const weeks = Object.keys(this.predictions).map(Number).sort((a, b) => a - b);
+        const weeks = Object.keys(this.actualResults).map(Number).sort((a, b) => a - b);
         let totalGames = 0;
         let totalCorrect = 0;
         let totalConfidence = 0;
@@ -116,7 +143,7 @@ class PerformanceTracker {
             const weekPerf = this.calculateWeekPerformance(week);
             totalGames += weekPerf.totalGames;
             totalCorrect += weekPerf.correctPredictions;
-            totalConfidence += weekPerf.averageConfidence * weekPerf.totalGames;
+            totalConfidence += weekPerf.averageConfidence * weekPerf.gamesWithPredictions;
             weekAccuracies.push({
                 week,
                 accuracy: parseFloat(weekPerf.accuracy),
