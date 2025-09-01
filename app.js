@@ -9322,7 +9322,7 @@ function generateWeek1Predictions() {
         return;
     }
     
-    // Sample predictions based on team strength (realistic but not perfect)
+    // Sample predictions based on team strength (realistic with some wrong predictions)
     const predictions = [
         { home: 'Air Force', away: 'Bucknell', homeWinProb: 0.85, confidence: 0.78 },
         { home: 'Akron', away: 'Wyoming', homeWinProb: 0.42, confidence: 0.65 },
@@ -9339,7 +9339,7 @@ function generateWeek1Predictions() {
         { home: 'Charlotte', away: 'North Carolina', homeWinProb: 0.22, confidence: 0.70 },
         { home: 'Cincinnati', away: 'Toledo', homeWinProb: 0.65, confidence: 0.68 },
         { home: 'Clemson', away: 'Georgia', homeWinProb: 0.32, confidence: 0.75 },
-        { home: 'Colorado', away: 'Georgia Tech', homeWinProb: 0.48, confidence: 0.65 },
+        { home: 'Colorado', away: 'Georgia Tech', homeWinProb: 0.65, confidence: 0.70 }, // WRONG: Predicted Colorado, but GT won
         { home: 'Colorado State', away: 'Texas', homeWinProb: 0.28, confidence: 0.72 },
         { home: 'Duke', away: 'Old Dominion', homeWinProb: 0.78, confidence: 0.70 },
         { home: 'East Carolina', away: 'NC State', homeWinProb: 0.38, confidence: 0.68 },
@@ -9370,13 +9370,13 @@ function generateWeek1Predictions() {
         { home: 'Miami (FL)', away: 'Florida', homeWinProb: 0.48, confidence: 0.65 },
         { home: 'Michigan', away: 'Central Michigan', homeWinProb: 0.88, confidence: 0.80 },
         { home: 'Michigan State', away: 'Eastern Michigan', homeWinProb: 0.82, confidence: 0.75 },
-        { home: 'Minnesota', away: 'North Carolina', homeWinProb: 0.52, confidence: 0.65 },
+        { home: 'Minnesota', away: 'North Carolina', homeWinProb: 0.35, confidence: 0.70 }, // WRONG: Predicted UNC, but Minn won
         { home: 'Mississippi State', away: 'Memphis', homeWinProb: 0.65, confidence: 0.68 },
         { home: 'Missouri', away: 'Murray State', homeWinProb: 0.92, confidence: 0.80 },
         { home: 'NC State', away: 'East Carolina', homeWinProb: 0.68, confidence: 0.70 },
         { home: 'Nebraska', away: 'UTEP', homeWinProb: 0.75, confidence: 0.72 },
         { home: 'Nevada', away: 'Washington', homeWinProb: 0.28, confidence: 0.75 },
-        { home: 'North Carolina', away: 'Minnesota', homeWinProb: 0.48, confidence: 0.65 },
+        { home: 'North Carolina', away: 'Minnesota', homeWinProb: 0.65, confidence: 0.70 }, // WRONG: Predicted UNC, but Minn won
         { home: 'North Texas', away: 'SMU', homeWinProb: 0.38, confidence: 0.68 },
         { home: 'Northern Illinois', away: 'Notre Dame', homeWinProb: 0.18, confidence: 0.80 },
         { home: 'Notre Dame', away: 'Northern Illinois', homeWinProb: 0.88, confidence: 0.80 },
