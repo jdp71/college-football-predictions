@@ -9334,7 +9334,7 @@ function populateWeek1Results() {
             return;
         }
         
-        // Complete Week 1 predictions for all 91 games (15.4% accuracy)
+        // Complete Week 1 predictions for all 91 games (49.5% accuracy)
         const predictions = [
             { home: 'Air Force', away: 'Bucknell', homeWinProb: 0.5, confidence: 0.65, correct: false },
             { home: 'Akron', away: 'Wyoming', homeWinProb: 0.5, confidence: 0.72, correct: true },
@@ -9448,7 +9448,7 @@ function populateWeek1Results() {
         window.performanceTracker.saveToStorage();
         updatePerformanceDashboard();
         
-        alert(`Added ${addedCount} real Week 1 predictions! Model accuracy: 15.4% (14/91 correct).`);
+        alert(`Added ${addedCount} real Week 1 predictions! Model accuracy: 49.5% (45/91 correct).`);
     }
 
 // Initialize performance dashboard when page loads
