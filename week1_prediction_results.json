@@ -1,0 +1,825 @@
+{
+  "timestamp": "2025-09-01T18:54:40.792387",
+  "total_games": 48,
+  "correct_predictions": 13,
+  "incorrect_predictions": 35,
+  "accuracy": 27.083333333333332,
+  "predictions": [
+    {
+      "game": "Akron vs Wyoming",
+      "prediction": {
+        "home_team": "Akron",
+        "away_team": "Wyoming",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Wyoming",
+        "predicted_loser": "Akron",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Wyoming",
+        "score": "31-17"
+      },
+      "correct": true
+    },
+    {
+      "game": "Florida State vs Alabama",
+      "prediction": {
+        "home_team": "Florida State",
+        "away_team": "Alabama",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Alabama",
+        "predicted_loser": "Florida State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Alabama",
+        "score": "28-24"
+      },
+      "correct": true
+    },
+    {
+      "game": "Appalachian State vs Charlotte",
+      "prediction": {
+        "home_team": "Appalachian State",
+        "away_team": "Charlotte",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Charlotte",
+        "predicted_loser": "Appalachian State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Appalachian State",
+        "score": "35-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Baylor vs Auburn",
+      "prediction": {
+        "home_team": "Baylor",
+        "away_team": "Auburn",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Auburn",
+        "predicted_loser": "Baylor",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Auburn",
+        "score": "31-28"
+      },
+      "correct": true
+    },
+    {
+      "game": "Purdue vs Ball State",
+      "prediction": {
+        "home_team": "Purdue",
+        "away_team": "Ball State",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Ball State",
+        "predicted_loser": "Purdue",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Purdue",
+        "score": "35-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "South Florida vs Boise State",
+      "prediction": {
+        "home_team": "South Florida",
+        "away_team": "Boise State",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Boise State",
+        "predicted_loser": "South Florida",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Boise State",
+        "score": "28-24"
+      },
+      "correct": true
+    },
+    {
+      "game": "Boston College vs Fordham",
+      "prediction": {
+        "home_team": "Boston College",
+        "away_team": "Fordham",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Fordham",
+        "predicted_loser": "Boston College",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Boston College",
+        "score": "45-10"
+      },
+      "correct": false
+    },
+    {
+      "game": "Minnesota vs Buffalo",
+      "prediction": {
+        "home_team": "Minnesota",
+        "away_team": "Buffalo",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Buffalo",
+        "predicted_loser": "Minnesota",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Minnesota",
+        "score": "38-17"
+      },
+      "correct": false
+    },
+    {
+      "game": "Cincinnati vs Nebraska",
+      "prediction": {
+        "home_team": "Cincinnati",
+        "away_team": "Nebraska",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Nebraska",
+        "predicted_loser": "Cincinnati",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Cincinnati",
+        "score": "31-28"
+      },
+      "correct": false
+    },
+    {
+      "game": "Clemson vs LSU",
+      "prediction": {
+        "home_team": "Clemson",
+        "away_team": "LSU",
+        "home_win_probability": 0.5,
+        "predicted_winner": "LSU",
+        "predicted_loser": "Clemson",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "LSU",
+        "score": "28-24"
+      },
+      "correct": true
+    },
+    {
+      "game": "Virginia vs Coastal Carolina",
+      "prediction": {
+        "home_team": "Virginia",
+        "away_team": "Coastal Carolina",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Coastal Carolina",
+        "predicted_loser": "Virginia",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Virginia",
+        "score": "24-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Colorado vs Georgia Tech",
+      "prediction": {
+        "home_team": "Colorado",
+        "away_team": "Georgia Tech",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Georgia Tech",
+        "predicted_loser": "Colorado",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Georgia Tech",
+        "score": "31-28"
+      },
+      "correct": true
+    },
+    {
+      "game": "Washington vs Colorado State",
+      "prediction": {
+        "home_team": "Washington",
+        "away_team": "Colorado State",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Colorado State",
+        "predicted_loser": "Washington",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Washington",
+        "score": "42-17"
+      },
+      "correct": false
+    },
+    {
+      "game": "NC State vs East Carolina",
+      "prediction": {
+        "home_team": "NC State",
+        "away_team": "East Carolina",
+        "home_win_probability": 0.5,
+        "predicted_winner": "East Carolina",
+        "predicted_loser": "NC State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "NC State",
+        "score": "31-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Texas State vs Eastern Michigan",
+      "prediction": {
+        "home_team": "Texas State",
+        "away_team": "Eastern Michigan",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Eastern Michigan",
+        "predicted_loser": "Texas State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Texas State",
+        "score": "28-24"
+      },
+      "correct": false
+    },
+    {
+      "game": "Maryland vs Florida Atlantic",
+      "prediction": {
+        "home_team": "Maryland",
+        "away_team": "Florida Atlantic",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Florida Atlantic",
+        "predicted_loser": "Maryland",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Maryland",
+        "score": "35-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Kansas vs Fresno State",
+      "prediction": {
+        "home_team": "Kansas",
+        "away_team": "Fresno State",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Fresno State",
+        "predicted_loser": "Kansas",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Kansas",
+        "score": "31-28"
+      },
+      "correct": false
+    },
+    {
+      "game": "Georgia vs Marshall",
+      "prediction": {
+        "home_team": "Georgia",
+        "away_team": "Marshall",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Marshall",
+        "predicted_loser": "Georgia",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Georgia",
+        "score": "45-17"
+      },
+      "correct": false
+    },
+    {
+      "game": "Fresno State vs Georgia Southern",
+      "prediction": {
+        "home_team": "Fresno State",
+        "away_team": "Georgia Southern",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Georgia Southern",
+        "predicted_loser": "Fresno State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Fresno State",
+        "score": "28-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Ole Miss vs Georgia State",
+      "prediction": {
+        "home_team": "Ole Miss",
+        "away_team": "Georgia State",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Georgia State",
+        "predicted_loser": "Ole Miss",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Ole Miss",
+        "score": "35-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Hawaii vs Stanford",
+      "prediction": {
+        "home_team": "Hawaii",
+        "away_team": "Stanford",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Stanford",
+        "predicted_loser": "Hawaii",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Stanford",
+        "score": "31-24"
+      },
+      "correct": true
+    },
+    {
+      "game": "Indiana vs Old Dominion",
+      "prediction": {
+        "home_team": "Indiana",
+        "away_team": "Old Dominion",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Old Dominion",
+        "predicted_loser": "Indiana",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Indiana",
+        "score": "35-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Iowa State vs Kansas State",
+      "prediction": {
+        "home_team": "Iowa State",
+        "away_team": "Kansas State",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Kansas State",
+        "predicted_loser": "Iowa State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Kansas State",
+        "score": "28-24"
+      },
+      "correct": true
+    },
+    {
+      "game": "UCF vs Jacksonville State",
+      "prediction": {
+        "home_team": "UCF",
+        "away_team": "Jacksonville State",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Jacksonville State",
+        "predicted_loser": "UCF",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "UCF",
+        "score": "42-17"
+      },
+      "correct": false
+    },
+    {
+      "game": "Kent State vs Merrimack",
+      "prediction": {
+        "home_team": "Kent State",
+        "away_team": "Merrimack",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Merrimack",
+        "predicted_loser": "Kent State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Kent State",
+        "score": "38-14"
+      },
+      "correct": false
+    },
+    {
+      "game": "Kentucky vs Toledo",
+      "prediction": {
+        "home_team": "Kentucky",
+        "away_team": "Toledo",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Toledo",
+        "predicted_loser": "Kentucky",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Kentucky",
+        "score": "31-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Louisiana vs Rice",
+      "prediction": {
+        "home_team": "Louisiana",
+        "away_team": "Rice",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Rice",
+        "predicted_loser": "Louisiana",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Louisiana",
+        "score": "28-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Miami vs Notre Dame",
+      "prediction": {
+        "home_team": "Miami",
+        "away_team": "Notre Dame",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Notre Dame",
+        "predicted_loser": "Miami",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Notre Dame",
+        "score": "31-28"
+      },
+      "correct": true
+    },
+    {
+      "game": "Wisconsin vs Miami (OH)",
+      "prediction": {
+        "home_team": "Wisconsin",
+        "away_team": "Miami (OH)",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Miami (OH)",
+        "predicted_loser": "Wisconsin",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Wisconsin",
+        "score": "35-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Michigan vs New Mexico",
+      "prediction": {
+        "home_team": "Michigan",
+        "away_team": "New Mexico",
+        "home_win_probability": 0.5,
+        "predicted_winner": "New Mexico",
+        "predicted_loser": "Michigan",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Michigan",
+        "score": "45-10"
+      },
+      "correct": false
+    },
+    {
+      "game": "Michigan State vs Western Michigan",
+      "prediction": {
+        "home_team": "Michigan State",
+        "away_team": "Western Michigan",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Western Michigan",
+        "predicted_loser": "Michigan State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Michigan State",
+        "score": "31-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Southern Miss vs Mississippi State",
+      "prediction": {
+        "home_team": "Southern Miss",
+        "away_team": "Mississippi State",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Mississippi State",
+        "predicted_loser": "Southern Miss",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Mississippi State",
+        "score": "31-21"
+      },
+      "correct": true
+    },
+    {
+      "game": "Navy vs VMI",
+      "prediction": {
+        "home_team": "Navy",
+        "away_team": "VMI",
+        "home_win_probability": 0.5,
+        "predicted_winner": "VMI",
+        "predicted_loser": "Navy",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Navy",
+        "score": "38-14"
+      },
+      "correct": false
+    },
+    {
+      "game": "Penn State vs Nevada",
+      "prediction": {
+        "home_team": "Penn State",
+        "away_team": "Nevada",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Nevada",
+        "predicted_loser": "Penn State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Penn State",
+        "score": "42-17"
+      },
+      "correct": false
+    },
+    {
+      "game": "North Carolina vs TCU",
+      "prediction": {
+        "home_team": "North Carolina",
+        "away_team": "TCU",
+        "home_win_probability": 0.5,
+        "predicted_winner": "TCU",
+        "predicted_loser": "North Carolina",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "North Carolina",
+        "score": "31-28"
+      },
+      "correct": false
+    },
+    {
+      "game": "Tulane vs Northwestern",
+      "prediction": {
+        "home_team": "Tulane",
+        "away_team": "Northwestern",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Northwestern",
+        "predicted_loser": "Tulane",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Tulane",
+        "score": "28-24"
+      },
+      "correct": false
+    },
+    {
+      "game": "Rutgers vs Ohio",
+      "prediction": {
+        "home_team": "Rutgers",
+        "away_team": "Ohio",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Ohio",
+        "predicted_loser": "Rutgers",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Rutgers",
+        "score": "31-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "Ohio State vs Texas",
+      "prediction": {
+        "home_team": "Ohio State",
+        "away_team": "Texas",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Texas",
+        "predicted_loser": "Ohio State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Texas",
+        "score": "31-28"
+      },
+      "correct": true
+    },
+    {
+      "game": "Pittsburgh vs Duquesne",
+      "prediction": {
+        "home_team": "Pittsburgh",
+        "away_team": "Duquesne",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Duquesne",
+        "predicted_loser": "Pittsburgh",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Pittsburgh",
+        "score": "45-10"
+      },
+      "correct": false
+    },
+    {
+      "game": "Western Kentucky vs Sam Houston",
+      "prediction": {
+        "home_team": "Western Kentucky",
+        "away_team": "Sam Houston",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Sam Houston",
+        "predicted_loser": "Western Kentucky",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Western Kentucky",
+        "score": "35-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "San Jose State vs Central Michigan",
+      "prediction": {
+        "home_team": "San Jose State",
+        "away_team": "Central Michigan",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Central Michigan",
+        "predicted_loser": "San Jose State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "San Jose State",
+        "score": "28-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "South Carolina vs Virginia Tech",
+      "prediction": {
+        "home_team": "South Carolina",
+        "away_team": "Virginia Tech",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Virginia Tech",
+        "predicted_loser": "South Carolina",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "South Carolina",
+        "score": "31-28"
+      },
+      "correct": false
+    },
+    {
+      "game": "Syracuse vs Tennessee",
+      "prediction": {
+        "home_team": "Syracuse",
+        "away_team": "Tennessee",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Tennessee",
+        "predicted_loser": "Syracuse",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Tennessee",
+        "score": "35-21"
+      },
+      "correct": true
+    },
+    {
+      "game": "Texas A&M vs UTSA",
+      "prediction": {
+        "home_team": "Texas A&M",
+        "away_team": "UTSA",
+        "home_win_probability": 0.5,
+        "predicted_winner": "UTSA",
+        "predicted_loser": "Texas A&M",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Texas A&M",
+        "score": "42-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "UCLA vs Utah",
+      "prediction": {
+        "home_team": "UCLA",
+        "away_team": "Utah",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Utah",
+        "predicted_loser": "UCLA",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "UCLA",
+        "score": "31-28"
+      },
+      "correct": false
+    },
+    {
+      "game": "UMass vs Temple",
+      "prediction": {
+        "home_team": "UMass",
+        "away_team": "Temple",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Temple",
+        "predicted_loser": "UMass",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Temple",
+        "score": "31-24"
+      },
+      "correct": true
+    },
+    {
+      "game": "Utah State vs UTEP",
+      "prediction": {
+        "home_team": "Utah State",
+        "away_team": "UTEP",
+        "home_win_probability": 0.5,
+        "predicted_winner": "UTEP",
+        "predicted_loser": "Utah State",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "Utah State",
+        "score": "31-21"
+      },
+      "correct": false
+    },
+    {
+      "game": "West Virginia vs Robert Morris",
+      "prediction": {
+        "home_team": "West Virginia",
+        "away_team": "Robert Morris",
+        "home_win_probability": 0.5,
+        "predicted_winner": "Robert Morris",
+        "predicted_loser": "West Virginia",
+        "home_rating": 0,
+        "away_rating": 0
+      },
+      "actual_result": {
+        "winner": "West Virginia",
+        "score": "45-10"
+      },
+      "correct": false
+    }
+  ]
+}
