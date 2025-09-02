@@ -62,22 +62,38 @@ def predict_game(home_team, away_team, teams_data):
     if not teams_data:
         return None
     
-    # Find team stats
+    # Find team stats - handle team name variations
     home_stats = None
     away_stats = None
     
     # teams_data is a dictionary with team names as keys
+    # Try exact match first
     if home_team in teams_data:
         home_stats = teams_data[home_team]['stats']
+    elif home_team.replace("'", "'") in teams_data:  # Handle escaped apostrophes
+        home_stats = teams_data[home_team.replace("'", "'")]['stats']
+    
     if away_team in teams_data:
         away_stats = teams_data[away_team]['stats']
+    elif away_team.replace("'", "'") in teams_data:  # Handle escaped apostrophes
+        away_stats = teams_data[away_team.replace("'", "'")]['stats']
+    
+    # Debug output
+    if not home_stats:
+        print(f"  Warning: No stats found for home team '{home_team}'")
+    if not away_stats:
+        print(f"  Warning: No stats found for away team '{away_team}'")
     
     if not home_stats or not away_stats:
         return None
     
+    # Debug: Show what we found
+    print(f"  Found stats for {home_team}: offensive={home_stats.get('offensiveRating', 'N/A')}, defensive={home_stats.get('defensiveRating', 'N/A')}")
+    print(f"  Found stats for {away_team}: offensive={away_stats.get('offensiveRating', 'N/A')}, defensive={away_stats.get('defensiveRating', 'N/A')}")
+    
     # Simplified prediction algorithm based on team ratings
-    home_rating = home_stats.get('overallRating', 0)
-    away_rating = away_stats.get('overallRating', 0)
+    home_rating = home_stats.get('efficiencyRating', 0)
+    away_rating = away_stats.get('efficiencyRating', 0)
     
     # Calculate win probability
     rating_diff = home_rating - away_rating

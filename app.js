@@ -169,7 +169,19 @@ class MLPredictionSystem {
     
     processTeamData(data) {
         // Extract team names and stats from the JSON data
-        const teamsArray = data.teams || data;
+        // teams.json has teams as direct keys, not in a teams array
+        let teamsArray;
+        if (data.teams) {
+            // If data has a teams array, use that
+            teamsArray = data.teams;
+        } else {
+            // If data has teams as direct keys, convert to array
+            teamsArray = Object.keys(data).map(teamName => ({
+                name: teamName,
+                ...data[teamName]
+            }));
+        }
+        
         this.teams = teamsArray.map(team => team.name || team.team_name).filter(Boolean);
         
         // Process team statistics
