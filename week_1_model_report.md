@@ -1,12 +1,12 @@
 # Week 1 Model Update Report
-Generated: 2025-09-01 12:53:48
-Backup Location: backups/week_1_backup_20250901_125347
+Generated: 2025-09-01 20:10:16
+Backup Location: backups/week_1_backup_20250901_201015
 
 ## Model Update Summary
 - **Week Processed:** 1
-- **Total Teams:** 136
+- **Total Teams:** 182
 - **Teams with Games:** 34
-- **Coverage:** 25.0%
+- **Coverage:** 18.7%
 
 ## Conference Performance Analysis
 ### SEC
@@ -20,8 +20,8 @@ Backup Location: backups/week_1_backup_20250901_125347
 - **Avg Efficiency:** 50.0
 
 ### Independent
-- **Teams:** 4
-- **Avg Win %:** 25.0%
+- **Teams:** 7
+- **Avg Win %:** 14.3%
 - **Avg Efficiency:** 50.0
 
 ### ACC
@@ -60,7 +60,7 @@ Backup Location: backups/week_1_backup_20250901_125347
 - **Avg Efficiency:** 50.0
 
 ### FCS
-- **Teams:** 6
+- **Teams:** 49
 - **Avg Win %:** 0.0%
 - **Avg Efficiency:** 50.0
 

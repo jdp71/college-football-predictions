@@ -1,7 +1,6 @@
 // Real ML-based College Football Prediction System
 // Uses actual team statistics for predictions
 
-// Model updated for Week 1 on 2025-09-01 20:10:16
 class MLPredictionSystem {
     constructor() {
         this.teams = [];
