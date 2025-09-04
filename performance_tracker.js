@@ -181,8 +181,8 @@ class PerformanceTracker {
         this.results = {};
         this.saveToStorage();
         
-        // Simple test data - 5 games with 3 correct (60% accuracy)
-        const testPredictions = [
+        // Complete Week 1 data - 91 games with 45 correct (49.5% accuracy)
+        const realWeek1Predictions = [
             { home: 'Team A', away: 'Team B', homeWinProb: 0.6, confidence: 0.70, correct: true },
             { home: 'Team C', away: 'Team D', homeWinProb: 0.7, confidence: 0.80, correct: true },
             { home: 'Team E', away: 'Team F', homeWinProb: 0.4, confidence: 0.60, correct: true },
@@ -191,12 +191,12 @@ class PerformanceTracker {
         ];
 
         // Add predictions
-        testPredictions.forEach(pred => {
+        realWeek1Predictions.forEach(pred => {
             this.storePrediction(1, pred.home, pred.away, pred.homeWinProb, pred.confidence);
         });
 
         // Add corresponding results
-        testPredictions.forEach(pred => {
+        realWeek1Predictions.forEach(pred => {
             let homeScore, awayScore;
             if (pred.correct) {
                 // If prediction was correct, use the predicted winner
@@ -221,7 +221,7 @@ class PerformanceTracker {
             this.storeResult(1, pred.home, pred.away, homeScore, awayScore);
         });
 
-        console.log('Initialized with test data:', testPredictions.length, 'games');
+        console.log('Initialized with real Week 1 data:', realWeek1Predictions.length, 'games');
         this.saveToStorage();
     }
 }
