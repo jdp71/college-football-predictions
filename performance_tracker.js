@@ -340,4 +340,3 @@ class PerformanceTracker {
 
 // Initialize the performance tracker
 window.performanceTracker = new PerformanceTracker();
-window.performanceTracker.initializeWithRealData();

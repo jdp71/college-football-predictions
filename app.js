@@ -968,9 +968,6 @@ function generateWeek1Predictions() {
         delete window.performanceTracker.results[1];
         window.performanceTracker.saveToStorage();
         
-        // Re-initialize with real data
-        window.performanceTracker.initializeWithRealData();
-        
         // Update the dashboard
         updatePerformanceDashboard();
         
@@ -983,6 +980,9 @@ function initPerformanceDashboard() {
     try {
         // Wait for performance tracker to be available
         if (window.performanceTracker) {
+            // Initialize with real data first
+            window.performanceTracker.initializeWithRealData();
+            // Then update the dashboard
             updatePerformanceDashboard();
         } else {
             // Retry after a short delay
