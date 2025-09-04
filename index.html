@@ -638,6 +638,118 @@
                 
                 <div id="singleResult" style="display: none;"></div>
             </div>
+
+            <!-- Performance Dashboard -->
+            <div class="prediction-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-chart-bar"></i> Performance Dashboard</h3>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Season Overview</h5>
+                                <div id="seasonOverview">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Current Week Performance</h5>
+                                <div id="currentWeekPerformance">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="mb-0"><i class="fas fa-plus-circle"></i> Record Game Results</h6>
+                            </div>
+                            <div class="card-body">
+                                <form id="recordResultsForm">
+                                    <div class="mb-3">
+                                        <label class="form-label">Week</label>
+                                        <select class="form-select" id="recordWeek" required>
+                                            <option value="">Select Week</option>
+                                            <option value="1">Week 1</option>
+                                            <option value="2">Week 2</option>
+                                            <option value="3">Week 3</option>
+                                            <option value="4">Week 4</option>
+                                            <option value="5">Week 5</option>
+                                            <option value="6">Week 6</option>
+                                            <option value="7">Week 7</option>
+                                            <option value="8">Week 8</option>
+                                            <option value="9">Week 9</option>
+                                            <option value="10">Week 10</option>
+                                            <option value="11">Week 11</option>
+                                            <option value="12">Week 12</option>
+                                            <option value="13">Week 13</option>
+                                            <option value="14">Week 14</option>
+                                            <option value="15">Week 15</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Home Team</label>
+                                        <input type="text" class="form-control" id="recordHomeTeam" placeholder="Home Team" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Home Score</label>
+                                        <input type="number" class="form-control" id="recordHomeScore" placeholder="Score" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Away Score</label>
+                                        <input type="number" class="form-control" id="recordAwayScore" placeholder="Score" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">
+                                        <i class="fas fa-database"></i> Record
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="mb-0"><i class="fas fa-list"></i> Detailed Results</h6>
+                            </div>
+                            <div class="card-body">
+                                <div id="detailedResults">
+                                    <p class="text-muted">No results recorded yet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex gap-2 flex-wrap">
+                            <button class="btn btn-info" onclick="refreshPerformanceData()">
+                                <i class="fas fa-sync-alt"></i> Refresh Data
+                            </button>
+                            <button class="btn btn-warning" onclick="generateWeek1Predictions()">
+                                <i class="fas fa-plus"></i> Add Week 1 Predictions
+                            </button>
+                            <button class="btn btn-danger" onclick="clearAllPerformanceData()">
+                                <i class="fas fa-trash"></i> Clear All Data
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="footer">
@@ -734,6 +846,7 @@
         });
     </script>
     <script src="app.js"></script>
+    <script src="performance_tracker.js"></script>
 <script>
         // PWA Service Worker Registration
         if ('serviceWorker' in navigator) {
