@@ -312,7 +312,7 @@ class PerformanceTracker {
                 let homeScore, awayScore;
                 if (pred.correct) {
                     // If prediction was correct, use the predicted winner
-                    if (pred.homeWinProb > 0.5) {
+                    if (pred.homeWinProb >= 0.5) {
                         homeScore = 28;
                         awayScore = 21;
                     } else {
@@ -321,7 +321,7 @@ class PerformanceTracker {
                     }
                 } else {
                     // If prediction was wrong, use the opposite
-                    if (pred.homeWinProb > 0.5) {
+                    if (pred.homeWinProb >= 0.5) {
                         homeScore = 21;
                         awayScore = 28;
                     } else {
