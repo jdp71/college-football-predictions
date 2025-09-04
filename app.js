@@ -817,8 +817,191 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form submission handler
     singleGameForm.addEventListener('submit', handlePrediction);
     
+    // Initialize performance dashboard
+    initPerformanceDashboard();
+    
     console.log('ML-based College Football Prediction System loaded with detailed schedule');
 });
+
+// Performance Dashboard Functions
+function refreshPerformanceData() {
+    console.log('Refreshing performance data...');
+    updatePerformanceDashboard();
+}
+
+function updatePerformanceDashboard() {
+    try {
+        if (!window.performanceTracker) {
+            console.error('Performance tracker not available');
+            return;
+        }
+
+        // Update Season Overview
+        const seasonPerf = window.performanceTracker.calculateSeasonPerformance();
+        const seasonOverview = document.getElementById('seasonOverview');
+        if (seasonOverview) {
+            seasonOverview.innerHTML = `
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-primary fw-bold fs-4">${seasonPerf.totalGames}</div>
+                        <div class="text-muted small">Total Games</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-success fw-bold fs-4">${seasonPerf.accuracy}%</div>
+                        <div class="text-muted small">Accuracy</div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <div class="text-info fw-bold">${seasonPerf.confidence}</div>
+                        <div class="text-muted small">Confidence</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-success fw-bold">${seasonPerf.correct}</div>
+                        <div class="text-muted small">Correct</div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="text-danger fw-bold">${seasonPerf.incorrect}</div>
+                        <div class="text-muted small">Incorrect</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Update Current Week Performance
+        const currentWeekPerf = window.performanceTracker.calculateWeekPerformance(1);
+        const currentWeekPerformance = document.getElementById('currentWeekPerformance');
+        if (currentWeekPerformance) {
+            currentWeekPerformance.innerHTML = `
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-primary fw-bold fs-4">Week 1</div>
+                        <div class="text-muted small">${currentWeekPerf.totalGames} games</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-success fw-bold fs-4">${currentWeekPerf.accuracy}%</div>
+                        <div class="text-muted small">Accuracy</div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <div class="text-info fw-bold">${currentWeekPerf.confidence}</div>
+                        <div class="text-muted small">Confidence</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-success fw-bold">${currentWeekPerf.correct}</div>
+                        <div class="text-muted small">Correct</div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="text-danger fw-bold">${currentWeekPerf.incorrect}</div>
+                        <div class="text-muted small">Incorrect</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Update Detailed Results
+        updateDetailedResults();
+
+        console.log('Performance dashboard updated successfully');
+    } catch (error) {
+        console.error('Error updating performance dashboard:', error);
+    }
+}
+
+function updateDetailedResults() {
+    try {
+        if (!window.performanceTracker) {
+            return;
+        }
+
+        const detailedResults = document.getElementById('detailedResults');
+        if (!detailedResults) return;
+
+        const weekDetails = window.performanceTracker.getWeekDetails(1);
+        
+        if (weekDetails.length === 0) {
+            detailedResults.innerHTML = '<p class="text-muted">No results recorded yet.</p>';
+            return;
+        }
+
+        let html = '<div class="table-responsive"><table class="table table-sm">';
+        html += '<thead><tr><th>Week</th><th>Games</th><th>Correct</th><th>Accuracy</th><th>Confidence</th></tr></thead><tbody>';
+        
+        const weekPerf = window.performanceTracker.calculateWeekPerformance(1);
+        html += `<tr>
+            <td>Week 1</td>
+            <td>${weekPerf.totalGames}</td>
+            <td>${weekPerf.correct}</td>
+            <td class="text-success fw-bold">${weekPerf.accuracy}%</td>
+            <td>${weekPerf.confidence}</td>
+        </tr>`;
+        
+        html += '</tbody></table></div>';
+        detailedResults.innerHTML = html;
+    } catch (error) {
+        console.error('Error updating detailed results:', error);
+    }
+}
+
+function clearAllPerformanceData() {
+    if (confirm('Are you sure you want to clear all performance data? This cannot be undone.')) {
+        if (window.performanceTracker) {
+            window.performanceTracker.clearAllData();
+            updatePerformanceDashboard();
+            console.log('All performance data cleared');
+        }
+    }
+}
+
+function generateWeek1Predictions() {
+    console.log('Generating Week 1 predictions...');
+    
+    // Clear any existing Week 1 predictions first
+    if (window.performanceTracker) {
+        // Clear existing Week 1 data
+        delete window.performanceTracker.predictions[1];
+        delete window.performanceTracker.results[1];
+        window.performanceTracker.saveToStorage();
+        
+        // Re-initialize with real data
+        window.performanceTracker.initializeWithRealData();
+        
+        // Update the dashboard
+        updatePerformanceDashboard();
+        
+        console.log('Week 1 predictions generated and dashboard updated');
+    }
+}
+
+// Initialize performance dashboard when DOM is loaded
+function initPerformanceDashboard() {
+    try {
+        // Wait for performance tracker to be available
+        if (window.performanceTracker) {
+            updatePerformanceDashboard();
+        } else {
+            // Retry after a short delay
+            setTimeout(initPerformanceDashboard, 500);
+        }
+    } catch (error) {
+        console.error('Error initializing performance dashboard:', error);
+        // Retry after a short delay
+        setTimeout(initPerformanceDashboard, 1000);
+    }
+}
+
+// Make functions available globally
+window.refreshPerformanceData = refreshPerformanceData;
+window.updatePerformanceDashboard = updatePerformanceDashboard;
+window.updateDetailedResults = updateDetailedResults;
+window.clearAllPerformanceData = clearAllPerformanceData;
+window.generateWeek1Predictions = generateWeek1Predictions;
+window.initPerformanceDashboard = initPerformanceDashboard;
 
 // Make functions available globally for PWA integration
 window.findTeamOpponent = findTeamOpponent;
