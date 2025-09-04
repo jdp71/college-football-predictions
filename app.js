@@ -836,8 +836,11 @@ function updatePerformanceDashboard() {
             return;
         }
 
+        console.log('Updating performance dashboard...');
+        
         // Update Season Overview
         const seasonPerf = window.performanceTracker.calculateSeasonPerformance();
+        console.log('Season performance:', seasonPerf);
         const seasonOverview = document.getElementById('seasonOverview');
         if (seasonOverview) {
             seasonOverview.innerHTML = `

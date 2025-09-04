@@ -179,49 +179,44 @@ class PerformanceTracker {
         // Clear existing data
         this.predictions = {};
         this.results = {};
-        this.saveToStorage();
         
-        // Complete Week 1 data - 91 games with 45 correct (49.5% accuracy)
-        const realWeek1Predictions = [
-            { home: 'Team A', away: 'Team B', homeWinProb: 0.6, confidence: 0.70, correct: true },
-            { home: 'Team C', away: 'Team D', homeWinProb: 0.7, confidence: 0.80, correct: true },
-            { home: 'Team E', away: 'Team F', homeWinProb: 0.4, confidence: 0.60, correct: true },
-            { home: 'Team G', away: 'Team H', homeWinProb: 0.8, confidence: 0.90, correct: false },
-            { home: 'Team I', away: 'Team J', homeWinProb: 0.3, confidence: 0.50, correct: false }
+        // Simple test data - 3 games with 2 correct (66.7% accuracy)
+        const testGames = [
+            { home: 'Alabama', away: 'Florida', homeWinProb: 0.7, confidence: 0.80, correct: true },
+            { home: 'Georgia', away: 'Auburn', homeWinProb: 0.6, confidence: 0.70, correct: true },
+            { home: 'Ohio State', away: 'Michigan', homeWinProb: 0.8, confidence: 0.90, correct: false }
         ];
 
-        // Add predictions
-        realWeek1Predictions.forEach(pred => {
-            this.storePrediction(1, pred.home, pred.away, pred.homeWinProb, pred.confidence);
-        });
-
-        // Add corresponding results
-        realWeek1Predictions.forEach(pred => {
+        // Add predictions and results
+        testGames.forEach(game => {
+            this.storePrediction(1, game.home, game.away, game.homeWinProb, game.confidence);
+            
+            // Create realistic scores
             let homeScore, awayScore;
-            if (pred.correct) {
+            if (game.correct) {
                 // If prediction was correct, use the predicted winner
-                if (pred.homeWinProb > 0.5) {
-                    homeScore = 28;
-                    awayScore = 21;
+                if (game.homeWinProb > 0.5) {
+                    homeScore = 31;
+                    awayScore = 24;
                 } else {
-                    homeScore = 21;
-                    awayScore = 28;
+                    homeScore = 24;
+                    awayScore = 31;
                 }
             } else {
                 // If prediction was wrong, use the opposite
-                if (pred.homeWinProb > 0.5) {
-                    homeScore = 21;
-                    awayScore = 28;
+                if (game.homeWinProb > 0.5) {
+                    homeScore = 24;
+                    awayScore = 31;
                 } else {
-                    homeScore = 28;
-                    awayScore = 21;
+                    homeScore = 31;
+                    awayScore = 24;
                 }
             }
             
-            this.storeResult(1, pred.home, pred.away, homeScore, awayScore);
+            this.storeResult(1, game.home, game.away, homeScore, awayScore);
         });
 
-        console.log('Initialized with real Week 1 data:', realWeek1Predictions.length, 'games');
+        console.log('Initialized with test data:', testGames.length, 'games');
         this.saveToStorage();
     }
 }
