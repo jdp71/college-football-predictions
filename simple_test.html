@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Test</title>
+</head>
+<body>
+    <h1>Simple Test</h1>
+    <div id="output"></div>
+    
+    <script src="performance_tracker.js?v=simple"></script>
+    <script src="app.js?v=simple"></script>
+    <script>
+        function log(message) {
+            document.getElementById('output').innerHTML += message + '<br>';
+            console.log(message);
+        }
+        
+        setTimeout(() => {
+            log('=== TEST RESULTS ===');
+            log('PerformanceTracker available: ' + (window.performanceTracker ? 'YES' : 'NO'));
+            log('Predictor available: ' + (window.predictor ? 'YES' : 'NO'));
+            
+            if (window.predictor) {
+                log('Teams count: ' + (window.predictor.teams ? window.predictor.teams.length : 'NO TEAMS'));
+                if (window.predictor.teams && window.predictor.teams.length > 0) {
+                    log('First team: ' + window.predictor.teams[0]);
+                }
+            }
+            
+            if (window.performanceTracker) {
+                try {
+                    const perf = window.performanceTracker.calculateSeasonPerformance();
+                    log('Season performance: ' + JSON.stringify(perf));
+                } catch (e) {
+                    log('Performance error: ' + e.message);
+                }
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

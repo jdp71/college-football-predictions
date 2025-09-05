@@ -379,7 +379,7 @@ class MLPredictionSystem {
             },
             {
                 home: 'Arizona',
-                away: 'Hawai'i',
+                away: 'Hawaii',
                 location: 'Arizona Stadium, Tucson, AZ',
                 time: '3:30 PM ET',
                 tv: 'ABC',
@@ -1114,9 +1114,9 @@ class MLPredictionSystem {
                 date: 'Week 1'
             },
             {
-                home: 'Hawai'i',
+                home: 'Hawaii',
                 away: 'Stanford',
-                location: 'Hawai'i Stadium',
+                location: 'Hawaii Stadium',
                 time: '10:30 PM ET',
                 tv: 'ESPN2',
                 date: 'Week 1'
@@ -3154,9 +3154,9 @@ class MLPredictionSystem {
                 date: 'Week 3'
             },
             {
-                home: 'Hawai'i',
+                home: 'Hawaii',
                 away: 'Sam Houston',
-                location: 'Hawai'i Stadium',
+                location: 'Hawaii Stadium',
                 time: '7:30 PM ET',
                 tv: 'FOX',
                 date: 'Week 3'
@@ -3479,7 +3479,7 @@ class MLPredictionSystem {
         schedule[4] = [
             {
                 home: 'Air Force',
-                away: 'Hawai'i',
+                away: 'Hawaii',
                 location: 'Air Force Stadium',
                 time: '3:30 PM ET',
                 tv: 'ESPN2',
@@ -4778,9 +4778,9 @@ class MLPredictionSystem {
                 date: 'Week 5'
             },
             {
-                home: 'Hawai'i',
+                home: 'Hawaii',
                 away: 'Fresno State',
-                location: 'Hawai'i Stadium',
+                location: 'Hawaii Stadium',
                 time: '3:30 PM ET',
                 tv: 'Pac-12 Network',
                 date: 'Week 5'
@@ -6518,9 +6518,9 @@ class MLPredictionSystem {
                 date: 'Week 6'
             },
             {
-                home: 'Hawai'i',
+                home: 'Hawaii',
                 away: 'Utah State',
-                location: 'Hawai'i Stadium',
+                location: 'Hawaii Stadium',
                 time: '12:00 PM ET',
                 tv: 'Pac-12 Network',
                 date: 'Week 6'
@@ -6803,7 +6803,7 @@ class MLPredictionSystem {
             },
             {
                 home: 'Colorado State',
-                away: 'Hawai'i',
+                away: 'Hawaii',
                 location: 'Colorado State Stadium',
                 time: '12:00 PM ET',
                 tv: 'SEC Network',
@@ -8391,7 +8391,7 @@ class MLPredictionSystem {
             },
             {
                 home: 'San Jose State',
-                away: 'Hawai'i',
+                away: 'Hawaii',
                 location: 'San Jose State Stadium',
                 time: '12:00 PM ET',
                 tv: 'ESPN2',
@@ -9426,9 +9426,9 @@ class MLPredictionSystem {
                 date: 'Week 9'
             },
             {
-                home: 'Hawai'i',
+                home: 'Hawaii',
                 away: 'San Diego State',
-                location: 'Hawai'i Stadium',
+                location: 'Hawaii Stadium',
                 time: '12:00 PM ET',
                 tv: 'NBC',
                 date: 'Week 9'
@@ -11699,7 +11699,7 @@ class MLPredictionSystem {
             },
             {
                 home: 'UNLV',
-                away: 'Hawai'i',
+                away: 'Hawaii',
                 location: 'UNLV Stadium',
                 time: '8:00 PM ET',
                 tv: 'ESPN',
@@ -12862,18 +12862,15 @@ class MLPredictionSystem {
                 date: 'Week 12'
             },
             {
-                home: 'Hawai'i',
+                home: 'Hawaii',
                 away: 'Wyoming',
-                location: 'Hawai'i Stadium',
+                location: 'Hawaii Stadium',
                 time: '3:30 PM ET',
                 tv: 'Pac-12 Network',
                 date: 'Week 12'
             }
         ];
 
-        return schedule;
-    };
-        
         // Complete 2025 College Football Schedule - All Weeks
         // Week 1 games with complete details - 90+ games
         schedule[1] = this.generateComprehensiveWeek1Games();
