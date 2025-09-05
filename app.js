@@ -841,6 +841,11 @@ function updatePerformanceDashboard() {
         // Update Season Overview
         const seasonPerf = window.performanceTracker.calculateSeasonPerformance();
         console.log('Season performance:', seasonPerf);
+        
+        if (!seasonPerf) {
+            console.error('Failed to calculate season performance');
+            return;
+        }
         const seasonOverview = document.getElementById('seasonOverview');
         if (seasonOverview) {
             seasonOverview.innerHTML = `
@@ -980,14 +985,18 @@ function generateWeek1Predictions() {
 
 // Initialize performance dashboard when DOM is loaded
 function initPerformanceDashboard() {
+    console.log('Initializing performance dashboard...');
+    
     try {
         // Wait for performance tracker to be available
         if (window.performanceTracker) {
+            console.log('Performance tracker found, initializing...');
             // Initialize with real data first
             window.performanceTracker.initializeWithRealData();
             // Then update the dashboard
             updatePerformanceDashboard();
         } else {
+            console.log('Performance tracker not found, retrying...');
             // Retry after a short delay
             setTimeout(initPerformanceDashboard, 500);
         }

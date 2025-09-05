@@ -1,6 +1,6 @@
 /**
  * Performance Tracker for College Football Predictions
- * Tracks prediction accuracy and game results over time
+ * Minimal version to fix spinning buttons
  */
 
 class PerformanceTracker {
@@ -172,51 +172,19 @@ class PerformanceTracker {
         this.saveToStorage();
     }
 
-    // Initialize with test data
+    // Initialize with minimal test data
     initializeWithRealData() {
-        console.log('Initializing performance tracker...');
+        console.log('Initializing performance tracker with minimal data...');
         
         // Clear existing data
         this.predictions = {};
         this.results = {};
         
-        // Simple test data - 3 games with 2 correct (66.7% accuracy)
-        const testGames = [
-            { home: 'Alabama', away: 'Florida', homeWinProb: 0.7, confidence: 0.80, correct: true },
-            { home: 'Georgia', away: 'Auburn', homeWinProb: 0.6, confidence: 0.70, correct: true },
-            { home: 'Ohio State', away: 'Michigan', homeWinProb: 0.8, confidence: 0.90, correct: false }
-        ];
-
-        // Add predictions and results
-        testGames.forEach(game => {
-            this.storePrediction(1, game.home, game.away, game.homeWinProb, game.confidence);
-            
-            // Create realistic scores
-            let homeScore, awayScore;
-            if (game.correct) {
-                // If prediction was correct, use the predicted winner
-                if (game.homeWinProb > 0.5) {
-                    homeScore = 31;
-                    awayScore = 24;
-                } else {
-                    homeScore = 24;
-                    awayScore = 31;
-                }
-            } else {
-                // If prediction was wrong, use the opposite
-                if (game.homeWinProb > 0.5) {
-                    homeScore = 24;
-                    awayScore = 31;
-                } else {
-                    homeScore = 31;
-                    awayScore = 24;
-                }
-            }
-            
-            this.storeResult(1, game.home, game.away, homeScore, awayScore);
-        });
-
-        console.log('Initialized with test data:', testGames.length, 'games');
+        // Add just one simple game
+        this.storePrediction(1, 'Alabama', 'Florida', 0.7, 0.80);
+        this.storeResult(1, 'Alabama', 'Florida', 31, 24);
+        
+        console.log('Initialized with minimal test data');
         this.saveToStorage();
     }
 }
