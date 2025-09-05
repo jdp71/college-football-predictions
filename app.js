@@ -128,8 +128,12540 @@ class MLPredictionSystem {
         return isNaN(parsed) ? 0 : parsed / 100;
     }
     
-    generateDetailedSchedule() {
+        generateDetailedSchedule() {
         const schedule = {};
+        
+        // Real 2025 College Football Schedule from CSV
+        // Week 1 games - 130 games
+        schedule[1] = [
+            {
+                home: 'Air Force',
+                away: 'Bucknell',
+                location: 'Air Force Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 1'
+            },
+            {
+                home: 'Akron',
+                away: 'Wyoming',
+                location: 'Akron Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Florida State',
+                away: 'Alabama',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Appalachian State',
+                away: 'Charlotte',
+                location: 'Appalachian State Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Arizona',
+                away: 'Hawai'i',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Arizona State',
+                away: 'Northern Arizona',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Alabama A&M',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Southeast Missouri State',
+                location: 'Arkansas State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Army',
+                away: 'Tarleton State',
+                location: 'Army Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Baylor',
+                away: 'Auburn',
+                location: 'McLane Stadium, Waco, TX',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'BYU',
+                away: 'Portland State',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Purdue',
+                away: 'Ball State',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'Baylor',
+                away: 'Auburn',
+                location: 'McLane Stadium, Waco, TX',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 1'
+            },
+            {
+                home: 'South Florida',
+                away: 'Boise State',
+                location: 'South Florida Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'Boston College',
+                away: 'Fordham',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 1'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Lafayette',
+                location: 'Bowling Green Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Buffalo',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'Oregon State',
+                away: 'California',
+                location: 'Reser Stadium, Corvallis, OR',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'San José State',
+                away: 'Central Michigan',
+                location: 'San José State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Charlotte',
+                away: 'App State',
+                location: 'Charlotte Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Nebraska',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Clemson',
+                away: 'LSU',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 1'
+            },
+            {
+                home: 'Virginia',
+                away: 'Coastal Carolina',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Colorado',
+                away: 'Georgia Tech',
+                location: 'Folsom Field, Boulder, CO',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Washington',
+                away: 'Colorado State',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 1'
+            },
+            {
+                home: 'Duke',
+                away: 'Elon',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'NC State',
+                away: 'East Carolina',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Texas State',
+                away: 'Eastern Michigan',
+                location: 'Texas State Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'Florida',
+                away: 'Long Island University',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'Maryland',
+                away: 'Florida Atlantic',
+                location: 'SECU Stadium, College Park, MD',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Florida International',
+                away: 'Bethune-Cookman',
+                location: 'Florida International Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Florida State',
+                away: 'Alabama',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Kansas',
+                away: 'Fresno State',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Georgia',
+                away: 'Marshall',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Fresno State',
+                away: 'Georgia Southern',
+                location: 'Fresno State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Ole Miss',
+                away: 'Georgia State',
+                location: 'Vaught-Hemingway Stadium, Oxford, MS',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'Colorado',
+                away: 'Georgia Tech',
+                location: 'Folsom Field, Boulder, CO',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Hawaii',
+                away: 'Stanford',
+                location: 'Hawaii Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Houston',
+                away: 'Stephen F. Austin',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 1'
+            },
+            {
+                home: 'Illinois',
+                away: 'Western Illinois',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Indiana',
+                away: 'Old Dominion',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Iowa',
+                away: 'UAlbany',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Iowa State',
+                away: 'Kansas State',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 1'
+            },
+            {
+                home: 'UCF',
+                away: 'Jacksonville State',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'James Madison',
+                away: 'Weber State',
+                location: 'James Madison Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Kansas',
+                away: 'Fresno State',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Kansas State',
+                away: 'Iowa State',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Kent State',
+                away: 'Merrimack',
+                location: 'Kent State Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Toledo',
+                location: 'Kroger Field, Lexington, KY',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'Clemson',
+                away: 'LSU',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Liberty',
+                away: 'Maine',
+                location: 'Liberty Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Louisiana',
+                away: 'Rice',
+                location: 'Louisiana Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Louisiana Monroe',
+                away: 'Saint Francis',
+                location: 'Louisiana Monroe Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'SE Louisiana',
+                location: 'Louisiana Tech Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 1'
+            },
+            {
+                home: 'Louisville',
+                away: 'Eastern Kentucky',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 1'
+            },
+            {
+                home: 'Georgia',
+                away: 'Marshall',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 1'
+            },
+            {
+                home: 'Maryland',
+                away: 'Florida Atlantic',
+                location: 'SECU Stadium, College Park, MD',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 1'
+            },
+            {
+                home: 'Memphis',
+                away: 'Chattanooga',
+                location: 'Memphis Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Miami',
+                away: 'Notre Dame',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 1'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Miami (OH)',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Michigan',
+                away: 'New Mexico',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Western Michigan',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Austin Peay',
+                location: 'Middle Tennessee Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Buffalo',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Mississippi',
+                away: 'Georgia State',
+                location: 'Mississippi Stadium',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Southern Miss',
+                away: 'Mississippi State',
+                location: 'Southern Miss Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Missouri',
+                away: 'Central Arkansas',
+                location: 'Faurot Field, Columbia, MO',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'NC State',
+                away: 'East Carolina',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Navy',
+                away: 'VMI',
+                location: 'Navy Stadium',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 1'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Cincinnati',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Penn State',
+                away: 'Nevada',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'Michigan',
+                away: 'New Mexico',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'New Mexico State',
+                away: 'Bryant',
+                location: 'New Mexico State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'North Carolina',
+                away: 'TCU',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'North Texas',
+                away: 'Lamar',
+                location: 'North Texas Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'Holy Cross',
+                location: 'Northern Illinois Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Tulane',
+                away: 'Northwestern',
+                location: 'Tulane Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Miami',
+                away: 'Notre Dame',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 1'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Ohio',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Texas',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Illinois State',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'UT Martin',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Indiana',
+                away: 'Old Dominion',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 1'
+            },
+            {
+                home: 'Oregon',
+                away: 'Montana State',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Penn State',
+                away: 'Nevada',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Duquesne',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Purdue',
+                away: 'Ball State',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Louisiana',
+                away: 'Rice',
+                location: 'Louisiana Stadium',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Ohio',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 1'
+            },
+            {
+                home: 'SMU',
+                away: 'East Texas A&M',
+                location: 'SMU Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'Sam Houston',
+                location: 'Western Kentucky Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'San Diego State',
+                away: 'Stony Brook',
+                location: 'San Diego State Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'San Jose State',
+                away: 'Central Michigan',
+                location: 'San Jose State Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Morgan State',
+                location: 'South Alabama Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Virginia Tech',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'South Florida',
+                away: 'Boise State',
+                location: 'South Florida Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Hawai'i',
+                away: 'Stanford',
+                location: 'Hawai'i Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Syracuse',
+                away: 'Tennessee',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'North Carolina',
+                away: 'TCU',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Massachusetts',
+                away: 'Temple',
+                location: 'Massachusetts Stadium',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'Tennessee',
+                away: 'Syracuse',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Texas',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'UTSA',
+                location: 'Kyle Field, College Station, TX',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'Texas State',
+                away: 'Eastern Michigan',
+                location: 'Texas State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'Arkansas-Pine Bluff',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Toledo',
+                location: 'Kroger Field, Lexington, KY',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'Troy',
+                away: 'Nicholls',
+                location: 'Troy Stadium',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 1'
+            },
+            {
+                home: 'Tulane',
+                away: 'Northwestern',
+                location: 'Tulane Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 1'
+            },
+            {
+                home: 'Tulsa',
+                away: 'Abilene Christian',
+                location: 'Tulsa Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'UAB',
+                away: 'Alabama State',
+                location: 'UAB Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'UCF',
+                away: 'Jacksonville State',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'UCLA',
+                away: 'Utah',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'UConn',
+                away: 'Central Connecticut',
+                location: 'UConn Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 1'
+            },
+            {
+                home: 'UMass',
+                away: 'Temple',
+                location: 'UMass Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'UNLV',
+                away: 'Idaho State',
+                location: 'UNLV Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'USC',
+                away: 'Missouri State',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'Utah State',
+                away: 'UTEP',
+                location: 'Utah State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'UTSA',
+                location: 'Kyle Field, College Station, TX',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 1'
+            },
+            {
+                home: 'UCLA',
+                away: 'Utah',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Utah State',
+                away: 'UTEP',
+                location: 'Utah State Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Charleston Southern',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Virginia',
+                away: 'Coastal Carolina',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'South Carolina',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'Kennesaw State',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 1'
+            },
+            {
+                home: 'Washington',
+                away: 'Colorado State',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 1'
+            },
+            {
+                home: 'West Virginia',
+                away: 'Robert Morris',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 1'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'Sam Houston',
+                location: 'Western Kentucky Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 1'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Western Michigan',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Miami (OH)',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 1'
+            },
+            {
+                home: 'Akron',
+                away: 'Wyoming',
+                location: 'Akron Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 1'
+            }
+        ];
+
+        // Week 2 games - 130 games
+        schedule[2] = [
+            {
+                home: 'Utah State',
+                away: 'Air Force',
+                location: 'Utah State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Akron',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Alabama',
+                away: 'UL Monroe',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Appalachian State',
+                away: 'Lindenwood',
+                location: 'Appalachian State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Arizona',
+                away: 'Weber State',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Arizona State',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Arkansas State',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Arkansas State',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Kansas State',
+                away: 'Army',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Auburn',
+                away: 'Ball State',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'BYU',
+                away: 'Stanford',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'Auburn',
+                away: 'Ball State',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'SMU',
+                away: 'Baylor',
+                location: 'SMU Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'Boise State',
+                away: 'Eastern Washington',
+                location: 'Boise State Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Boston College',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Bowling Green',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Saint Francis',
+                location: 'Buffalo Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'California',
+                away: 'Texas Southern',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Central Michigan',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Charlotte',
+                away: 'North Carolina',
+                location: 'Charlotte Stadium',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Bowling Green',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Clemson',
+                away: 'Troy',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'Charleston Southern',
+                location: 'Coastal Carolina Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'Colorado',
+                away: 'Delaware',
+                location: 'Folsom Field, Boulder, CO',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Colorado State',
+                away: 'Northern Colorado',
+                location: 'Colorado State Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Duke',
+                away: 'Illinois',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'East Carolina',
+                away: 'Campbell',
+                location: 'East Carolina Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Long Island University',
+                location: 'Eastern Michigan Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Florida',
+                away: 'South Florida',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'Florida A&M',
+                location: 'Florida Atlantic Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Penn State',
+                away: 'Florida International',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Florida State',
+                away: 'East Texas A&M',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'Fresno State',
+                away: 'Georgia Southern',
+                location: 'Fresno State Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Georgia',
+                away: 'Austin Peay',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'USC',
+                away: 'Georgia Southern',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Georgia State',
+                away: 'Memphis',
+                location: 'Georgia State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Gardner-Webb',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Arizona',
+                away: 'Hawaii',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Rice',
+                away: 'Houston',
+                location: 'Rice Stadium',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Duke',
+                away: 'Illinois',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Indiana',
+                away: 'Kennesaw State',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Iowa State',
+                away: 'Iowa',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Iowa State',
+                away: 'South Dakota',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'Jacksonville State',
+                away: 'Liberty',
+                location: 'Jacksonville State Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Louisville',
+                away: 'James Madison',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Kansas',
+                away: 'Wagner',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'Kansas State',
+                away: 'North Dakota',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'Kent State',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Ole Miss',
+                location: 'Kroger Field, Lexington, KY',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'LSU',
+                away: 'Louisiana Tech',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Jacksonville State',
+                away: 'Liberty',
+                location: 'Jacksonville State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Louisiana',
+                away: 'McNeese',
+                location: 'Louisiana Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Alabama',
+                away: 'Louisiana Monroe',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'LSU',
+                away: 'Louisiana Tech',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Louisville',
+                away: 'James Madison',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Marshall',
+                away: 'Missouri State',
+                location: 'Marshall Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Maryland',
+                away: 'Northern Illinois',
+                location: 'SECU Stadium, College Park, MD',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Georgia State',
+                away: 'Memphis',
+                location: 'Georgia State Stadium',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Miami',
+                away: 'Bethune-Cookman',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Miami (OH)',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Michigan',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Boston College',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Middle Tennessee',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Northwestern State',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Mississippi',
+                location: 'Kroger Field, Lexington, KY',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Arizona State',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Missouri',
+                away: 'Kansas',
+                location: 'Faurot Field, Columbia, MO',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'NC State',
+                away: 'Virginia',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Navy',
+                away: 'UAB',
+                location: 'Navy Stadium',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Akron',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'Nevada',
+                away: 'Sacramento State',
+                location: 'Nevada Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'New Mexico',
+                away: 'Idaho State',
+                location: 'New Mexico Stadium',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 2'
+            },
+            {
+                home: 'New Mexico State',
+                away: 'Tulsa',
+                location: 'New Mexico State Stadium',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Charlotte',
+                away: 'North Carolina',
+                location: 'Charlotte Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'North Texas',
+                location: 'Western Michigan Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Maryland',
+                away: 'Northern Illinois',
+                location: 'SECU Stadium, College Park, MD',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Western Illinois',
+                location: 'Ryan Field, Evanston, IL',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Texas A&M',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Ohio',
+                away: 'West Virginia',
+                location: 'Ohio Stadium',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Grambling',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Michigan',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Oregon',
+                away: 'Oklahoma State',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'North Carolina Central',
+                location: 'Old Dominion Stadium',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Oregon',
+                away: 'Oklahoma State',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Penn State',
+                away: 'Florida International',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Central Michigan',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Purdue',
+                away: 'Southern Illinois',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Rice',
+                away: 'Houston',
+                location: 'Rice Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Miami (OH)',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'SMU',
+                away: 'Baylor',
+                location: 'SMU Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Sam Houston',
+                away: 'UNLV',
+                location: 'Sam Houston Stadium',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Washington State',
+                away: 'San Diego State',
+                location: 'Martin Stadium, Pullman, WA',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Texas',
+                away: 'San Jose State',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Tulane',
+                location: 'South Alabama Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'South Carolina',
+                away: 'South Carolina State',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Florida',
+                away: 'South Florida',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 2'
+            },
+            {
+                home: 'BYU',
+                away: 'Stanford',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'Syracuse',
+                away: 'UConn',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'TCU',
+                away: 'Abilene Christian',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'Temple',
+                away: 'Howard',
+                location: 'Temple Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'Tennessee',
+                away: 'East Tennessee State',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Texas',
+                away: 'San José State',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'Utah State',
+                location: 'Kyle Field, College Station, TX',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'UTSA',
+                away: 'Texas State',
+                location: 'UTSA Stadium',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 2'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'Kent State',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Toledo',
+                away: 'Western Kentucky',
+                location: 'Toledo Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Clemson',
+                away: 'Troy',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Tulane',
+                location: 'South Alabama Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'New Mexico State',
+                away: 'Tulsa',
+                location: 'New Mexico State Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Navy',
+                away: 'UAB',
+                location: 'Navy Stadium',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'UCF',
+                away: 'North Carolina A&T',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'UNLV',
+                away: 'UCLA',
+                location: 'UNLV Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Syracuse',
+                away: 'UConn',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'UMass',
+                away: 'Bryant',
+                location: 'UMass Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Sam Houston',
+                away: 'UNLV',
+                location: 'Sam Houston Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'USC',
+                away: 'Georgia Southern',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'UTEP',
+                away: 'UT Martin',
+                location: 'UTEP Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 2'
+            },
+            {
+                home: 'UTSA',
+                away: 'Texas State',
+                location: 'UTSA Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Utah',
+                away: 'Cal Poly',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'Utah State',
+                location: 'Kyle Field, College Station, TX',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 2'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Vanderbilt',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'NC State',
+                away: 'Virginia',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 2'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Vanderbilt',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'Western Carolina',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Washington',
+                away: 'UC Davis',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Ohio',
+                away: 'West Virginia',
+                location: 'Ohio Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'North Alabama',
+                location: 'Western Kentucky Stadium',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 2'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'North Texas',
+                location: 'Western Michigan Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 2'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Middle Tennessee',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 2'
+            },
+            {
+                home: 'Wyoming',
+                away: 'Northern Iowa',
+                location: 'Wyoming Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 2'
+            }
+        ];
+
+        // Week 3 games - 130 games
+        schedule[3] = [
+            {
+                home: 'Air Force',
+                away: 'Boise State',
+                location: 'Air Force Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'UAB',
+                away: 'Akron',
+                location: 'UAB Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Alabama',
+                away: 'Wisconsin',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Southern Miss',
+                away: 'Appalachian State',
+                location: 'Southern Miss Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Arizona',
+                away: 'Kansas State',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Arizona State',
+                away: 'Texas State',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Ole Miss',
+                away: 'Arkansas',
+                location: 'Vaught-Hemingway Stadium, Oxford, MS',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Iowa State',
+                location: 'Arkansas State Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Army',
+                away: 'North Texas',
+                location: 'Army Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Auburn',
+                away: 'South Alabama',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'East Carolina',
+                away: 'BYU',
+                location: 'East Carolina Stadium',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Ball State',
+                away: 'New Hampshire',
+                location: 'Ball State Stadium',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Baylor',
+                away: 'Samford',
+                location: 'McLane Stadium, Waco, TX',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Air Force',
+                away: 'Boise State',
+                location: 'Air Force Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Stanford',
+                away: 'Boston College',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Liberty',
+                location: 'Bowling Green Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Kent State',
+                away: 'Buffalo',
+                location: 'Kent State Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'California',
+                away: 'Minnesota',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Michigan',
+                away: 'Central Michigan',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Charlotte',
+                away: 'Monmouth',
+                location: 'Charlotte Stadium',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Northwestern State',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Clemson',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'East Carolina',
+                location: 'Coastal Carolina Stadium',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Houston',
+                away: 'Colorado',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Colorado State',
+                away: 'UTSA',
+                location: 'Colorado State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Tulane',
+                away: 'Duke',
+                location: 'Tulane Stadium',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'East Carolina',
+                location: 'Coastal Carolina Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Eastern Michigan',
+                location: 'Kroger Field, Lexington, KY',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'LSU',
+                away: 'Florida',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Florida International',
+                away: 'Florida Atlantic',
+                location: 'Florida International Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Florida International',
+                away: 'Florida Atlantic',
+                location: 'Florida International Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 3'
+            },
+            {
+                home: 'Florida State',
+                away: 'Kent State',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Oregon State',
+                away: 'Fresno State',
+                location: 'Reser Stadium, Corvallis, OR',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Tennessee',
+                away: 'Georgia',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Jacksonville State',
+                location: 'Georgia Southern Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Georgia State',
+                away: 'Murray State',
+                location: 'Georgia State Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Clemson',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Hawaii',
+                away: 'Sam Houston',
+                location: 'Hawaii Stadium',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Houston',
+                away: 'Colorado',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Illinois',
+                away: 'Western Michigan',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Indiana',
+                away: 'Indiana State',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Iowa',
+                away: 'Massachusetts',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 3'
+            },
+            {
+                home: 'Iowa State',
+                away: 'Iowa',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Jacksonville State',
+                location: 'Georgia Southern Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Liberty',
+                away: 'James Madison',
+                location: 'Liberty Stadium',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Missouri',
+                away: 'Kansas',
+                location: 'Faurot Field, Columbia, MO',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Kansas State',
+                away: 'Army',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Kent State',
+                away: 'Buffalo',
+                location: 'Kent State Stadium',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 3'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Eastern Michigan',
+                location: 'Kroger Field, Lexington, KY',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'LSU',
+                away: 'Florida',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Liberty',
+                location: 'Bowling Green Stadium',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 3'
+            },
+            {
+                home: 'Missouri',
+                away: 'Louisiana',
+                location: 'Faurot Field, Columbia, MO',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'UTEP',
+                away: 'Louisiana Monroe',
+                location: 'UTEP Stadium',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'New Mexico State',
+                location: 'Louisiana Tech Stadium',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Louisville',
+                away: 'Bowling Green',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Marshall',
+                away: 'Eastern Kentucky',
+                location: 'Marshall Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Maryland',
+                away: 'Towson',
+                location: 'SECU Stadium, College Park, MD',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Troy',
+                away: 'Memphis',
+                location: 'Troy Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Miami',
+                away: 'South Florida',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'UNLV',
+                location: 'Miami (OH) Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Michigan',
+                away: 'Central Michigan',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Youngstown State',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Nevada',
+                away: 'Middle Tennessee',
+                location: 'Nevada Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'California',
+                away: 'Minnesota',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Mississippi',
+                away: 'Arkansas',
+                location: 'Mississippi Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Alcorn State',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Missouri',
+                away: 'Louisiana',
+                location: 'Faurot Field, Columbia, MO',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'NC State',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Tulsa',
+                away: 'Navy',
+                location: 'Tulsa Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Houston Christian',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Nevada',
+                away: 'Middle Tennessee',
+                location: 'Nevada Stadium',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 3'
+            },
+            {
+                home: 'UCLA',
+                away: 'New Mexico',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'New Mexico State',
+                location: 'Louisiana Tech Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'North Carolina',
+                away: 'Richmond',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 3'
+            },
+            {
+                home: 'North Texas',
+                away: 'Washington State',
+                location: 'North Texas Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Northern Illinois',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Oregon',
+                location: 'Ryan Field, Evanston, IL',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Purdue',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Ohio',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Ohio',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Temple',
+                away: 'Oklahoma',
+                location: 'Temple Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Tulsa',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Old Dominion',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Oregon',
+                location: 'Ryan Field, Evanston, IL',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Penn State',
+                away: 'Villanova',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'West Virginia',
+                away: 'Pittsburgh',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Purdue',
+                away: 'USC',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Rice',
+                away: 'Prairie View A&M',
+                location: 'Rice Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Norfolk State',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Missouri State',
+                away: 'SMU',
+                location: 'Missouri State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 3'
+            },
+            {
+                home: 'Hawai'i',
+                away: 'Sam Houston',
+                location: 'Hawai'i Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'San Diego State',
+                away: 'California',
+                location: 'San Diego State Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'San Jose State',
+                away: 'Idaho',
+                location: 'San Jose State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Auburn',
+                away: 'South Alabama',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 3'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Vanderbilt',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Miami',
+                away: 'South Florida',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Stanford',
+                away: 'Boston College',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Syracuse',
+                away: 'Colgate',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 3'
+            },
+            {
+                home: 'TCU',
+                away: 'SMU',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Temple',
+                away: 'Oklahoma',
+                location: 'Temple Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Tennessee',
+                away: 'Georgia',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Texas',
+                away: 'UTEP',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Texas A&M',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Arizona State',
+                away: 'Texas State',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'Oregon State',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 3'
+            },
+            {
+                home: 'Toledo',
+                away: 'Morgan State',
+                location: 'Toledo Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Troy',
+                away: 'Memphis',
+                location: 'Troy Stadium',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 3'
+            },
+            {
+                home: 'Tulane',
+                away: 'Duke',
+                location: 'Tulane Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Tulsa',
+                away: 'Navy',
+                location: 'Tulsa Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'UAB',
+                away: 'Akron',
+                location: 'UAB Stadium',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'UCF',
+                away: 'North Carolina',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'UCLA',
+                away: 'New Mexico',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Delaware',
+                away: 'UConn',
+                location: 'Delaware Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 3'
+            },
+            {
+                home: 'Iowa',
+                away: 'UMass',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'UNLV',
+                away: 'UCLA',
+                location: 'UNLV Stadium',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Purdue',
+                away: 'USC',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 3'
+            },
+            {
+                home: 'Texas',
+                away: 'UTEP',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'UTSA',
+                away: 'Incarnate Word',
+                location: 'UTSA Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Wyoming',
+                away: 'Utah',
+                location: 'Wyoming Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Utah State',
+                away: 'Air Force',
+                location: 'Utah State Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Vanderbilt',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Virginia',
+                away: 'William & Mary',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Old Dominion',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'NC State',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 3'
+            },
+            {
+                home: 'Washington State',
+                away: 'Washington',
+                location: 'Martin Stadium, Pullman, WA',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 3'
+            },
+            {
+                home: 'West Virginia',
+                away: 'Pittsburgh',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Toledo',
+                away: 'Western Kentucky',
+                location: 'Toledo Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 3'
+            },
+            {
+                home: 'Illinois',
+                away: 'Western Michigan',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 3'
+            },
+            {
+                home: 'Alabama',
+                away: 'Wisconsin',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 3'
+            },
+            {
+                home: 'Wyoming',
+                away: 'Utah',
+                location: 'Wyoming Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 3'
+            }
+        ];
+
+        // Week 4 games - 130 games
+        schedule[4] = [
+            {
+                home: 'Air Force',
+                away: 'Hawai'i',
+                location: 'Air Force Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'Akron',
+                away: 'Duquesne',
+                location: 'Akron Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Georgia',
+                away: 'Alabama',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Boise State',
+                away: 'Appalachian State',
+                location: 'Boise State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Iowa State',
+                away: 'Arizona',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Baylor',
+                away: 'Arizona State',
+                location: 'McLane Stadium, Waco, TX',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Memphis',
+                away: 'Arkansas',
+                location: 'Memphis Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Kennesaw State',
+                away: 'Arkansas State',
+                location: 'Kennesaw State Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'East Carolina',
+                away: 'Army',
+                location: 'East Carolina Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Auburn',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Colorado',
+                away: 'BYU',
+                location: 'Folsom Field, Boulder, CO',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'UConn',
+                away: 'Ball State',
+                location: 'UConn Stadium',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Baylor',
+                away: 'Arizona State',
+                location: 'McLane Stadium, Waco, TX',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Boise State',
+                away: 'App State',
+                location: 'Boise State Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Boston College',
+                away: 'California',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Louisville',
+                away: 'Bowling Green',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Troy',
+                location: 'Buffalo Stadium',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 4'
+            },
+            {
+                home: 'San Diego State',
+                away: 'California',
+                location: 'San Diego State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Central Michigan',
+                away: 'Wagner',
+                location: 'Central Michigan Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Charlotte',
+                away: 'Rice',
+                location: 'Charlotte Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Kansas',
+                away: 'Cincinnati',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Clemson',
+                away: 'Syracuse',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Coastal Carolina',
+                location: 'South Alabama Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Colorado',
+                away: 'Wyoming',
+                location: 'Folsom Field, Boulder, CO',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 4'
+            },
+            {
+                home: 'Colorado State',
+                away: 'Washington State',
+                location: 'Colorado State Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Duke',
+                away: 'NC State',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'East Carolina',
+                away: 'BYU',
+                location: 'East Carolina Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Louisiana',
+                location: 'Eastern Michigan Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'Miami',
+                away: 'Florida',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'Memphis',
+                location: 'Florida Atlantic Stadium',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 4'
+            },
+            {
+                home: 'Florida International',
+                away: 'Delaware',
+                location: 'Florida International Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Virginia',
+                away: 'Florida State',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Fresno State',
+                away: 'Southern',
+                location: 'Fresno State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Georgia',
+                away: 'Alabama',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Maine',
+                location: 'Georgia Southern Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Georgia State',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Temple',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'Hawaii',
+                away: 'Portland State',
+                location: 'Hawaii Stadium',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Oregon State',
+                away: 'Houston',
+                location: 'Reser Stadium, Corvallis, OR',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Indiana',
+                away: 'Illinois',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Indiana',
+                away: 'Illinois',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Iowa',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Iowa State',
+                location: 'Arkansas State Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Jacksonville State',
+                away: 'Murray State',
+                location: 'Jacksonville State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'James Madison',
+                away: 'Georgia Southern',
+                location: 'James Madison Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Kansas',
+                away: 'West Virginia',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Arizona',
+                away: 'Kansas State',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Florida State',
+                away: 'Kent State',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Kentucky',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 4'
+            },
+            {
+                home: 'LSU',
+                away: 'SE Louisiana',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Liberty',
+                away: 'James Madison',
+                location: 'Liberty Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Louisiana',
+                location: 'Eastern Michigan Stadium',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Louisiana Monroe',
+                away: 'Arkansas State',
+                location: 'Louisiana Monroe Stadium',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'Southern Miss',
+                location: 'Louisiana Tech Stadium',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Louisville',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Marshall',
+                location: 'Middle Tennessee Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Maryland',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Memphis',
+                away: 'Arkansas',
+                location: 'Memphis Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Miami',
+                away: 'Florida',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'Lindenwood',
+                location: 'Miami (OH) Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Michigan',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'USC',
+                away: 'Michigan State',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Marshall',
+                location: 'Middle Tennessee Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Rutgers',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Mississippi',
+                away: 'Tulane',
+                location: 'Mississippi Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Northern Illinois',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Missouri',
+                away: 'South Carolina',
+                location: 'Faurot Field, Columbia, MO',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Duke',
+                away: 'NC State',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Navy',
+                away: 'Rice',
+                location: 'Navy Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Michigan',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'Nevada',
+                location: 'Western Kentucky Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'New Mexico',
+                away: 'New Mexico State',
+                location: 'New Mexico Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'New Mexico',
+                away: 'New Mexico State',
+                location: 'New Mexico Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'UCF',
+                away: 'North Carolina',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Army',
+                away: 'North Texas',
+                location: 'Army Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'San Diego State',
+                location: 'Northern Illinois Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Northwestern',
+                away: 'UCLA',
+                location: 'Ryan Field, Evanston, IL',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Notre Dame',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Ohio',
+                away: 'Gardner-Webb',
+                location: 'Ohio Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Washington',
+                away: 'Ohio State',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Auburn',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Baylor',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 4'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'Liberty',
+                location: 'Old Dominion Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'Oregon',
+                away: 'Oregon State',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Penn State',
+                away: 'Oregon',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Louisville',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Purdue',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Charlotte',
+                away: 'Rice',
+                location: 'Charlotte Stadium',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Iowa',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'TCU',
+                away: 'SMU',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Texas',
+                away: 'Sam Houston',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'San Diego State',
+                location: 'Northern Illinois Stadium',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 4'
+            },
+            {
+                home: 'Stanford',
+                away: 'San Jose State',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Coastal Carolina',
+                location: 'South Alabama Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'Missouri',
+                away: 'South Carolina',
+                location: 'Faurot Field, Columbia, MO',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'South Florida',
+                away: 'South Carolina State',
+                location: 'South Florida Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Virginia',
+                away: 'Stanford',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Clemson',
+                away: 'Syracuse',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Arizona State',
+                away: 'TCU',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 4'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Temple',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Tennessee',
+                away: 'UAB',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Texas',
+                away: 'Sam Houston',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'Auburn',
+                location: 'Kyle Field, College Station, TX',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 4'
+            },
+            {
+                home: 'Texas State',
+                away: 'Nicholls',
+                location: 'Texas State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 4'
+            },
+            {
+                home: 'Utah',
+                away: 'Texas Tech',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 4'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'Toledo',
+                location: 'Western Michigan Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Troy',
+                location: 'Buffalo Stadium',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Ole Miss',
+                away: 'Tulane',
+                location: 'Vaught-Hemingway Stadium, Oxford, MS',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Tulsa',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 4'
+            },
+            {
+                home: 'Tennessee',
+                away: 'UAB',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Kansas State',
+                away: 'UCF',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Northwestern',
+                away: 'UCLA',
+                location: 'Ryan Field, Evanston, IL',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'UConn',
+                away: 'Ball State',
+                location: 'UConn Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Missouri',
+                away: 'UMass',
+                location: 'Faurot Field, Columbia, MO',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'UNLV',
+                location: 'Miami (OH) Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'USC',
+                away: 'Michigan State',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'UTEP',
+                away: 'UL Monroe',
+                location: 'UTEP Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Colorado State',
+                away: 'UTSA',
+                location: 'Colorado State Stadium',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Utah',
+                away: 'Texas Tech',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Utah State',
+                away: 'McNeese',
+                location: 'Utah State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Georgia State',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Virginia',
+                away: 'Stanford',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Wofford',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'Georgia Tech',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 4'
+            },
+            {
+                home: 'Washington',
+                away: 'Ohio State',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 4'
+            },
+            {
+                home: 'Kansas',
+                away: 'West Virginia',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 4'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'Nevada',
+                location: 'Western Kentucky Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'Toledo',
+                location: 'Western Michigan Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Maryland',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 4'
+            },
+            {
+                home: 'Colorado',
+                away: 'Wyoming',
+                location: 'Folsom Field, Boulder, CO',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 4'
+            }
+        ];
+
+        // Week 5 games - 130 games
+        schedule[5] = [
+            {
+                home: 'Navy',
+                away: 'Air Force',
+                location: 'Navy Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Toledo',
+                away: 'Akron',
+                location: 'Toledo Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'Alabama',
+                away: 'Vanderbilt',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 5'
+            },
+            {
+                home: 'Appalachian State',
+                away: 'Oregon State',
+                location: 'Appalachian State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Arizona',
+                away: 'Oklahoma State',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Arizona State',
+                away: 'TCU',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Notre Dame',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'UL Monroe',
+                away: 'Arkansas State',
+                location: 'UL Monroe Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'UAB',
+                away: 'Army',
+                location: 'UAB Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'Auburn',
+                location: 'Kyle Field, College Station, TX',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'BYU',
+                away: 'West Virginia',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'Ball State',
+                away: 'Ohio',
+                location: 'Ball State Stadium',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Baylor',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Boise State',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Boston College',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'Ohio',
+                away: 'Bowling Green',
+                location: 'Ohio Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Buffalo',
+                away: 'UConn',
+                location: 'Buffalo Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Boston College',
+                away: 'California',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'Central Michigan',
+                away: 'Eastern Michigan',
+                location: 'Central Michigan Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'South Florida',
+                away: 'Charlotte',
+                location: 'South Florida Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Iowa State',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'North Carolina',
+                away: 'Clemson',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'Coastal Carolina',
+                location: 'Old Dominion Stadium',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Colorado',
+                away: 'BYU',
+                location: 'Folsom Field, Boulder, CO',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'San Diego State',
+                away: 'Colorado State',
+                location: 'San Diego State Stadium',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 5'
+            },
+            {
+                home: 'Syracuse',
+                away: 'Duke',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 5'
+            },
+            {
+                home: 'East Carolina',
+                away: 'Army',
+                location: 'East Carolina Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Central Michigan',
+                away: 'Eastern Michigan',
+                location: 'Central Michigan Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Florida',
+                away: 'Texas',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Rice',
+                away: 'Florida Atlantic',
+                location: 'Rice Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'UConn',
+                away: 'Florida International',
+                location: 'UConn Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Florida State',
+                away: 'Miami',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Hawai'i',
+                away: 'Fresno State',
+                location: 'Hawai'i Stadium',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Georgia',
+                away: 'Kentucky',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 5'
+            },
+            {
+                home: 'James Madison',
+                away: 'Georgia Southern',
+                location: 'James Madison Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Georgia State',
+                away: 'James Madison',
+                location: 'Georgia State Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'Georgia Tech',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Hawaii',
+                away: 'Fresno State',
+                location: 'Hawaii Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Houston',
+                away: 'Texas Tech',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Illinois',
+                away: 'USC',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Iowa',
+                away: 'Indiana',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Iowa',
+                away: 'Indiana',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Iowa State',
+                away: 'Arizona',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Southern Miss',
+                away: 'Jacksonville State',
+                location: 'Southern Miss Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Georgia State',
+                away: 'James Madison',
+                location: 'Georgia State Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 5'
+            },
+            {
+                home: 'Kansas',
+                away: 'Cincinnati',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Kansas State',
+                away: 'UCF',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Kent State',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Georgia',
+                away: 'Kentucky',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Ole Miss',
+                away: 'LSU',
+                location: 'Vaught-Hemingway Stadium, Oxford, MS',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'Liberty',
+                location: 'Old Dominion Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Louisiana',
+                away: 'Marshall',
+                location: 'Louisiana Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Louisiana Monroe',
+                location: 'Ryan Field, Evanston, IL',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'UTEP',
+                away: 'Louisiana Tech',
+                location: 'UTEP Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Louisville',
+                away: 'Virginia',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Louisiana',
+                away: 'Marshall',
+                location: 'Louisiana Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Maryland',
+                away: 'Washington',
+                location: 'SECU Stadium, College Park, MD',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'Memphis',
+                location: 'Florida Atlantic Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Florida State',
+                away: 'Miami',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'Miami (OH)',
+                location: 'Northern Illinois Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Michigan',
+                away: 'Wisconsin',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Michigan State',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Kennesaw State',
+                away: 'Middle Tennessee',
+                location: 'Kennesaw State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Minnesota',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Mississippi',
+                away: 'LSU',
+                location: 'Mississippi Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Tennessee',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Missouri',
+                away: 'Massachusetts',
+                location: 'Faurot Field, Columbia, MO',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'NC State',
+                away: 'Virginia Tech',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Navy',
+                away: 'Air Force',
+                location: 'Navy Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Michigan State',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Fresno State',
+                away: 'Nevada',
+                location: 'Fresno State Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'San José State',
+                away: 'New Mexico',
+                location: 'San José State Stadium',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'New Mexico State',
+                away: 'Sam Houston',
+                location: 'New Mexico State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'North Carolina',
+                away: 'Clemson',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'North Texas',
+                away: 'South Alabama',
+                location: 'North Texas Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'Miami (OH)',
+                location: 'Northern Illinois Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Northwestern',
+                away: 'UL Monroe',
+                location: 'Ryan Field, Evanston, IL',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Boise State',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Ohio',
+                away: 'Bowling Green',
+                location: 'Ohio Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Minnesota',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Kent State',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Arizona',
+                away: 'Oklahoma State',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'Coastal Carolina',
+                location: 'Old Dominion Stadium',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Penn State',
+                away: 'Oregon',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'UCLA',
+                away: 'Penn State',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Boston College',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Purdue',
+                away: 'Illinois',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Navy',
+                away: 'Rice',
+                location: 'Navy Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Rutgers',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'SMU',
+                away: 'Syracuse',
+                location: 'SMU Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 5'
+            },
+            {
+                home: 'New Mexico State',
+                away: 'Sam Houston',
+                location: 'New Mexico State Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 5'
+            },
+            {
+                home: 'San Diego State',
+                away: 'Colorado State',
+                location: 'San Diego State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'San Jose State',
+                away: 'New Mexico',
+                location: 'San Jose State Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'North Texas',
+                away: 'South Alabama',
+                location: 'North Texas Stadium',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Kentucky',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'South Florida',
+                away: 'Charlotte',
+                location: 'South Florida Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Stanford',
+                away: 'San José State',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Syracuse',
+                away: 'Duke',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'TCU',
+                away: 'Colorado',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Temple',
+                away: 'UTSA',
+                location: 'Temple Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Tennessee',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Florida',
+                away: 'Texas',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'Mississippi State',
+                location: 'Kyle Field, College Station, TX',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Texas State',
+                location: 'Arkansas State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Houston',
+                away: 'Texas Tech',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 5'
+            },
+            {
+                home: 'Toledo',
+                away: 'Akron',
+                location: 'Toledo Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Troy',
+                away: 'South Alabama',
+                location: 'Troy Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Tulsa',
+                away: 'Tulane',
+                location: 'Tulsa Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Tulsa',
+                away: 'Tulane',
+                location: 'Tulsa Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'UAB',
+                away: 'Army',
+                location: 'UAB Stadium',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'UCF',
+                away: 'Kansas',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'UCLA',
+                away: 'Penn State',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Buffalo',
+                away: 'UConn',
+                location: 'Buffalo Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'UMass',
+                away: 'Western Michigan',
+                location: 'UMass Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'Wyoming',
+                away: 'UNLV',
+                location: 'Wyoming Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'Illinois',
+                away: 'USC',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'UTEP',
+                away: 'Louisiana Tech',
+                location: 'UTEP Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 5'
+            },
+            {
+                home: 'Temple',
+                away: 'UTSA',
+                location: 'Temple Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 5'
+            },
+            {
+                home: 'West Virginia',
+                away: 'Utah',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Utah State',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Utah State',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Virginia',
+                away: 'Florida State',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'NC State',
+                away: 'Virginia Tech',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 5'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Wake Forest',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Maryland',
+                away: 'Washington',
+                location: 'SECU Stadium, College Park, MD',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'West Virginia',
+                away: 'Utah',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Missouri State',
+                away: 'Western Kentucky',
+                location: 'Missouri State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 5'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'Rhode Island',
+                location: 'Western Michigan Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 5'
+            },
+            {
+                home: 'Michigan',
+                away: 'Wisconsin',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 5'
+            },
+            {
+                home: 'Wyoming',
+                away: 'UNLV',
+                location: 'Wyoming Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 5'
+            }
+        ];
+
+        // Week 6 games - 130 games
+        schedule[6] = [
+            {
+                home: 'UNLV',
+                away: 'Air Force',
+                location: 'UNLV Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Akron',
+                away: 'Central Michigan',
+                location: 'Akron Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Missouri',
+                away: 'Alabama',
+                location: 'Faurot Field, Columbia, MO',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Georgia State',
+                away: 'Appalachian State',
+                location: 'Georgia State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Arizona',
+                away: 'BYU',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Utah',
+                away: 'Arizona State',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Tennessee',
+                away: 'Arkansas',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Texas State',
+                location: 'Arkansas State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Army',
+                away: 'Charlotte',
+                location: 'Army Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 6'
+            },
+            {
+                home: 'Auburn',
+                away: 'Georgia',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Arizona',
+                away: 'BYU',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'Ball State',
+                location: 'Western Michigan Stadium',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Baylor',
+                away: 'Kansas State',
+                location: 'McLane Stadium, Waco, TX',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Boise State',
+                away: 'New Mexico',
+                location: 'Boise State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Boston College',
+                away: 'Clemson',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Toledo',
+                location: 'Bowling Green Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Eastern Michigan',
+                location: 'Buffalo Stadium',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'California',
+                away: 'Duke',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Akron',
+                away: 'Central Michigan',
+                location: 'Akron Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 6'
+            },
+            {
+                home: 'Army',
+                away: 'Charlotte',
+                location: 'Army Stadium',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'UCF',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Boston College',
+                away: 'Clemson',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 6'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'UL Monroe',
+                location: 'Coastal Carolina Stadium',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'TCU',
+                away: 'Colorado',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Colorado State',
+                away: 'Fresno State',
+                location: 'Colorado State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 6'
+            },
+            {
+                home: 'California',
+                away: 'Duke',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Tulane',
+                away: 'East Carolina',
+                location: 'Tulane Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Eastern Michigan',
+                location: 'Buffalo Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'Florida',
+                location: 'Kyle Field, College Station, TX',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'UAB',
+                location: 'Florida Atlantic Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'Florida International',
+                location: 'Western Kentucky Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Florida State',
+                away: 'Pittsburgh',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Fresno State',
+                away: 'Nevada',
+                location: 'Fresno State Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Auburn',
+                away: 'Georgia',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Southern Miss',
+                location: 'Georgia Southern Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Georgia State',
+                away: 'App State',
+                location: 'Georgia State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Virginia Tech',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 6'
+            },
+            {
+                home: 'Air Force',
+                away: 'Hawaii',
+                location: 'Air Force Stadium',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Houston',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 6'
+            },
+            {
+                home: 'Purdue',
+                away: 'Illinois',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Oregon',
+                away: 'Indiana',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Iowa',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Iowa State',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Sam Houston',
+                away: 'Jacksonville State',
+                location: 'Sam Houston Stadium',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'James Madison',
+                away: 'Louisiana',
+                location: 'James Madison Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'UCF',
+                away: 'Kansas',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Baylor',
+                away: 'Kansas State',
+                location: 'McLane Stadium, Waco, TX',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Kent State',
+                away: 'Massachusetts',
+                location: 'Kent State Stadium',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Texas',
+                location: 'Kroger Field, Lexington, KY',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'LSU',
+                away: 'South Carolina',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 6'
+            },
+            {
+                home: 'UTEP',
+                away: 'Liberty',
+                location: 'UTEP Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'James Madison',
+                away: 'Louisiana',
+                location: 'James Madison Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'Louisiana Monroe',
+                location: 'Coastal Carolina Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Kennesaw State',
+                away: 'Louisiana Tech',
+                location: 'Kennesaw State Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Miami',
+                away: 'Louisville',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Marshall',
+                away: 'Old Dominion',
+                location: 'Marshall Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Maryland',
+                away: 'Nebraska',
+                location: 'SECU Stadium, College Park, MD',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 6'
+            },
+            {
+                home: 'Memphis',
+                away: 'Tulsa',
+                location: 'Memphis Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Miami',
+                away: 'Louisville',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Akron',
+                away: 'Miami (OH)',
+                location: 'Akron Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'USC',
+                away: 'Michigan',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Michigan State',
+                away: 'UCLA',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Missouri State',
+                location: 'Middle Tennessee Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Purdue',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Mississippi',
+                away: 'Washington State',
+                location: 'Mississippi Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'Mississippi State',
+                location: 'Kyle Field, College Station, TX',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 6'
+            },
+            {
+                home: 'Missouri',
+                away: 'Alabama',
+                location: 'Faurot Field, Columbia, MO',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'NC State',
+                away: 'Campbell',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Temple',
+                away: 'Navy',
+                location: 'Temple Stadium',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Maryland',
+                away: 'Nebraska',
+                location: 'SECU Stadium, College Park, MD',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Nevada',
+                away: 'San Diego State',
+                location: 'Nevada Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Boise State',
+                away: 'New Mexico',
+                location: 'Boise State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Liberty',
+                away: 'New Mexico State',
+                location: 'Liberty Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'California',
+                away: 'North Carolina',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'North Texas',
+                away: 'South Florida',
+                location: 'North Texas Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Northern Illinois',
+                location: 'Eastern Michigan Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 6'
+            },
+            {
+                home: 'Penn State',
+                away: 'Northwestern',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'NC State',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Ball State',
+                away: 'Ohio',
+                location: 'Ball State Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Illinois',
+                away: 'Ohio State',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Texas',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 6'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Houston',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Marshall',
+                away: 'Old Dominion',
+                location: 'Marshall Stadium',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Oregon',
+                away: 'Indiana',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Penn State',
+                away: 'Northwestern',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Florida State',
+                away: 'Pittsburgh',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Purdue',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Rice',
+                away: 'Florida Atlantic',
+                location: 'Rice Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Washington',
+                away: 'Rutgers',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'SMU',
+                away: 'Stanford',
+                location: 'SMU Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Sam Houston',
+                away: 'Jacksonville State',
+                location: 'Sam Houston Stadium',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Nevada',
+                away: 'San Diego State',
+                location: 'Nevada Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Wyoming',
+                away: 'San Jose State',
+                location: 'Wyoming Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Troy',
+                away: 'South Alabama',
+                location: 'Troy Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'LSU',
+                away: 'South Carolina',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'North Texas',
+                away: 'South Florida',
+                location: 'North Texas Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'SMU',
+                away: 'Stanford',
+                location: 'SMU Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'SMU',
+                away: 'Syracuse',
+                location: 'SMU Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Kansas State',
+                away: 'TCU',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Temple',
+                away: 'Navy',
+                location: 'Temple Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Tennessee',
+                away: 'Arkansas',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Texas',
+                away: 'Oklahoma',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'Florida',
+                location: 'Kyle Field, College Station, TX',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Texas State',
+                away: 'Troy',
+                location: 'Texas State Stadium',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 6'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'Kansas',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Toledo',
+                location: 'Bowling Green Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Texas State',
+                away: 'Troy',
+                location: 'Texas State Stadium',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Tulane',
+                away: 'East Carolina',
+                location: 'Tulane Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 6'
+            },
+            {
+                home: 'Memphis',
+                away: 'Tulsa',
+                location: 'Memphis Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'UAB',
+                location: 'Florida Atlantic Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 6'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'UCF',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 6'
+            },
+            {
+                home: 'Michigan State',
+                away: 'UCLA',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'UConn',
+                away: 'Florida International',
+                location: 'UConn Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Kent State',
+                away: 'UMass',
+                location: 'Kent State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'UNLV',
+                away: 'Air Force',
+                location: 'UNLV Stadium',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'USC',
+                away: 'Michigan',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'UTEP',
+                away: 'Liberty',
+                location: 'UTEP Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'UTSA',
+                away: 'Rice',
+                location: 'UTSA Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Utah',
+                away: 'Arizona State',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Hawai'i',
+                away: 'Utah State',
+                location: 'Hawai'i Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Alabama',
+                away: 'Vanderbilt',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Louisville',
+                away: 'Virginia',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Wake Forest',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 6'
+            },
+            {
+                home: 'Oregon State',
+                away: 'Wake Forest',
+                location: 'Reser Stadium, Corvallis, OR',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Washington',
+                away: 'Rutgers',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'BYU',
+                away: 'West Virginia',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Delaware',
+                away: 'Western Kentucky',
+                location: 'Delaware Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 6'
+            },
+            {
+                home: 'Massachusetts',
+                away: 'Western Michigan',
+                location: 'Massachusetts Stadium',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 6'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Iowa',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 6'
+            },
+            {
+                home: 'Wyoming',
+                away: 'San José State',
+                location: 'Wyoming Stadium',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 6'
+            }
+        ];
+
+        // Week 7 games - 130 games
+        schedule[7] = [
+            {
+                home: 'Air Force',
+                away: 'Wyoming',
+                location: 'Air Force Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'Akron',
+                away: 'Miami (OH)',
+                location: 'Akron Stadium',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Alabama',
+                away: 'Tennessee',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Appalachian State',
+                away: 'Coastal Carolina',
+                location: 'Appalachian State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Houston',
+                away: 'Arizona',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Arizona State',
+                away: 'Texas Tech',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Texas A&M',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Arkansas State',
+                location: 'South Alabama Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Tulane',
+                away: 'Army',
+                location: 'Tulane Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Auburn',
+                away: 'Missouri',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'BYU',
+                away: 'Utah',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Ball State',
+                away: 'Akron',
+                location: 'Ball State Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'TCU',
+                away: 'Baylor',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Boise State',
+                away: 'UNLV',
+                location: 'Boise State Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Boston College',
+                away: 'UConn',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Central Michigan',
+                location: 'Bowling Green Stadium',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Massachusetts',
+                away: 'Buffalo',
+                location: 'Massachusetts Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'California',
+                away: 'North Carolina',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Central Michigan',
+                location: 'Bowling Green Stadium',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Charlotte',
+                away: 'Temple',
+                location: 'Charlotte Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Cincinnati',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'Clemson',
+                away: 'SMU',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'App State',
+                away: 'Coastal Carolina',
+                location: 'App State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Colorado',
+                away: 'Iowa State',
+                location: 'Folsom Field, Boulder, CO',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Colorado State',
+                away: 'Hawai'i',
+                location: 'Colorado State Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Duke',
+                away: 'Georgia Tech',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'East Carolina',
+                away: 'Tulsa',
+                location: 'East Carolina Stadium',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Northern Illinois',
+                location: 'Eastern Michigan Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 7'
+            },
+            {
+                home: 'Florida',
+                away: 'Mississippi State',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'South Florida',
+                away: 'Florida Atlantic',
+                location: 'South Florida Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Florida International',
+                away: 'Kennesaw State',
+                location: 'Florida International Stadium',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'Stanford',
+                away: 'Florida State',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'Colorado State',
+                away: 'Fresno State',
+                location: 'Colorado State Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Georgia',
+                away: 'Ole Miss',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Georgia State',
+                location: 'Georgia Southern Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Georgia State',
+                location: 'Georgia Southern Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Duke',
+                away: 'Georgia Tech',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'Hawaii',
+                away: 'Utah State',
+                location: 'Hawaii Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 7'
+            },
+            {
+                home: 'Houston',
+                away: 'Arizona',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Illinois',
+                away: 'Ohio State',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'Indiana',
+                away: 'Michigan State',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Iowa',
+                away: 'Penn State',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'Colorado',
+                away: 'Iowa State',
+                location: 'Folsom Field, Boulder, CO',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Jacksonville State',
+                away: 'Delaware',
+                location: 'Jacksonville State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'James Madison',
+                away: 'Old Dominion',
+                location: 'James Madison Stadium',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'Kansas',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'Kansas State',
+                away: 'TCU',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Toledo',
+                away: 'Kent State',
+                location: 'Toledo Stadium',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Tennessee',
+                location: 'Kroger Field, Lexington, KY',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'LSU',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Liberty',
+                away: 'New Mexico State',
+                location: 'Liberty Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'Louisiana',
+                away: 'Southern Miss',
+                location: 'Louisiana Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Louisiana Monroe',
+                away: 'Troy',
+                location: 'Louisiana Monroe Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'Western Kentucky',
+                location: 'Louisiana Tech Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Louisville',
+                away: 'Boston College',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Marshall',
+                away: 'Texas State',
+                location: 'Marshall Stadium',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'UCLA',
+                away: 'Maryland',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'UAB',
+                away: 'Memphis',
+                location: 'UAB Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Miami',
+                away: 'Stanford',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'Eastern Michigan',
+                location: 'Miami (OH) Stadium',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Michigan',
+                away: 'Washington',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Indiana',
+                away: 'Michigan State',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Delaware',
+                away: 'Middle Tennessee',
+                location: 'Delaware Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Nebraska',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Georgia',
+                away: 'Mississippi',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Florida',
+                away: 'Mississippi State',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 7'
+            },
+            {
+                home: 'Auburn',
+                away: 'Missouri',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'NC State',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Navy',
+                away: 'Florida Atlantic',
+                location: 'Navy Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Nebraska',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'New Mexico',
+                away: 'Nevada',
+                location: 'New Mexico Stadium',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'New Mexico',
+                away: 'Nevada',
+                location: 'New Mexico Stadium',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'New Mexico State',
+                away: 'Missouri State',
+                location: 'New Mexico State Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'North Carolina',
+                away: 'Virginia',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'North Texas',
+                away: 'UTSA',
+                location: 'North Texas Stadium',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Ohio',
+                away: 'Northern Illinois',
+                location: 'Ohio Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Purdue',
+                location: 'Ryan Field, Evanston, IL',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'USC',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Ohio',
+                away: 'Northern Illinois',
+                location: 'Ohio Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Ohio State',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Oklahoma',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Cincinnati',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'James Madison',
+                away: 'Old Dominion',
+                location: 'James Madison Stadium',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Oregon',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Iowa',
+                away: 'Penn State',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Syracuse',
+                away: 'Pittsburgh',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Purdue',
+                location: 'Ryan Field, Evanston, IL',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 7'
+            },
+            {
+                home: 'UTSA',
+                away: 'Rice',
+                location: 'UTSA Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Oregon',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Clemson',
+                away: 'SMU',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 7'
+            },
+            {
+                home: 'Sam Houston',
+                away: 'UTEP',
+                location: 'Sam Houston Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Fresno State',
+                away: 'San Diego State',
+                location: 'Fresno State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'Utah State',
+                away: 'San Jose State',
+                location: 'Utah State Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Arkansas State',
+                location: 'South Alabama Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Oklahoma',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'South Florida',
+                away: 'Florida Atlantic',
+                location: 'South Florida Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Stanford',
+                away: 'Florida State',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 7'
+            },
+            {
+                home: 'Syracuse',
+                away: 'Pittsburgh',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 7'
+            },
+            {
+                home: 'TCU',
+                away: 'Baylor',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Charlotte',
+                away: 'Temple',
+                location: 'Charlotte Stadium',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'Alabama',
+                away: 'Tennessee',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Texas',
+                location: 'Kroger Field, Lexington, KY',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Texas A&M',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Marshall',
+                away: 'Texas State',
+                location: 'Marshall Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Arizona State',
+                away: 'Texas Tech',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 7'
+            },
+            {
+                home: 'Toledo',
+                away: 'Kent State',
+                location: 'Toledo Stadium',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'UL Monroe',
+                away: 'Troy',
+                location: 'UL Monroe Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Tulane',
+                away: 'Army',
+                location: 'Tulane Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'East Carolina',
+                away: 'Tulsa',
+                location: 'East Carolina Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'UAB',
+                away: 'Memphis',
+                location: 'UAB Stadium',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 7'
+            },
+            {
+                home: 'UCF',
+                away: 'West Virginia',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'UCLA',
+                away: 'Maryland',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Boston College',
+                away: 'UConn',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            },
+            {
+                home: 'UMass',
+                away: 'Buffalo',
+                location: 'UMass Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 7'
+            },
+            {
+                home: 'Boise State',
+                away: 'UNLV',
+                location: 'Boise State Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'USC',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Sam Houston',
+                away: 'UTEP',
+                location: 'Sam Houston Stadium',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'North Texas',
+                away: 'UTSA',
+                location: 'North Texas Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'BYU',
+                away: 'Utah',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 7'
+            },
+            {
+                home: 'Utah State',
+                away: 'San José State',
+                location: 'Utah State Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'LSU',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Virginia',
+                away: 'Washington State',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 7'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Virginia Tech',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'SMU',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 7'
+            },
+            {
+                home: 'Michigan',
+                away: 'Washington',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'UCF',
+                away: 'West Virginia',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'Florida International',
+                location: 'Western Kentucky Stadium',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'Ball State',
+                location: 'Western Michigan Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Ohio State',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 7'
+            },
+            {
+                home: 'Air Force',
+                away: 'Wyoming',
+                location: 'Air Force Stadium',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 7'
+            }
+        ];
+
+        // Week 8 games - 130 games
+        schedule[8] = [
+            {
+                home: 'Air Force',
+                away: 'Army',
+                location: 'Air Force Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Ball State',
+                away: 'Akron',
+                location: 'Ball State Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Alabama',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'Appalachian State',
+                location: 'Old Dominion Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Colorado',
+                away: 'Arizona',
+                location: 'Folsom Field, Boulder, CO',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Arizona State',
+                away: 'Houston',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Auburn',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Georgia Southern',
+                location: 'Arkansas State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Air Force',
+                away: 'Army',
+                location: 'Air Force Stadium',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Auburn',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Iowa State',
+                away: 'BYU',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'Ball State',
+                location: 'Northern Illinois Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Baylor',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Nevada',
+                away: 'Boise State',
+                location: 'Nevada Stadium',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Louisville',
+                away: 'Boston College',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Kent State',
+                away: 'Bowling Green',
+                location: 'Kent State Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Akron',
+                location: 'Buffalo Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'California',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Central Michigan',
+                away: 'Massachusetts',
+                location: 'Central Michigan Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Charlotte',
+                away: 'North Texas',
+                location: 'Charlotte Stadium',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Baylor',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Clemson',
+                away: 'Duke',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'Marshall',
+                location: 'Coastal Carolina Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Utah',
+                away: 'Colorado',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Wyoming',
+                away: 'Colorado State',
+                location: 'Wyoming Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Clemson',
+                away: 'Duke',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Temple',
+                away: 'East Carolina',
+                location: 'Temple Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'Eastern Michigan',
+                location: 'Miami (OH) Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Florida',
+                away: 'Georgia',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Navy',
+                away: 'Florida Atlantic',
+                location: 'Navy Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Missouri State',
+                away: 'Florida International',
+                location: 'Missouri State Stadium',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'Florida State',
+                away: 'Wake Forest',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Fresno State',
+                away: 'San Diego State',
+                location: 'Fresno State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Georgia',
+                away: 'Florida',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Georgia Southern',
+                location: 'Arkansas State Stadium',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Georgia State',
+                away: 'South Alabama',
+                location: 'Georgia State Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Syracuse',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'Colorado State',
+                away: 'Hawaii',
+                location: 'Colorado State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Arizona State',
+                away: 'Houston',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Washington',
+                away: 'Illinois',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Indiana',
+                away: 'UCLA',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'Iowa',
+                away: 'Minnesota',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Iowa State',
+                away: 'BYU',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Jacksonville State',
+                location: 'Middle Tennessee Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Texas State',
+                away: 'James Madison',
+                location: 'Texas State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Kansas',
+                away: 'Kansas State',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Kansas',
+                away: 'Kansas State',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Kent State',
+                away: 'Bowling Green',
+                location: 'Kent State Stadium',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'Auburn',
+                away: 'Kentucky',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'LSU',
+                away: 'Texas A&M',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Liberty',
+                away: 'Delaware',
+                location: 'Liberty Stadium',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'Troy',
+                away: 'Louisiana',
+                location: 'Troy Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'Southern Miss',
+                away: 'Louisiana Monroe',
+                location: 'Southern Miss Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'Sam Houston',
+                location: 'Louisiana Tech Stadium',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Louisville',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'Marshall',
+                location: 'Coastal Carolina Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Maryland',
+                away: 'Indiana',
+                location: 'SECU Stadium, College Park, MD',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Memphis',
+                away: 'South Florida',
+                location: 'Memphis Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'SMU',
+                away: 'Miami',
+                location: 'SMU Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'Western Michigan',
+                location: 'Miami (OH) Stadium',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Michigan',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Michigan',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Jacksonville State',
+                location: 'Middle Tennessee Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Iowa',
+                away: 'Minnesota',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Mississippi',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Texas',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Missouri',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'NC State',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'North Texas',
+                away: 'Navy',
+                location: 'North Texas Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Northwestern',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Nevada',
+                away: 'Boise State',
+                location: 'Nevada Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'New Mexico',
+                away: 'Utah State',
+                location: 'New Mexico Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'New Mexico State',
+                location: 'Western Kentucky Stadium',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Syracuse',
+                away: 'North Carolina',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Charlotte',
+                away: 'North Texas',
+                location: 'Charlotte Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'Ball State',
+                location: 'Northern Illinois Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Northwestern',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Boston College',
+                away: 'Notre Dame',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Ohio',
+                location: 'Eastern Michigan Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Penn State',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Ole Miss',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'Oklahoma State',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'App State',
+                location: 'Old Dominion Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Oregon',
+                away: 'Wisconsin',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Penn State',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'NC State',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Purdue',
+                away: 'Rutgers',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Rice',
+                away: 'UConn',
+                location: 'Rice Stadium',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Purdue',
+                away: 'Rutgers',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'SMU',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'Sam Houston',
+                location: 'Louisiana Tech Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'San Diego State',
+                away: 'Wyoming',
+                location: 'San Diego State Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'San Jose State',
+                away: 'Hawai'i',
+                location: 'San Jose State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Georgia State',
+                away: 'South Alabama',
+                location: 'Georgia State Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Alabama',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'Memphis',
+                away: 'South Florida',
+                location: 'Memphis Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Miami',
+                away: 'Stanford',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Syracuse',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'West Virginia',
+                away: 'TCU',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Tulsa',
+                away: 'Temple',
+                location: 'Tulsa Stadium',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Tennessee',
+                location: 'Kroger Field, Lexington, KY',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Texas',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'LSU',
+                away: 'Texas A&M',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Texas State',
+                away: 'James Madison',
+                location: 'Texas State Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 8'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'Oklahoma State',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Washington State',
+                away: 'Toledo',
+                location: 'Martin Stadium, Pullman, WA',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Troy',
+                away: 'Louisiana',
+                location: 'Troy Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'UTSA',
+                away: 'Tulane',
+                location: 'UTSA Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Tulsa',
+                away: 'Temple',
+                location: 'Tulsa Stadium',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 8'
+            },
+            {
+                home: 'UConn',
+                away: 'UAB',
+                location: 'UConn Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Baylor',
+                away: 'UCF',
+                location: 'McLane Stadium, Waco, TX',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Indiana',
+                away: 'UCLA',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Rice',
+                away: 'UConn',
+                location: 'Rice Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Central Michigan',
+                away: 'UMass',
+                location: 'Central Michigan Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'UNLV',
+                away: 'New Mexico',
+                location: 'UNLV Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 8'
+            },
+            {
+                home: 'Nebraska',
+                away: 'USC',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Kennesaw State',
+                away: 'UTEP',
+                location: 'Kennesaw State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'UTSA',
+                away: 'Tulane',
+                location: 'UTSA Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Utah',
+                away: 'Colorado',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'New Mexico',
+                away: 'Utah State',
+                location: 'New Mexico Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Missouri',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'North Carolina',
+                away: 'Virginia',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 8'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'California',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Florida State',
+                away: 'Wake Forest',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            },
+            {
+                home: 'Washington',
+                away: 'Illinois',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 8'
+            },
+            {
+                home: 'West Virginia',
+                away: 'TCU',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 8'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'Western Kentucky',
+                location: 'Louisiana Tech Stadium',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'Western Michigan',
+                location: 'Miami (OH) Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Oregon',
+                away: 'Wisconsin',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 8'
+            },
+            {
+                home: 'Wyoming',
+                away: 'Colorado State',
+                location: 'Wyoming Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 8'
+            }
+        ];
+
+        // Week 9 games - 130 games
+        schedule[9] = [
+            {
+                home: 'San José State',
+                away: 'Air Force',
+                location: 'San José State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Akron',
+                location: 'Buffalo Stadium',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Alabama',
+                away: 'LSU',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Appalachian State',
+                away: 'Georgia Southern',
+                location: 'Appalachian State Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Arizona',
+                away: 'Kansas',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Iowa State',
+                away: 'Arizona State',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Mississippi State',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Troy',
+                away: 'Arkansas State',
+                location: 'Troy Stadium',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Army',
+                away: 'Temple',
+                location: 'Army Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'Auburn',
+                away: 'Kentucky',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 9'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'BYU',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Ball State',
+                away: 'Kent State',
+                location: 'Ball State Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'Baylor',
+                away: 'UCF',
+                location: 'McLane Stadium, Waco, TX',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'Boise State',
+                away: 'Fresno State',
+                location: 'Boise State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Boston College',
+                away: 'Notre Dame',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Buffalo',
+                location: 'Bowling Green Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Buffalo',
+                location: 'Bowling Green Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'California',
+                away: 'Virginia',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'Central Michigan',
+                location: 'Western Michigan Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'East Carolina',
+                away: 'Charlotte',
+                location: 'East Carolina Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Utah',
+                away: 'Cincinnati',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Clemson',
+                away: 'Florida State',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 9'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'Georgia State',
+                location: 'Coastal Carolina Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Colorado',
+                away: 'Arizona',
+                location: 'Folsom Field, Boulder, CO',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Colorado State',
+                away: 'UNLV',
+                location: 'Colorado State Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'UConn',
+                away: 'Duke',
+                location: 'UConn Stadium',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'East Carolina',
+                away: 'Charlotte',
+                location: 'East Carolina Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Ohio',
+                location: 'Eastern Michigan Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Florida',
+                location: 'Kroger Field, Lexington, KY',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'Tulsa',
+                location: 'Florida Atlantic Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Florida International',
+                location: 'Middle Tennessee Stadium',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Clemson',
+                away: 'Florida State',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Boise State',
+                away: 'Fresno State',
+                location: 'Boise State Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Georgia',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'App State',
+                away: 'Georgia Southern',
+                location: 'App State Stadium',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'Georgia State',
+                location: 'Coastal Carolina Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'NC State',
+                away: 'Georgia Tech',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'San José State',
+                away: 'Hawaii',
+                location: 'San José State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'Houston',
+                away: 'West Virginia',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 9'
+            },
+            {
+                home: 'Illinois',
+                away: 'Rutgers',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'Maryland',
+                away: 'Indiana',
+                location: 'SECU Stadium, College Park, MD',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Iowa',
+                away: 'Oregon',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Iowa State',
+                away: 'Arizona State',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'UTEP',
+                away: 'Jacksonville State',
+                location: 'UTEP Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Marshall',
+                away: 'James Madison',
+                location: 'Marshall Stadium',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'Kansas',
+                away: 'Oklahoma State',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Kansas State',
+                away: 'Texas Tech',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'Ball State',
+                away: 'Kent State',
+                location: 'Ball State Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Florida',
+                location: 'Kroger Field, Lexington, KY',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Alabama',
+                away: 'LSU',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Liberty',
+                away: 'Missouri State',
+                location: 'Liberty Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Louisiana',
+                location: 'South Alabama Stadium',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Louisiana Monroe',
+                away: 'Old Dominion',
+                location: 'Louisiana Monroe Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Delaware',
+                away: 'Louisiana Tech',
+                location: 'Delaware Stadium',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Louisville',
+                away: 'California',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Marshall',
+                away: 'James Madison',
+                location: 'Marshall Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Maryland',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Rice',
+                away: 'Memphis',
+                location: 'Rice Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'Miami',
+                away: 'Syracuse',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 9'
+            },
+            {
+                home: 'Ohio',
+                away: 'Miami (OH)',
+                location: 'Ohio Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Michigan',
+                away: 'Purdue',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Michigan State',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 9'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Florida International',
+                location: 'Middle Tennessee Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Michigan State',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'Mississippi',
+                away: 'South Carolina',
+                location: 'Mississippi Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Mississippi State',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Missouri',
+                away: 'Texas A&M',
+                location: 'Faurot Field, Columbia, MO',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'NC State',
+                away: 'Georgia Tech',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Navy',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Nebraska',
+                away: 'USC',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Utah State',
+                away: 'Nevada',
+                location: 'Utah State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'UNLV',
+                away: 'New Mexico',
+                location: 'UNLV Stadium',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'New Mexico State',
+                away: 'Kennesaw State',
+                location: 'New Mexico State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'North Carolina',
+                away: 'Stanford',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'North Texas',
+                away: 'Navy',
+                location: 'North Texas Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 9'
+            },
+            {
+                home: 'Toledo',
+                away: 'Northern Illinois',
+                location: 'Toledo Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'USC',
+                away: 'Northwestern',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Navy',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 9'
+            },
+            {
+                home: 'Ohio',
+                away: 'Miami (OH)',
+                location: 'Ohio Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'Purdue',
+                away: 'Ohio State',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'Tennessee',
+                away: 'Oklahoma',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'Kansas',
+                away: 'Oklahoma State',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'UL Monroe',
+                away: 'Old Dominion',
+                location: 'UL Monroe Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'Iowa',
+                away: 'Oregon',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 9'
+            },
+            {
+                home: 'Penn State',
+                away: 'Indiana',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'Stanford',
+                away: 'Pittsburgh',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Michigan',
+                away: 'Purdue',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'Rice',
+                away: 'Memphis',
+                location: 'Rice Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'Illinois',
+                away: 'Rutgers',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'SMU',
+                away: 'Miami',
+                location: 'SMU Stadium',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Oregon State',
+                away: 'Sam Houston',
+                location: 'Reser Stadium, Corvallis, OR',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Hawai'i',
+                away: 'San Diego State',
+                location: 'Hawai'i Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'San Jose State',
+                away: 'Air Force',
+                location: 'San Jose State Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Louisiana',
+                location: 'South Alabama Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 9'
+            },
+            {
+                home: 'Ole Miss',
+                away: 'South Carolina',
+                location: 'Vaught-Hemingway Stadium, Oxford, MS',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'South Florida',
+                away: 'UTSA',
+                location: 'South Florida Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'Stanford',
+                away: 'Pittsburgh',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Syracuse',
+                away: 'North Carolina',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'TCU',
+                away: 'Iowa State',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'Temple',
+                away: 'East Carolina',
+                location: 'Temple Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Tennessee',
+                away: 'Oklahoma',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Texas',
+                away: 'Vanderbilt',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Missouri',
+                away: 'Texas A&M',
+                location: 'Faurot Field, Columbia, MO',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Louisiana',
+                away: 'Texas State',
+                location: 'Louisiana Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'Kansas State',
+                away: 'Texas Tech',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Toledo',
+                away: 'Northern Illinois',
+                location: 'Toledo Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Troy',
+                away: 'Arkansas State',
+                location: 'Troy Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Memphis',
+                away: 'Tulane',
+                location: 'Memphis Stadium',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'Tulsa',
+                location: 'Florida Atlantic Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'Rice',
+                away: 'UAB',
+                location: 'Rice Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'UCF',
+                away: 'Houston',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'UCLA',
+                away: 'Nebraska',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'UConn',
+                away: 'UAB',
+                location: 'UConn Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Akron',
+                away: 'UMass',
+                location: 'Akron Stadium',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Colorado State',
+                away: 'UNLV',
+                location: 'Colorado State Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'USC',
+                away: 'Northwestern',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 9'
+            },
+            {
+                home: 'UTEP',
+                away: 'Jacksonville State',
+                location: 'UTEP Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'South Florida',
+                away: 'UTSA',
+                location: 'South Florida Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 9'
+            },
+            {
+                home: 'Utah',
+                away: 'Cincinnati',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 9'
+            },
+            {
+                home: 'Utah State',
+                away: 'Nevada',
+                location: 'Utah State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Texas',
+                away: 'Vanderbilt',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'California',
+                away: 'Virginia',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Louisville',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 9'
+            },
+            {
+                home: 'Virginia',
+                away: 'Wake Forest',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Washington',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'Houston',
+                away: 'West Virginia',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'New Mexico State',
+                location: 'Western Kentucky Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'Central Michigan',
+                location: 'Western Michigan Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 9'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Washington',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 9'
+            },
+            {
+                home: 'San Diego State',
+                away: 'Wyoming',
+                location: 'San Diego State Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 9'
+            }
+        ];
+
+        // Week 10 games - 130 games
+        schedule[10] = [
+            {
+                home: 'UConn',
+                away: 'Air Force',
+                location: 'UConn Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Akron',
+                away: 'Massachusetts',
+                location: 'Akron Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Alabama',
+                away: 'Oklahoma',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 10'
+            },
+            {
+                home: 'James Madison',
+                away: 'Appalachian State',
+                location: 'James Madison Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Arizona',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Arizona State',
+                away: 'West Virginia',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'LSU',
+                away: 'Arkansas',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Southern Miss',
+                location: 'Arkansas State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Army',
+                away: 'Tulsa',
+                location: 'Army Stadium',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Auburn',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'BYU',
+                away: 'TCU',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Ball State',
+                away: 'Eastern Michigan',
+                location: 'Ball State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 10'
+            },
+            {
+                home: 'Baylor',
+                away: 'Utah',
+                location: 'McLane Stadium, Waco, TX',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'San Diego State',
+                away: 'Boise State',
+                location: 'San Diego State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Boston College',
+                away: 'SMU',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Bowling Green',
+                location: 'Eastern Michigan Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Central Michigan',
+                away: 'Buffalo',
+                location: 'Central Michigan Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Louisville',
+                away: 'California',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Central Michigan',
+                away: 'Buffalo',
+                location: 'Central Michigan Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 10'
+            },
+            {
+                home: 'Charlotte',
+                away: 'UTSA',
+                location: 'Charlotte Stadium',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'Arizona',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Louisville',
+                away: 'Clemson',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Coastal Carolina',
+                location: 'Georgia Southern Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'West Virginia',
+                away: 'Colorado',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'New Mexico',
+                away: 'Colorado State',
+                location: 'New Mexico Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 10'
+            },
+            {
+                home: 'Duke',
+                away: 'Virginia',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'East Carolina',
+                away: 'Memphis',
+                location: 'East Carolina Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Bowling Green',
+                location: 'Eastern Michigan Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Ole Miss',
+                away: 'Florida',
+                location: 'Vaught-Hemingway Stadium, Oxford, MS',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Tulane',
+                away: 'Florida Atlantic',
+                location: 'Tulane Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Florida International',
+                away: 'Liberty',
+                location: 'Florida International Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Florida State',
+                away: 'Virginia Tech',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Fresno State',
+                away: 'Wyoming',
+                location: 'Fresno State Stadium',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Georgia',
+                away: 'Texas',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Coastal Carolina',
+                location: 'Georgia Southern Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Georgia State',
+                away: 'Marshall',
+                location: 'Georgia State Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Boston College',
+                away: 'Georgia Tech',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Hawaii',
+                away: 'San Diego State',
+                location: 'Hawaii Stadium',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'UCF',
+                away: 'Houston',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Illinois',
+                away: 'Maryland',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Penn State',
+                away: 'Indiana',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'USC',
+                away: 'Iowa',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'TCU',
+                away: 'Iowa State',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Jacksonville State',
+                away: 'Kennesaw State',
+                location: 'Jacksonville State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'James Madison',
+                away: 'App State',
+                location: 'James Madison Stadium',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Arizona',
+                away: 'Kansas',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Kansas State',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Akron',
+                away: 'Kent State',
+                location: 'Akron Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 10'
+            },
+            {
+                home: 'Kentucky',
+                away: 'Tennessee Tech',
+                location: 'Kroger Field, Lexington, KY',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'LSU',
+                away: 'Arkansas',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Florida International',
+                away: 'Liberty',
+                location: 'Florida International Stadium',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Louisiana',
+                away: 'Texas State',
+                location: 'Louisiana Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Louisiana Monroe',
+                away: 'South Alabama',
+                location: 'Louisiana Monroe Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 10'
+            },
+            {
+                home: 'Washington State',
+                away: 'Louisiana Tech',
+                location: 'Martin Stadium, Pullman, WA',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 10'
+            },
+            {
+                home: 'Louisville',
+                away: 'Clemson',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Georgia State',
+                away: 'Marshall',
+                location: 'Georgia State Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Illinois',
+                away: 'Maryland',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Memphis',
+                away: 'Tulane',
+                location: 'Memphis Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Miami',
+                away: 'NC State',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'Toledo',
+                location: 'Miami (OH) Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Michigan',
+                location: 'Ryan Field, Evanston, IL',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Penn State',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'Middle Tennessee',
+                location: 'Western Kentucky Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Oregon',
+                away: 'Minnesota',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Mississippi',
+                away: 'The Citadel',
+                location: 'Mississippi Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Georgia',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Missouri',
+                away: 'Mississippi State',
+                location: 'Faurot Field, Columbia, MO',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Miami',
+                away: 'NC State',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Navy',
+                away: 'South Florida',
+                location: 'Navy Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'UCLA',
+                away: 'Nebraska',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Nevada',
+                away: 'San José State',
+                location: 'Nevada Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 10'
+            },
+            {
+                home: 'New Mexico',
+                away: 'Colorado State',
+                location: 'New Mexico Stadium',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Tennessee',
+                away: 'New Mexico State',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 10'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'North Carolina',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'UAB',
+                away: 'North Texas',
+                location: 'UAB Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Massachusetts',
+                away: 'Northern Illinois',
+                location: 'Massachusetts Stadium',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Michigan',
+                location: 'Ryan Field, Evanston, IL',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Notre Dame',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'Ohio',
+                location: 'Western Michigan Stadium',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Ohio State',
+                away: 'UCLA',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Alabama',
+                away: 'Oklahoma',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Kansas State',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 10'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'Troy',
+                location: 'Old Dominion Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Oregon',
+                away: 'Minnesota',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Penn State',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Notre Dame',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Purdue',
+                away: 'Ohio State',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Rice',
+                away: 'UAB',
+                location: 'Rice Stadium',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Maryland',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 10'
+            },
+            {
+                home: 'Boston College',
+                away: 'SMU',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Sam Houston',
+                away: 'Delaware',
+                location: 'Sam Houston Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'San Diego State',
+                away: 'Boise State',
+                location: 'San Diego State Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Nevada',
+                away: 'San Jose State',
+                location: 'Nevada Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 10'
+            },
+            {
+                home: 'UL Monroe',
+                away: 'South Alabama',
+                location: 'UL Monroe Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'South Carolina',
+                location: 'Kyle Field, College Station, TX',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Navy',
+                away: 'South Florida',
+                location: 'Navy Stadium',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'North Carolina',
+                away: 'Stanford',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'Miami',
+                away: 'Syracuse',
+                location: 'Hard Rock Stadium, Miami Gardens, FL',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 10'
+            },
+            {
+                home: 'BYU',
+                away: 'TCU',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Army',
+                away: 'Temple',
+                location: 'Army Stadium',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Tennessee',
+                away: 'New Mexico State',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Georgia',
+                away: 'Texas',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 10'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'South Carolina',
+                location: 'Kyle Field, College Station, TX',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Southern Miss',
+                away: 'Texas State',
+                location: 'Southern Miss Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'BYU',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'Toledo',
+                location: 'Miami (OH) Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'Troy',
+                location: 'Old Dominion Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Tulane',
+                away: 'Florida Atlantic',
+                location: 'Tulane Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 10'
+            },
+            {
+                home: 'Tulsa',
+                away: 'Oregon State',
+                location: 'Tulsa Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'UAB',
+                away: 'North Texas',
+                location: 'UAB Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'UCF',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'Ohio State',
+                away: 'UCLA',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'UConn',
+                away: 'Duke',
+                location: 'UConn Stadium',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'UMass',
+                away: 'Northern Illinois',
+                location: 'UMass Stadium',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 10'
+            },
+            {
+                home: 'UNLV',
+                away: 'Utah State',
+                location: 'UNLV Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'USC',
+                away: 'Iowa',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Missouri State',
+                away: 'UTEP',
+                location: 'Missouri State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 10'
+            },
+            {
+                home: 'Charlotte',
+                away: 'UTSA',
+                location: 'Charlotte Stadium',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Baylor',
+                away: 'Utah',
+                location: 'McLane Stadium, Waco, TX',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            },
+            {
+                home: 'UNLV',
+                away: 'Utah State',
+                location: 'UNLV Stadium',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Auburn',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Virginia',
+                away: 'Wake Forest',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Florida State',
+                away: 'Virginia Tech',
+                location: 'Doak Campbell Stadium, Tallahassee, FL',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'North Carolina',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 10'
+            },
+            {
+                home: 'Washington',
+                away: 'Purdue',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'West Virginia',
+                away: 'Colorado',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '8:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 10'
+            },
+            {
+                home: 'Western Kentucky',
+                away: 'Middle Tennessee',
+                location: 'Western Kentucky Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 10'
+            },
+            {
+                home: 'Western Michigan',
+                away: 'Ohio',
+                location: 'Western Michigan Stadium',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 10'
+            },
+            {
+                home: 'Indiana',
+                away: 'Wisconsin',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '7:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 10'
+            },
+            {
+                home: 'Fresno State',
+                away: 'Wyoming',
+                location: 'Fresno State Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 10'
+            }
+        ];
+
+        // Week 11 games - 130 games
+        schedule[11] = [
+            {
+                home: 'Air Force',
+                away: 'New Mexico',
+                location: 'Air Force Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 11'
+            },
+            {
+                home: 'Akron',
+                away: 'Kent State',
+                location: 'Akron Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Alabama',
+                away: 'Eastern Illinois',
+                location: 'Bryant-Denny Stadium, Tuscaloosa, AL',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Appalachian State',
+                away: 'Marshall',
+                location: 'Appalachian State Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Arizona',
+                away: 'Baylor',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'Colorado',
+                away: 'Arizona State',
+                location: 'Folsom Field, Boulder, CO',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Texas',
+                away: 'Arkansas',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Louisiana',
+                location: 'Arkansas State Stadium',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'UTSA',
+                away: 'Army',
+                location: 'UTSA Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Auburn',
+                away: 'Mercer',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'BYU',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Toledo',
+                away: 'Ball State',
+                location: 'Toledo Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Arizona',
+                away: 'Baylor',
+                location: 'Arizona Stadium, Tucson, AZ',
+                time: '10:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'Boise State',
+                away: 'Colorado State',
+                location: 'Boise State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Boston College',
+                away: 'Georgia Tech',
+                location: 'Alumni Stadium, Chestnut Hill, MA',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Akron',
+                location: 'Bowling Green Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Miami (OH)',
+                location: 'Buffalo Stadium',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Stanford',
+                away: 'California',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Kent State',
+                away: 'Central Michigan',
+                location: 'Kent State Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Georgia',
+                away: 'Charlotte',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 11'
+            },
+            {
+                home: 'Cincinnati',
+                away: 'BYU',
+                location: 'Nippert Stadium, Cincinnati, OH',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Clemson',
+                away: 'Furman',
+                location: 'Memorial Stadium, Clemson, SC',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Coastal Carolina',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Colorado',
+                away: 'Arizona State',
+                location: 'Folsom Field, Boulder, CO',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Boise State',
+                away: 'Colorado State',
+                location: 'Boise State Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'North Carolina',
+                away: 'Duke',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'UTSA',
+                away: 'East Carolina',
+                location: 'UTSA Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 11'
+            },
+            {
+                home: 'Ball State',
+                away: 'Eastern Michigan',
+                location: 'Ball State Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Florida',
+                away: 'Tennessee',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'UConn',
+                location: 'Florida Atlantic Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Florida International',
+                away: 'Jacksonville State',
+                location: 'Florida International Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'NC State',
+                away: 'Florida State',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Fresno State',
+                away: 'Utah State',
+                location: 'Fresno State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 11'
+            },
+            {
+                home: 'Georgia',
+                away: 'Charlotte',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Old Dominion',
+                location: 'Georgia Southern Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'Troy',
+                away: 'Georgia State',
+                location: 'Troy Stadium',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Pittsburgh',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'UNLV',
+                away: 'Hawaii',
+                location: 'UNLV Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'Houston',
+                away: 'TCU',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Illinois',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 11'
+            },
+            {
+                home: 'Indiana',
+                away: 'Wisconsin',
+                location: 'Memorial Stadium, Bloomington, IN',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 11'
+            },
+            {
+                home: 'Iowa',
+                away: 'Michigan State',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'Iowa State',
+                away: 'Kansas',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Florida International',
+                away: 'Jacksonville State',
+                location: 'Florida International Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 11'
+            },
+            {
+                home: 'James Madison',
+                away: 'Washington State',
+                location: 'James Madison Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Iowa State',
+                away: 'Kansas',
+                location: 'Jack Trice Stadium, Ames, IA',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Utah',
+                away: 'Kansas State',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Kent State',
+                away: 'Central Michigan',
+                location: 'Kent State Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Kentucky',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'LSU',
+                away: 'Western Kentucky',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'Liberty',
+                location: 'Louisiana Tech Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Arkansas State',
+                away: 'Louisiana',
+                location: 'Arkansas State Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Texas State',
+                away: 'Louisiana Monroe',
+                location: 'Texas State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 11'
+            },
+            {
+                home: 'Louisiana Tech',
+                away: 'Liberty',
+                location: 'Louisiana Tech Stadium',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'SMU',
+                away: 'Louisville',
+                location: 'SMU Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'App State',
+                away: 'Marshall',
+                location: 'App State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 11'
+            },
+            {
+                home: 'Maryland',
+                away: 'Michigan',
+                location: 'SECU Stadium, College Park, MD',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'East Carolina',
+                away: 'Memphis',
+                location: 'East Carolina Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Miami',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Miami (OH)',
+                location: 'Buffalo Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Maryland',
+                away: 'Michigan',
+                location: 'SECU Stadium, College Park, MD',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Iowa',
+                away: 'Michigan State',
+                location: 'Kinnick Stadium, Iowa City, IA',
+                time: '7:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Sam Houston',
+                location: 'Middle Tennessee Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Minnesota',
+                location: 'Ryan Field, Evanston, IL',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Mississippi',
+                away: 'Florida',
+                location: 'Mississippi Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Missouri',
+                away: 'Mississippi State',
+                location: 'Faurot Field, Columbia, MO',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 11'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Missouri',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'NC State',
+                away: 'Florida State',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'Memphis',
+                away: 'Navy',
+                location: 'Memphis Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Penn State',
+                away: 'Nebraska',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Wyoming',
+                away: 'Nevada',
+                location: 'Wyoming Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'Air Force',
+                away: 'New Mexico',
+                location: 'Air Force Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'UTEP',
+                away: 'New Mexico State',
+                location: 'UTEP Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'North Carolina',
+                away: 'Duke',
+                location: 'Kenan Memorial Stadium, Chapel Hill, NC',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 11'
+            },
+            {
+                home: 'Rice',
+                away: 'North Texas',
+                location: 'Rice Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'Western Michigan',
+                location: 'Northern Illinois Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Northwestern',
+                away: 'Minnesota',
+                location: 'Ryan Field, Evanston, IL',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Syracuse',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Ohio',
+                away: 'Massachusetts',
+                location: 'Ohio Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 11'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Rutgers',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '8:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'Missouri',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '10:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'UCF',
+                away: 'Oklahoma State',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'Georgia Southern',
+                away: 'Old Dominion',
+                location: 'Georgia Southern Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Oregon',
+                away: 'USC',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Penn State',
+                away: 'Nebraska',
+                location: 'Beaver Stadium, University Park, PA',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 11'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Pittsburgh',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Washington',
+                away: 'Purdue',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'Rice',
+                away: 'North Texas',
+                location: 'Rice Stadium',
+                time: '8:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 11'
+            },
+            {
+                home: 'Ohio State',
+                away: 'Rutgers',
+                location: 'Ohio Stadium, Columbus, OH',
+                time: '3:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'SMU',
+                away: 'Louisville',
+                location: 'SMU Stadium',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'Middle Tennessee',
+                away: 'Sam Houston',
+                location: 'Middle Tennessee Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 11'
+            },
+            {
+                home: 'San Diego State',
+                away: 'San José State',
+                location: 'San Diego State Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'San Diego State',
+                away: 'San Jose State',
+                location: 'San Diego State Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'South Alabama',
+                away: 'Southern Miss',
+                location: 'South Alabama Stadium',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Coastal Carolina',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'UAB',
+                away: 'South Florida',
+                location: 'UAB Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Stanford',
+                away: 'California',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Notre Dame',
+                away: 'Syracuse',
+                location: 'Notre Dame Stadium, Notre Dame, IN',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 11'
+            },
+            {
+                home: 'Houston',
+                away: 'TCU',
+                location: 'TDECU Stadium, Houston, TX',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Temple',
+                away: 'Tulane',
+                location: 'Temple Stadium',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'Florida',
+                away: 'Tennessee',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Texas',
+                away: 'Arkansas',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '12:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Texas A&M',
+                away: 'Samford',
+                location: 'Kyle Field, College Station, TX',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Texas State',
+                away: 'UL Monroe',
+                location: 'Texas State Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Texas Tech',
+                away: 'UCF',
+                location: 'Jones AT&T Stadium, Lubbock, TX',
+                time: '3:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Toledo',
+                away: 'Ball State',
+                location: 'Toledo Stadium',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Troy',
+                away: 'Georgia State',
+                location: 'Troy Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Temple',
+                away: 'Tulane',
+                location: 'Temple Stadium',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'Army',
+                away: 'Tulsa',
+                location: 'Army Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'UAB',
+                away: 'South Florida',
+                location: 'UAB Stadium',
+                time: '3:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'UCF',
+                away: 'Oklahoma State',
+                location: 'FBC Mortgage Stadium, Orlando, FL',
+                time: '12:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'UCLA',
+                away: 'Washington',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'UConn',
+                away: 'Air Force',
+                location: 'UConn Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Ohio',
+                away: 'UMass',
+                location: 'Ohio Stadium',
+                time: '7:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'UNLV',
+                away: 'Hawai'i',
+                location: 'UNLV Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 11'
+            },
+            {
+                home: 'Oregon',
+                away: 'USC',
+                location: 'Autzen Stadium, Eugene, OR',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 11'
+            },
+            {
+                home: 'UTEP',
+                away: 'New Mexico State',
+                location: 'UTEP Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'UTSA',
+                away: 'East Carolina',
+                location: 'UTSA Stadium',
+                time: '7:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 11'
+            },
+            {
+                home: 'Utah',
+                away: 'Kansas State',
+                location: 'Rice-Eccles Stadium, Salt Lake City, UT',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Fresno State',
+                away: 'Utah State',
+                location: 'Fresno State Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'Vanderbilt',
+                away: 'Kentucky',
+                location: 'FirstBank Stadium, Nashville, TN',
+                time: '10:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Duke',
+                away: 'Virginia',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 11'
+            },
+            {
+                home: 'Virginia Tech',
+                away: 'Miami',
+                location: 'Lane Stadium, Blacksburg, VA',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 11'
+            },
+            {
+                home: 'Wake Forest',
+                away: 'Delaware',
+                location: 'Allegacy Federal Credit Union Stadium, Winston-Salem, NC',
+                time: '7:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'UCLA',
+                away: 'Washington',
+                location: 'Rose Bowl, Pasadena, CA',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Arizona State',
+                away: 'West Virginia',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 11'
+            },
+            {
+                home: 'LSU',
+                away: 'Western Kentucky',
+                location: 'Tiger Stadium, Baton Rouge, LA',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 11'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'Western Michigan',
+                location: 'Northern Illinois Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 11'
+            },
+            {
+                home: 'Wisconsin',
+                away: 'Illinois',
+                location: 'Camp Randall Stadium, Madison, WI',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 11'
+            },
+            {
+                home: 'Wyoming',
+                away: 'Nevada',
+                location: 'Wyoming Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 11'
+            }
+        ];
+
+        // Week 12 games - 130 games
+        schedule[12] = [
+            {
+                home: 'Colorado State',
+                away: 'Air Force',
+                location: 'Colorado State Stadium',
+                time: '12:00 PM ET',
+                tv: 'CBS',
+                date: 'Week 12'
+            },
+            {
+                home: 'Bowling Green',
+                away: 'Akron',
+                location: 'Bowling Green Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Auburn',
+                away: 'Alabama',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'Appalachian State',
+                away: 'Arkansas State',
+                location: 'Appalachian State Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Arizona State',
+                away: 'Arizona',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Arizona State',
+                away: 'Arizona',
+                location: 'Sun Devil Stadium, Tempe, AZ',
+                time: '8:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Missouri',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'App State',
+                away: 'Arkansas State',
+                location: 'App State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Army',
+                away: 'Navy',
+                location: 'Army Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Auburn',
+                away: 'Alabama',
+                location: 'Jordan-Hare Stadium, Auburn, AL',
+                time: '7:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 12'
+            },
+            {
+                home: 'BYU',
+                away: 'UCF',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'Ball State',
+                location: 'Miami (OH) Stadium',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Baylor',
+                away: 'Houston',
+                location: 'McLane Stadium, Waco, TX',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'Utah State',
+                away: 'Boise State',
+                location: 'Utah State Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Syracuse',
+                away: 'Boston College',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '8:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 12'
+            },
+            {
+                home: 'Massachusetts',
+                away: 'Bowling Green',
+                location: 'Massachusetts Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Ohio',
+                location: 'Buffalo Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'California',
+                away: 'SMU',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Central Michigan',
+                away: 'Toledo',
+                location: 'Central Michigan Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Tulane',
+                away: 'Charlotte',
+                location: 'Tulane Stadium',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 12'
+            },
+            {
+                home: 'TCU',
+                away: 'Cincinnati',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Clemson',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '3:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 12'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'James Madison',
+                location: 'Coastal Carolina Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'Kansas State',
+                away: 'Colorado',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Colorado State',
+                away: 'Air Force',
+                location: 'Colorado State Stadium',
+                time: '12:00 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 12'
+            },
+            {
+                home: 'Duke',
+                away: 'Wake Forest',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'East Carolina',
+                location: 'Florida Atlantic Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Western Michigan',
+                location: 'Eastern Michigan Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 12'
+            },
+            {
+                home: 'Florida',
+                away: 'Florida State',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '7:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'East Carolina',
+                location: 'Florida Atlantic Stadium',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Sam Houston',
+                away: 'Florida International',
+                location: 'Sam Houston Stadium',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Florida',
+                away: 'Florida State',
+                location: 'Ben Hill Griffin Stadium, Gainesville, FL',
+                time: '7:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'San José State',
+                away: 'Fresno State',
+                location: 'San José State Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Georgia',
+                away: 'Georgia Tech',
+                location: 'Sanford Stadium, Athens, GA',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Marshall',
+                away: 'Georgia Southern',
+                location: 'Marshall Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'Georgia State',
+                location: 'Old Dominion Stadium',
+                time: '10:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Georgia Tech',
+                away: 'Georgia',
+                location: 'Bobby Dodd Stadium, Atlanta, GA',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 12'
+            },
+            {
+                home: 'Hawaii',
+                away: 'Wyoming',
+                location: 'Hawaii Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Baylor',
+                away: 'Houston',
+                location: 'McLane Stadium, Waco, TX',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Illinois',
+                away: 'Northwestern',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Purdue',
+                away: 'Indiana',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 12'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Iowa',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Iowa State',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Jacksonville State',
+                away: 'Western Kentucky',
+                location: 'Jacksonville State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Coastal Carolina',
+                away: 'James Madison',
+                location: 'Coastal Carolina Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Kansas',
+                away: 'Utah',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 12'
+            },
+            {
+                home: 'Kansas State',
+                away: 'Colorado',
+                location: 'Bill Snyder Family Stadium, Manhattan, KS',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'Kent State',
+                location: 'Northern Illinois Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Louisville',
+                away: 'Kentucky',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '7:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'LSU',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Liberty',
+                away: 'Kennesaw State',
+                location: 'Liberty Stadium',
+                time: '12:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Louisiana',
+                away: 'UL Monroe',
+                location: 'Louisiana Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Louisiana',
+                away: 'Louisiana Monroe',
+                location: 'Louisiana Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Missouri State',
+                away: 'Louisiana Tech',
+                location: 'Missouri State Stadium',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Louisville',
+                away: 'Kentucky',
+                location: 'L&N Federal Credit Union Stadium, Louisville, KY',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 12'
+            },
+            {
+                home: 'Marshall',
+                away: 'Georgia Southern',
+                location: 'Marshall Stadium',
+                time: '7:00 PM ET',
+                tv: 'NBC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Maryland',
+                away: 'Michigan State',
+                location: 'SECU Stadium, College Park, MD',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Memphis',
+                away: 'Navy',
+                location: 'Memphis Stadium',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Miami',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '7:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 12'
+            },
+            {
+                home: 'Miami (OH)',
+                away: 'Ball State',
+                location: 'Miami (OH) Stadium',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Michigan',
+                away: 'Ohio State',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Michigan State',
+                away: 'Maryland',
+                location: 'Spartan Stadium, East Lansing, MI',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'New Mexico State',
+                away: 'Middle Tennessee',
+                location: 'New Mexico State Stadium',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Wisconsin',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '7:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Mississippi',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '7:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Mississippi State',
+                away: 'Ole Miss',
+                location: 'Davis Wade Stadium, Starkville, MS',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Arkansas',
+                away: 'Missouri',
+                location: 'Reynolds Razorback Stadium, Fayetteville, AR',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'NC State',
+                away: 'North Carolina',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Navy',
+                away: 'Army',
+                location: 'Navy Stadium',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Nebraska',
+                away: 'Iowa',
+                location: 'Memorial Stadium, Lincoln, NE',
+                time: '3:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 12'
+            },
+            {
+                home: 'Nevada',
+                away: 'UNLV',
+                location: 'Nevada Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'New Mexico',
+                away: 'San Diego State',
+                location: 'New Mexico Stadium',
+                time: '8:00 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'New Mexico State',
+                away: 'Middle Tennessee',
+                location: 'New Mexico State Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'NC State',
+                away: 'North Carolina',
+                location: 'Carter-Finley Stadium, Raleigh, NC',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'North Texas',
+                away: 'Temple',
+                location: 'North Texas Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Northern Illinois',
+                away: 'Kent State',
+                location: 'Northern Illinois Stadium',
+                time: '8:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Illinois',
+                away: 'Northwestern',
+                location: 'Memorial Stadium, Champaign, IL',
+                time: '8:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Stanford',
+                away: 'Notre Dame',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '7:30 PM ET',
+                tv: 'FOX',
+                date: 'Week 12'
+            },
+            {
+                home: 'Buffalo',
+                away: 'Ohio',
+                location: 'Buffalo Stadium',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Michigan',
+                away: 'Ohio State',
+                location: 'Michigan Stadium, Ann Arbor, MI',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Oklahoma',
+                away: 'LSU',
+                location: 'Gaylord Family Oklahoma Memorial Stadium, Norman, OK',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Oklahoma State',
+                away: 'Iowa State',
+                location: 'Boone Pickens Stadium, Stillwater, OK',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Old Dominion',
+                away: 'Georgia State',
+                location: 'Old Dominion Stadium',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Washington',
+                away: 'Oregon',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '7:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Penn State',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Pittsburgh',
+                away: 'Miami',
+                location: 'Acrisure Stadium, Pittsburgh, PA',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Purdue',
+                away: 'Indiana',
+                location: 'Ross-Ade Stadium, West Lafayette, IN',
+                time: '8:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'South Florida',
+                away: 'Rice',
+                location: 'South Florida Stadium',
+                time: '3:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Rutgers',
+                away: 'Penn State',
+                location: 'SHI Stadium, Piscataway, NJ',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'California',
+                away: 'SMU',
+                location: 'California Memorial Stadium, Berkeley, CA',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Sam Houston',
+                away: 'Florida International',
+                location: 'Sam Houston Stadium',
+                time: '7:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 12'
+            },
+            {
+                home: 'New Mexico',
+                away: 'San Diego State',
+                location: 'New Mexico Stadium',
+                time: '10:30 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'San Jose State',
+                away: 'Fresno State',
+                location: 'San Jose State Stadium',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Texas State',
+                away: 'South Alabama',
+                location: 'Texas State Stadium',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'South Carolina',
+                away: 'Clemson',
+                location: 'Williams-Brice Stadium, Columbia, SC',
+                time: '12:00 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'South Florida',
+                away: 'Rice',
+                location: 'South Florida Stadium',
+                time: '10:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Stanford',
+                away: 'Notre Dame',
+                location: 'Stanford Stadium, Stanford, CA',
+                time: '3:30 PM ET',
+                tv: 'ESPN2',
+                date: 'Week 12'
+            },
+            {
+                home: 'Syracuse',
+                away: 'Boston College',
+                location: 'JMA Wireless Dome, Syracuse, NY',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'TCU',
+                away: 'Cincinnati',
+                location: 'Amon G. Carter Stadium, Fort Worth, TX',
+                time: '10:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'North Texas',
+                away: 'Temple',
+                location: 'North Texas Stadium',
+                time: '10:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Tennessee',
+                away: 'Vanderbilt',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '7:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Texas',
+                away: 'Texas A&M',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '7:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Texas',
+                away: 'Texas A&M',
+                location: 'DKR Texas Memorial Stadium, Austin, TX',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Texas State',
+                away: 'South Alabama',
+                location: 'Texas State Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big Ten Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'West Virginia',
+                away: 'Texas Tech',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '8:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Central Michigan',
+                away: 'Toledo',
+                location: 'Central Michigan Stadium',
+                time: '3:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Southern Miss',
+                away: 'Troy',
+                location: 'Southern Miss Stadium',
+                time: '12:00 PM ET',
+                tv: 'FOX',
+                date: 'Week 12'
+            },
+            {
+                home: 'Tulane',
+                away: 'Charlotte',
+                location: 'Tulane Stadium',
+                time: '12:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Tulsa',
+                away: 'UAB',
+                location: 'Tulsa Stadium',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'Tulsa',
+                away: 'UAB',
+                location: 'Tulsa Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'BYU',
+                away: 'UCF',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '12:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'USC',
+                away: 'UCLA',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '7:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Florida Atlantic',
+                away: 'UConn',
+                location: 'Florida Atlantic Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'UMass',
+                away: 'Bowling Green',
+                location: 'UMass Stadium',
+                time: '10:30 PM ET',
+                tv: 'NBC',
+                date: 'Week 12'
+            },
+            {
+                home: 'Nevada',
+                away: 'UNLV',
+                location: 'Nevada Stadium',
+                time: '3:30 PM ET',
+                tv: 'ABC',
+                date: 'Week 12'
+            },
+            {
+                home: 'USC',
+                away: 'UCLA',
+                location: 'Los Angeles Memorial Coliseum, Los Angeles, CA',
+                time: '10:30 PM ET',
+                tv: 'CBS',
+                date: 'Week 12'
+            },
+            {
+                home: 'Delaware',
+                away: 'UTEP',
+                location: 'Delaware Stadium',
+                time: '3:30 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'UTSA',
+                away: 'Army',
+                location: 'UTSA Stadium',
+                time: '12:00 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Kansas',
+                away: 'Utah',
+                location: 'David Booth Kansas Memorial Stadium, Lawrence, KS',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Utah State',
+                away: 'Boise State',
+                location: 'Utah State Stadium',
+                time: '8:00 PM ET',
+                tv: 'ACC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Tennessee',
+                away: 'Vanderbilt',
+                location: 'Neyland Stadium, Knoxville, TN',
+                time: '7:00 PM ET',
+                tv: 'ESPN',
+                date: 'Week 12'
+            },
+            {
+                home: 'Virginia',
+                away: 'Virginia Tech',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '12:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'Virginia',
+                away: 'Virginia Tech',
+                location: 'Scott Stadium, Charlottesville, VA',
+                time: '7:30 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Duke',
+                away: 'Wake Forest',
+                location: 'Wallace Wade Stadium, Durham, NC',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Washington',
+                away: 'Oregon',
+                location: 'Husky Stadium, Seattle, WA',
+                time: '8:00 PM ET',
+                tv: 'ESPN+',
+                date: 'Week 12'
+            },
+            {
+                home: 'West Virginia',
+                away: 'Texas Tech',
+                location: 'Milan Puskar Stadium, Morgantown, WV',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Jacksonville State',
+                away: 'Western Kentucky',
+                location: 'Jacksonville State Stadium',
+                time: '10:30 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Eastern Michigan',
+                away: 'Western Michigan',
+                location: 'Eastern Michigan Stadium',
+                time: '12:00 PM ET',
+                tv: 'SEC Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Minnesota',
+                away: 'Wisconsin',
+                location: 'Huntington Bank Stadium, Minneapolis, MN',
+                time: '7:00 PM ET',
+                tv: 'Big 12 Network',
+                date: 'Week 12'
+            },
+            {
+                home: 'Hawai'i',
+                away: 'Wyoming',
+                location: 'Hawai'i Stadium',
+                time: '3:30 PM ET',
+                tv: 'Pac-12 Network',
+                date: 'Week 12'
+            }
+        ];
+
+        return schedule;
+    };
         
         // Complete 2025 College Football Schedule - All Weeks
         // Week 1 games with complete details - 90+ games
