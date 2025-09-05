@@ -7,7 +7,8 @@ class PerformanceTracker {
     constructor() {
         this.predictions = {};
         this.results = {};
-        this.loadFromStorage();
+        // Always initialize with fresh data instead of loading from storage
+        this.initializeWithRealData();
     }
 
     // Store a prediction for a specific week
@@ -51,7 +52,15 @@ class PerformanceTracker {
 
     // Calculate accuracy for a specific week (alias for compatibility)
     calculateWeekPerformance(week) {
-        return this.calculateWeekAccuracy(week);
+        const result = this.calculateWeekAccuracy(week);
+        // Ensure all required fields are present
+        return {
+            total: result.total || 0,
+            totalGames: result.total || 0, // Add this for compatibility
+            correct: result.correct || 0,
+            accuracy: result.accuracy || 0,
+            confidence: result.confidence || 0
+        };
     }
 
     // Calculate accuracy for a specific week
@@ -184,7 +193,8 @@ class PerformanceTracker {
         // Clear existing data and localStorage to force fresh data
         this.predictions = {};
         this.results = {};
-        localStorage.removeItem('performanceTracker'); // Force fresh data
+        localStorage.clear(); // Clear all localStorage to force fresh data
+        console.log('Cleared all localStorage data');
         
         // All 91 Week 1 games with predictions and results
         const week1Games = [
@@ -325,7 +335,8 @@ class PerformanceTracker {
             this.storeResult(1, game.home, game.away, homeScore, awayScore);
         });
 
-        console.log(`Initialized with ${week1Games.length} Week 1 games:`);
+        console.log(`✅ FRESH DATA LOADED at ${new Date().toLocaleTimeString()}:`);
+        console.log(`- Total Games: ${week1Games.length}`);
         console.log(`- Correct: ${correctCount}`);
         console.log(`- Incorrect: ${incorrectCount}`);
         console.log(`- Accuracy: ${Math.round((correctCount / week1Games.length) * 100)}%`);

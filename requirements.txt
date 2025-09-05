@@ -1,0 +1,23 @@
+# Weekly College Football Model Update System Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core data processing
+requests>=2.31.0
+pandas>=2.0.0
+
+# Git operations
+gitpython>=3.1.0
+
+# Optional: For enhanced data analysis
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Optional: For web scraping (if needed)
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Optional: For API rate limiting
+ratelimit>=2.2.1
+
+# Optional: For progress bars
+tqdm>=4.65.0
