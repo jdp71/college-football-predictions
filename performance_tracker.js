@@ -49,6 +49,11 @@ class PerformanceTracker {
         this.saveToStorage();
     }
 
+    // Calculate accuracy for a specific week (alias for compatibility)
+    calculateWeekPerformance(week) {
+        return this.calculateWeekAccuracy(week);
+    }
+
     // Calculate accuracy for a specific week
     calculateWeekAccuracy(week) {
         if (!this.predictions[week] || !this.results[week]) {
