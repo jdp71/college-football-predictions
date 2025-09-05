@@ -360,6 +360,14 @@ class MLPredictionSystem {
                 time: '12:00 PM ET',
                 tv: 'Big Ten Network',
                 date: 'Saturday, September 7, 2025'
+            },
+            {
+                home: 'BYU',
+                away: 'Stanford',
+                location: 'LaVell Edwards Stadium, Provo, UT',
+                time: '10:15 PM ET',
+                tv: 'ESPN',
+                date: 'Saturday, September 7, 2025'
             }
         ];
         
