@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comprehensive App Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 2px solid #ccc; border-radius: 5px; }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        .info { background-color: #d1ecf1; border-color: #bee5eb; }
+        .warning { background-color: #fff3cd; border-color: #ffeaa7; }
+        pre { background-color: #f8f9fa; padding: 10px; border-radius: 3px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive College Football App Test</h1>
+    <div id="results"></div>
+    
+    <script src="performance_tracker.js?v=comprehensive"></script>
+    <script src="app.js?v=comprehensive"></script>
+    <script>
+        function addSection(title, content, type = 'info') {
+            const div = document.createElement('div');
+            div.className = `test-section ${type}`;
+            div.innerHTML = `<h3>${title}</h3>${content}`;
+            document.getElementById('results').appendChild(div);
+        }
+        
+        function runComprehensiveTests() {
+            console.log('Starting comprehensive tests...');
+            
+            // Test 1: Basic App Initialization
+            let basicTests = '<ul>';
+            basicTests += `<li>PerformanceTracker: ${window.performanceTracker ? '✅ Available' : '❌ Missing'}</li>`;
+            basicTests += `<li>Predictor: ${window.predictor ? '✅ Available' : '❌ Missing'}</li>`;
+            basicTests += '</ul>';
+            addSection('Basic App Initialization', basicTests, 
+                (window.performanceTracker && window.predictor) ? 'success' : 'error');
+            
+            // Test 2: Teams Loading
+            let teamsInfo = '';
+            if (window.predictor && window.predictor.teams) {
+                teamsInfo = `<p><strong>✅ Teams loaded successfully!</strong></p>`;
+                teamsInfo += `<p>Total teams: ${window.predictor.teams.length}</p>`;
+                teamsInfo += `<p>First 10 teams: ${window.predictor.teams.slice(0, 10).join(', ')}</p>`;
+                teamsInfo += `<p>Sample teams: ${window.predictor.teams.filter(t => t.includes('BYU') || t.includes('Stanford') || t.includes('Alabama')).join(', ')}</p>`;
+                addSection('Teams Loading', teamsInfo, 'success');
+            } else {
+                teamsInfo = '<p><strong>❌ Teams NOT loaded</strong></p>';
+                if (window.predictor) {
+                    teamsInfo += `<p>Predictor exists but teams array is: ${typeof window.predictor.teams}</p>`;
+                }
+                addSection('Teams Loading', teamsInfo, 'error');
+            }
+            
+            // Test 3: Schedule Loading
+            let scheduleInfo = '';
+            if (window.predictor && window.predictor.schedule) {
+                const week1Games = window.predictor.schedule[1];
+                const week2Games = window.predictor.schedule[2];
+                if (week1Games && week2Games) {
+                    scheduleInfo = `<p><strong>✅ Schedule loaded successfully!</strong></p>`;
+                    scheduleInfo += `<p>Week 1 games: ${week1Games.length}</p>`;
+                    scheduleInfo += `<p>Week 2 games: ${week2Games.length}</p>`;
+                    
+                    // Check for BYU vs Stanford in Week 2
+                    const byuStanford = week2Games.find(game => 
+                        (game.home === 'BYU' && game.away === 'Stanford') || 
+                        (game.home === 'Stanford' && game.away === 'BYU')
+                    );
+                    if (byuStanford) {
+                        scheduleInfo += `<p>✅ BYU vs Stanford found in Week 2: ${byuStanford.home} vs ${byuStanford.away}</p>`;
+                    } else {
+                        scheduleInfo += `<p>❌ BYU vs Stanford NOT found in Week 2</p>`;
+                    }
+                    
+                    scheduleInfo += `<p>First Week 1 game: ${week1Games[0].home} vs ${week1Games[0].away}</p>`;
+                    addSection('Schedule Loading', scheduleInfo, 'success');
+                } else {
+                    scheduleInfo = '<p><strong>❌ Schedule structure incomplete</strong></p>';
+                    addSection('Schedule Loading', scheduleInfo, 'error');
+                }
+            } else {
+                scheduleInfo = '<p><strong>❌ Schedule NOT loaded</strong></p>';
+                addSection('Schedule Loading', scheduleInfo, 'error');
+            }
+            
+            // Test 4: Performance Tracker
+            let perfInfo = '';
+            if (window.performanceTracker) {
+                try {
+                    const seasonPerf = window.performanceTracker.calculateSeasonPerformance();
+                    perfInfo = `<p><strong>✅ Performance tracker working!</strong></p>`;
+                    perfInfo += `<p>Season performance: ${JSON.stringify(seasonPerf, null, 2)}</p>`;
+                    
+                    const week1Perf = window.performanceTracker.calculateWeekPerformance(1);
+                    perfInfo += `<p>Week 1 performance: ${JSON.stringify(week1Perf, null, 2)}</p>`;
+                    
+                    addSection('Performance Tracker', perfInfo, 'success');
+                } catch (error) {
+                    perfInfo = `<p><strong>❌ Performance tracker error</strong></p>`;
+                    perfInfo += `<p>Error: ${error.message}</p>`;
+                    perfInfo += `<pre>${error.stack}</pre>`;
+                    addSection('Performance Tracker', perfInfo, 'error');
+                }
+            } else {
+                perfInfo = '<p><strong>❌ Performance tracker NOT available</strong></p>';
+                addSection('Performance Tracker', perfInfo, 'error');
+            }
+            
+            // Test 5: Team Dropdown Functionality
+            let dropdownInfo = '';
+            if (window.predictor && window.predictor.teams && window.predictor.teams.length > 0) {
+                dropdownInfo = `<p><strong>✅ Team dropdown should work!</strong></p>`;
+                dropdownInfo += `<p>Teams available for dropdown: ${window.predictor.teams.length}</p>`;
+                
+                // Test if populateTeamDropdown function exists
+                if (typeof window.populateTeamDropdown === 'function') {
+                    dropdownInfo += `<p>✅ populateTeamDropdown function available</p>`;
+                } else {
+                    dropdownInfo += `<p>❌ populateTeamDropdown function NOT available</p>`;
+                }
+                addSection('Team Dropdown', dropdownInfo, 'success');
+            } else {
+                dropdownInfo = '<p><strong>❌ Team dropdown will NOT work - no teams loaded</strong></p>';
+                addSection('Team Dropdown', dropdownInfo, 'error');
+            }
+            
+            // Test 6: Performance Dashboard Functionality
+            let dashboardInfo = '';
+            if (window.performanceTracker && typeof window.updatePerformanceDashboard === 'function') {
+                dashboardInfo = `<p><strong>✅ Performance dashboard should work!</strong></p>`;
+                dashboardInfo += `<p>updatePerformanceDashboard function available</p>`;
+                dashboardInfo += `<p>initPerformanceDashboard function: ${typeof window.initPerformanceDashboard === 'function' ? 'Available' : 'Missing'}</p>`;
+                addSection('Performance Dashboard', dashboardInfo, 'success');
+            } else {
+                dashboardInfo = '<p><strong>❌ Performance dashboard will NOT work</strong></p>';
+                if (!window.performanceTracker) {
+                    dashboardInfo += `<p>Performance tracker missing</p>`;
+                }
+                if (typeof window.updatePerformanceDashboard !== 'function') {
+                    dashboardInfo += `<p>updatePerformanceDashboard function missing</p>`;
+                }
+                addSection('Performance Dashboard', dashboardInfo, 'error');
+            }
+            
+            console.log('Comprehensive tests completed');
+        }
+        
+        // Run tests after initialization
+        setTimeout(runComprehensiveTests, 3000);
+    </script>
+</body>
+</html>

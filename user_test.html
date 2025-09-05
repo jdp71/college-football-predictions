@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Experience Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-result { margin: 10px 0; padding: 10px; border-radius: 5px; }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .info { background-color: #d1ecf1; color: #0c5460; }
+        select { padding: 5px; margin: 5px; }
+        button { padding: 10px 20px; margin: 5px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        #teamDropdown { width: 200px; }
+        #weekDropdown { width: 100px; }
+    </style>
+</head>
+<body>
+    <h1>User Experience Test</h1>
+    <p>This simulates what the user would see in the actual app.</p>
+    
+    <div>
+        <h3>Team Selection Test:</h3>
+        <select id="teamDropdown">
+            <option value="">Select a Team...</option>
+        </select>
+        <div id="teamResult" class="test-result info">Teams loading...</div>
+    </div>
+    
+    <div>
+        <h3>Week Selection Test:</h3>
+        <select id="weekDropdown">
+            <option value="">Select Week...</option>
+        </select>
+        <div id="weekResult" class="test-result info">Weeks loading...</div>
+    </div>
+    
+    <div>
+        <h3>Performance Dashboard Test:</h3>
+        <button onclick="testPerformanceDashboard()">Test Performance Dashboard</button>
+        <div id="perfResult" class="test-result info">Click button to test</div>
+    </div>
+    
+    <div>
+        <h3>Game Search Test:</h3>
+        <input type="text" id="gameSearch" placeholder="Search for a game (e.g., BYU vs Stanford)" style="width: 300px; padding: 5px;">
+        <button onclick="searchGame()">Search</button>
+        <div id="searchResult" class="test-result info">Enter a game to search</div>
+    </div>
+    
+    <script src="performance_tracker.js?v=user-test"></script>
+    <script src="app.js?v=user-test"></script>
+    <script>
+        function updateTeamDropdown() {
+            const dropdown = document.getElementById('teamDropdown');
+            const result = document.getElementById('teamResult');
+            
+            if (window.predictor && window.predictor.teams) {
+                // Clear existing options
+                dropdown.innerHTML = '<option value="">Select a Team...</option>';
+                
+                // Add teams
+                window.predictor.teams.forEach(team => {
+                    const option = document.createElement('option');
+                    option.value = team;
+                    option.textContent = team;
+                    dropdown.appendChild(option);
+                });
+                
+                result.className = 'test-result success';
+                result.textContent = `✅ ${window.predictor.teams.length} teams loaded successfully!`;
+            } else {
+                result.className = 'test-result error';
+                result.textContent = '❌ No teams available';
+            }
+        }
+        
+        function updateWeekDropdown() {
+            const dropdown = document.getElementById('weekDropdown');
+            const result = document.getElementById('weekResult');
+            
+            if (window.predictor && window.predictor.schedule) {
+                // Clear existing options
+                dropdown.innerHTML = '<option value="">Select Week...</option>';
+                
+                // Add weeks
+                for (let week = 1; week <= 15; week++) {
+                    if (window.predictor.schedule[week]) {
+                        const option = document.createElement('option');
+                        option.value = week;
+                        option.textContent = `Week ${week}`;
+                        dropdown.appendChild(option);
+                    }
+                }
+                
+                result.className = 'test-result success';
+                result.textContent = `✅ ${Object.keys(window.predictor.schedule).length} weeks available`;
+            } else {
+                result.className = 'test-result error';
+                result.textContent = '❌ No schedule available';
+            }
+        }
+        
+        function testPerformanceDashboard() {
+            const result = document.getElementById('perfResult');
+            
+            if (window.performanceTracker) {
+                try {
+                    const seasonPerf = window.performanceTracker.calculateSeasonPerformance();
+                    result.className = 'test-result success';
+                    result.innerHTML = `
+                        ✅ Performance Dashboard Working!<br>
+                        Total Games: ${seasonPerf.totalGames}<br>
+                        Accuracy: ${seasonPerf.accuracy}%<br>
+                        Correct: ${seasonPerf.correct}<br>
+                        Incorrect: ${seasonPerf.incorrect}
+                    `;
+                } catch (error) {
+                    result.className = 'test-result error';
+                    result.textContent = `❌ Performance Dashboard Error: ${error.message}`;
+                }
+            } else {
+                result.className = 'test-result error';
+                result.textContent = '❌ Performance Tracker not available';
+            }
+        }
+        
+        function searchGame() {
+            const searchTerm = document.getElementById('gameSearch').value.toLowerCase();
+            const result = document.getElementById('searchResult');
+            
+            if (!searchTerm) {
+                result.className = 'test-result info';
+                result.textContent = 'Please enter a search term';
+                return;
+            }
+            
+            if (window.predictor && window.predictor.schedule) {
+                let found = false;
+                let foundGames = [];
+                
+                // Search through all weeks
+                for (let week = 1; week <= 15; week++) {
+                    if (window.predictor.schedule[week]) {
+                        const games = window.predictor.schedule[week];
+                        games.forEach(game => {
+                            const gameString = `${game.home} vs ${game.away}`.toLowerCase();
+                            if (gameString.includes(searchTerm)) {
+                                found = true;
+                                foundGames.push(`Week ${week}: ${game.home} vs ${game.away}`);
+                            }
+                        });
+                    }
+                }
+                
+                if (found) {
+                    result.className = 'test-result success';
+                    result.innerHTML = `✅ Found ${foundGames.length} game(s):<br>${foundGames.join('<br>')}`;
+                } else {
+                    result.className = 'test-result error';
+                    result.textContent = `❌ No games found for "${searchTerm}"`;
+                }
+            } else {
+                result.className = 'test-result error';
+                result.textContent = '❌ Schedule not available';
+            }
+        }
+        
+        // Initialize after app loads
+        setTimeout(() => {
+            updateTeamDropdown();
+            updateWeekDropdown();
+        }, 2000);
+    </script>
+</body>
+</html>
