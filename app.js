@@ -841,6 +841,9 @@ function updatePerformanceDashboard() {
         // Update Season Overview
         const seasonPerf = window.performanceTracker.calculateSeasonPerformance();
         console.log('Season performance:', seasonPerf);
+        console.log('Total games in seasonPerf:', seasonPerf.totalGames);
+        console.log('Correct in seasonPerf:', seasonPerf.correct);
+        console.log('Incorrect in seasonPerf:', seasonPerf.incorrect);
         
         if (!seasonPerf) {
             console.error('Failed to calculate season performance');
@@ -880,6 +883,11 @@ function updatePerformanceDashboard() {
 
         // Update Current Week Performance
         const currentWeekPerf = window.performanceTracker.calculateWeekPerformance(1);
+        console.log('Week 1 performance:', currentWeekPerf);
+        console.log('Week 1 total games:', currentWeekPerf.total);
+        console.log('Week 1 correct:', currentWeekPerf.correct);
+        console.log('Week 1 incorrect:', currentWeekPerf.total - currentWeekPerf.correct);
+        
         const currentWeekPerformance = document.getElementById('currentWeekPerformance');
         if (currentWeekPerformance) {
             currentWeekPerformance.innerHTML = `

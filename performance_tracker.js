@@ -181,9 +181,10 @@ class PerformanceTracker {
     initializeWithRealData() {
         console.log('Initializing performance tracker with all 91 Week 1 games...');
         
-        // Clear existing data
+        // Clear existing data and localStorage to force fresh data
         this.predictions = {};
         this.results = {};
+        localStorage.removeItem('performanceTracker'); // Force fresh data
         
         // All 91 Week 1 games with predictions and results
         const week1Games = [
@@ -290,12 +291,17 @@ class PerformanceTracker {
         ];
 
         // Add all predictions and results
+        console.log(`Processing ${week1Games.length} games...`);
+        let correctCount = 0;
+        let incorrectCount = 0;
+        
         week1Games.forEach((game, index) => {
             this.storePrediction(1, game.home, game.away, game.homeWinProb, game.confidence);
             
             // Create realistic scores based on prediction correctness
             let homeScore, awayScore;
             if (game.correct) {
+                correctCount++;
                 // If prediction was correct, use the predicted winner
                 if (game.homeWinProb > 0.5) {
                     homeScore = 28 + Math.floor(Math.random() * 14); // 28-41
@@ -305,6 +311,7 @@ class PerformanceTracker {
                     awayScore = 28 + Math.floor(Math.random() * 14); // 28-41
                 }
             } else {
+                incorrectCount++;
                 // If prediction was wrong, use the opposite
                 if (game.homeWinProb > 0.5) {
                     homeScore = 14 + Math.floor(Math.random() * 14); // 14-27
@@ -318,7 +325,10 @@ class PerformanceTracker {
             this.storeResult(1, game.home, game.away, homeScore, awayScore);
         });
 
-        console.log('Initialized with all 91 Week 1 games (49.5% accuracy: 45 correct, 46 incorrect)');
+        console.log(`Initialized with ${week1Games.length} Week 1 games:`);
+        console.log(`- Correct: ${correctCount}`);
+        console.log(`- Incorrect: ${incorrectCount}`);
+        console.log(`- Accuracy: ${Math.round((correctCount / week1Games.length) * 100)}%`);
         this.saveToStorage();
     }
 }
