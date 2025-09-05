@@ -13984,6 +13984,9 @@ class MLPredictionSystem {
 // Initialize the ML prediction system
 const predictor = new MLPredictionSystem();
 
+// Initialize the performance tracker
+window.performanceTracker = new PerformanceTracker();
+
 // DOM elements
 const weekSelect = document.getElementById('singleWeek');
 const teamSelect = document.getElementById('teamSelect');
