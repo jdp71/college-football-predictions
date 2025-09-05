@@ -65,9 +65,19 @@ class PerformanceTracker {
 
     // Calculate accuracy for a specific week
     calculateWeekAccuracy(week) {
+        console.log(`Calculating week ${week} accuracy...`);
+        console.log('Predictions:', this.predictions[week]);
+        console.log('Results:', this.results[week]);
+        
         if (!this.predictions[week] || !this.results[week]) {
+            console.log('Missing predictions or results for week', week);
             return { total: 0, correct: 0, accuracy: 0, confidence: 0 };
         }
+
+        const predictionKeys = Object.keys(this.predictions[week]);
+        const resultKeys = Object.keys(this.results[week]);
+        console.log(`Prediction keys: ${predictionKeys.length}`, predictionKeys.slice(0, 5));
+        console.log(`Result keys: ${resultKeys.length}`, resultKeys.slice(0, 5));
 
         let total = 0;
         let correct = 0;
@@ -87,8 +97,12 @@ class PerformanceTracker {
                 }
                 
                 totalConfidence += prediction.confidence;
+            } else {
+                console.log(`Missing result for game: ${gameKey}`);
             }
         }
+
+        console.log(`Week ${week} calculation: total=${total}, correct=${correct}, accuracy=${total > 0 ? Math.round((correct / total) * 100) : 0}%`);
 
         return {
             total,
@@ -100,24 +114,32 @@ class PerformanceTracker {
 
     // Calculate overall season performance
     calculateSeasonPerformance() {
+        console.log('Calculating season performance...');
+        console.log('Available weeks:', Object.keys(this.predictions));
+        
         let totalGames = 0;
         let totalCorrect = 0;
         let totalConfidence = 0;
 
         for (const week in this.predictions) {
+            console.log(`Processing week ${week}...`);
             const weekPerf = this.calculateWeekAccuracy(parseInt(week));
+            console.log(`Week ${week} performance:`, weekPerf);
             totalGames += weekPerf.total;
             totalCorrect += weekPerf.correct;
             totalConfidence += weekPerf.confidence * weekPerf.total;
         }
 
-        return {
+        const result = {
             totalGames,
             correct: totalCorrect,
             incorrect: totalGames - totalCorrect,
             accuracy: totalGames > 0 ? Math.round((totalCorrect / totalGames) * 100) : 0,
             confidence: totalGames > 0 ? Math.round((totalConfidence / totalGames)) : 0
         };
+        
+        console.log('Season performance result:', result);
+        return result;
     }
 
     // Get detailed results for a specific week
