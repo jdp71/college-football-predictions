@@ -5,9 +5,11 @@
 
 class PerformanceTracker {
     constructor() {
+        console.log('🚀 PerformanceTracker constructor called');
         this.predictions = {};
         this.results = {};
         // Always initialize with fresh data instead of loading from storage
+        console.log('📊 About to initialize with fresh data...');
         this.initializeWithRealData();
     }
 
@@ -173,6 +175,11 @@ class PerformanceTracker {
         return results.sort((a, b) => b.confidence - a.confidence);
     }
 
+    // Alias for compatibility (getWeekDetails)
+    getWeekDetails(week) {
+        return this.getWeekResults(week);
+    }
+
     // Save data to localStorage
     saveToStorage() {
         try {
@@ -185,20 +192,12 @@ class PerformanceTracker {
         }
     }
 
-    // Load data from localStorage
+    // Load data from localStorage (DISABLED - always use fresh data)
     loadFromStorage() {
-        try {
-            const data = localStorage.getItem('performanceTracker');
-            if (data) {
-                const parsed = JSON.parse(data);
-                this.predictions = parsed.predictions || {};
-                this.results = parsed.results || {};
-            }
-        } catch (error) {
-            console.error('Error loading from localStorage:', error);
-            this.predictions = {};
-            this.results = {};
-        }
+        console.log('loadFromStorage() called but disabled - using fresh data instead');
+        // Always use fresh data instead of loading from storage
+        this.predictions = {};
+        this.results = {};
     }
 
     // Clear all data
