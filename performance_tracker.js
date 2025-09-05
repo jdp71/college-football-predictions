@@ -67,19 +67,21 @@ class PerformanceTracker {
 
     // Calculate accuracy for a specific week
     calculateWeekAccuracy(week) {
-        console.log(`Calculating week ${week} accuracy...`);
-        console.log('Predictions:', this.predictions[week]);
-        console.log('Results:', this.results[week]);
+        console.log(`🔍 CALCULATING week ${week} accuracy...`);
+        console.log('🔍 Predictions object:', this.predictions[week]);
+        console.log('🔍 Results object:', this.results[week]);
         
         if (!this.predictions[week] || !this.results[week]) {
-            console.log('Missing predictions or results for week', week);
+            console.log('❌ Missing predictions or results for week', week);
             return { total: 0, correct: 0, accuracy: 0, confidence: 0 };
         }
 
         const predictionKeys = Object.keys(this.predictions[week]);
         const resultKeys = Object.keys(this.results[week]);
-        console.log(`Prediction keys: ${predictionKeys.length}`, predictionKeys.slice(0, 5));
-        console.log(`Result keys: ${resultKeys.length}`, resultKeys.slice(0, 5));
+        console.log(`🔍 Prediction keys: ${predictionKeys.length}`, predictionKeys.slice(0, 5));
+        console.log(`🔍 Result keys: ${resultKeys.length}`, resultKeys.slice(0, 5));
+        console.log(`🔍 All prediction keys:`, predictionKeys);
+        console.log(`🔍 All result keys:`, resultKeys);
 
         let total = 0;
         let correct = 0;
@@ -361,6 +363,13 @@ class PerformanceTracker {
         console.log(`- Correct: ${correctCount}`);
         console.log(`- Incorrect: ${incorrectCount}`);
         console.log(`- Accuracy: ${Math.round((correctCount / week1Games.length) * 100)}%`);
+        
+        // Debug: Check what was actually stored
+        console.log(`🔍 DEBUG: Stored predictions for week 1:`, Object.keys(this.predictions[1] || {}).length);
+        console.log(`🔍 DEBUG: Stored results for week 1:`, Object.keys(this.results[1] || {}).length);
+        console.log(`🔍 DEBUG: First 5 prediction keys:`, Object.keys(this.predictions[1] || {}).slice(0, 5));
+        console.log(`🔍 DEBUG: First 5 result keys:`, Object.keys(this.results[1] || {}).slice(0, 5));
+        
         this.saveToStorage();
     }
 }
