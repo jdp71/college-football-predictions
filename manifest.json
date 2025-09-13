@@ -1,12 +1,12 @@
-
 {
-  "name": "College Football Predictor",
+  "name": "College Football Predictor 2025",
   "short_name": "CFB Predictor",
-  "start_url": "/college-football-predictions/index.html",
+  "description": "Advanced ML-Powered College Football Predictions",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#667eea",
-  "theme_color": "#667eea",
-  "scope": "/college-football-predictions/",
+  "background_color": "#1a365d",
+  "theme_color": "#ffd700",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
@@ -18,5 +18,7 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "categories": ["sports", "entertainment", "utilities"],
+  "lang": "en-US"
 }
