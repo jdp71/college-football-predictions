@@ -1,0 +1,2564 @@
+{
+  "teams": [
+    {
+      "name": "Georgia",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 2,
+        "defensiveRating": 1,
+        "efficiencyRating": 5,
+        "advancedRating": 4,
+        "pointsPerPlay": 0.47,
+        "yardsPerPlay": 7.2,
+        "completionRate": 0.72,
+        "thirdDownRate": 0.49,
+        "redZoneRate": 0.81,
+        "oppPointsPerPlay": 0.29,
+        "oppYardsPerPlay": 4.5,
+        "oppCompletionRate": 0.52,
+        "oppThirdDownRate": 0.35,
+        "oppRedZoneRate": 0.7
+      }
+    },
+    {
+      "name": "Alabama",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 4,
+        "defensiveRating": 9,
+        "efficiencyRating": 7,
+        "advancedRating": 4,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.8,
+        "completionRate": 0.74,
+        "thirdDownRate": 0.48,
+        "redZoneRate": 0.82,
+        "oppPointsPerPlay": 0.29,
+        "oppYardsPerPlay": 4.8,
+        "oppCompletionRate": 0.52,
+        "oppThirdDownRate": 0.38,
+        "oppRedZoneRate": 0.71
+      }
+    },
+    {
+      "name": "Michigan",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 7,
+        "defensiveRating": 2,
+        "efficiencyRating": 6,
+        "advancedRating": 6,
+        "pointsPerPlay": 0.51,
+        "yardsPerPlay": 7.3,
+        "completionRate": 0.72,
+        "thirdDownRate": 0.45,
+        "redZoneRate": 0.9,
+        "oppPointsPerPlay": 0.29,
+        "oppYardsPerPlay": 5.1,
+        "oppCompletionRate": 0.58,
+        "oppThirdDownRate": 0.36,
+        "oppRedZoneRate": 0.79
+      }
+    },
+    {
+      "name": "Ohio State",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 10,
+        "defensiveRating": 4,
+        "efficiencyRating": 2,
+        "advancedRating": 1,
+        "pointsPerPlay": 0.52,
+        "yardsPerPlay": 7.3,
+        "completionRate": 0.75,
+        "thirdDownRate": 0.49,
+        "redZoneRate": 0.89,
+        "oppPointsPerPlay": 0.29,
+        "oppYardsPerPlay": 5.0,
+        "oppCompletionRate": 0.58,
+        "oppThirdDownRate": 0.32,
+        "oppRedZoneRate": 0.74
+      }
+    },
+    {
+      "name": "Texas",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 5,
+        "defensiveRating": 2,
+        "efficiencyRating": 10,
+        "advancedRating": 3,
+        "pointsPerPlay": 0.5,
+        "yardsPerPlay": 6.7,
+        "completionRate": 0.7,
+        "thirdDownRate": 0.43,
+        "redZoneRate": 0.89,
+        "oppPointsPerPlay": 0.32,
+        "oppYardsPerPlay": 4.7,
+        "oppCompletionRate": 0.53,
+        "oppThirdDownRate": 0.38,
+        "oppRedZoneRate": 0.71
+      }
+    },
+    {
+      "name": "Oregon",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 1,
+        "defensiveRating": 6,
+        "efficiencyRating": 7,
+        "advancedRating": 5,
+        "pointsPerPlay": 0.46,
+        "yardsPerPlay": 7.4,
+        "completionRate": 0.71,
+        "thirdDownRate": 0.47,
+        "redZoneRate": 0.82,
+        "oppPointsPerPlay": 0.3,
+        "oppYardsPerPlay": 5.4,
+        "oppCompletionRate": 0.56,
+        "oppThirdDownRate": 0.31,
+        "oppRedZoneRate": 0.71
+      }
+    },
+    {
+      "name": "Penn State",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 9,
+        "defensiveRating": 9,
+        "efficiencyRating": 5,
+        "advancedRating": 10,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 7.1,
+        "completionRate": 0.69,
+        "thirdDownRate": 0.5,
+        "redZoneRate": 0.81,
+        "oppPointsPerPlay": 0.3,
+        "oppYardsPerPlay": 5.3,
+        "oppCompletionRate": 0.59,
+        "oppThirdDownRate": 0.32,
+        "oppRedZoneRate": 0.72
+      }
+    },
+    {
+      "name": "Notre Dame",
+      "conference": "Independent",
+      "stats": {
+        "offensiveRating": 7,
+        "defensiveRating": 10,
+        "efficiencyRating": 2,
+        "advancedRating": 7,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 7.5,
+        "completionRate": 0.7,
+        "thirdDownRate": 0.5,
+        "redZoneRate": 0.89,
+        "oppPointsPerPlay": 0.25,
+        "oppYardsPerPlay": 5.2,
+        "oppCompletionRate": 0.57,
+        "oppThirdDownRate": 0.35,
+        "oppRedZoneRate": 0.73
+      }
+    },
+    {
+      "name": "LSU",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 6,
+        "defensiveRating": 2,
+        "efficiencyRating": 5,
+        "advancedRating": 7,
+        "pointsPerPlay": 0.47,
+        "yardsPerPlay": 6.5,
+        "completionRate": 0.72,
+        "thirdDownRate": 0.47,
+        "redZoneRate": 0.9,
+        "oppPointsPerPlay": 0.33,
+        "oppYardsPerPlay": 5.0,
+        "oppCompletionRate": 0.51,
+        "oppThirdDownRate": 0.36,
+        "oppRedZoneRate": 0.78
+      }
+    },
+    {
+      "name": "Florida State",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 9,
+        "defensiveRating": 10,
+        "efficiencyRating": 4,
+        "advancedRating": 3,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.7,
+        "completionRate": 0.75,
+        "thirdDownRate": 0.49,
+        "redZoneRate": 0.89,
+        "oppPointsPerPlay": 0.31,
+        "oppYardsPerPlay": 5.0,
+        "oppCompletionRate": 0.51,
+        "oppThirdDownRate": 0.34,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "Tennessee",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 19,
+        "defensiveRating": 17,
+        "efficiencyRating": 11,
+        "advancedRating": 17,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.9,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.4,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.38,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.56,
+        "oppThirdDownRate": 0.4,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "Ole Miss",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 18,
+        "defensiveRating": 23,
+        "efficiencyRating": 16,
+        "advancedRating": 16,
+        "pointsPerPlay": 0.47,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.67,
+        "thirdDownRate": 0.39,
+        "redZoneRate": 0.84,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.2,
+        "oppCompletionRate": 0.56,
+        "oppThirdDownRate": 0.35,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Auburn",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 17,
+        "defensiveRating": 10,
+        "efficiencyRating": 12,
+        "advancedRating": 11,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.9,
+        "completionRate": 0.69,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.2,
+        "oppCompletionRate": 0.56,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Texas A&M",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 25,
+        "defensiveRating": 17,
+        "efficiencyRating": 25,
+        "advancedRating": 23,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.39,
+        "redZoneRate": 0.8,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.7,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.36,
+        "oppRedZoneRate": 0.79
+      }
+    },
+    {
+      "name": "Missouri",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 20,
+        "defensiveRating": 13,
+        "efficiencyRating": 17,
+        "advancedRating": 16,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 5.4,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.76
+      }
+    },
+    {
+      "name": "Kentucky",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 10,
+        "defensiveRating": 12,
+        "efficiencyRating": 17,
+        "advancedRating": 15,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.5,
+        "completionRate": 0.69,
+        "thirdDownRate": 0.44,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.3,
+        "oppYardsPerPlay": 5.4,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.43,
+        "oppRedZoneRate": 0.78
+      }
+    },
+    {
+      "name": "Arkansas",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 25,
+        "defensiveRating": 14,
+        "efficiencyRating": 16,
+        "advancedRating": 19,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.67,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.31,
+        "oppYardsPerPlay": 5.5,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.4,
+        "oppRedZoneRate": 0.76
+      }
+    },
+    {
+      "name": "South Carolina",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 12,
+        "defensiveRating": 15,
+        "efficiencyRating": 12,
+        "advancedRating": 12,
+        "pointsPerPlay": 0.47,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.44,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.59,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "Vanderbilt",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 18,
+        "defensiveRating": 16,
+        "efficiencyRating": 20,
+        "advancedRating": 17,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.4,
+        "redZoneRate": 0.84,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 5.0,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.76
+      }
+    },
+    {
+      "name": "USC",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 16,
+        "defensiveRating": 18,
+        "efficiencyRating": 14,
+        "advancedRating": 21,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.9,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.83,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.75
+      }
+    },
+    {
+      "name": "Washington",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 19,
+        "defensiveRating": 13,
+        "efficiencyRating": 14,
+        "advancedRating": 18,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.81,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.2,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.38,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "UCLA",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 11,
+        "defensiveRating": 12,
+        "efficiencyRating": 23,
+        "advancedRating": 18,
+        "pointsPerPlay": 0.4,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.45,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.34,
+        "oppYardsPerPlay": 5.7,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.36,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Wisconsin",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 14,
+        "defensiveRating": 11,
+        "efficiencyRating": 21,
+        "advancedRating": 14,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.44,
+        "redZoneRate": 0.85,
+        "oppPointsPerPlay": 0.3,
+        "oppYardsPerPlay": 5.4,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.79
+      }
+    },
+    {
+      "name": "Iowa",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 23,
+        "defensiveRating": 14,
+        "efficiencyRating": 17,
+        "advancedRating": 15,
+        "pointsPerPlay": 0.5,
+        "yardsPerPlay": 6.8,
+        "completionRate": 0.69,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.82,
+        "oppPointsPerPlay": 0.33,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "Minnesota",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 18,
+        "defensiveRating": 15,
+        "efficiencyRating": 13,
+        "advancedRating": 22,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.9,
+        "completionRate": 0.62,
+        "thirdDownRate": 0.43,
+        "redZoneRate": 0.8,
+        "oppPointsPerPlay": 0.33,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.57,
+        "oppThirdDownRate": 0.35,
+        "oppRedZoneRate": 0.77
+      }
+    },
+    {
+      "name": "Nebraska",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 20,
+        "defensiveRating": 18,
+        "efficiencyRating": 12,
+        "advancedRating": 18,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.5,
+        "completionRate": 0.67,
+        "thirdDownRate": 0.43,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.3,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.58,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.85
+      }
+    },
+    {
+      "name": "Maryland",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 11,
+        "defensiveRating": 13,
+        "efficiencyRating": 23,
+        "advancedRating": 21,
+        "pointsPerPlay": 0.47,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.4,
+        "redZoneRate": 0.79,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 5.3,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.35,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Illinois",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 16,
+        "defensiveRating": 21,
+        "efficiencyRating": 23,
+        "advancedRating": 12,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.9,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.42,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 5.5,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.38,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "Northwestern",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 14,
+        "defensiveRating": 16,
+        "efficiencyRating": 23,
+        "advancedRating": 22,
+        "pointsPerPlay": 0.47,
+        "yardsPerPlay": 6.9,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.8,
+        "oppPointsPerPlay": 0.3,
+        "oppYardsPerPlay": 5.3,
+        "oppCompletionRate": 0.59,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "Purdue",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 24,
+        "defensiveRating": 24,
+        "efficiencyRating": 24,
+        "advancedRating": 16,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 6.8,
+        "completionRate": 0.7,
+        "thirdDownRate": 0.42,
+        "redZoneRate": 0.82,
+        "oppPointsPerPlay": 0.33,
+        "oppYardsPerPlay": 5.7,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.36,
+        "oppRedZoneRate": 0.85
+      }
+    },
+    {
+      "name": "Michigan State",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 17,
+        "defensiveRating": 19,
+        "efficiencyRating": 17,
+        "advancedRating": 16,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.7,
+        "thirdDownRate": 0.41,
+        "redZoneRate": 0.83,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.79
+      }
+    },
+    {
+      "name": "Indiana",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 22,
+        "defensiveRating": 17,
+        "efficiencyRating": 14,
+        "advancedRating": 10,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.9,
+        "completionRate": 0.69,
+        "thirdDownRate": 0.43,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.38,
+        "oppYardsPerPlay": 5.7,
+        "oppCompletionRate": 0.6,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Rutgers",
+      "conference": "Big Ten",
+      "stats": {
+        "offensiveRating": 13,
+        "defensiveRating": 24,
+        "efficiencyRating": 14,
+        "advancedRating": 24,
+        "pointsPerPlay": 0.47,
+        "yardsPerPlay": 7.0,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.45,
+        "redZoneRate": 0.84,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 5.7,
+        "oppCompletionRate": 0.6,
+        "oppThirdDownRate": 0.43,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "Clemson",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 15,
+        "defensiveRating": 25,
+        "efficiencyRating": 24,
+        "advancedRating": 18,
+        "pointsPerPlay": 0.48,
+        "yardsPerPlay": 6.8,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.43,
+        "redZoneRate": 0.8,
+        "oppPointsPerPlay": 0.32,
+        "oppYardsPerPlay": 5.4,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.37,
+        "oppRedZoneRate": 0.78
+      }
+    },
+    {
+      "name": "Miami",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 12,
+        "defensiveRating": 14,
+        "efficiencyRating": 14,
+        "advancedRating": 17,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.62,
+        "thirdDownRate": 0.39,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.1,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.39,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "North Carolina",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 10,
+        "defensiveRating": 22,
+        "efficiencyRating": 25,
+        "advancedRating": 10,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.44,
+        "redZoneRate": 0.83,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.7,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "Louisville",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 18,
+        "defensiveRating": 23,
+        "efficiencyRating": 25,
+        "advancedRating": 10,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.7,
+        "completionRate": 0.68,
+        "thirdDownRate": 0.42,
+        "redZoneRate": 0.83,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.6,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "NC State",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 10,
+        "defensiveRating": 12,
+        "efficiencyRating": 23,
+        "advancedRating": 14,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.8,
+        "oppPointsPerPlay": 0.33,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.58,
+        "oppThirdDownRate": 0.45,
+        "oppRedZoneRate": 0.79
+      }
+    },
+    {
+      "name": "Virginia Tech",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 12,
+        "defensiveRating": 25,
+        "efficiencyRating": 10,
+        "advancedRating": 11,
+        "pointsPerPlay": 0.5,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.67,
+        "thirdDownRate": 0.43,
+        "redZoneRate": 0.82,
+        "oppPointsPerPlay": 0.38,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.57,
+        "oppThirdDownRate": 0.35,
+        "oppRedZoneRate": 0.77
+      }
+    },
+    {
+      "name": "Pittsburgh",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 14,
+        "defensiveRating": 25,
+        "efficiencyRating": 13,
+        "advancedRating": 16,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.41,
+        "redZoneRate": 0.85,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.57,
+        "oppThirdDownRate": 0.38,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Duke",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 19,
+        "defensiveRating": 22,
+        "efficiencyRating": 22,
+        "advancedRating": 16,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 6.7,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.83,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.56,
+        "oppThirdDownRate": 0.45,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "Georgia Tech",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 21,
+        "defensiveRating": 23,
+        "efficiencyRating": 21,
+        "advancedRating": 12,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.68,
+        "thirdDownRate": 0.43,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.4,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.79
+      }
+    },
+    {
+      "name": "Boston College",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 18,
+        "defensiveRating": 25,
+        "efficiencyRating": 24,
+        "advancedRating": 23,
+        "pointsPerPlay": 0.48,
+        "yardsPerPlay": 6.6,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.84,
+        "oppPointsPerPlay": 0.33,
+        "oppYardsPerPlay": 5.5,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "Wake Forest",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 20,
+        "defensiveRating": 10,
+        "efficiencyRating": 25,
+        "advancedRating": 20,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.68,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.84,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.3,
+        "oppCompletionRate": 0.55,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.76
+      }
+    },
+    {
+      "name": "Virginia",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 23,
+        "defensiveRating": 25,
+        "efficiencyRating": 17,
+        "advancedRating": 25,
+        "pointsPerPlay": 0.46,
+        "yardsPerPlay": 6.5,
+        "completionRate": 0.68,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.3,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.4,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "Syracuse",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 23,
+        "defensiveRating": 20,
+        "efficiencyRating": 21,
+        "advancedRating": 24,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.57,
+        "oppThirdDownRate": 0.37,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "California",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 19,
+        "defensiveRating": 13,
+        "efficiencyRating": 16,
+        "advancedRating": 19,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.6,
+        "thirdDownRate": 0.4,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.4,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.36,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Stanford",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 25,
+        "defensiveRating": 13,
+        "efficiencyRating": 10,
+        "advancedRating": 19,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.62,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.84,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.59,
+        "oppThirdDownRate": 0.36,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "SMU",
+      "conference": "ACC",
+      "stats": {
+        "offensiveRating": 11,
+        "defensiveRating": 14,
+        "efficiencyRating": 14,
+        "advancedRating": 19,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.39,
+        "redZoneRate": 0.81,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.59,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.78
+      }
+    },
+    {
+      "name": "Oklahoma",
+      "conference": "SEC",
+      "stats": {
+        "offensiveRating": 23,
+        "defensiveRating": 19,
+        "efficiencyRating": 11,
+        "advancedRating": 13,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.62,
+        "thirdDownRate": 0.42,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.32,
+        "oppYardsPerPlay": 5.1,
+        "oppCompletionRate": 0.55,
+        "oppThirdDownRate": 0.4,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Kansas State",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 19,
+        "defensiveRating": 11,
+        "efficiencyRating": 17,
+        "advancedRating": 19,
+        "pointsPerPlay": 0.47,
+        "yardsPerPlay": 6.7,
+        "completionRate": 0.65,
+        "thirdDownRate": 0.42,
+        "redZoneRate": 0.84,
+        "oppPointsPerPlay": 0.38,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.79
+      }
+    },
+    {
+      "name": "Iowa State",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 17,
+        "defensiveRating": 14,
+        "efficiencyRating": 18,
+        "advancedRating": 14,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.42,
+        "redZoneRate": 0.81,
+        "oppPointsPerPlay": 0.33,
+        "oppYardsPerPlay": 5.1,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Baylor",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 25,
+        "defensiveRating": 24,
+        "efficiencyRating": 12,
+        "advancedRating": 11,
+        "pointsPerPlay": 0.49,
+        "yardsPerPlay": 6.7,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.35,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "TCU",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 18,
+        "defensiveRating": 11,
+        "efficiencyRating": 15,
+        "advancedRating": 25,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.45,
+        "redZoneRate": 0.79,
+        "oppPointsPerPlay": 0.38,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.6,
+        "oppThirdDownRate": 0.39,
+        "oppRedZoneRate": 0.78
+      }
+    },
+    {
+      "name": "Texas Tech",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 13,
+        "defensiveRating": 15,
+        "efficiencyRating": 20,
+        "advancedRating": 23,
+        "pointsPerPlay": 0.47,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.69,
+        "thirdDownRate": 0.43,
+        "redZoneRate": 0.81,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.3,
+        "oppCompletionRate": 0.58,
+        "oppThirdDownRate": 0.45,
+        "oppRedZoneRate": 0.79
+      }
+    },
+    {
+      "name": "West Virginia",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 10,
+        "defensiveRating": 24,
+        "efficiencyRating": 23,
+        "advancedRating": 11,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.68,
+        "thirdDownRate": 0.41,
+        "redZoneRate": 0.83,
+        "oppPointsPerPlay": 0.32,
+        "oppYardsPerPlay": 5.5,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.39,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "Kansas",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 13,
+        "defensiveRating": 10,
+        "efficiencyRating": 17,
+        "advancedRating": 15,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.83,
+        "oppPointsPerPlay": 0.31,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.37,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Oklahoma State",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 19,
+        "defensiveRating": 18,
+        "efficiencyRating": 23,
+        "advancedRating": 25,
+        "pointsPerPlay": 0.5,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.39,
+        "redZoneRate": 0.84,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.38,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "Houston",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 23,
+        "defensiveRating": 20,
+        "efficiencyRating": 18,
+        "advancedRating": 10,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.45,
+        "redZoneRate": 0.8,
+        "oppPointsPerPlay": 0.31,
+        "oppYardsPerPlay": 5.5,
+        "oppCompletionRate": 0.58,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "BYU",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 24,
+        "defensiveRating": 20,
+        "efficiencyRating": 16,
+        "advancedRating": 17,
+        "pointsPerPlay": 0.46,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.68,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.82,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.59,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "Cincinnati",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 14,
+        "defensiveRating": 25,
+        "efficiencyRating": 11,
+        "advancedRating": 14,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 6.6,
+        "completionRate": 0.69,
+        "thirdDownRate": 0.44,
+        "redZoneRate": 0.79,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.5,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.39,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "UCF",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 14,
+        "defensiveRating": 12,
+        "efficiencyRating": 25,
+        "advancedRating": 18,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 6.7,
+        "completionRate": 0.66,
+        "thirdDownRate": 0.44,
+        "redZoneRate": 0.84,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 5.4,
+        "oppCompletionRate": 0.58,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "Arizona",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 11,
+        "defensiveRating": 12,
+        "efficiencyRating": 17,
+        "advancedRating": 19,
+        "pointsPerPlay": 0.5,
+        "yardsPerPlay": 6.7,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.81,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 5.4,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.75
+      }
+    },
+    {
+      "name": "Arizona State",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 11,
+        "defensiveRating": 19,
+        "efficiencyRating": 21,
+        "advancedRating": 21,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.42,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.32,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.59,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.8
+      }
+    },
+    {
+      "name": "Utah",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 14,
+        "defensiveRating": 17,
+        "efficiencyRating": 24,
+        "advancedRating": 18,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 6.7,
+        "completionRate": 0.69,
+        "thirdDownRate": 0.4,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.1,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.45,
+        "oppRedZoneRate": 0.78
+      }
+    },
+    {
+      "name": "Colorado",
+      "conference": "Big 12",
+      "stats": {
+        "offensiveRating": 23,
+        "defensiveRating": 18,
+        "efficiencyRating": 24,
+        "advancedRating": 19,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.65,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.81,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.58,
+        "oppThirdDownRate": 0.45,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "Boise State",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 33,
+        "defensiveRating": 25,
+        "efficiencyRating": 43,
+        "advancedRating": 26,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.39,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 6.3,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "Fresno State",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 29,
+        "defensiveRating": 45,
+        "efficiencyRating": 28,
+        "advancedRating": 45,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 5.8,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.67,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "San Diego State",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 42,
+        "defensiveRating": 36,
+        "efficiencyRating": 41,
+        "advancedRating": 41,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.58,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.75,
+        "oppPointsPerPlay": 0.43,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.9
+      }
+    },
+    {
+      "name": "Air Force",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 29,
+        "defensiveRating": 32,
+        "efficiencyRating": 37,
+        "advancedRating": 42,
+        "pointsPerPlay": 0.39,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.55,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.75,
+        "oppPointsPerPlay": 0.42,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.66,
+        "oppThirdDownRate": 0.48,
+        "oppRedZoneRate": 0.89
+      }
+    },
+    {
+      "name": "Wyoming",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 28,
+        "defensiveRating": 32,
+        "efficiencyRating": 40,
+        "advancedRating": 25,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.58,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.41,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.67,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Nevada",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 26,
+        "defensiveRating": 26,
+        "efficiencyRating": 34,
+        "advancedRating": 40,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 5.7,
+        "completionRate": 0.6,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.74,
+        "oppPointsPerPlay": 0.44,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.87
+      }
+    },
+    {
+      "name": "San Jose State",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 38,
+        "defensiveRating": 45,
+        "efficiencyRating": 28,
+        "advancedRating": 40,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.58,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.72,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 5.7,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.5,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "New Mexico",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 45,
+        "defensiveRating": 36,
+        "efficiencyRating": 26,
+        "advancedRating": 37,
+        "pointsPerPlay": 0.38,
+        "yardsPerPlay": 6.5,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.71,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 6.1,
+        "oppCompletionRate": 0.7,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "Utah State",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 29,
+        "defensiveRating": 43,
+        "efficiencyRating": 31,
+        "advancedRating": 27,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.72,
+        "oppPointsPerPlay": 0.43,
+        "oppYardsPerPlay": 6.3,
+        "oppCompletionRate": 0.66,
+        "oppThirdDownRate": 0.43,
+        "oppRedZoneRate": 0.9
+      }
+    },
+    {
+      "name": "Hawaii",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 29,
+        "defensiveRating": 42,
+        "efficiencyRating": 33,
+        "advancedRating": 30,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.56,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.41,
+        "oppYardsPerPlay": 5.5,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "UNLV",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 28,
+        "defensiveRating": 27,
+        "efficiencyRating": 40,
+        "advancedRating": 39,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.56,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.79,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 6.3,
+        "oppCompletionRate": 0.69,
+        "oppThirdDownRate": 0.45,
+        "oppRedZoneRate": 0.85
+      }
+    },
+    {
+      "name": "Colorado State",
+      "conference": "Mountain West",
+      "stats": {
+        "offensiveRating": 25,
+        "defensiveRating": 26,
+        "efficiencyRating": 40,
+        "advancedRating": 37,
+        "pointsPerPlay": 0.39,
+        "yardsPerPlay": 5.6,
+        "completionRate": 0.62,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.79,
+        "oppPointsPerPlay": 0.38,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.86
+      }
+    },
+    {
+      "name": "Tulane",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 35,
+        "defensiveRating": 37,
+        "efficiencyRating": 44,
+        "advancedRating": 41,
+        "pointsPerPlay": 0.38,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.71,
+        "oppPointsPerPlay": 0.42,
+        "oppYardsPerPlay": 6.4,
+        "oppCompletionRate": 0.66,
+        "oppThirdDownRate": 0.49,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Memphis",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 32,
+        "defensiveRating": 38,
+        "efficiencyRating": 35,
+        "advancedRating": 39,
+        "pointsPerPlay": 0.39,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.58,
+        "thirdDownRate": 0.33,
+        "redZoneRate": 0.73,
+        "oppPointsPerPlay": 0.45,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "UAB",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 38,
+        "defensiveRating": 28,
+        "efficiencyRating": 36,
+        "advancedRating": 29,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.33,
+        "redZoneRate": 0.71,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.68,
+        "oppThirdDownRate": 0.49,
+        "oppRedZoneRate": 0.87
+      }
+    },
+    {
+      "name": "Navy",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 34,
+        "defensiveRating": 44,
+        "efficiencyRating": 34,
+        "advancedRating": 36,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.57,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 6.1,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.43,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "Temple",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 38,
+        "defensiveRating": 42,
+        "efficiencyRating": 44,
+        "advancedRating": 44,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.68,
+        "oppThirdDownRate": 0.49,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Tulsa",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 30,
+        "defensiveRating": 29,
+        "efficiencyRating": 43,
+        "advancedRating": 37,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.65,
+        "thirdDownRate": 0.31,
+        "redZoneRate": 0.75,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.43,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "East Carolina",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 43,
+        "defensiveRating": 44,
+        "efficiencyRating": 27,
+        "advancedRating": 26,
+        "pointsPerPlay": 0.37,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.55,
+        "thirdDownRate": 0.31,
+        "redZoneRate": 0.74,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 6.1,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.85
+      }
+    },
+    {
+      "name": "Charlotte",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 36,
+        "defensiveRating": 38,
+        "efficiencyRating": 28,
+        "advancedRating": 34,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.6,
+        "thirdDownRate": 0.33,
+        "redZoneRate": 0.72,
+        "oppPointsPerPlay": 0.45,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.49,
+        "oppRedZoneRate": 0.88
+      }
+    },
+    {
+      "name": "Rice",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 33,
+        "defensiveRating": 34,
+        "efficiencyRating": 35,
+        "advancedRating": 28,
+        "pointsPerPlay": 0.35,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.57,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.4,
+        "oppYardsPerPlay": 6.3,
+        "oppCompletionRate": 0.68,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.89
+      }
+    },
+    {
+      "name": "North Texas",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 26,
+        "defensiveRating": 38,
+        "efficiencyRating": 25,
+        "advancedRating": 39,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.6,
+        "oppThirdDownRate": 0.43,
+        "oppRedZoneRate": 0.88
+      }
+    },
+    {
+      "name": "Florida Atlantic",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 44,
+        "defensiveRating": 39,
+        "efficiencyRating": 36,
+        "advancedRating": 27,
+        "pointsPerPlay": 0.39,
+        "yardsPerPlay": 5.6,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.71,
+        "oppPointsPerPlay": 0.44,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.48,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "South Florida",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 45,
+        "defensiveRating": 28,
+        "efficiencyRating": 41,
+        "advancedRating": 41,
+        "pointsPerPlay": 0.37,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.4,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "UTSA",
+      "conference": "American",
+      "stats": {
+        "offensiveRating": 45,
+        "defensiveRating": 27,
+        "efficiencyRating": 30,
+        "advancedRating": 45,
+        "pointsPerPlay": 0.4,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.79,
+        "oppPointsPerPlay": 0.41,
+        "oppYardsPerPlay": 6.1,
+        "oppCompletionRate": 0.66,
+        "oppThirdDownRate": 0.49,
+        "oppRedZoneRate": 0.86
+      }
+    },
+    {
+      "name": "Troy",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 29,
+        "defensiveRating": 39,
+        "efficiencyRating": 27,
+        "advancedRating": 40,
+        "pointsPerPlay": 0.39,
+        "yardsPerPlay": 5.8,
+        "completionRate": 0.58,
+        "thirdDownRate": 0.31,
+        "redZoneRate": 0.75,
+        "oppPointsPerPlay": 0.38,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.48,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Appalachian State",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 27,
+        "defensiveRating": 44,
+        "efficiencyRating": 44,
+        "advancedRating": 41,
+        "pointsPerPlay": 0.39,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.65,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.7,
+        "oppPointsPerPlay": 0.44,
+        "oppYardsPerPlay": 6.1,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.85
+      }
+    },
+    {
+      "name": "Coastal Carolina",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 26,
+        "defensiveRating": 39,
+        "efficiencyRating": 28,
+        "advancedRating": 35,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 5.6,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.3,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.45,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.66,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.89
+      }
+    },
+    {
+      "name": "Georgia Southern",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 37,
+        "defensiveRating": 38,
+        "efficiencyRating": 35,
+        "advancedRating": 44,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.58,
+        "thirdDownRate": 0.33,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.69,
+        "oppThirdDownRate": 0.5,
+        "oppRedZoneRate": 0.86
+      }
+    },
+    {
+      "name": "Louisiana",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 29,
+        "defensiveRating": 35,
+        "efficiencyRating": 27,
+        "advancedRating": 43,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.58,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.77,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.86
+      }
+    },
+    {
+      "name": "South Alabama",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 35,
+        "defensiveRating": 29,
+        "efficiencyRating": 41,
+        "advancedRating": 27,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 5.9,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.72,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 6.4,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Georgia State",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 27,
+        "defensiveRating": 34,
+        "efficiencyRating": 28,
+        "advancedRating": 41,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.3,
+        "redZoneRate": 0.73,
+        "oppPointsPerPlay": 0.43,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.88
+      }
+    },
+    {
+      "name": "Marshall",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 44,
+        "defensiveRating": 30,
+        "efficiencyRating": 39,
+        "advancedRating": 26,
+        "pointsPerPlay": 0.39,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.57,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.73,
+        "oppPointsPerPlay": 0.42,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.43,
+        "oppRedZoneRate": 0.88
+      }
+    },
+    {
+      "name": "James Madison",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 40,
+        "defensiveRating": 31,
+        "efficiencyRating": 36,
+        "advancedRating": 43,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.58,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.75,
+        "oppPointsPerPlay": 0.45,
+        "oppYardsPerPlay": 6.3,
+        "oppCompletionRate": 0.68,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "Arkansas State",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 45,
+        "defensiveRating": 40,
+        "efficiencyRating": 36,
+        "advancedRating": 42,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.2,
+        "completionRate": 0.6,
+        "thirdDownRate": 0.31,
+        "redZoneRate": 0.71,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.48,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Texas State",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 32,
+        "defensiveRating": 39,
+        "efficiencyRating": 36,
+        "advancedRating": 25,
+        "pointsPerPlay": 0.39,
+        "yardsPerPlay": 5.9,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.71,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.47,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "Old Dominion",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 29,
+        "defensiveRating": 29,
+        "efficiencyRating": 26,
+        "advancedRating": 34,
+        "pointsPerPlay": 0.44,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.38,
+        "redZoneRate": 0.75,
+        "oppPointsPerPlay": 0.41,
+        "oppYardsPerPlay": 6.4,
+        "oppCompletionRate": 0.6,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Louisiana Monroe",
+      "conference": "Sun Belt",
+      "stats": {
+        "offensiveRating": 44,
+        "defensiveRating": 41,
+        "efficiencyRating": 38,
+        "advancedRating": 28,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 5.7,
+        "completionRate": 0.56,
+        "thirdDownRate": 0.32,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.41,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.68,
+        "oppThirdDownRate": 0.45,
+        "oppRedZoneRate": 0.85
+      }
+    },
+    {
+      "name": "Toledo",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 45,
+        "defensiveRating": 41,
+        "efficiencyRating": 43,
+        "advancedRating": 32,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 5.8,
+        "completionRate": 0.55,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.9
+      }
+    },
+    {
+      "name": "Ohio",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 42,
+        "defensiveRating": 41,
+        "efficiencyRating": 41,
+        "advancedRating": 42,
+        "pointsPerPlay": 0.35,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.55,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.74,
+        "oppPointsPerPlay": 0.42,
+        "oppYardsPerPlay": 5.9,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.87
+      }
+    },
+    {
+      "name": "Northern Illinois",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 28,
+        "defensiveRating": 43,
+        "efficiencyRating": 35,
+        "advancedRating": 29,
+        "pointsPerPlay": 0.35,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.32,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.4,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.66,
+        "oppThirdDownRate": 0.48,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Bowling Green",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 39,
+        "defensiveRating": 26,
+        "efficiencyRating": 34,
+        "advancedRating": 31,
+        "pointsPerPlay": 0.35,
+        "yardsPerPlay": 5.7,
+        "completionRate": 0.55,
+        "thirdDownRate": 0.39,
+        "redZoneRate": 0.75,
+        "oppPointsPerPlay": 0.45,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.48,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "Buffalo",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 36,
+        "defensiveRating": 26,
+        "efficiencyRating": 45,
+        "advancedRating": 35,
+        "pointsPerPlay": 0.38,
+        "yardsPerPlay": 6.3,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.74,
+        "oppPointsPerPlay": 0.45,
+        "oppYardsPerPlay": 5.8,
+        "oppCompletionRate": 0.62,
+        "oppThirdDownRate": 0.47,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Kent State",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 41,
+        "defensiveRating": 33,
+        "efficiencyRating": 27,
+        "advancedRating": 38,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.73,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Central Michigan",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 39,
+        "defensiveRating": 36,
+        "efficiencyRating": 39,
+        "advancedRating": 26,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.43,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.67,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.85
+      }
+    },
+    {
+      "name": "Western Michigan",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 30,
+        "defensiveRating": 25,
+        "efficiencyRating": 29,
+        "advancedRating": 44,
+        "pointsPerPlay": 0.42,
+        "yardsPerPlay": 5.9,
+        "completionRate": 0.56,
+        "thirdDownRate": 0.32,
+        "redZoneRate": 0.76,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 6.4,
+        "oppCompletionRate": 0.6,
+        "oppThirdDownRate": 0.42,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Eastern Michigan",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 36,
+        "defensiveRating": 36,
+        "efficiencyRating": 39,
+        "advancedRating": 27,
+        "pointsPerPlay": 0.41,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.36,
+        "redZoneRate": 0.72,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 6.2,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.86
+      }
+    },
+    {
+      "name": "Ball State",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 33,
+        "defensiveRating": 33,
+        "efficiencyRating": 39,
+        "advancedRating": 31,
+        "pointsPerPlay": 0.45,
+        "yardsPerPlay": 5.8,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.71,
+        "oppPointsPerPlay": 0.44,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.69,
+        "oppThirdDownRate": 0.44,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Miami (OH)",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 35,
+        "defensiveRating": 36,
+        "efficiencyRating": 27,
+        "advancedRating": 42,
+        "pointsPerPlay": 0.4,
+        "yardsPerPlay": 6.4,
+        "completionRate": 0.64,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.79,
+        "oppPointsPerPlay": 0.41,
+        "oppYardsPerPlay": 6.3,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.41,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "Akron",
+      "conference": "MAC",
+      "stats": {
+        "offensiveRating": 29,
+        "defensiveRating": 32,
+        "efficiencyRating": 40,
+        "advancedRating": 25,
+        "pointsPerPlay": 0.39,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.6,
+        "thirdDownRate": 0.4,
+        "redZoneRate": 0.71,
+        "oppPointsPerPlay": 0.44,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.47,
+        "oppRedZoneRate": 0.85
+      }
+    },
+    {
+      "name": "Liberty",
+      "conference": "Conference USA",
+      "stats": {
+        "offensiveRating": 38,
+        "defensiveRating": 38,
+        "efficiencyRating": 43,
+        "advancedRating": 27,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 5.8,
+        "completionRate": 0.56,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.75,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 6.3,
+        "oppCompletionRate": 0.66,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.88
+      }
+    },
+    {
+      "name": "Western Kentucky",
+      "conference": "Conference USA",
+      "stats": {
+        "offensiveRating": 29,
+        "defensiveRating": 38,
+        "efficiencyRating": 41,
+        "advancedRating": 26,
+        "pointsPerPlay": 0.43,
+        "yardsPerPlay": 6.0,
+        "completionRate": 0.58,
+        "thirdDownRate": 0.32,
+        "redZoneRate": 0.79,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 6.4,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.43,
+        "oppRedZoneRate": 0.81
+      }
+    },
+    {
+      "name": "Middle Tennessee",
+      "conference": "Conference USA",
+      "stats": {
+        "offensiveRating": 31,
+        "defensiveRating": 45,
+        "efficiencyRating": 42,
+        "advancedRating": 33,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 5.8,
+        "completionRate": 0.6,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.72,
+        "oppPointsPerPlay": 0.44,
+        "oppYardsPerPlay": 5.7,
+        "oppCompletionRate": 0.67,
+        "oppThirdDownRate": 0.47,
+        "oppRedZoneRate": 0.86
+      }
+    },
+    {
+      "name": "Louisiana Tech",
+      "conference": "Conference USA",
+      "stats": {
+        "offensiveRating": 43,
+        "defensiveRating": 26,
+        "efficiencyRating": 25,
+        "advancedRating": 27,
+        "pointsPerPlay": 0.35,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.61,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.78,
+        "oppPointsPerPlay": 0.39,
+        "oppYardsPerPlay": 6.1,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.83
+      }
+    },
+    {
+      "name": "UTEP",
+      "conference": "Conference USA",
+      "stats": {
+        "offensiveRating": 34,
+        "defensiveRating": 40,
+        "efficiencyRating": 32,
+        "advancedRating": 37,
+        "pointsPerPlay": 0.38,
+        "yardsPerPlay": 5.6,
+        "completionRate": 0.56,
+        "thirdDownRate": 0.34,
+        "redZoneRate": 0.75,
+        "oppPointsPerPlay": 0.37,
+        "oppYardsPerPlay": 6.1,
+        "oppCompletionRate": 0.63,
+        "oppThirdDownRate": 0.47,
+        "oppRedZoneRate": 0.87
+      }
+    },
+    {
+      "name": "Jacksonville State",
+      "conference": "Conference USA",
+      "stats": {
+        "offensiveRating": 36,
+        "defensiveRating": 37,
+        "efficiencyRating": 29,
+        "advancedRating": 36,
+        "pointsPerPlay": 0.4,
+        "yardsPerPlay": 5.6,
+        "completionRate": 0.57,
+        "thirdDownRate": 0.31,
+        "redZoneRate": 0.74,
+        "oppPointsPerPlay": 0.36,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.69,
+        "oppThirdDownRate": 0.49,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "New Mexico State",
+      "conference": "Conference USA",
+      "stats": {
+        "offensiveRating": 30,
+        "defensiveRating": 35,
+        "efficiencyRating": 43,
+        "advancedRating": 35,
+        "pointsPerPlay": 0.37,
+        "yardsPerPlay": 5.7,
+        "completionRate": 0.65,
+        "thirdDownRate": 0.35,
+        "redZoneRate": 0.79,
+        "oppPointsPerPlay": 0.4,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.64,
+        "oppThirdDownRate": 0.45,
+        "oppRedZoneRate": 0.82
+      }
+    },
+    {
+      "name": "Sam Houston",
+      "conference": "Conference USA",
+      "stats": {
+        "offensiveRating": 43,
+        "defensiveRating": 36,
+        "efficiencyRating": 26,
+        "advancedRating": 26,
+        "pointsPerPlay": 0.38,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.63,
+        "thirdDownRate": 0.37,
+        "redZoneRate": 0.73,
+        "oppPointsPerPlay": 0.35,
+        "oppYardsPerPlay": 5.6,
+        "oppCompletionRate": 0.61,
+        "oppThirdDownRate": 0.43,
+        "oppRedZoneRate": 0.84
+      }
+    },
+    {
+      "name": "Florida International",
+      "conference": "Conference USA",
+      "stats": {
+        "offensiveRating": 37,
+        "defensiveRating": 36,
+        "efficiencyRating": 26,
+        "advancedRating": 37,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 6.1,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.33,
+        "redZoneRate": 0.74,
+        "oppPointsPerPlay": 0.4,
+        "oppYardsPerPlay": 6.0,
+        "oppCompletionRate": 0.68,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.86
+      }
+    },
+    {
+      "name": "Army",
+      "conference": "Independent",
+      "stats": {
+        "offensiveRating": 49,
+        "defensiveRating": 48,
+        "efficiencyRating": 57,
+        "advancedRating": 56,
+        "pointsPerPlay": 0.38,
+        "yardsPerPlay": 5.3,
+        "completionRate": 0.59,
+        "thirdDownRate": 0.33,
+        "redZoneRate": 0.67,
+        "oppPointsPerPlay": 0.45,
+        "oppYardsPerPlay": 6.5,
+        "oppCompletionRate": 0.65,
+        "oppThirdDownRate": 0.46,
+        "oppRedZoneRate": 0.88
+      }
+    },
+    {
+      "name": "UMass",
+      "conference": "Independent",
+      "stats": {
+        "offensiveRating": 60,
+        "defensiveRating": 61,
+        "efficiencyRating": 59,
+        "advancedRating": 49,
+        "pointsPerPlay": 0.36,
+        "yardsPerPlay": 5.5,
+        "completionRate": 0.53,
+        "thirdDownRate": 0.31,
+        "redZoneRate": 0.67,
+        "oppPointsPerPlay": 0.5,
+        "oppYardsPerPlay": 6.7,
+        "oppCompletionRate": 0.68,
+        "oppThirdDownRate": 0.48,
+        "oppRedZoneRate": 0.93
+      }
+    },
+    {
+      "name": "UConn",
+      "conference": "Independent",
+      "stats": {
+        "offensiveRating": 62,
+        "defensiveRating": 60,
+        "efficiencyRating": 63,
+        "advancedRating": 54,
+        "pointsPerPlay": 0.35,
+        "yardsPerPlay": 5.0,
+        "completionRate": 0.53,
+        "thirdDownRate": 0.26,
+        "redZoneRate": 0.69,
+        "oppPointsPerPlay": 0.43,
+        "oppYardsPerPlay": 6.9,
+        "oppCompletionRate": 0.74,
+        "oppThirdDownRate": 0.51,
+        "oppRedZoneRate": 0.91
+      }
+    }
+  ]
+}

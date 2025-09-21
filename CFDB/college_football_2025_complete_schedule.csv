@@ -1,0 +1,302 @@
+Team,Week,Date,Day,Time_ET,Opponent,Location,Home_Away,TV_Network,Conference,Notes
+Iowa State,0,2025-08-23,Saturday,12:00 PM,Kansas State,Aviva Stadium Dublin,Neutral,ESPN,Big 12,Aer Lingus Classic
+Kansas State,0,2025-08-23,Saturday,12:00 PM,Iowa State,Aviva Stadium Dublin,Neutral,ESPN,Big 12,Aer Lingus Classic
+Alabama,1,2025-08-30,Saturday,3:30 PM,Florida State,Doak Campbell Stadium,Away,ABC,SEC,
+Clemson,1,2025-08-30,Saturday,7:30 PM,LSU,Memorial Stadium,Home,ESPN,ACC,
+Florida State,1,2025-08-30,Saturday,3:30 PM,Alabama,Doak Campbell Stadium,Home,ABC,ACC,
+LSU,1,2025-08-30,Saturday,7:30 PM,Clemson,Memorial Stadium,Away,ESPN,SEC,
+Ohio State,1,2025-08-30,Saturday,12:00 PM,Texas,Ohio Stadium,Home,FOX,Big Ten,
+Syracuse,1,2025-08-30,Saturday,12:00 PM,Tennessee,Mercedes-Benz Stadium,Away,ESPN,ACC,
+Tennessee,1,2025-08-30,Saturday,12:00 PM,Syracuse,Mercedes-Benz Stadium,Home,ESPN,SEC,
+Texas,1,2025-08-30,Saturday,12:00 PM,Ohio State,Ohio Stadium,Away,FOX,SEC,
+Alabama,2,2025-09-06,Saturday,3:30 PM,Ohio State,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,2,2025-09-06,Saturday,3:30 PM,Georgia,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,2,2025-09-06,Saturday,3:30 PM,Oregon,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,2,2025-09-06,Saturday,3:30 PM,USC,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,2,2025-09-06,Saturday,3:30 PM,Michigan,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,2,2025-09-06,Saturday,3:30 PM,Florida State,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,2,2025-09-06,Saturday,3:30 PM,Tennessee,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,2,2025-09-06,Saturday,3:30 PM,Oklahoma,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,2,2025-09-06,Saturday,3:30 PM,Wisconsin,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,2,2025-09-06,Saturday,3:30 PM,Texas,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,2,2025-09-06,Saturday,3:30 PM,Clemson,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,2,2025-09-06,Saturday,3:30 PM,Notre Dame,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,2,2025-09-06,Saturday,3:30 PM,Miami,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,2,2025-09-06,Saturday,3:30 PM,Alabama,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,2,2025-09-06,Saturday,3:30 PM,LSU,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,2,2025-09-06,Saturday,3:30 PM,Auburn,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,2,2025-09-06,Saturday,3:30 PM,Penn State,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,2,2025-09-06,Saturday,3:30 PM,Texas A&M,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,3,2025-09-13,Saturday,12:00 PM,Wisconsin,Bryant-Denny Stadium,Home,ABC,SEC,
+Arizona,3,2025-09-12,Friday,9:00 PM,Kansas State,Arizona Stadium,Home,FOX,Big 12,
+Arkansas,3,2025-09-13,Saturday,7:00 PM,Ole Miss,Vaught-Hemingway Stadium,Away,ESPN,SEC,
+BYU,3,2025-09-13,Saturday,,,,,,Big 12,BYE WEEK
+Boston College,3,2025-09-13,Saturday,10:30 PM,Stanford,Stanford Stadium,Away,ACCN,ACC,
+California,3,2025-09-13,Saturday,10:30 PM,Minnesota,California Memorial Stadium,Home,ESPN,ACC,
+Central Michigan,3,2025-09-13,Saturday,12:00 PM,Michigan,Michigan Stadium,Away,BTN,MAC,
+Clemson,3,2025-09-13,Saturday,12:00 PM,Georgia Tech,Bobby Dodd Stadium,Away,ESPN,ACC,
+Colgate,3,2025-09-12,Friday,7:00 PM,Syracuse,JMA Wireless Dome,Away,ACCN,Other,
+Colorado,3,2025-09-12,Friday,7:30 PM,Houston,TDECU Stadium,Away,ESPN,Big 12,
+Duke,3,2025-09-13,Saturday,8:00 PM,Tulane,Yulman Stadium,Away,ESPN2,ACC,
+Florida,3,2025-09-13,Saturday,7:30 PM,LSU,Tiger Stadium,Away,ABC,SEC,
+Georgia,3,2025-09-13,Saturday,3:30 PM,Tennessee,Neyland Stadium,Away,ABC,SEC,
+Georgia Tech,3,2025-09-13,Saturday,12:00 PM,Clemson,Bobby Dodd Stadium,Home,ESPN,ACC,
+Houston,3,2025-09-12,Friday,7:30 PM,Colorado,TDECU Stadium,Home,ESPN,Big 12,
+Houston Christian,3,2025-09-13,Saturday,12:00 PM,Nebraska,Memorial Stadium,Away,FS1,Other,
+Indiana,3,2025-09-12,Friday,6:30 PM,Indiana State,Memorial Stadium,Home,BTN,Big Ten,
+Indiana State,3,2025-09-12,Friday,6:30 PM,Indiana,Memorial Stadium,Away,BTN,Other,
+Kansas State,3,2025-09-12,Friday,9:00 PM,Arizona,Arizona Stadium,Away,FOX,Big 12,
+LSU,3,2025-09-13,Saturday,7:30 PM,Florida,Tiger Stadium,Home,ABC,SEC,
+Maryland,3,2025-09-13,Saturday,12:00 PM,Towson,SECU Stadium,Home,Peacock,Big Ten,
+Miami,3,2025-09-13,Saturday,4:30 PM,South Florida,Hard Rock Stadium,Home,The CW,ACC,
+Michigan,3,2025-09-13,Saturday,12:00 PM,Central Michigan,Michigan Stadium,Home,BTN,Big Ten,
+Minnesota,3,2025-09-13,Saturday,10:30 PM,California,California Memorial Stadium,Away,ESPN,Big Ten,
+NC State,3,2025-09-11,Thursday,7:30 PM,Wake Forest,Truist Field,Away,ESPN,ACC,
+Nebraska,3,2025-09-13,Saturday,12:00 PM,Houston Christian,Memorial Stadium,Home,FS1,Big Ten,
+New Mexico,3,2025-09-12,Friday,10:00 PM,UCLA,Rose Bowl,Away,BTN,Mountain West,
+Northwestern,3,2025-09-13,Saturday,12:00 PM,Oregon,Ryan Field,Home,FOX,Big Ten,
+Notre Dame,3,2025-09-13,Saturday,7:30 PM,Texas A&M,Notre Dame Stadium,Home,NBC,Independent,
+Ohio,3,2025-09-13,Saturday,7:00 PM,Ohio State,Ohio Stadium,Away,Peacock,MAC,
+Ohio State,3,2025-09-13,Saturday,7:00 PM,Ohio,Ohio Stadium,Home,Peacock,Big Ten,
+Oklahoma,3,2025-09-13,Saturday,12:00 PM,Temple,Lincoln Financial Field,Away,ESPN2,SEC,
+Old Dominion,3,2025-09-13,Saturday,7:00 PM,Virginia Tech,Lane Stadium,Away,ACCN,Sun Belt,
+Ole Miss,3,2025-09-13,Saturday,7:00 PM,Arkansas,Vaught-Hemingway Stadium,Home,ESPN,SEC,
+Oregon,3,2025-09-13,Saturday,12:00 PM,Northwestern,Ryan Field,Away,FOX,Big Ten,
+Oregon State,3,2025-09-13,Saturday,3:30 PM,Texas Tech,Jones AT&T Stadium,Away,FOX,Pac-12,
+Pittsburgh,3,2025-09-13,Saturday,3:30 PM,West Virginia,Mountaineer Field,Away,ESPN,ACC,
+Purdue,3,2025-09-13,Saturday,3:30 PM,USC,Ross-Ade Stadium,Home,CBS,Big Ten,
+South Florida,3,2025-09-13,Saturday,4:30 PM,Miami,Hard Rock Stadium,Away,The CW,American,
+Stanford,3,2025-09-13,Saturday,10:30 PM,Boston College,Stanford Stadium,Home,ACCN,ACC,
+Syracuse,3,2025-09-12,Friday,7:00 PM,Colgate,JMA Wireless Dome,Home,ACCN,ACC,
+TCU,3,2025-09-13,Saturday,7:00 PM,UCF,Amon G. Carter Stadium,Away,ESPN,Big 12,
+Temple,3,2025-09-13,Saturday,12:00 PM,Oklahoma,Lincoln Financial Field,Home,ESPN2,American,
+Tennessee,3,2025-09-13,Saturday,3:30 PM,Georgia,Neyland Stadium,Home,ABC,SEC,
+Texas A&M,3,2025-09-13,Saturday,7:30 PM,Notre Dame,Notre Dame Stadium,Away,NBC,SEC,
+Texas Tech,3,2025-09-13,Saturday,3:30 PM,Oregon State,Jones AT&T Stadium,Home,FOX,Big 12,
+Towson,3,2025-09-13,Saturday,12:00 PM,Maryland,SECU Stadium,Away,Peacock,Other,
+Tulane,3,2025-09-13,Saturday,8:00 PM,Duke,Yulman Stadium,Home,ESPN2,American,
+UCF,3,2025-09-13,Saturday,7:00 PM,TCU,Amon G. Carter Stadium,Home,ESPN,Big 12,
+UCLA,3,2025-09-12,Friday,10:00 PM,New Mexico,Rose Bowl,Home,BTN,Big Ten,
+USC,3,2025-09-13,Saturday,3:30 PM,Purdue,Ross-Ade Stadium,Away,CBS,Big Ten,
+Virginia,3,2025-09-13,Saturday,12:00 PM,William & Mary,Scott Stadium,Home,ACCN,ACC,
+Virginia Tech,3,2025-09-13,Saturday,7:00 PM,Old Dominion,Lane Stadium,Home,ACCN,ACC,
+Wake Forest,3,2025-09-11,Thursday,7:30 PM,NC State,Truist Field,Home,ESPN,ACC,
+West Virginia,3,2025-09-13,Saturday,3:30 PM,Pittsburgh,Mountaineer Field,Home,ESPN,Big 12,
+William & Mary,3,2025-09-13,Saturday,12:00 PM,Virginia,Scott Stadium,Away,ACCN,Other,
+Wisconsin,3,2025-09-13,Saturday,12:00 PM,Alabama,Bryant-Denny Stadium,Away,ABC,Big Ten,
+Alabama,4,2025-09-20,Saturday,3:30 PM,Texas,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,4,2025-09-20,Saturday,3:30 PM,Michigan,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,4,2025-09-20,Saturday,3:30 PM,Notre Dame,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,4,2025-09-20,Saturday,3:30 PM,Penn State,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,4,2025-09-20,Saturday,3:30 PM,Oklahoma,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,4,2025-09-20,Saturday,3:30 PM,USC,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,4,2025-09-20,Saturday,3:30 PM,Alabama,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,4,2025-09-20,Saturday,3:30 PM,Clemson,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,4,2025-09-20,Saturday,3:30 PM,Texas A&M,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,4,2025-09-20,Saturday,3:30 PM,LSU,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,4,2025-09-20,Saturday,3:30 PM,Oregon,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,4,2025-09-20,Saturday,3:30 PM,Wisconsin,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,4,2025-09-20,Saturday,3:30 PM,Tennessee,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,4,2025-09-20,Saturday,3:30 PM,Ohio State,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,4,2025-09-20,Saturday,3:30 PM,Florida State,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,4,2025-09-20,Saturday,3:30 PM,Georgia,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,4,2025-09-20,Saturday,3:30 PM,Miami,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,4,2025-09-20,Saturday,3:30 PM,Auburn,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,5,2025-09-27,Saturday,3:30 PM,Oklahoma,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,5,2025-09-27,Saturday,3:30 PM,Texas,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,5,2025-09-27,Saturday,3:30 PM,Penn State,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,5,2025-09-27,Saturday,3:30 PM,Wisconsin,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,5,2025-09-27,Saturday,3:30 PM,LSU,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,5,2025-09-27,Saturday,3:30 PM,Notre Dame,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,5,2025-09-27,Saturday,3:30 PM,Georgia,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,5,2025-09-27,Saturday,3:30 PM,Florida State,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,5,2025-09-27,Saturday,3:30 PM,Tennessee,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,5,2025-09-27,Saturday,3:30 PM,Clemson,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,5,2025-09-27,Saturday,3:30 PM,USC,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,5,2025-09-27,Saturday,3:30 PM,Miami,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,5,2025-09-27,Saturday,3:30 PM,Auburn,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,5,2025-09-27,Saturday,3:30 PM,Michigan,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,5,2025-09-27,Saturday,3:30 PM,Oregon,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,5,2025-09-27,Saturday,3:30 PM,Ohio State,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,5,2025-09-27,Saturday,3:30 PM,Texas A&M,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,5,2025-09-27,Saturday,3:30 PM,Alabama,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,6,2025-10-04,Saturday,3:30 PM,LSU,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,6,2025-10-04,Saturday,3:30 PM,Oklahoma,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,6,2025-10-04,Saturday,3:30 PM,Wisconsin,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,6,2025-10-04,Saturday,3:30 PM,Miami,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,6,2025-10-04,Saturday,3:30 PM,Clemson,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,6,2025-10-04,Saturday,3:30 PM,Penn State,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,6,2025-10-04,Saturday,3:30 PM,Ohio State,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,6,2025-10-04,Saturday,3:30 PM,Oregon,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,6,2025-10-04,Saturday,3:30 PM,Auburn,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,6,2025-10-04,Saturday,3:30 PM,Florida State,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,6,2025-10-04,Saturday,3:30 PM,Notre Dame,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,6,2025-10-04,Saturday,3:30 PM,Texas A&M,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,6,2025-10-04,Saturday,3:30 PM,Alabama,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,6,2025-10-04,Saturday,3:30 PM,Texas,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,6,2025-10-04,Saturday,3:30 PM,USC,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,6,2025-10-04,Saturday,3:30 PM,Michigan,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,6,2025-10-04,Saturday,3:30 PM,Tennessee,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,6,2025-10-04,Saturday,3:30 PM,Georgia,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,7,2025-10-11,Saturday,3:30 PM,Clemson,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,7,2025-10-11,Saturday,3:30 PM,LSU,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,7,2025-10-11,Saturday,3:30 PM,Miami,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,7,2025-10-11,Saturday,3:30 PM,Texas A&M,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,7,2025-10-11,Saturday,3:30 PM,Florida State,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,7,2025-10-11,Saturday,3:30 PM,Wisconsin,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,7,2025-10-11,Saturday,3:30 PM,Michigan,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,7,2025-10-11,Saturday,3:30 PM,USC,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,7,2025-10-11,Saturday,3:30 PM,Alabama,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,7,2025-10-11,Saturday,3:30 PM,Oregon,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,7,2025-10-11,Saturday,3:30 PM,Penn State,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,7,2025-10-11,Saturday,3:30 PM,Tennessee,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,7,2025-10-11,Saturday,3:30 PM,Georgia,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,7,2025-10-11,Saturday,3:30 PM,Oklahoma,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,7,2025-10-11,Saturday,3:30 PM,Notre Dame,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,7,2025-10-11,Saturday,3:30 PM,Texas,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,7,2025-10-11,Saturday,3:30 PM,Auburn,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,7,2025-10-11,Saturday,3:30 PM,Ohio State,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,8,2025-10-18,Saturday,3:30 PM,Florida State,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,8,2025-10-18,Saturday,3:30 PM,Clemson,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,8,2025-10-18,Saturday,3:30 PM,Texas A&M,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,8,2025-10-18,Saturday,3:30 PM,Tennessee,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,8,2025-10-18,Saturday,3:30 PM,Oregon,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,8,2025-10-18,Saturday,3:30 PM,Miami,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,8,2025-10-18,Saturday,3:30 PM,Texas,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,8,2025-10-18,Saturday,3:30 PM,Notre Dame,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,8,2025-10-18,Saturday,3:30 PM,Georgia,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,8,2025-10-18,Saturday,3:30 PM,USC,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,8,2025-10-18,Saturday,3:30 PM,Wisconsin,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,8,2025-10-18,Saturday,3:30 PM,Auburn,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,8,2025-10-18,Saturday,3:30 PM,Ohio State,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,8,2025-10-18,Saturday,3:30 PM,LSU,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,8,2025-10-18,Saturday,3:30 PM,Penn State,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,8,2025-10-18,Saturday,3:30 PM,Oklahoma,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,8,2025-10-18,Saturday,3:30 PM,Alabama,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,8,2025-10-18,Saturday,3:30 PM,Michigan,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,9,2025-10-25,Saturday,3:30 PM,Oregon,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,9,2025-10-25,Saturday,3:30 PM,Florida State,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,9,2025-10-25,Saturday,3:30 PM,Tennessee,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,9,2025-10-25,Saturday,3:30 PM,Auburn,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,9,2025-10-25,Saturday,3:30 PM,USC,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,9,2025-10-25,Saturday,3:30 PM,Texas A&M,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,9,2025-10-25,Saturday,3:30 PM,Oklahoma,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,9,2025-10-25,Saturday,3:30 PM,Penn State,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,9,2025-10-25,Saturday,3:30 PM,Ohio State,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,9,2025-10-25,Saturday,3:30 PM,Notre Dame,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,9,2025-10-25,Saturday,3:30 PM,Miami,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,9,2025-10-25,Saturday,3:30 PM,Alabama,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,9,2025-10-25,Saturday,3:30 PM,Michigan,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,9,2025-10-25,Saturday,3:30 PM,Clemson,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,9,2025-10-25,Saturday,3:30 PM,Wisconsin,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,9,2025-10-25,Saturday,3:30 PM,LSU,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,9,2025-10-25,Saturday,3:30 PM,Georgia,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,9,2025-10-25,Saturday,3:30 PM,Texas,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,10,2025-11-01,Saturday,3:30 PM,USC,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,10,2025-11-01,Saturday,3:30 PM,Oregon,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,10,2025-11-01,Saturday,3:30 PM,Auburn,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,10,2025-11-01,Saturday,3:30 PM,Alabama,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,10,2025-11-01,Saturday,3:30 PM,Notre Dame,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,10,2025-11-01,Saturday,3:30 PM,Tennessee,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,10,2025-11-01,Saturday,3:30 PM,LSU,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,10,2025-11-01,Saturday,3:30 PM,Wisconsin,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,10,2025-11-01,Saturday,3:30 PM,Michigan,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,10,2025-11-01,Saturday,3:30 PM,Penn State,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,10,2025-11-01,Saturday,3:30 PM,Texas A&M,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,10,2025-11-01,Saturday,3:30 PM,Georgia,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,10,2025-11-01,Saturday,3:30 PM,Texas,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,10,2025-11-01,Saturday,3:30 PM,Florida State,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,10,2025-11-01,Saturday,3:30 PM,Miami,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,10,2025-11-01,Saturday,3:30 PM,Clemson,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,10,2025-11-01,Saturday,3:30 PM,Ohio State,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,10,2025-11-01,Saturday,3:30 PM,Oklahoma,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,11,2025-11-08,Saturday,3:30 PM,Notre Dame,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,11,2025-11-08,Saturday,3:30 PM,USC,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,11,2025-11-08,Saturday,3:30 PM,Alabama,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,11,2025-11-08,Saturday,3:30 PM,Georgia,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,11,2025-11-08,Saturday,3:30 PM,Penn State,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,11,2025-11-08,Saturday,3:30 PM,Auburn,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,11,2025-11-08,Saturday,3:30 PM,Clemson,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,11,2025-11-08,Saturday,3:30 PM,Miami,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,11,2025-11-08,Saturday,3:30 PM,Texas,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,11,2025-11-08,Saturday,3:30 PM,Wisconsin,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,11,2025-11-08,Saturday,3:30 PM,Tennessee,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,11,2025-11-08,Saturday,3:30 PM,Ohio State,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,11,2025-11-08,Saturday,3:30 PM,Oklahoma,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,11,2025-11-08,Saturday,3:30 PM,Oregon,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,11,2025-11-08,Saturday,3:30 PM,Texas A&M,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,11,2025-11-08,Saturday,3:30 PM,Florida State,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,11,2025-11-08,Saturday,3:30 PM,Michigan,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,11,2025-11-08,Saturday,3:30 PM,LSU,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,12,2025-11-15,Saturday,3:30 PM,Penn State,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,12,2025-11-15,Saturday,3:30 PM,Notre Dame,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,12,2025-11-15,Saturday,3:30 PM,Georgia,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,12,2025-11-15,Saturday,3:30 PM,Ohio State,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,12,2025-11-15,Saturday,3:30 PM,Wisconsin,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,12,2025-11-15,Saturday,3:30 PM,Alabama,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,12,2025-11-15,Saturday,3:30 PM,Florida State,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,12,2025-11-15,Saturday,3:30 PM,Texas A&M,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,12,2025-11-15,Saturday,3:30 PM,Oklahoma,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,12,2025-11-15,Saturday,3:30 PM,Miami,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,12,2025-11-15,Saturday,3:30 PM,Auburn,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,12,2025-11-15,Saturday,3:30 PM,Michigan,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,12,2025-11-15,Saturday,3:30 PM,LSU,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,12,2025-11-15,Saturday,3:30 PM,USC,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,12,2025-11-15,Saturday,3:30 PM,Tennessee,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,12,2025-11-15,Saturday,3:30 PM,Oregon,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,12,2025-11-15,Saturday,3:30 PM,Texas,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,12,2025-11-15,Saturday,3:30 PM,Clemson,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,13,2025-11-22,Saturday,3:30 PM,Wisconsin,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,13,2025-11-22,Saturday,3:30 PM,Penn State,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,13,2025-11-22,Saturday,3:30 PM,Ohio State,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,13,2025-11-22,Saturday,3:30 PM,Michigan,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,13,2025-11-22,Saturday,3:30 PM,Miami,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,13,2025-11-22,Saturday,3:30 PM,Georgia,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,13,2025-11-22,Saturday,3:30 PM,Oregon,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,13,2025-11-22,Saturday,3:30 PM,Tennessee,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,13,2025-11-22,Saturday,3:30 PM,LSU,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,13,2025-11-22,Saturday,3:30 PM,Texas A&M,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,13,2025-11-22,Saturday,3:30 PM,Alabama,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,13,2025-11-22,Saturday,3:30 PM,Texas,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,13,2025-11-22,Saturday,3:30 PM,Clemson,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,13,2025-11-22,Saturday,3:30 PM,Notre Dame,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,13,2025-11-22,Saturday,3:30 PM,Auburn,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,13,2025-11-22,Saturday,3:30 PM,USC,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,13,2025-11-22,Saturday,3:30 PM,Oklahoma,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,13,2025-11-22,Saturday,3:30 PM,Florida State,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,14,2025-11-29,Saturday,3:30 PM,Miami,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,14,2025-11-29,Saturday,3:30 PM,Wisconsin,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,14,2025-11-29,Saturday,3:30 PM,Michigan,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,14,2025-11-29,Saturday,3:30 PM,Texas,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,14,2025-11-29,Saturday,3:30 PM,Texas A&M,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,14,2025-11-29,Saturday,3:30 PM,Ohio State,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,14,2025-11-29,Saturday,3:30 PM,USC,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,14,2025-11-29,Saturday,3:30 PM,Auburn,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,14,2025-11-29,Saturday,3:30 PM,Clemson,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,14,2025-11-29,Saturday,3:30 PM,Tennessee,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,14,2025-11-29,Saturday,3:30 PM,Georgia,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,14,2025-11-29,Saturday,3:30 PM,Oklahoma,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,14,2025-11-29,Saturday,3:30 PM,Florida State,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,14,2025-11-29,Saturday,3:30 PM,Penn State,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,14,2025-11-29,Saturday,3:30 PM,Alabama,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,14,2025-11-29,Saturday,3:30 PM,Notre Dame,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,14,2025-11-29,Saturday,3:30 PM,LSU,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,14,2025-11-29,Saturday,3:30 PM,Oregon,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data
+Alabama,15,2025-12-06,Saturday,3:30 PM,Texas A&M,Alabama Stadium,Home,ESPN,SEC,Estimated Data
+Auburn,15,2025-12-06,Saturday,3:30 PM,Miami,Auburn Stadium,Away,ESPN,SEC,Estimated Data
+Clemson,15,2025-12-06,Saturday,3:30 PM,Texas,Clemson Stadium,Away,ESPN,ACC,Estimated Data
+Florida State,15,2025-12-06,Saturday,3:30 PM,Oklahoma,Florida State Stadium,Home,ESPN,ACC,Estimated Data
+Georgia,15,2025-12-06,Saturday,3:30 PM,Tennessee,Georgia Stadium,Away,ESPN,SEC,Estimated Data
+LSU,15,2025-12-06,Saturday,3:30 PM,Michigan,LSU Stadium,Home,ESPN,SEC,Estimated Data
+Miami,15,2025-12-06,Saturday,3:30 PM,Notre Dame,Miami Stadium,Home,ESPN,ACC,Estimated Data
+Michigan,15,2025-12-06,Saturday,3:30 PM,Alabama,Michigan Stadium,Away,ESPN,Big Ten,Estimated Data
+Notre Dame,15,2025-12-06,Saturday,3:30 PM,Florida State,Notre Dame Stadium,Away,ESPN,Independent,Estimated Data
+Ohio State,15,2025-12-06,Saturday,3:30 PM,Auburn,Ohio State Stadium,Home,ESPN,Big Ten,Estimated Data
+Oklahoma,15,2025-12-06,Saturday,3:30 PM,Ohio State,Oklahoma Stadium,Away,ESPN,SEC,Estimated Data
+Oregon,15,2025-12-06,Saturday,3:30 PM,LSU,Oregon Stadium,Away,ESPN,Big Ten,Estimated Data
+Penn State,15,2025-12-06,Saturday,3:30 PM,Oregon,Penn State Stadium,Home,ESPN,Big Ten,Estimated Data
+Tennessee,15,2025-12-06,Saturday,3:30 PM,Wisconsin,Tennessee Stadium,Home,ESPN,SEC,Estimated Data
+Texas,15,2025-12-06,Saturday,3:30 PM,Georgia,Texas Stadium,Home,ESPN,SEC,Estimated Data
+Texas A&M,15,2025-12-06,Saturday,3:30 PM,Penn State,Texas A&M Stadium,Away,ESPN,SEC,Estimated Data
+USC,15,2025-12-06,Saturday,3:30 PM,Clemson,USC Stadium,Home,ESPN,Big Ten,Estimated Data
+Wisconsin,15,2025-12-06,Saturday,3:30 PM,USC,Wisconsin Stadium,Away,ESPN,Big Ten,Estimated Data

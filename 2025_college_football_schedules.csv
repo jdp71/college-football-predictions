@@ -1,0 +1,1561 @@
+Team,Week,Opponent,Home_Away,Location
+Air Force,1,Bucknell,Home,vs
+Air Force,2,Utah State,Away,@
+Air Force,3,Boise State,Home,vs
+Air Force,4,Hawai'i,Home,vs
+Air Force,5,Navy,Away,@
+Air Force,6,UNLV,Away,@
+Air Force,7,Wyoming,Home,vs
+Air Force,8,Army,Home,vs
+Air Force,9,San José State,Away,@
+Air Force,10,UConn,Away,@
+Air Force,11,New Mexico,Home,vs
+Air Force,12,Colorado State,Away,@
+Akron,1,Wyoming,Home,vs
+Akron,2,Nebraska,Away,@
+Akron,3,UAB,Away,@
+Akron,4,Duquesne,Home,vs
+Akron,5,Toledo,Away,@
+Akron,6,Central Michigan,Home,vs
+Akron,7,Miami (OH),Home,vs
+Akron,8,Ball State,Away,@
+Akron,9,Buffalo,Away,@
+Akron,10,Massachusetts,Home,vs
+Akron,11,Kent State,Home,vs
+Akron,12,Bowling Green,Away,@
+Alabama,1,Florida State,Away,@
+Alabama,2,UL Monroe,Home,vs
+Alabama,3,Wisconsin,Home,vs
+Alabama,4,Georgia,Away,@
+Alabama,5,Vanderbilt,Home,vs
+Alabama,6,Missouri,Away,@
+Alabama,7,Tennessee,Home,vs
+Alabama,8,South Carolina,Away,@
+Alabama,9,LSU,Home,vs
+Alabama,10,Oklahoma,Home,vs
+Alabama,11,Eastern Illinois,Home,vs
+Alabama,12,Auburn,Away,@
+Appalachian State,1,Charlotte,Home,vs
+Appalachian State,2,Lindenwood,Home,vs
+Appalachian State,3,Southern Miss,Away,@
+Appalachian State,4,Boise State,Away,@
+Appalachian State,5,Oregon State,Home,vs
+Appalachian State,6,Georgia State,Away,@
+Appalachian State,7,Coastal Carolina,Home,vs
+Appalachian State,8,Old Dominion,Away,@
+Appalachian State,9,Georgia Southern,Home,vs
+Appalachian State,10,James Madison,Away,@
+Appalachian State,11,Marshall,Home,vs
+Appalachian State,12,Arkansas State,Home,vs
+Arizona,1,Hawai'i,Home,vs
+Arizona,2,Weber State,Home,vs
+Arizona,3,Kansas State,Home,vs
+Arizona,4,Iowa State,Away,@
+Arizona,5,Oklahoma State,Home,vs
+Arizona,6,BYU,Home,vs
+Arizona,7,Houston,Away,@
+Arizona,8,Colorado,Away,@
+Arizona,9,Kansas,Home,vs
+Arizona,10,Cincinnati,Away,@
+Arizona,11,Baylor,Home,vs
+Arizona,12,Arizona State,Away,@
+Arizona State,1,Northern Arizona,Home,vs
+Arizona State,2,Mississippi State,Away,@
+Arizona State,3,Texas State,Home,vs
+Arizona State,4,Baylor,Away,@
+Arizona State,5,TCU,Home,vs
+Arizona State,6,Utah,Away,@
+Arizona State,7,Texas Tech,Home,vs
+Arizona State,8,Houston,Home,vs
+Arizona State,9,Iowa State,Away,@
+Arizona State,10,West Virginia,Home,vs
+Arizona State,11,Colorado,Away,@
+Arizona State,12,Arizona,Home,vs
+Arkansas,1,Alabama A&M,Home,vs
+Arkansas,2,Arkansas State,Home,vs
+Arkansas,3,Ole Miss,Away,@
+Arkansas,4,Memphis,Away,@
+Arkansas,5,Notre Dame,Home,vs
+Arkansas,6,Tennessee,Away,@
+Arkansas,7,Texas A&M,Home,vs
+Arkansas,8,Auburn,Home,vs
+Arkansas,9,Mississippi State,Home,vs
+Arkansas,10,LSU,Away,@
+Arkansas,11,Texas,Away,@
+Arkansas,12,Missouri,Home,vs
+Arkansas State,1,Southeast Missouri State,Home,vs
+Arkansas State,2,Arkansas,Away,@
+Arkansas State,3,Iowa State,Home,vs
+Arkansas State,4,Kennesaw State,Away,@
+Arkansas State,5,UL Monroe,Away,@
+Arkansas State,6,Texas State,Home,vs
+Arkansas State,7,South Alabama,Away,@
+Arkansas State,8,Georgia Southern,Home,vs
+Arkansas State,9,Troy,Away,@
+Arkansas State,10,Southern Miss,Home,vs
+Arkansas State,11,Louisiana,Home,vs
+Arkansas State,12,App State,Away,@
+Army,1,Tarleton State,Home,vs
+Army,2,Kansas State,Away,@
+Army,3,North Texas,Home,vs
+Army,4,East Carolina,Away,@
+Army,5,UAB,Away,@
+Army,6,Charlotte,Home,vs
+Army,7,Tulane,Away,@
+Army,8,Air Force,Away,@
+Army,9,Temple,Home,vs
+Army,10,Tulsa,Home,vs
+Army,11,UTSA,Away,@
+Army,12,Navy,Home,vs
+Auburn,1,Baylor,Away,@
+Auburn,2,Ball State,Home,vs
+Auburn,3,South Alabama,Home,vs
+Auburn,4,Oklahoma,Away,@
+Auburn,5,Texas A&M,Away,@
+Auburn,6,Georgia,Home,vs
+Auburn,7,Missouri,Home,vs
+Auburn,8,Arkansas,Away,@
+Auburn,9,Kentucky,Home,vs
+Auburn,10,Vanderbilt,Away,@
+Auburn,11,Mercer,Home,vs
+Auburn,12,Alabama,Home,vs
+BYU,1,Portland State,Home,vs
+BYU,2,Stanford,Home,vs
+BYU,3,East Carolina,Away,@
+BYU,4,Colorado,Away,@
+BYU,5,West Virginia,Home,vs
+BYU,6,Arizona,Away,@
+BYU,7,Utah,Home,vs
+BYU,8,Iowa State,Away,@
+BYU,9,Texas Tech,Away,@
+BYU,10,TCU,Home,vs
+BYU,11,Cincinnati,Away,@
+BYU,12,UCF,Home,vs
+Ball State,1,Purdue,Away,@
+Ball State,2,Auburn,Away,@
+Ball State,3,New Hampshire,Home,vs
+Ball State,4,UConn,Away,@
+Ball State,5,Ohio,Home,vs
+Ball State,6,Western Michigan,Away,@
+Ball State,7,Akron,Home,vs
+Ball State,8,Northern Illinois,Away,@
+Ball State,9,Kent State,Home,vs
+Ball State,10,Eastern Michigan,Home,vs
+Ball State,11,Toledo,Away,@
+Ball State,12,Miami (OH),Away,@
+Baylor,1,Auburn,Home,vs
+Baylor,2,SMU,Away,@
+Baylor,3,Samford,Home,vs
+Baylor,4,Arizona State,Home,vs
+Baylor,5,Oklahoma State,Away,@
+Baylor,6,Kansas State,Home,vs
+Baylor,7,TCU,Away,@
+Baylor,8,Cincinnati,Away,@
+Baylor,9,UCF,Home,vs
+Baylor,10,Utah,Home,vs
+Baylor,11,Arizona,Away,@
+Baylor,12,Houston,Home,vs
+Boise State,1,South Florida,Away,@
+Boise State,2,Eastern Washington,Home,vs
+Boise State,3,Air Force,Away,@
+Boise State,4,App State,Home,vs
+Boise State,5,Notre Dame,Away,@
+Boise State,6,New Mexico,Home,vs
+Boise State,7,UNLV,Home,vs
+Boise State,8,Nevada,Away,@
+Boise State,9,Fresno State,Home,vs
+Boise State,10,San Diego State,Away,@
+Boise State,11,Colorado State,Home,vs
+Boise State,12,Utah State,Away,@
+Boston College,1,Fordham,Home,vs
+Boston College,2,Michigan State,Away,@
+Boston College,3,Stanford,Away,@
+Boston College,4,California,Home,vs
+Boston College,5,Pittsburgh,Away,@
+Boston College,6,Clemson,Home,vs
+Boston College,7,UConn,Home,vs
+Boston College,8,Louisville,Away,@
+Boston College,9,Notre Dame,Home,vs
+Boston College,10,SMU,Home,vs
+Boston College,11,Georgia Tech,Home,vs
+Boston College,12,Syracuse,Away,@
+Bowling Green,1,Lafayette,Home,vs
+Bowling Green,2,Cincinnati,Away,@
+Bowling Green,3,Liberty,Home,vs
+Bowling Green,4,Louisville,Away,@
+Bowling Green,5,Ohio,Away,@
+Bowling Green,6,Toledo,Home,vs
+Bowling Green,7,Central Michigan,Home,vs
+Bowling Green,8,Kent State,Away,@
+Bowling Green,9,Buffalo,Home,vs
+Bowling Green,10,Eastern Michigan,Away,@
+Bowling Green,11,Akron,Home,vs
+Bowling Green,12,Massachusetts,Away,@
+Buffalo,1,Minnesota,Away,@
+Buffalo,2,Saint Francis,Home,vs
+Buffalo,3,Kent State,Away,@
+Buffalo,4,Troy,Home,vs
+Buffalo,5,UConn,Home,vs
+Buffalo,6,Eastern Michigan,Home,vs
+Buffalo,7,Massachusetts,Away,@
+Buffalo,8,Akron,Home,vs
+Buffalo,9,Bowling Green,Away,@
+Buffalo,10,Central Michigan,Away,@
+Buffalo,11,Miami (OH),Home,vs
+Buffalo,12,Ohio,Home,vs
+California,1,Oregon State,Away,@
+California,2,Texas Southern,Home,vs
+California,3,Minnesota,Home,vs
+California,4,San Diego State,Away,@
+California,5,Boston College,Away,@
+California,6,Duke,Home,vs
+California,7,North Carolina,Home,vs
+California,8,Virginia Tech,Away,@
+California,9,Virginia,Home,vs
+California,10,Louisville,Away,@
+California,11,Stanford,Away,@
+California,12,SMU,Home,vs
+Central Michigan,1,San José State,Away,@
+Central Michigan,2,Pittsburgh,Away,@
+Central Michigan,3,Michigan,Away,@
+Central Michigan,4,Wagner,Home,vs
+Central Michigan,5,Eastern Michigan,Home,vs
+Central Michigan,6,Akron,Away,@
+Central Michigan,7,Bowling Green,Away,@
+Central Michigan,8,Massachusetts,Home,vs
+Central Michigan,9,Western Michigan,Away,@
+Central Michigan,10,Buffalo,Home,vs
+Central Michigan,11,Kent State,Away,@
+Central Michigan,12,Toledo,Home,vs
+Charlotte,1,App State,Home,vs
+Charlotte,2,North Carolina,Home,vs
+Charlotte,3,Monmouth,Home,vs
+Charlotte,4,Rice,Home,vs
+Charlotte,5,South Florida,Away,@
+Charlotte,6,Army,Away,@
+Charlotte,7,Temple,Home,vs
+Charlotte,8,North Texas,Home,vs
+Charlotte,9,East Carolina,Away,@
+Charlotte,10,UTSA,Home,vs
+Charlotte,11,Georgia,Away,@
+Charlotte,12,Tulane,Away,@
+Cincinnati,1,Nebraska,Home,vs
+Cincinnati,2,Bowling Green,Home,vs
+Cincinnati,3,Northwestern State,Home,vs
+Cincinnati,4,Kansas,Away,@
+Cincinnati,5,Iowa State,Home,vs
+Cincinnati,6,UCF,Home,vs
+Cincinnati,7,Oklahoma State,Away,@
+Cincinnati,8,Baylor,Home,vs
+Cincinnati,9,Utah,Away,@
+Cincinnati,10,Arizona,Home,vs
+Cincinnati,11,BYU,Home,vs
+Cincinnati,12,TCU,Away,@
+Clemson,1,LSU,Home,vs
+Clemson,2,Troy,Home,vs
+Clemson,3,Georgia Tech,Away,@
+Clemson,4,Syracuse,Home,vs
+Clemson,5,North Carolina,Away,@
+Clemson,6,Boston College,Away,@
+Clemson,7,SMU,Home,vs
+Clemson,8,Duke,Home,vs
+Clemson,9,Florida State,Home,vs
+Clemson,10,Louisville,Away,@
+Clemson,11,Furman,Home,vs
+Clemson,12,South Carolina,Away,@
+Coastal Carolina,1,Virginia,Away,@
+Coastal Carolina,2,Charleston Southern,Home,vs
+Coastal Carolina,3,East Carolina,Home,vs
+Coastal Carolina,4,South Alabama,Away,@
+Coastal Carolina,5,Old Dominion,Away,@
+Coastal Carolina,6,UL Monroe,Home,vs
+Coastal Carolina,7,App State,Away,@
+Coastal Carolina,8,Marshall,Home,vs
+Coastal Carolina,9,Georgia State,Home,vs
+Coastal Carolina,10,Georgia Southern,Away,@
+Coastal Carolina,11,South Carolina,Away,@
+Coastal Carolina,12,James Madison,Home,vs
+Colorado,1,Georgia Tech,Home,vs
+Colorado,2,Delaware,Home,vs
+Colorado,3,Houston,Away,@
+Colorado,4,Wyoming,Home,vs
+Colorado,5,BYU,Home,vs
+Colorado,6,TCU,Away,@
+Colorado,7,Iowa State,Home,vs
+Colorado,8,Utah,Away,@
+Colorado,9,Arizona,Home,vs
+Colorado,10,West Virginia,Away,@
+Colorado,11,Arizona State,Home,vs
+Colorado,12,Kansas State,Away,@
+Colorado State,1,Washington,Away,@
+Colorado State,2,Northern Colorado,Home,vs
+Colorado State,3,UTSA,Home,vs
+Colorado State,4,Washington State,Home,vs
+Colorado State,5,San Diego State,Away,@
+Colorado State,6,Fresno State,Home,vs
+Colorado State,7,Hawai'i,Home,vs
+Colorado State,8,Wyoming,Away,@
+Colorado State,9,UNLV,Home,vs
+Colorado State,10,New Mexico,Away,@
+Colorado State,11,Boise State,Away,@
+Colorado State,12,Air Force,Home,vs
+Duke,1,Elon,Home,vs
+Duke,2,Illinois,Home,vs
+Duke,3,Tulane,Away,@
+Duke,4,NC State,Home,vs
+Duke,5,Syracuse,Away,@
+Duke,6,California,Away,@
+Duke,7,Georgia Tech,Home,vs
+Duke,8,Clemson,Away,@
+Duke,9,UConn,Away,@
+Duke,10,Virginia,Home,vs
+Duke,11,North Carolina,Away,@
+Duke,12,Wake Forest,Home,vs
+East Carolina,1,NC State,Away,@
+East Carolina,2,Campbell,Home,vs
+East Carolina,3,Coastal Carolina,Away,@
+East Carolina,4,BYU,Home,vs
+East Carolina,5,Army,Home,vs
+East Carolina,6,Tulane,Away,@
+East Carolina,7,Tulsa,Home,vs
+East Carolina,8,Temple,Away,@
+East Carolina,9,Charlotte,Home,vs
+East Carolina,10,Memphis,Home,vs
+East Carolina,11,UTSA,Away,@
+East Carolina,12,Florida Atlantic,Away,@
+Eastern Michigan,1,Texas State,Away,@
+Eastern Michigan,2,Long Island University,Home,vs
+Eastern Michigan,3,Kentucky,Away,@
+Eastern Michigan,4,Louisiana,Home,vs
+Eastern Michigan,5,Central Michigan,Away,@
+Eastern Michigan,6,Buffalo,Away,@
+Eastern Michigan,7,Northern Illinois,Home,vs
+Eastern Michigan,8,Miami (OH),Away,@
+Eastern Michigan,9,Ohio,Home,vs
+Eastern Michigan,10,Bowling Green,Home,vs
+Eastern Michigan,11,Ball State,Away,@
+Eastern Michigan,12,Western Michigan,Home,vs
+Florida,1,Long Island University,Home,vs
+Florida,2,South Florida,Home,vs
+Florida,3,LSU,Away,@
+Florida,4,Miami,Away,@
+Florida,5,Texas,Home,vs
+Florida,6,Texas A&M,Away,@
+Florida,7,Mississippi State,Home,vs
+Florida,8,Georgia,Home,vs
+Florida,9,Kentucky,Away,@
+Florida,10,Ole Miss,Away,@
+Florida,11,Tennessee,Home,vs
+Florida,12,Florida State,Home,vs
+Florida Atlantic,1,Maryland,Away,@
+Florida Atlantic,2,Florida A&M,Home,vs
+Florida Atlantic,3,Florida International,Away,@
+Florida Atlantic,4,Memphis,Home,vs
+Florida Atlantic,5,Rice,Away,@
+Florida Atlantic,6,UAB,Home,vs
+Florida Atlantic,7,South Florida,Away,@
+Florida Atlantic,8,Navy,Away,@
+Florida Atlantic,9,Tulsa,Home,vs
+Florida Atlantic,10,Tulane,Away,@
+Florida Atlantic,11,UConn,Home,vs
+Florida Atlantic,12,East Carolina,Home,vs
+Florida International,1,Bethune-Cookman,Home,vs
+Florida International,2,Penn State,Away,@
+Florida International,3,Florida Atlantic,Home,vs
+Florida International,4,Delaware,Home,vs
+Florida International,5,UConn,Away,@
+Florida International,6,Western Kentucky,Away,@
+Florida International,7,Kennesaw State,Home,vs
+Florida International,8,Missouri State,Away,@
+Florida International,9,Middle Tennessee,Away,@
+Florida International,10,Liberty,Home,vs
+Florida International,11,Jacksonville State,Home,vs
+Florida International,12,Sam Houston,Away,@
+Florida State,1,Alabama,Home,vs
+Florida State,2,East Texas A&M,Home,vs
+Florida State,3,Kent State,Home,vs
+Florida State,4,Virginia,Away,@
+Florida State,5,Miami,Home,vs
+Florida State,6,Pittsburgh,Home,vs
+Florida State,7,Stanford,Away,@
+Florida State,8,Wake Forest,Home,vs
+Florida State,9,Clemson,Away,@
+Florida State,10,Virginia Tech,Home,vs
+Florida State,11,NC State,Away,@
+Florida State,12,Florida,Away,@
+Fresno State,1,Kansas,Away,@
+Fresno State,2,Georgia Southern,Home,vs
+Fresno State,3,Oregon State,Away,@
+Fresno State,4,Southern,Home,vs
+Fresno State,5,Hawai'i,Away,@
+Fresno State,6,Nevada,Home,vs
+Fresno State,7,Colorado State,Away,@
+Fresno State,8,San Diego State,Home,vs
+Fresno State,9,Boise State,Away,@
+Fresno State,10,Wyoming,Home,vs
+Fresno State,11,Utah State,Home,vs
+Fresno State,12,San José State,Away,@
+Georgia,1,Marshall,Home,vs
+Georgia,2,Austin Peay,Home,vs
+Georgia,3,Tennessee,Away,@
+Georgia,4,Alabama,Home,vs
+Georgia,5,Kentucky,Home,vs
+Georgia,6,Auburn,Away,@
+Georgia,7,Ole Miss,Home,vs
+Georgia,8,Florida,Home,vs
+Georgia,9,Mississippi State,Away,@
+Georgia,10,Texas,Home,vs
+Georgia,11,Charlotte,Home,vs
+Georgia,12,Georgia Tech,Home,vs
+Georgia Southern,1,Fresno State,Away,@
+Georgia Southern,2,USC,Away,@
+Georgia Southern,3,Jacksonville State,Home,vs
+Georgia Southern,4,Maine,Home,vs
+Georgia Southern,5,James Madison,Away,@
+Georgia Southern,6,Southern Miss,Home,vs
+Georgia Southern,7,Georgia State,Home,vs
+Georgia Southern,8,Arkansas State,Away,@
+Georgia Southern,9,App State,Away,@
+Georgia Southern,10,Coastal Carolina,Home,vs
+Georgia Southern,11,Old Dominion,Home,vs
+Georgia Southern,12,Marshall,Away,@
+Georgia State,1,Ole Miss,Away,@
+Georgia State,2,Memphis,Home,vs
+Georgia State,3,Murray State,Home,vs
+Georgia State,4,Vanderbilt,Away,@
+Georgia State,5,James Madison,Home,vs
+Georgia State,6,App State,Home,vs
+Georgia State,7,Georgia Southern,Away,@
+Georgia State,8,South Alabama,Home,vs
+Georgia State,9,Coastal Carolina,Away,@
+Georgia State,10,Marshall,Home,vs
+Georgia State,11,Troy,Away,@
+Georgia State,12,Old Dominion,Away,@
+Georgia Tech,1,Colorado,Away,@
+Georgia Tech,2,Gardner-Webb,Home,vs
+Georgia Tech,3,Clemson,Home,vs
+Georgia Tech,4,Temple,Home,vs
+Georgia Tech,5,Wake Forest,Away,@
+Georgia Tech,6,Virginia Tech,Home,vs
+Georgia Tech,7,Duke,Away,@
+Georgia Tech,8,Syracuse,Home,vs
+Georgia Tech,9,NC State,Away,@
+Georgia Tech,10,Boston College,Away,@
+Georgia Tech,11,Pittsburgh,Home,vs
+Georgia Tech,12,Georgia,Home,vs
+Hawaii,1,Stanford,Home,vs
+Hawaii,2,Arizona,Away,@
+Hawaii,3,Sam Houston,Home,vs
+Hawaii,4,Portland State,Home,vs
+Hawaii,5,Fresno State,Home,vs
+Hawaii,6,Air Force,Away,@
+Hawaii,7,Utah State,Home,vs
+Hawaii,8,Colorado State,Away,@
+Hawaii,9,San José State,Away,@
+Hawaii,10,San Diego State,Home,vs
+Hawaii,11,UNLV,Away,@
+Hawaii,12,Wyoming,Home,vs
+Houston,1,Stephen F. Austin,Home,vs
+Houston,2,Rice,Away,@
+Houston,3,Colorado,Home,vs
+Houston,4,Oregon State,Away,@
+Houston,5,Texas Tech,Home,vs
+Houston,6,Oklahoma State,Away,@
+Houston,7,Arizona,Home,vs
+Houston,8,Arizona State,Away,@
+Houston,9,West Virginia,Home,vs
+Houston,10,UCF,Away,@
+Houston,11,TCU,Home,vs
+Houston,12,Baylor,Away,@
+Illinois,1,Western Illinois,Home,vs
+Illinois,2,Duke,Away,@
+Illinois,3,Western Michigan,Home,vs
+Illinois,4,Indiana,Away,@
+Illinois,5,USC,Home,vs
+Illinois,6,Purdue,Away,@
+Illinois,7,Ohio State,Home,vs
+Illinois,8,Washington,Away,@
+Illinois,9,Rutgers,Home,vs
+Illinois,10,Maryland,Home,vs
+Illinois,11,Wisconsin,Away,@
+Illinois,12,Northwestern,Home,vs
+Indiana,1,Old Dominion,Home,vs
+Indiana,2,Kennesaw State,Home,vs
+Indiana,3,Indiana State,Home,vs
+Indiana,4,Illinois,Home,vs
+Indiana,5,Iowa,Away,@
+Indiana,6,Oregon,Away,@
+Indiana,7,Michigan State,Home,vs
+Indiana,8,UCLA,Home,vs
+Indiana,9,Maryland,Away,@
+Indiana,10,Penn State,Away,@
+Indiana,11,Wisconsin,Home,vs
+Indiana,12,Purdue,Away,@
+Iowa,1,UAlbany,Home,vs
+Iowa,2,Iowa State,Away,@
+Iowa,3,Massachusetts,Home,vs
+Iowa,4,Rutgers,Away,@
+Iowa,5,Indiana,Home,vs
+Iowa,6,Wisconsin,Away,@
+Iowa,7,Penn State,Home,vs
+Iowa,8,Minnesota,Home,vs
+Iowa,9,Oregon,Home,vs
+Iowa,10,USC,Away,@
+Iowa,11,Michigan State,Home,vs
+Iowa,12,Nebraska,Away,@
+Iowa State,1,Kansas State,Home,vs
+Iowa State,2,South Dakota,Home,vs
+Iowa State,3,Iowa,Home,vs
+Iowa State,4,Arkansas State,Away,@
+Iowa State,5,Arizona,Home,vs
+Iowa State,6,Cincinnati,Away,@
+Iowa State,7,Colorado,Away,@
+Iowa State,8,BYU,Home,vs
+Iowa State,9,Arizona State,Home,vs
+Iowa State,10,TCU,Away,@
+Iowa State,11,Kansas,Home,vs
+Iowa State,12,Oklahoma State,Away,@
+Jacksonville State,1,UCF,Away,@
+Jacksonville State,2,Liberty,Home,vs
+Jacksonville State,3,Georgia Southern,Away,@
+Jacksonville State,4,Murray State,Home,vs
+Jacksonville State,5,Southern Miss,Away,@
+Jacksonville State,6,Sam Houston,Away,@
+Jacksonville State,7,Delaware,Home,vs
+Jacksonville State,8,Middle Tennessee,Away,@
+Jacksonville State,9,UTEP,Away,@
+Jacksonville State,10,Kennesaw State,Home,vs
+Jacksonville State,11,Florida International,Away,@
+Jacksonville State,12,Western Kentucky,Home,vs
+James Madison,1,Weber State,Home,vs
+James Madison,2,Louisville,Away,@
+James Madison,3,Liberty,Away,@
+James Madison,4,Georgia Southern,Home,vs
+James Madison,5,Georgia State,Away,@
+James Madison,6,Louisiana,Home,vs
+James Madison,7,Old Dominion,Home,vs
+James Madison,8,Texas State,Away,@
+James Madison,9,Marshall,Away,@
+James Madison,10,App State,Home,vs
+James Madison,11,Washington State,Home,vs
+James Madison,12,Coastal Carolina,Away,@
+Kansas,1,Fresno State,Home,vs
+Kansas,2,Wagner,Home,vs
+Kansas,3,Missouri,Away,@
+Kansas,4,West Virginia,Home,vs
+Kansas,5,Cincinnati,Home,vs
+Kansas,6,UCF,Away,@
+Kansas,7,Texas Tech,Away,@
+Kansas,8,Kansas State,Home,vs
+Kansas,9,Oklahoma State,Home,vs
+Kansas,10,Arizona,Away,@
+Kansas,11,Iowa State,Away,@
+Kansas,12,Utah,Home,vs
+Kansas State,1,Iowa State,Home,vs
+Kansas State,2,North Dakota,Home,vs
+Kansas State,3,Army,Home,vs
+Kansas State,4,Arizona,Away,@
+Kansas State,5,UCF,Home,vs
+Kansas State,6,Baylor,Away,@
+Kansas State,7,TCU,Home,vs
+Kansas State,8,Kansas,Away,@
+Kansas State,9,Texas Tech,Home,vs
+Kansas State,10,Oklahoma State,Away,@
+Kansas State,11,Utah,Away,@
+Kansas State,12,Colorado,Home,vs
+Kent State,1,Merrimack,Home,vs
+Kent State,2,Texas Tech,Away,@
+Kent State,3,Buffalo,Home,vs
+Kent State,4,Florida State,Away,@
+Kent State,5,Oklahoma,Away,@
+Kent State,6,Massachusetts,Home,vs
+Kent State,7,Toledo,Away,@
+Kent State,8,Bowling Green,Home,vs
+Kent State,9,Ball State,Away,@
+Kent State,10,Akron,Away,@
+Kent State,11,Central Michigan,Home,vs
+Kent State,12,Northern Illinois,Away,@
+Kentucky,1,Toledo,Home,vs
+Kentucky,2,Ole Miss,Home,vs
+Kentucky,3,Eastern Michigan,Home,vs
+Kentucky,4,South Carolina,Away,@
+Kentucky,5,Georgia,Away,@
+Kentucky,6,Texas,Home,vs
+Kentucky,7,Tennessee,Home,vs
+Kentucky,8,Auburn,Away,@
+Kentucky,9,Florida,Home,vs
+Kentucky,10,Tennessee Tech,Home,vs
+Kentucky,11,Vanderbilt,Away,@
+Kentucky,12,Louisville,Away,@
+LSU,1,Clemson,Away,@
+LSU,2,Louisiana Tech,Home,vs
+LSU,3,Florida,Home,vs
+LSU,4,SE Louisiana,Home,vs
+LSU,5,Ole Miss,Away,@
+LSU,6,South Carolina,Home,vs
+LSU,7,Vanderbilt,Away,@
+LSU,8,Texas A&M,Home,vs
+LSU,9,Alabama,Away,@
+LSU,10,Arkansas,Home,vs
+LSU,11,Western Kentucky,Home,vs
+LSU,12,Oklahoma,Away,@
+Liberty,1,Maine,Home,vs
+Liberty,2,Jacksonville State,Away,@
+Liberty,3,Bowling Green,Away,@
+Liberty,4,James Madison,Home,vs
+Liberty,5,Old Dominion,Away,@
+Liberty,6,UTEP,Away,@
+Liberty,7,New Mexico State,Home,vs
+Liberty,8,Delaware,Home,vs
+Liberty,9,Missouri State,Home,vs
+Liberty,10,Florida International,Away,@
+Liberty,11,Louisiana Tech,Away,@
+Liberty,12,Kennesaw State,Home,vs
+Louisiana,1,Rice,Home,vs
+Louisiana,2,McNeese,Home,vs
+Louisiana,3,Missouri,Away,@
+Louisiana,4,Eastern Michigan,Away,@
+Louisiana,5,Marshall,Home,vs
+Louisiana,6,James Madison,Away,@
+Louisiana,7,Southern Miss,Home,vs
+Louisiana,8,Troy,Away,@
+Louisiana,9,South Alabama,Away,@
+Louisiana,10,Texas State,Home,vs
+Louisiana,11,Arkansas State,Away,@
+Louisiana,12,UL Monroe,Home,vs
+Louisiana Monroe,1,Saint Francis,Home,vs
+Louisiana Monroe,2,Alabama,Away,@
+Louisiana Monroe,3,UTEP,Away,@
+Louisiana Monroe,4,Arkansas State,Home,vs
+Louisiana Monroe,5,Northwestern,Away,@
+Louisiana Monroe,6,Coastal Carolina,Away,@
+Louisiana Monroe,7,Troy,Home,vs
+Louisiana Monroe,8,Southern Miss,Away,@
+Louisiana Monroe,9,Old Dominion,Home,vs
+Louisiana Monroe,10,South Alabama,Home,vs
+Louisiana Monroe,11,Texas State,Away,@
+Louisiana Monroe,12,Louisiana,Away,@
+Louisiana Tech,1,SE Louisiana,Home,vs
+Louisiana Tech,2,LSU,Away,@
+Louisiana Tech,3,New Mexico State,Home,vs
+Louisiana Tech,4,Southern Miss,Home,vs
+Louisiana Tech,5,UTEP,Away,@
+Louisiana Tech,6,Kennesaw State,Away,@
+Louisiana Tech,7,Western Kentucky,Home,vs
+Louisiana Tech,8,Sam Houston,Home,vs
+Louisiana Tech,9,Delaware,Away,@
+Louisiana Tech,10,Washington State,Away,@
+Louisiana Tech,11,Liberty,Home,vs
+Louisiana Tech,12,Missouri State,Away,@
+Louisville,1,Eastern Kentucky,Home,vs
+Louisville,2,James Madison,Home,vs
+Louisville,3,Bowling Green,Home,vs
+Louisville,4,Pittsburgh,Away,@
+Louisville,5,Virginia,Home,vs
+Louisville,6,Miami,Away,@
+Louisville,7,Boston College,Home,vs
+Louisville,8,Virginia Tech,Away,@
+Louisville,9,California,Home,vs
+Louisville,10,Clemson,Home,vs
+Louisville,11,SMU,Away,@
+Louisville,12,Kentucky,Home,vs
+Marshall,1,Georgia,Away,@
+Marshall,2,Missouri State,Home,vs
+Marshall,3,Eastern Kentucky,Home,vs
+Marshall,4,Middle Tennessee,Away,@
+Marshall,5,Louisiana,Away,@
+Marshall,6,Old Dominion,Home,vs
+Marshall,7,Texas State,Home,vs
+Marshall,8,Coastal Carolina,Away,@
+Marshall,9,James Madison,Home,vs
+Marshall,10,Georgia State,Away,@
+Marshall,11,App State,Away,@
+Marshall,12,Georgia Southern,Home,vs
+Maryland,1,Florida Atlantic,Home,vs
+Maryland,2,Northern Illinois,Home,vs
+Maryland,3,Towson,Home,vs
+Maryland,4,Wisconsin,Away,@
+Maryland,5,Washington,Home,vs
+Maryland,6,Nebraska,Home,vs
+Maryland,7,UCLA,Away,@
+Maryland,8,Indiana,Home,vs
+Maryland,9,Rutgers,Away,@
+Maryland,10,Illinois,Away,@
+Maryland,11,Michigan,Home,vs
+Maryland,12,Michigan State,Home,vs
+Memphis,1,Chattanooga,Home,vs
+Memphis,2,Georgia State,Away,@
+Memphis,3,Troy,Away,@
+Memphis,4,Arkansas,Home,vs
+Memphis,5,Florida Atlantic,Away,@
+Memphis,6,Tulsa,Home,vs
+Memphis,7,UAB,Away,@
+Memphis,8,South Florida,Home,vs
+Memphis,9,Rice,Away,@
+Memphis,10,Tulane,Home,vs
+Memphis,11,East Carolina,Away,@
+Memphis,12,Navy,Home,vs
+Miami,1,Notre Dame,Home,vs
+Miami,2,Bethune-Cookman,Home,vs
+Miami,3,South Florida,Home,vs
+Miami,4,Florida,Home,vs
+Miami,5,Florida State,Away,@
+Miami,6,Louisville,Home,vs
+Miami,7,Stanford,Home,vs
+Miami,8,SMU,Away,@
+Miami,9,Syracuse,Home,vs
+Miami,10,NC State,Home,vs
+Miami,11,Virginia Tech,Away,@
+Miami,12,Pittsburgh,Away,@
+Miami (OH),1,Wisconsin,Away,@
+Miami (OH),2,Rutgers,Away,@
+Miami (OH),3,UNLV,Home,vs
+Miami (OH),4,Lindenwood,Home,vs
+Miami (OH),5,Northern Illinois,Away,@
+Miami (OH),6,Akron,Away,@
+Miami (OH),7,Eastern Michigan,Home,vs
+Miami (OH),8,Western Michigan,Home,vs
+Miami (OH),9,Ohio,Away,@
+Miami (OH),10,Toledo,Home,vs
+Miami (OH),11,Buffalo,Away,@
+Miami (OH),12,Ball State,Home,vs
+Michigan,1,New Mexico,Home,vs
+Michigan,2,Oklahoma,Away,@
+Michigan,3,Central Michigan,Home,vs
+Michigan,4,Nebraska,Away,@
+Michigan,5,Wisconsin,Home,vs
+Michigan,6,USC,Away,@
+Michigan,7,Washington,Home,vs
+Michigan,8,Michigan State,Away,@
+Michigan,9,Purdue,Home,vs
+Michigan,10,Northwestern,Away,@
+Michigan,11,Maryland,Away,@
+Michigan,12,Ohio State,Home,vs
+Michigan State,1,Western Michigan,Home,vs
+Michigan State,2,Boston College,Home,vs
+Michigan State,3,Youngstown State,Home,vs
+Michigan State,4,USC,Away,@
+Michigan State,5,Nebraska,Away,@
+Michigan State,6,UCLA,Home,vs
+Michigan State,7,Indiana,Away,@
+Michigan State,8,Michigan,Home,vs
+Michigan State,9,Minnesota,Away,@
+Michigan State,10,Penn State,Home,vs
+Michigan State,11,Iowa,Away,@
+Michigan State,12,Maryland,Home,vs
+Middle Tennessee,1,Austin Peay,Home,vs
+Middle Tennessee,2,Wisconsin,Away,@
+Middle Tennessee,3,Nevada,Away,@
+Middle Tennessee,4,Marshall,Home,vs
+Middle Tennessee,5,Kennesaw State,Away,@
+Middle Tennessee,6,Missouri State,Home,vs
+Middle Tennessee,7,Delaware,Away,@
+Middle Tennessee,8,Jacksonville State,Home,vs
+Middle Tennessee,9,Florida International,Home,vs
+Middle Tennessee,10,Western Kentucky,Away,@
+Middle Tennessee,11,Sam Houston,Home,vs
+Middle Tennessee,12,New Mexico State,Away,@
+Minnesota,1,Buffalo,Home,vs
+Minnesota,2,Northwestern State,Home,vs
+Minnesota,3,California,Away,@
+Minnesota,4,Rutgers,Home,vs
+Minnesota,5,Ohio State,Away,@
+Minnesota,6,Purdue,Home,vs
+Minnesota,7,Nebraska,Home,vs
+Minnesota,8,Iowa,Away,@
+Minnesota,9,Michigan State,Home,vs
+Minnesota,10,Oregon,Away,@
+Minnesota,11,Northwestern,Away,@
+Minnesota,12,Wisconsin,Home,vs
+Mississippi,1,Georgia State,Home,vs
+Mississippi,2,Kentucky,Away,@
+Mississippi,3,Arkansas,Home,vs
+Mississippi,4,Tulane,Home,vs
+Mississippi,5,LSU,Home,vs
+Mississippi,6,Washington State,Home,vs
+Mississippi,7,Georgia,Away,@
+Mississippi,8,Oklahoma,Away,@
+Mississippi,9,South Carolina,Home,vs
+Mississippi,10,The Citadel,Home,vs
+Mississippi,11,Florida,Home,vs
+Mississippi,12,Mississippi State,Away,@
+Mississippi State,1,Southern Miss,Away,@
+Mississippi State,2,Arizona State,Home,vs
+Mississippi State,3,Alcorn State,Home,vs
+Mississippi State,4,Northern Illinois,Home,vs
+Mississippi State,5,Tennessee,Home,vs
+Mississippi State,6,Texas A&M,Away,@
+Mississippi State,7,Florida,Away,@
+Mississippi State,8,Texas,Home,vs
+Mississippi State,9,Arkansas,Away,@
+Mississippi State,10,Georgia,Home,vs
+Mississippi State,11,Missouri,Away,@
+Mississippi State,12,Ole Miss,Home,vs
+Missouri,1,Central Arkansas,Home,vs
+Missouri,2,Kansas,Home,vs
+Missouri,3,Louisiana,Home,vs
+Missouri,4,South Carolina,Home,vs
+Missouri,5,Massachusetts,Home,vs
+Missouri,6,Alabama,Home,vs
+Missouri,7,Auburn,Away,@
+Missouri,8,Vanderbilt,Away,@
+Missouri,9,Texas A&M,Home,vs
+Missouri,10,Mississippi State,Home,vs
+Missouri,11,Oklahoma,Away,@
+Missouri,12,Arkansas,Away,@
+NC State,1,East Carolina,Home,vs
+NC State,2,Virginia,Home,vs
+NC State,3,Wake Forest,Away,@
+NC State,4,Duke,Away,@
+NC State,5,Virginia Tech,Home,vs
+NC State,6,Campbell,Home,vs
+NC State,7,Notre Dame,Away,@
+NC State,8,Pittsburgh,Away,@
+NC State,9,Georgia Tech,Home,vs
+NC State,10,Miami,Away,@
+NC State,11,Florida State,Home,vs
+NC State,12,North Carolina,Home,vs
+Navy,1,VMI,Home,vs
+Navy,2,UAB,Home,vs
+Navy,3,Tulsa,Away,@
+Navy,4,Rice,Home,vs
+Navy,5,Air Force,Home,vs
+Navy,6,Temple,Away,@
+Navy,7,Florida Atlantic,Home,vs
+Navy,8,North Texas,Away,@
+Navy,9,Notre Dame,Away,@
+Navy,10,South Florida,Home,vs
+Navy,11,Memphis,Away,@
+Navy,12,Army,Home,vs
+Nebraska,1,Cincinnati,Home,vs
+Nebraska,2,Akron,Home,vs
+Nebraska,3,Houston Christian,Home,vs
+Nebraska,4,Michigan,Home,vs
+Nebraska,5,Michigan State,Home,vs
+Nebraska,6,Maryland,Away,@
+Nebraska,7,Minnesota,Away,@
+Nebraska,8,Northwestern,Home,vs
+Nebraska,9,USC,Home,vs
+Nebraska,10,UCLA,Away,@
+Nebraska,11,Penn State,Away,@
+Nebraska,12,Iowa,Home,vs
+Nevada,1,Penn State,Away,@
+Nevada,2,Sacramento State,Home,vs
+Nevada,3,Middle Tennessee,Home,vs
+Nevada,4,Western Kentucky,Away,@
+Nevada,5,Fresno State,Away,@
+Nevada,6,San Diego State,Home,vs
+Nevada,7,New Mexico,Away,@
+Nevada,8,Boise State,Home,vs
+Nevada,9,Utah State,Away,@
+Nevada,10,San José State,Home,vs
+Nevada,11,Wyoming,Away,@
+Nevada,12,UNLV,Home,vs
+New Mexico,1,Michigan,Away,@
+New Mexico,2,Idaho State,Home,vs
+New Mexico,3,UCLA,Away,@
+New Mexico,4,New Mexico State,Home,vs
+New Mexico,5,San José State,Away,@
+New Mexico,6,Boise State,Away,@
+New Mexico,7,Nevada,Home,vs
+New Mexico,8,Utah State,Home,vs
+New Mexico,9,UNLV,Away,@
+New Mexico,10,Colorado State,Home,vs
+New Mexico,11,Air Force,Away,@
+New Mexico,12,San Diego State,Home,vs
+New Mexico State,1,Bryant,Home,vs
+New Mexico State,2,Tulsa,Home,vs
+New Mexico State,3,Louisiana Tech,Away,@
+New Mexico State,4,New Mexico,Away,@
+New Mexico State,5,Sam Houston,Home,vs
+New Mexico State,6,Liberty,Away,@
+New Mexico State,7,Missouri State,Home,vs
+New Mexico State,8,Western Kentucky,Away,@
+New Mexico State,9,Kennesaw State,Home,vs
+New Mexico State,10,Tennessee,Away,@
+New Mexico State,11,UTEP,Away,@
+New Mexico State,12,Middle Tennessee,Home,vs
+North Carolina,1,TCU,Home,vs
+North Carolina,2,Charlotte,Away,@
+North Carolina,3,Richmond,Home,vs
+North Carolina,4,UCF,Away,@
+North Carolina,5,Clemson,Home,vs
+North Carolina,6,California,Away,@
+North Carolina,7,Virginia,Home,vs
+North Carolina,8,Syracuse,Away,@
+North Carolina,9,Stanford,Home,vs
+North Carolina,10,Wake Forest,Away,@
+North Carolina,11,Duke,Home,vs
+North Carolina,12,NC State,Away,@
+North Texas,1,Lamar,Home,vs
+North Texas,2,Western Michigan,Away,@
+North Texas,3,Washington State,Home,vs
+North Texas,4,Army,Away,@
+North Texas,5,South Alabama,Home,vs
+North Texas,6,South Florida,Home,vs
+North Texas,7,UTSA,Home,vs
+North Texas,8,Charlotte,Away,@
+North Texas,9,Navy,Home,vs
+North Texas,10,UAB,Away,@
+North Texas,11,Rice,Away,@
+North Texas,12,Temple,Home,vs
+Northern Illinois,1,Holy Cross,Home,vs
+Northern Illinois,2,Maryland,Away,@
+Northern Illinois,3,Mississippi State,Away,@
+Northern Illinois,4,San Diego State,Home,vs
+Northern Illinois,5,Miami (OH),Home,vs
+Northern Illinois,6,Eastern Michigan,Away,@
+Northern Illinois,7,Ohio,Away,@
+Northern Illinois,8,Ball State,Home,vs
+Northern Illinois,9,Toledo,Away,@
+Northern Illinois,10,Massachusetts,Away,@
+Northern Illinois,11,Western Michigan,Home,vs
+Northern Illinois,12,Kent State,Home,vs
+Northwestern,1,Tulane,Away,@
+Northwestern,2,Western Illinois,Home,vs
+Northwestern,3,Oregon,Home,vs
+Northwestern,4,UCLA,Home,vs
+Northwestern,5,UL Monroe,Home,vs
+Northwestern,6,Penn State,Away,@
+Northwestern,7,Purdue,Home,vs
+Northwestern,8,Nebraska,Away,@
+Northwestern,9,USC,Away,@
+Northwestern,10,Michigan,Home,vs
+Northwestern,11,Minnesota,Home,vs
+Northwestern,12,Illinois,Away,@
+Notre Dame,1,Miami,Away,@
+Notre Dame,2,Texas A&M,Home,vs
+Notre Dame,3,Purdue,Home,vs
+Notre Dame,4,Arkansas,Away,@
+Notre Dame,5,Boise State,Home,vs
+Notre Dame,6,NC State,Home,vs
+Notre Dame,7,USC,Home,vs
+Notre Dame,8,Boston College,Away,@
+Notre Dame,9,Navy,Home,vs
+Notre Dame,10,Pittsburgh,Away,@
+Notre Dame,11,Syracuse,Home,vs
+Notre Dame,12,Stanford,Away,@
+Ohio,1,Rutgers,Away,@
+Ohio,2,West Virginia,Home,vs
+Ohio,3,Ohio State,Away,@
+Ohio,4,Gardner-Webb,Home,vs
+Ohio,5,Bowling Green,Home,vs
+Ohio,6,Ball State,Away,@
+Ohio,7,Northern Illinois,Home,vs
+Ohio,8,Eastern Michigan,Away,@
+Ohio,9,Miami (OH),Home,vs
+Ohio,10,Western Michigan,Away,@
+Ohio,11,Massachusetts,Home,vs
+Ohio,12,Buffalo,Away,@
+Ohio State,1,Texas,Home,vs
+Ohio State,2,Grambling,Home,vs
+Ohio State,3,Ohio,Home,vs
+Ohio State,4,Washington,Away,@
+Ohio State,5,Minnesota,Home,vs
+Ohio State,6,Illinois,Away,@
+Ohio State,7,Wisconsin,Away,@
+Ohio State,8,Penn State,Home,vs
+Ohio State,9,Purdue,Away,@
+Ohio State,10,UCLA,Home,vs
+Ohio State,11,Rutgers,Home,vs
+Ohio State,12,Michigan,Away,@
+Oklahoma,1,Illinois State,Home,vs
+Oklahoma,2,Michigan,Home,vs
+Oklahoma,3,Temple,Away,@
+Oklahoma,4,Auburn,Home,vs
+Oklahoma,5,Kent State,Home,vs
+Oklahoma,6,Texas,Home,vs
+Oklahoma,7,South Carolina,Away,@
+Oklahoma,8,Ole Miss,Home,vs
+Oklahoma,9,Tennessee,Away,@
+Oklahoma,10,Alabama,Away,@
+Oklahoma,11,Missouri,Home,vs
+Oklahoma,12,LSU,Home,vs
+Oklahoma State,1,UT Martin,Home,vs
+Oklahoma State,2,Oregon,Away,@
+Oklahoma State,3,Tulsa,Home,vs
+Oklahoma State,4,Baylor,Home,vs
+Oklahoma State,5,Arizona,Away,@
+Oklahoma State,6,Houston,Home,vs
+Oklahoma State,7,Cincinnati,Home,vs
+Oklahoma State,8,Texas Tech,Away,@
+Oklahoma State,9,Kansas,Away,@
+Oklahoma State,10,Kansas State,Home,vs
+Oklahoma State,11,UCF,Away,@
+Oklahoma State,12,Iowa State,Home,vs
+Old Dominion,1,Indiana,Away,@
+Old Dominion,2,North Carolina Central,Home,vs
+Old Dominion,3,Virginia Tech,Away,@
+Old Dominion,4,Liberty,Home,vs
+Old Dominion,5,Coastal Carolina,Home,vs
+Old Dominion,6,Marshall,Away,@
+Old Dominion,7,James Madison,Away,@
+Old Dominion,8,App State,Home,vs
+Old Dominion,9,UL Monroe,Away,@
+Old Dominion,10,Troy,Home,vs
+Old Dominion,11,Georgia Southern,Away,@
+Old Dominion,12,Georgia State,Home,vs
+Oregon,1,Montana State,Home,vs
+Oregon,2,Oklahoma State,Home,vs
+Oregon,3,Northwestern,Away,@
+Oregon,4,Oregon State,Home,vs
+Oregon,5,Penn State,Away,@
+Oregon,6,Indiana,Home,vs
+Oregon,7,Rutgers,Away,@
+Oregon,8,Wisconsin,Home,vs
+Oregon,9,Iowa,Away,@
+Oregon,10,Minnesota,Home,vs
+Oregon,11,USC,Home,vs
+Oregon,12,Washington,Away,@
+Penn State,1,Nevada,Home,vs
+Penn State,2,Florida International,Home,vs
+Penn State,3,Villanova,Home,vs
+Penn State,4,Oregon,Home,vs
+Penn State,5,UCLA,Away,@
+Penn State,6,Northwestern,Home,vs
+Penn State,7,Iowa,Away,@
+Penn State,8,Ohio State,Away,@
+Penn State,9,Indiana,Home,vs
+Penn State,10,Michigan State,Away,@
+Penn State,11,Nebraska,Home,vs
+Penn State,12,Rutgers,Away,@
+Pittsburgh,1,Duquesne,Home,vs
+Pittsburgh,2,Central Michigan,Home,vs
+Pittsburgh,3,West Virginia,Away,@
+Pittsburgh,4,Louisville,Home,vs
+Pittsburgh,5,Boston College,Home,vs
+Pittsburgh,6,Florida State,Away,@
+Pittsburgh,7,Syracuse,Away,@
+Pittsburgh,8,NC State,Home,vs
+Pittsburgh,9,Stanford,Away,@
+Pittsburgh,10,Notre Dame,Home,vs
+Pittsburgh,11,Georgia Tech,Away,@
+Pittsburgh,12,Miami,Home,vs
+Purdue,1,Ball State,Home,vs
+Purdue,2,Southern Illinois,Home,vs
+Purdue,3,USC,Home,vs
+Purdue,4,Notre Dame,Away,@
+Purdue,5,Illinois,Home,vs
+Purdue,6,Minnesota,Away,@
+Purdue,7,Northwestern,Away,@
+Purdue,8,Rutgers,Home,vs
+Purdue,9,Michigan,Away,@
+Purdue,10,Ohio State,Home,vs
+Purdue,11,Washington,Away,@
+Purdue,12,Indiana,Home,vs
+Rice,1,Louisiana,Away,@
+Rice,2,Houston,Home,vs
+Rice,3,Prairie View A&M,Home,vs
+Rice,4,Charlotte,Away,@
+Rice,5,Navy,Away,@
+Rice,6,Florida Atlantic,Home,vs
+Rice,7,UTSA,Away,@
+Rice,8,UConn,Home,vs
+Rice,9,Memphis,Home,vs
+Rice,10,UAB,Home,vs
+Rice,11,North Texas,Home,vs
+Rice,12,South Florida,Away,@
+Rutgers,1,Ohio,Home,vs
+Rutgers,2,Miami (OH),Home,vs
+Rutgers,3,Norfolk State,Home,vs
+Rutgers,4,Iowa,Home,vs
+Rutgers,5,Minnesota,Away,@
+Rutgers,6,Washington,Away,@
+Rutgers,7,Oregon,Home,vs
+Rutgers,8,Purdue,Away,@
+Rutgers,9,Illinois,Away,@
+Rutgers,10,Maryland,Home,vs
+Rutgers,11,Ohio State,Away,@
+Rutgers,12,Penn State,Home,vs
+SMU,1,East Texas A&M,Home,vs
+SMU,2,Baylor,Home,vs
+SMU,3,Missouri State,Away,@
+SMU,4,TCU,Away,@
+SMU,5,Syracuse,Home,vs
+SMU,6,Stanford,Home,vs
+SMU,7,Clemson,Away,@
+SMU,8,Wake Forest,Away,@
+SMU,9,Miami,Home,vs
+SMU,10,Boston College,Away,@
+SMU,11,Louisville,Home,vs
+SMU,12,California,Away,@
+Sam Houston,1,Western Kentucky,Away,@
+Sam Houston,2,UNLV,Home,vs
+Sam Houston,3,Hawai'i,Away,@
+Sam Houston,4,Texas,Away,@
+Sam Houston,5,New Mexico State,Away,@
+Sam Houston,6,Jacksonville State,Home,vs
+Sam Houston,7,UTEP,Home,vs
+Sam Houston,8,Louisiana Tech,Away,@
+Sam Houston,9,Oregon State,Away,@
+Sam Houston,10,Delaware,Home,vs
+Sam Houston,11,Middle Tennessee,Away,@
+Sam Houston,12,Florida International,Home,vs
+San Diego State,1,Stony Brook,Home,vs
+San Diego State,2,Washington State,Away,@
+San Diego State,3,California,Home,vs
+San Diego State,4,Northern Illinois,Away,@
+San Diego State,5,Colorado State,Home,vs
+San Diego State,6,Nevada,Away,@
+San Diego State,7,Fresno State,Away,@
+San Diego State,8,Wyoming,Home,vs
+San Diego State,9,Hawai'i,Away,@
+San Diego State,10,Boise State,Home,vs
+San Diego State,11,San José State,Home,vs
+San Diego State,12,New Mexico,Away,@
+San Jose State,1,Central Michigan,Home,vs
+San Jose State,2,Texas,Away,@
+San Jose State,3,Idaho,Home,vs
+San Jose State,4,Stanford,Away,@
+San Jose State,5,New Mexico,Home,vs
+San Jose State,6,Wyoming,Away,@
+San Jose State,7,Utah State,Away,@
+San Jose State,8,Hawai'i,Home,vs
+San Jose State,9,Air Force,Home,vs
+San Jose State,10,Nevada,Away,@
+San Jose State,11,San Diego State,Away,@
+San Jose State,12,Fresno State,Home,vs
+South Alabama,1,Morgan State,Home,vs
+South Alabama,2,Tulane,Home,vs
+South Alabama,3,Auburn,Away,@
+South Alabama,4,Coastal Carolina,Home,vs
+South Alabama,5,North Texas,Away,@
+South Alabama,6,Troy,Away,@
+South Alabama,7,Arkansas State,Home,vs
+South Alabama,8,Georgia State,Away,@
+South Alabama,9,Louisiana,Home,vs
+South Alabama,10,UL Monroe,Away,@
+South Alabama,11,Southern Miss,Home,vs
+South Alabama,12,Texas State,Away,@
+South Carolina,1,Virginia Tech,Home,vs
+South Carolina,2,South Carolina State,Home,vs
+South Carolina,3,Vanderbilt,Home,vs
+South Carolina,4,Missouri,Away,@
+South Carolina,5,Kentucky,Home,vs
+South Carolina,6,LSU,Away,@
+South Carolina,7,Oklahoma,Home,vs
+South Carolina,8,Alabama,Home,vs
+South Carolina,9,Ole Miss,Away,@
+South Carolina,10,Texas A&M,Away,@
+South Carolina,11,Coastal Carolina,Home,vs
+South Carolina,12,Clemson,Home,vs
+South Florida,1,Boise State,Home,vs
+South Florida,2,Florida,Away,@
+South Florida,3,Miami,Away,@
+South Florida,4,South Carolina State,Home,vs
+South Florida,5,Charlotte,Home,vs
+South Florida,6,North Texas,Away,@
+South Florida,7,Florida Atlantic,Home,vs
+South Florida,8,Memphis,Away,@
+South Florida,9,UTSA,Home,vs
+South Florida,10,Navy,Away,@
+South Florida,11,UAB,Away,@
+South Florida,12,Rice,Home,vs
+Stanford,1,Hawai'i,Away,@
+Stanford,2,BYU,Away,@
+Stanford,3,Boston College,Home,vs
+Stanford,4,Virginia,Away,@
+Stanford,5,San José State,Home,vs
+Stanford,6,SMU,Away,@
+Stanford,7,Florida State,Home,vs
+Stanford,8,Miami,Away,@
+Stanford,9,Pittsburgh,Home,vs
+Stanford,10,North Carolina,Away,@
+Stanford,11,California,Home,vs
+Stanford,12,Notre Dame,Home,vs
+Syracuse,1,Tennessee,Home,vs
+Syracuse,2,UConn,Home,vs
+Syracuse,3,Colgate,Home,vs
+Syracuse,4,Clemson,Away,@
+Syracuse,5,Duke,Home,vs
+Syracuse,6,SMU,Away,@
+Syracuse,7,Pittsburgh,Home,vs
+Syracuse,8,Georgia Tech,Away,@
+Syracuse,9,North Carolina,Home,vs
+Syracuse,10,Miami,Away,@
+Syracuse,11,Notre Dame,Away,@
+Syracuse,12,Boston College,Home,vs
+TCU,1,North Carolina,Away,@
+TCU,2,Abilene Christian,Home,vs
+TCU,3,SMU,Home,vs
+TCU,4,Arizona State,Away,@
+TCU,5,Colorado,Home,vs
+TCU,6,Kansas State,Away,@
+TCU,7,Baylor,Home,vs
+TCU,8,West Virginia,Away,@
+TCU,9,Iowa State,Home,vs
+TCU,10,BYU,Away,@
+TCU,11,Houston,Away,@
+TCU,12,Cincinnati,Home,vs
+Temple,1,Massachusetts,Away,@
+Temple,2,Howard,Home,vs
+Temple,3,Oklahoma,Home,vs
+Temple,4,Georgia Tech,Away,@
+Temple,5,UTSA,Home,vs
+Temple,6,Navy,Home,vs
+Temple,7,Charlotte,Away,@
+Temple,8,Tulsa,Away,@
+Temple,9,East Carolina,Home,vs
+Temple,10,Army,Away,@
+Temple,11,Tulane,Home,vs
+Temple,12,North Texas,Away,@
+Tennessee,1,Syracuse,Home,vs
+Tennessee,2,East Tennessee State,Home,vs
+Tennessee,3,Georgia,Home,vs
+Tennessee,4,UAB,Home,vs
+Tennessee,5,Mississippi State,Away,@
+Tennessee,6,Arkansas,Home,vs
+Tennessee,7,Alabama,Away,@
+Tennessee,8,Kentucky,Away,@
+Tennessee,9,Oklahoma,Home,vs
+Tennessee,10,New Mexico State,Home,vs
+Tennessee,11,Florida,Away,@
+Tennessee,12,Vanderbilt,Home,vs
+Texas,1,Ohio State,Away,@
+Texas,2,San José State,Home,vs
+Texas,3,UTEP,Home,vs
+Texas,4,Sam Houston,Home,vs
+Texas,5,Florida,Away,@
+Texas,6,Oklahoma,Home,vs
+Texas,7,Kentucky,Away,@
+Texas,8,Mississippi State,Away,@
+Texas,9,Vanderbilt,Home,vs
+Texas,10,Georgia,Away,@
+Texas,11,Arkansas,Home,vs
+Texas,12,Texas A&M,Home,vs
+Texas A&M,1,UTSA,Home,vs
+Texas A&M,2,Utah State,Home,vs
+Texas A&M,3,Notre Dame,Away,@
+Texas A&M,4,Auburn,Home,vs
+Texas A&M,5,Mississippi State,Home,vs
+Texas A&M,6,Florida,Home,vs
+Texas A&M,7,Arkansas,Away,@
+Texas A&M,8,LSU,Away,@
+Texas A&M,9,Missouri,Away,@
+Texas A&M,10,South Carolina,Home,vs
+Texas A&M,11,Samford,Home,vs
+Texas A&M,12,Texas,Away,@
+Texas State,1,Eastern Michigan,Home,vs
+Texas State,2,UTSA,Away,@
+Texas State,3,Arizona State,Away,@
+Texas State,4,Nicholls,Home,vs
+Texas State,5,Arkansas State,Away,@
+Texas State,6,Troy,Home,vs
+Texas State,7,Marshall,Away,@
+Texas State,8,James Madison,Home,vs
+Texas State,9,Louisiana,Away,@
+Texas State,10,Southern Miss,Away,@
+Texas State,11,UL Monroe,Home,vs
+Texas State,12,South Alabama,Home,vs
+Texas Tech,1,Arkansas-Pine Bluff,Home,vs
+Texas Tech,2,Kent State,Home,vs
+Texas Tech,3,Oregon State,Home,vs
+Texas Tech,4,Utah,Away,@
+Texas Tech,5,Houston,Away,@
+Texas Tech,6,Kansas,Home,vs
+Texas Tech,7,Arizona State,Away,@
+Texas Tech,8,Oklahoma State,Home,vs
+Texas Tech,9,Kansas State,Away,@
+Texas Tech,10,BYU,Home,vs
+Texas Tech,11,UCF,Home,vs
+Texas Tech,12,West Virginia,Away,@
+Toledo,1,Kentucky,Away,@
+Toledo,2,Western Kentucky,Home,vs
+Toledo,3,Morgan State,Home,vs
+Toledo,4,Western Michigan,Away,@
+Toledo,5,Akron,Home,vs
+Toledo,6,Bowling Green,Away,@
+Toledo,7,Kent State,Home,vs
+Toledo,8,Washington State,Away,@
+Toledo,9,Northern Illinois,Home,vs
+Toledo,10,Miami (OH),Away,@
+Toledo,11,Ball State,Home,vs
+Toledo,12,Central Michigan,Away,@
+Troy,1,Nicholls,Home,vs
+Troy,2,Clemson,Away,@
+Troy,3,Memphis,Home,vs
+Troy,4,Buffalo,Away,@
+Troy,5,South Alabama,Home,vs
+Troy,6,Texas State,Away,@
+Troy,7,UL Monroe,Away,@
+Troy,8,Louisiana,Home,vs
+Troy,9,Arkansas State,Home,vs
+Troy,10,Old Dominion,Away,@
+Troy,11,Georgia State,Home,vs
+Troy,12,Southern Miss,Away,@
+Tulane,1,Northwestern,Home,vs
+Tulane,2,South Alabama,Away,@
+Tulane,3,Duke,Home,vs
+Tulane,4,Ole Miss,Away,@
+Tulane,5,Tulsa,Away,@
+Tulane,6,East Carolina,Home,vs
+Tulane,7,Army,Home,vs
+Tulane,8,UTSA,Away,@
+Tulane,9,Memphis,Away,@
+Tulane,10,Florida Atlantic,Home,vs
+Tulane,11,Temple,Away,@
+Tulane,12,Charlotte,Home,vs
+Tulsa,1,Abilene Christian,Home,vs
+Tulsa,2,New Mexico State,Away,@
+Tulsa,3,Navy,Home,vs
+Tulsa,4,Oklahoma State,Away,@
+Tulsa,5,Tulane,Home,vs
+Tulsa,6,Memphis,Away,@
+Tulsa,7,East Carolina,Away,@
+Tulsa,8,Temple,Home,vs
+Tulsa,9,Florida Atlantic,Away,@
+Tulsa,10,Oregon State,Home,vs
+Tulsa,11,Army,Away,@
+Tulsa,12,UAB,Home,vs
+UAB,1,Alabama State,Home,vs
+UAB,2,Navy,Away,@
+UAB,3,Akron,Home,vs
+UAB,4,Tennessee,Away,@
+UAB,5,Army,Home,vs
+UAB,6,Florida Atlantic,Away,@
+UAB,7,Memphis,Home,vs
+UAB,8,UConn,Away,@
+UAB,9,Rice,Away,@
+UAB,10,North Texas,Home,vs
+UAB,11,South Florida,Home,vs
+UAB,12,Tulsa,Away,@
+UCF,1,Jacksonville State,Home,vs
+UCF,2,North Carolina A&T,Home,vs
+UCF,3,North Carolina,Home,vs
+UCF,4,Kansas State,Away,@
+UCF,5,Kansas,Home,vs
+UCF,6,Cincinnati,Away,@
+UCF,7,West Virginia,Home,vs
+UCF,8,Baylor,Away,@
+UCF,9,Houston,Home,vs
+UCF,10,Texas Tech,Away,@
+UCF,11,Oklahoma State,Home,vs
+UCF,12,BYU,Away,@
+UCLA,1,Utah,Home,vs
+UCLA,2,UNLV,Away,@
+UCLA,3,New Mexico,Home,vs
+UCLA,4,Northwestern,Away,@
+UCLA,5,Penn State,Home,vs
+UCLA,6,Michigan State,Away,@
+UCLA,7,Maryland,Home,vs
+UCLA,8,Indiana,Away,@
+UCLA,9,Nebraska,Home,vs
+UCLA,10,Ohio State,Away,@
+UCLA,11,Washington,Home,vs
+UCLA,12,USC,Away,@
+UConn,1,Central Connecticut,Home,vs
+UConn,2,Syracuse,Away,@
+UConn,3,Delaware,Away,@
+UConn,4,Ball State,Home,vs
+UConn,5,Buffalo,Away,@
+UConn,6,Florida International,Home,vs
+UConn,7,Boston College,Away,@
+UConn,8,Rice,Away,@
+UConn,9,UAB,Home,vs
+UConn,10,Duke,Home,vs
+UConn,11,Air Force,Home,vs
+UConn,12,Florida Atlantic,Away,@
+UMass,1,Temple,Home,vs
+UMass,2,Bryant,Home,vs
+UMass,3,Iowa,Away,@
+UMass,4,Missouri,Away,@
+UMass,5,Western Michigan,Home,vs
+UMass,6,Kent State,Away,@
+UMass,7,Buffalo,Home,vs
+UMass,8,Central Michigan,Away,@
+UMass,9,Akron,Away,@
+UMass,10,Northern Illinois,Home,vs
+UMass,11,Ohio,Away,@
+UMass,12,Bowling Green,Home,vs
+UNLV,1,Idaho State,Home,vs
+UNLV,2,Sam Houston,Away,@
+UNLV,3,UCLA,Home,vs
+UNLV,4,Miami (OH),Away,@
+UNLV,5,Wyoming,Away,@
+UNLV,6,Air Force,Home,vs
+UNLV,7,Boise State,Away,@
+UNLV,8,New Mexico,Home,vs
+UNLV,9,Colorado State,Away,@
+UNLV,10,Utah State,Home,vs
+UNLV,11,Hawai'i,Home,vs
+UNLV,12,Nevada,Away,@
+USC,1,Missouri State,Home,vs
+USC,2,Georgia Southern,Home,vs
+USC,3,Purdue,Away,@
+USC,4,Michigan State,Home,vs
+USC,5,Illinois,Away,@
+USC,6,Michigan,Home,vs
+USC,7,Notre Dame,Away,@
+USC,8,Nebraska,Away,@
+USC,9,Northwestern,Home,vs
+USC,10,Iowa,Home,vs
+USC,11,Oregon,Away,@
+USC,12,UCLA,Home,vs
+UTEP,1,Utah State,Away,@
+UTEP,2,UT Martin,Home,vs
+UTEP,3,Texas,Away,@
+UTEP,4,UL Monroe,Home,vs
+UTEP,5,Louisiana Tech,Home,vs
+UTEP,6,Liberty,Home,vs
+UTEP,7,Sam Houston,Away,@
+UTEP,8,Kennesaw State,Away,@
+UTEP,9,Jacksonville State,Home,vs
+UTEP,10,Missouri State,Away,@
+UTEP,11,New Mexico State,Home,vs
+UTEP,12,Delaware,Away,@
+UTSA,1,Texas A&M,Away,@
+UTSA,2,Texas State,Home,vs
+UTSA,3,Incarnate Word,Home,vs
+UTSA,4,Colorado State,Away,@
+UTSA,5,Temple,Away,@
+UTSA,6,Rice,Home,vs
+UTSA,7,North Texas,Away,@
+UTSA,8,Tulane,Home,vs
+UTSA,9,South Florida,Away,@
+UTSA,10,Charlotte,Away,@
+UTSA,11,East Carolina,Home,vs
+UTSA,12,Army,Home,vs
+Utah,1,UCLA,Away,@
+Utah,2,Cal Poly,Home,vs
+Utah,3,Wyoming,Away,@
+Utah,4,Texas Tech,Home,vs
+Utah,5,West Virginia,Away,@
+Utah,6,Arizona State,Home,vs
+Utah,7,BYU,Away,@
+Utah,8,Colorado,Home,vs
+Utah,9,Cincinnati,Home,vs
+Utah,10,Baylor,Away,@
+Utah,11,Kansas State,Home,vs
+Utah,12,Kansas,Away,@
+Utah State,1,UTEP,Home,vs
+Utah State,2,Texas A&M,Away,@
+Utah State,3,Air Force,Home,vs
+Utah State,4,McNeese,Home,vs
+Utah State,5,Vanderbilt,Away,@
+Utah State,6,Hawai'i,Away,@
+Utah State,7,San José State,Home,vs
+Utah State,8,New Mexico,Away,@
+Utah State,9,Nevada,Home,vs
+Utah State,10,UNLV,Away,@
+Utah State,11,Fresno State,Away,@
+Utah State,12,Boise State,Home,vs
+Vanderbilt,1,Charleston Southern,Home,vs
+Vanderbilt,2,Virginia Tech,Away,@
+Vanderbilt,3,South Carolina,Away,@
+Vanderbilt,4,Georgia State,Home,vs
+Vanderbilt,5,Utah State,Home,vs
+Vanderbilt,6,Alabama,Away,@
+Vanderbilt,7,LSU,Home,vs
+Vanderbilt,8,Missouri,Home,vs
+Vanderbilt,9,Texas,Away,@
+Vanderbilt,10,Auburn,Home,vs
+Vanderbilt,11,Kentucky,Home,vs
+Vanderbilt,12,Tennessee,Away,@
+Virginia,1,Coastal Carolina,Home,vs
+Virginia,2,NC State,Away,@
+Virginia,3,William & Mary,Home,vs
+Virginia,4,Stanford,Home,vs
+Virginia,5,Florida State,Home,vs
+Virginia,6,Louisville,Away,@
+Virginia,7,Washington State,Home,vs
+Virginia,8,North Carolina,Away,@
+Virginia,9,California,Away,@
+Virginia,10,Wake Forest,Home,vs
+Virginia,11,Duke,Away,@
+Virginia,12,Virginia Tech,Home,vs
+Virginia Tech,1,South Carolina,Home,vs
+Virginia Tech,2,Vanderbilt,Home,vs
+Virginia Tech,3,Old Dominion,Home,vs
+Virginia Tech,4,Wofford,Home,vs
+Virginia Tech,5,NC State,Away,@
+Virginia Tech,6,Wake Forest,Home,vs
+Virginia Tech,7,Georgia Tech,Away,@
+Virginia Tech,8,California,Home,vs
+Virginia Tech,9,Louisville,Home,vs
+Virginia Tech,10,Florida State,Away,@
+Virginia Tech,11,Miami,Home,vs
+Virginia Tech,12,Virginia,Away,@
+Wake Forest,1,Kennesaw State,Home,vs
+Wake Forest,2,Western Carolina,Home,vs
+Wake Forest,3,NC State,Home,vs
+Wake Forest,4,Georgia Tech,Home,vs
+Wake Forest,5,Virginia Tech,Away,@
+Wake Forest,6,Oregon State,Away,@
+Wake Forest,7,SMU,Home,vs
+Wake Forest,8,Florida State,Away,@
+Wake Forest,9,Virginia,Away,@
+Wake Forest,10,North Carolina,Home,vs
+Wake Forest,11,Delaware,Home,vs
+Wake Forest,12,Duke,Away,@
+Washington,1,Colorado State,Home,vs
+Washington,2,UC Davis,Home,vs
+Washington,3,Washington State,Away,@
+Washington,4,Ohio State,Home,vs
+Washington,5,Maryland,Away,@
+Washington,6,Rutgers,Home,vs
+Washington,7,Michigan,Away,@
+Washington,8,Illinois,Home,vs
+Washington,9,Wisconsin,Away,@
+Washington,10,Purdue,Home,vs
+Washington,11,UCLA,Away,@
+Washington,12,Oregon,Home,vs
+West Virginia,1,Robert Morris,Home,vs
+West Virginia,2,Ohio,Away,@
+West Virginia,3,Pittsburgh,Home,vs
+West Virginia,4,Kansas,Away,@
+West Virginia,5,Utah,Home,vs
+West Virginia,6,BYU,Away,@
+West Virginia,7,UCF,Away,@
+West Virginia,8,TCU,Home,vs
+West Virginia,9,Houston,Away,@
+West Virginia,10,Colorado,Home,vs
+West Virginia,11,Arizona State,Away,@
+West Virginia,12,Texas Tech,Home,vs
+Western Kentucky,1,Sam Houston,Home,vs
+Western Kentucky,2,North Alabama,Home,vs
+Western Kentucky,3,Toledo,Away,@
+Western Kentucky,4,Nevada,Home,vs
+Western Kentucky,5,Missouri State,Away,@
+Western Kentucky,6,Delaware,Away,@
+Western Kentucky,7,Florida International,Home,vs
+Western Kentucky,8,Louisiana Tech,Away,@
+Western Kentucky,9,New Mexico State,Home,vs
+Western Kentucky,10,Middle Tennessee,Home,vs
+Western Kentucky,11,LSU,Away,@
+Western Kentucky,12,Jacksonville State,Away,@
+Western Michigan,1,Michigan State,Away,@
+Western Michigan,2,North Texas,Home,vs
+Western Michigan,3,Illinois,Away,@
+Western Michigan,4,Toledo,Home,vs
+Western Michigan,5,Rhode Island,Home,vs
+Western Michigan,6,Massachusetts,Away,@
+Western Michigan,7,Ball State,Home,vs
+Western Michigan,8,Miami (OH),Away,@
+Western Michigan,9,Central Michigan,Home,vs
+Western Michigan,10,Ohio,Home,vs
+Western Michigan,11,Northern Illinois,Away,@
+Western Michigan,12,Eastern Michigan,Away,@
+Wisconsin,1,Miami (OH),Home,vs
+Wisconsin,2,Middle Tennessee,Home,vs
+Wisconsin,3,Alabama,Away,@
+Wisconsin,4,Maryland,Home,vs
+Wisconsin,5,Michigan,Away,@
+Wisconsin,6,Iowa,Home,vs
+Wisconsin,7,Ohio State,Home,vs
+Wisconsin,8,Oregon,Away,@
+Wisconsin,9,Washington,Home,vs
+Wisconsin,10,Indiana,Away,@
+Wisconsin,11,Illinois,Home,vs
+Wisconsin,12,Minnesota,Away,@
+Wyoming,1,Akron,Away,@
+Wyoming,2,Northern Iowa,Home,vs
+Wyoming,3,Utah,Home,vs
+Wyoming,4,Colorado,Away,@
+Wyoming,5,UNLV,Home,vs
+Wyoming,6,San José State,Home,vs
+Wyoming,7,Air Force,Away,@
+Wyoming,8,Colorado State,Home,vs
+Wyoming,9,San Diego State,Away,@
+Wyoming,10,Fresno State,Away,@
+Wyoming,11,Nevada,Home,vs
+Wyoming,12,Hawai'i,Away,@
