@@ -5232,7 +5232,7 @@ const REAL_SCHEDULE_DATA = {
             rivalry: false
         },
         {
-            homeTeam: "BYU",
+            homeTeam: "Utah",
             awayTeam: "West Virginia",
             week: 5,
             date: "2025-09-27",
@@ -5936,18 +5936,6 @@ const REAL_SCHEDULE_DATA = {
             location: "@",
             tv_network: "TBD",
             conference: "Mountain West",
-            notes: "",
-            rivalry: false
-        },
-        {
-            homeTeam: "West Virginia",
-            awayTeam: "Utah",
-            week: 5,
-            date: "2025-09-27",
-            time_et: "TBD",
-            location: "@",
-            tv_network: "TBD",
-            conference: "Pac-12",
             notes: "",
             rivalry: false
         },

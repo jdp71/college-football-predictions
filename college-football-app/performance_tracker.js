@@ -168,4 +168,25 @@ class PerformanceTracker {
     getWeekDetails(week) {
         return this.calculateWeekPerformance(week);
     }
+
+    // Additional methods needed by the dashboard buttons
+    getSeasonAccuracy() {
+        const seasonPerf = this.calculateSeasonPerformance();
+        return Math.round(seasonPerf.accuracy * 100);
+    }
+
+    getWeekAccuracy(week) {
+        const weekPerf = this.calculateWeekPerformance(week);
+        return Math.round(weekPerf.accuracy * 100);
+    }
+
+    getPredictions(week = null) {
+        if (week === null) {
+            // Return all predictions
+            return Array.from(this.predictions.values());
+        } else {
+            // Return predictions for specific week
+            return Array.from(this.predictions.values()).filter(p => p.week === week);
+        }
+    }
 }
