@@ -532,17 +532,126 @@ class CollegeFootballPredictor {
 
     showSeasonOverview() {
         console.log('📊 Showing season overview...');
-        // Implementation for season overview
+        const performanceStats = document.getElementById('performanceStats');
+        const detailedResults = document.getElementById('detailedResults');
+        
+        if (performanceStats && detailedResults) {
+            // Show performance stats
+            performanceStats.style.display = 'flex';
+            detailedResults.style.display = 'block';
+            
+            // Update season stats
+            const seasonAccuracy = this.performanceTracker.getSeasonAccuracy();
+            const totalPredictions = this.performanceTracker.getTotalPredictions();
+            
+            document.getElementById('seasonAccuracy').textContent = `${seasonAccuracy}%`;
+            document.getElementById('totalPredictions').textContent = totalPredictions;
+            
+            // Show detailed results table
+            this.updateResultsTable();
+        }
     }
 
     showCurrentWeekPerformance() {
         console.log('📈 Showing current week performance...');
-        // Implementation for current week performance
+        const performanceStats = document.getElementById('performanceStats');
+        const detailedResults = document.getElementById('detailedResults');
+        
+        if (performanceStats && detailedResults) {
+            // Show performance stats
+            performanceStats.style.display = 'flex';
+            detailedResults.style.display = 'block';
+            
+            // Update current week stats
+            const currentWeek = this.getCurrentWeek();
+            const weekAccuracy = this.performanceTracker.getWeekAccuracy(currentWeek);
+            const totalPredictions = this.performanceTracker.getTotalPredictions();
+            
+            document.getElementById('weekAccuracy').textContent = `${weekAccuracy}%`;
+            document.getElementById('totalPredictions').textContent = totalPredictions;
+            
+            // Show detailed results table for current week
+            this.updateResultsTable(currentWeek);
+        }
     }
 
     clearAllData() {
         console.log('🗑️ Clearing all data...');
-        // Implementation for clearing data
+        if (confirm('Are you sure you want to clear all prediction data? This cannot be undone.')) {
+            this.performanceTracker.clearAllData();
+            const performanceStats = document.getElementById('performanceStats');
+            const detailedResults = document.getElementById('detailedResults');
+            
+            if (performanceStats) performanceStats.style.display = 'none';
+            if (detailedResults) detailedResults.style.display = 'none';
+            
+            // Reset stats display
+            document.getElementById('seasonAccuracy').textContent = '0%';
+            document.getElementById('weekAccuracy').textContent = '0%';
+            document.getElementById('totalPredictions').textContent = '0';
+            
+            console.log('✅ All data cleared');
+        }
+    }
+
+    getCurrentWeek() {
+        // Get current week based on today's date
+        const today = new Date();
+        const seasonStart = new Date('2025-08-30'); // Season starts August 30, 2025
+        const daysDiff = Math.floor((today - seasonStart) / (1000 * 60 * 60 * 24));
+        const currentWeek = Math.min(Math.max(Math.floor(daysDiff / 7) + 1, 1), 16);
+        return currentWeek;
+    }
+
+    updateResultsTable(week = null) {
+        const resultsTable = document.getElementById('resultsTable');
+        if (!resultsTable) return;
+
+        const predictions = this.performanceTracker.getPredictions(week);
+        
+        if (predictions.length === 0) {
+            resultsTable.innerHTML = '<p>No predictions available for this period.</p>';
+            return;
+        }
+
+        let tableHTML = `
+            <table class="results-table-content">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Game</th>
+                        <th>Prediction</th>
+                        <th>Confidence</th>
+                        <th>Result</th>
+                        <th>Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+
+        predictions.forEach(prediction => {
+            const accuracy = prediction.actualResult ? 
+                (prediction.predictedWinner === prediction.actualResult ? '✅' : '❌') : 
+                '⏳';
+            
+            tableHTML += `
+                <tr>
+                    <td>${prediction.week}</td>
+                    <td>${prediction.homeTeam} vs ${prediction.awayTeam}</td>
+                    <td>${prediction.predictedWinner}</td>
+                    <td>${Math.round(prediction.confidence * 100)}%</td>
+                    <td>${prediction.actualResult || 'TBD'}</td>
+                    <td>${accuracy}</td>
+                </tr>
+            `;
+        });
+
+        tableHTML += `
+                </tbody>
+            </table>
+        `;
+
+        resultsTable.innerHTML = tableHTML;
     }
 }
 
