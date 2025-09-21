@@ -299,8 +299,93 @@ class CollegeFootballPredictor {
             const homeData = this.teams.get(game.homeTeam);
             const awayData = this.teams.get(game.awayTeam);
             
-            const prediction = this.predictGame(homeData, awayData, true);
-            const winProb = prediction.homeWinProb;
+            const prediction = this.
+    async predictGameWithRealModel(homeTeam, awayTeam, isHomeGame) {
+        try {
+            // Load current season stats
+            const response = await fetch('current_season_stats.json');
+            if (!response.ok) {
+                console.warn('Current stats not available, using fallback prediction');
+                return this.predictGameFallback(homeTeam, awayTeam, isHomeGame);
+            }
+            
+            const currentStats = await response.json();
+            
+            // Get stats for both teams
+            const homeStats = currentStats[homeTeam] || this.getDefaultStats(homeTeam);
+            const awayStats = currentStats[awayTeam] || this.getDefaultStats(awayTeam);
+            
+            // Calculate prediction based on current season performance
+            const homeAdvantage = isHomeGame ? 0.05 : -0.05; // 5% home field advantage
+            
+            // Points per game advantage
+            const ppgAdvantage = (homeStats.points_per_game - awayStats.points_per_game) / 100;
+            
+            // Defense advantage (lower points allowed is better)
+            const defAdvantage = (awayStats.points_allowed_per_game - homeStats.points_allowed_per_game) / 100;
+            
+            // Total yards advantage
+            const ypgAdvantage = (homeStats.total_yards - awayStats.total_yards) / 1000;
+            
+            // Success rate advantages
+            const offSrAdvantage = (homeStats.off_success_rate - awayStats.off_success_rate) * 0.2;
+            const defSrAdvantage = (homeStats.def_success_rate - awayStats.def_success_rate) * 0.2;
+            
+            // Turnover advantage
+            const turnoverAdvantage = (awayStats.turnovers - homeStats.turnovers) * 0.05;
+            
+            // Combine all advantages
+            const totalAdvantage = ppgAdvantage + defAdvantage + ypgAdvantage + offSrAdvantage + defSrAdvantage + turnoverAdvantage;
+            
+            // Calculate win probability
+            let homeWinProb = 0.5 + homeAdvantage + totalAdvantage;
+            
+            // Add some randomness for realism
+            const randomFactor = (Math.random() - 0.5) * 0.1;
+            homeWinProb += randomFactor;
+            
+            // Ensure probability is within realistic bounds
+            homeWinProb = Math.max(0.1, Math.min(0.9, homeWinProb));
+            
+            // Calculate confidence based on stat differences
+            const statDiff = Math.abs(totalAdvantage);
+            const confidence = Math.min(0.95, Math.max(0.5, 0.5 + statDiff * 2));
+            
+            return {
+                homeWinProb: homeWinProb,
+                awayWinProb: 1 - homeWinProb,
+                confidence: confidence,
+                method: 'current_season_stats',
+                homeStats: homeStats,
+                awayStats: awayStats
+            };
+            
+        } catch (error) {
+            console.error('Error using real model:', error);
+            return this.predictGameFallback(homeTeam, awayTeam, isHomeGame);
+        }
+    }
+    
+    predictGameFallback(homeTeam, awayTeam, isHomeGame) {
+        // Fallback to original prediction method
+        const homeData = this.teams.get(homeTeam);
+        const awayData = this.teams.get(awayTeam);
+        return this.predictGameWithRealModel(homeData, awayData, isHomeGame);
+    }
+    
+    getDefaultStats(teamName) {
+        // Default stats based on conference
+        const conferenceDefaults = {
+            'SEC': { points_per_game: 32.1, points_allowed_per_game: 21.5, total_yards: 435.2, off_success_rate: 0.67, def_success_rate: 0.69 },
+            'Big Ten': { points_per_game: 29.8, points_allowed_per_game: 19.2, total_yards: 415.6, off_success_rate: 0.64, def_success_rate: 0.71 },
+            'Big 12': { points_per_game: 34.2, points_allowed_per_game: 24.8, total_yards: 455.3, off_success_rate: 0.69, def_success_rate: 0.66 },
+            'ACC': { points_per_game: 28.5, points_allowed_per_game: 22.1, total_yards: 405.2, off_success_rate: 0.62, def_success_rate: 0.67 }
+        };
+        
+        const conference = this.getConference(teamName);
+        return conferenceDefaults[conference] || conferenceDefaults['Big Ten'];
+    }
+
             
             const gameCard = document.createElement('div');
             gameCard.className = 'game-card';
@@ -340,53 +425,93 @@ class CollegeFootballPredictor {
         });
     }
 
-    predictGame(homeData, awayData, isHomeGame) {
-        // Advanced prediction algorithm using multiple factors
-        const homeRating = homeData.overallRating;
-        const awayRating = awayData.overallRating;
-        
-        // Base rating difference (0-100 scale)
-        const ratingDiff = (homeRating - awayRating) / 100;
-        
-        // Conference strength multiplier
-        const homeConfBoost = this.getConferenceBoost(homeData.conference);
-        const awayConfBoost = this.getConferenceBoost(awayData.conference);
-        const confAdvantage = (homeConfBoost - awayConfBoost) * 0.1;
-        
-        // Coach rating difference
-        const coachDiff = (homeData.coachRating - awayData.coachRating) / 1000;
-        
-        // Recent form and momentum
-        const formAdvantage = homeData.recentForm - awayData.recentForm;
-        
-        // Strength of schedule adjustment
-        const sosAdvantage = (homeData.strengthOfSchedule - awayData.strengthOfSchedule) * 0.1;
-        
-        // Home field advantage
-        const homeAdvantage = isHomeGame ? 0.05 : -0.05;
-        
-        // Stadium factor
-        const stadiumAdvantage = isHomeGame ? homeData.stadiumFactor : -homeData.stadiumFactor;
-        
-        // Combine all factors
-        const totalAdvantage = ratingDiff + confAdvantage + coachDiff + formAdvantage + sosAdvantage + homeAdvantage + stadiumAdvantage;
-        
-        // Add some randomness for realism
-        const randomFactor = (Math.random() - 0.5) * 0.1;
-        let homeWinProb = 0.5 + totalAdvantage + randomFactor;
-        
-        // Ensure probability is within realistic bounds
-        homeWinProb = Math.max(0.1, Math.min(0.9, homeWinProb));
-        
-        // Calculate confidence based on rating difference
-        const confidence = Math.min(0.95, Math.max(0.5, 0.5 + Math.abs(totalAdvantage) * 2));
-        
-        return {
-            homeWinProb: homeWinProb,
-            awayWinProb: 1 - homeWinProb,
-            confidence: confidence
-        };
+    
+    async predictGameWithRealModel(homeTeam, awayTeam, isHomeGame) {
+        try {
+            // Load current season stats
+            const response = await fetch('current_season_stats.json');
+            if (!response.ok) {
+                console.warn('Current stats not available, using fallback prediction');
+                return this.predictGameFallback(homeTeam, awayTeam, isHomeGame);
+            }
+            
+            const currentStats = await response.json();
+            
+            // Get stats for both teams
+            const homeStats = currentStats[homeTeam] || this.getDefaultStats(homeTeam);
+            const awayStats = currentStats[awayTeam] || this.getDefaultStats(awayTeam);
+            
+            // Calculate prediction based on current season performance
+            const homeAdvantage = isHomeGame ? 0.05 : -0.05; // 5% home field advantage
+            
+            // Points per game advantage
+            const ppgAdvantage = (homeStats.points_per_game - awayStats.points_per_game) / 100;
+            
+            // Defense advantage (lower points allowed is better)
+            const defAdvantage = (awayStats.points_allowed_per_game - homeStats.points_allowed_per_game) / 100;
+            
+            // Total yards advantage
+            const ypgAdvantage = (homeStats.total_yards - awayStats.total_yards) / 1000;
+            
+            // Success rate advantages
+            const offSrAdvantage = (homeStats.off_success_rate - awayStats.off_success_rate) * 0.2;
+            const defSrAdvantage = (homeStats.def_success_rate - awayStats.def_success_rate) * 0.2;
+            
+            // Turnover advantage
+            const turnoverAdvantage = (awayStats.turnovers - homeStats.turnovers) * 0.05;
+            
+            // Combine all advantages
+            const totalAdvantage = ppgAdvantage + defAdvantage + ypgAdvantage + offSrAdvantage + defSrAdvantage + turnoverAdvantage;
+            
+            // Calculate win probability
+            let homeWinProb = 0.5 + homeAdvantage + totalAdvantage;
+            
+            // Add some randomness for realism
+            const randomFactor = (Math.random() - 0.5) * 0.1;
+            homeWinProb += randomFactor;
+            
+            // Ensure probability is within realistic bounds
+            homeWinProb = Math.max(0.1, Math.min(0.9, homeWinProb));
+            
+            // Calculate confidence based on stat differences
+            const statDiff = Math.abs(totalAdvantage);
+            const confidence = Math.min(0.95, Math.max(0.5, 0.5 + statDiff * 2));
+            
+            return {
+                homeWinProb: homeWinProb,
+                awayWinProb: 1 - homeWinProb,
+                confidence: confidence,
+                method: 'current_season_stats',
+                homeStats: homeStats,
+                awayStats: awayStats
+            };
+            
+        } catch (error) {
+            console.error('Error using real model:', error);
+            return this.predictGameFallback(homeTeam, awayTeam, isHomeGame);
+        }
     }
+    
+    predictGameFallback(homeTeam, awayTeam, isHomeGame) {
+        // Fallback to original prediction method
+        const homeData = this.teams.get(homeTeam);
+        const awayData = this.teams.get(awayTeam);
+        return this.predictGameWithRealModel(homeData, awayData, isHomeGame);
+    }
+    
+    getDefaultStats(teamName) {
+        // Default stats based on conference
+        const conferenceDefaults = {
+            'SEC': { points_per_game: 32.1, points_allowed_per_game: 21.5, total_yards: 435.2, off_success_rate: 0.67, def_success_rate: 0.69 },
+            'Big Ten': { points_per_game: 29.8, points_allowed_per_game: 19.2, total_yards: 415.6, off_success_rate: 0.64, def_success_rate: 0.71 },
+            'Big 12': { points_per_game: 34.2, points_allowed_per_game: 24.8, total_yards: 455.3, off_success_rate: 0.69, def_success_rate: 0.66 },
+            'ACC': { points_per_game: 28.5, points_allowed_per_game: 22.1, total_yards: 405.2, off_success_rate: 0.62, def_success_rate: 0.67 }
+        };
+        
+        const conference = this.getConference(teamName);
+        return conferenceDefaults[conference] || conferenceDefaults['Big Ten'];
+    }
+
 
     getConferenceBoost(conference) {
         const conferenceStrength = {
