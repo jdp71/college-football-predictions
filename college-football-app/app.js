@@ -79,13 +79,11 @@ class CollegeFootballPredictor {
         
         try {
             // Try to load real team data first
-            const response = await fetch('teams.json');
-            if (response.ok) {
-                const teamData = await response.json();
-                console.log(`📊 Loading ${Object.keys(teamData).length} teams from teams.json`);
+            if (typeof TEAMS_DATA !== 'undefined') {
+                console.log(`📊 Loading ${Object.keys(TEAMS_DATA).length} teams from teams_data.js`);
                 
-                // Load teams from JSON file
-                for (const [teamName, data] of Object.entries(teamData)) {
+                // Load teams from JavaScript data
+                for (const [teamName, data] of Object.entries(TEAMS_DATA)) {
                     this.teams.set(teamName, data);
                 }
                 
@@ -93,7 +91,7 @@ class CollegeFootballPredictor {
                 return;
             }
         } catch (error) {
-            console.warn('⚠️ Could not load teams.json, falling back to generated data:', error);
+            console.warn('⚠️ Could not load teams_data.js, falling back to generated data:', error);
         }
         
         // Fallback: Extract unique teams from schedule and generate data
