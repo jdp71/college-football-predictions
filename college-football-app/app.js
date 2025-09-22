@@ -9,6 +9,10 @@ class CollegeFootballPredictor {
 
     async init() {
         console.log('🏈 Initializing College Football Predictor 2025...');
+        console.log('🔍 Debug: Checking for data availability...');
+        console.log('🔍 REAL_SCHEDULE_DATA available:', typeof REAL_SCHEDULE_DATA !== 'undefined');
+        console.log('🔍 TEAMS_DATA available:', typeof TEAMS_DATA !== 'undefined');
+        
         await this.loadScheduleData();
         await this.createTeams();
         this.initializeUI();
@@ -198,6 +202,8 @@ class CollegeFootballPredictor {
     initializeUI() {
         try {
             console.log('🎨 Initializing UI...');
+            console.log('🔍 Teams loaded:', this.teams.size);
+            console.log('🔍 Schedule weeks loaded:', this.schedule.size);
             
             // Populate team dropdown
             const teamSelect = document.getElementById('teamSelect');
@@ -210,6 +216,7 @@ class CollegeFootballPredictor {
             
             const sortedTeams = Array.from(this.teams.keys()).sort();
             console.log(`📋 Adding ${sortedTeams.length} teams to dropdown`);
+            console.log('🔍 First 5 teams:', sortedTeams.slice(0, 5));
             
             sortedTeams.forEach(team => {
                 const option = document.createElement('option');
