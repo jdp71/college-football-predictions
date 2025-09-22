@@ -272,8 +272,12 @@ class CollegeFootballPredictor {
     }
 
     handlePrediction() {
+        console.log('🎯 Handle prediction clicked');
         const team = document.getElementById('teamSelect').value;
         const week = document.getElementById('weekSelect').value;
+        
+        console.log('🔍 Selected team:', team);
+        console.log('🔍 Selected week:', week);
         
         if (!team || !week) {
             alert('Please select both a team and a week.');
@@ -281,24 +285,46 @@ class CollegeFootballPredictor {
         }
 
         const games = this.schedule.get(parseInt(week));
+        console.log('🔍 Games for week', week, ':', games ? games.length : 'undefined');
+        
+        if (!games) {
+            console.error('❌ No games found for week', week);
+            alert(`No games found for Week ${week}.`);
+            return;
+        }
+        
         const teamGames = games.filter(game => 
             game.homeTeam === team || game.awayTeam === team
         );
+        
+        console.log('🔍 Team games found:', teamGames.length);
+        console.log('🔍 Team games:', teamGames);
 
         if (teamGames.length === 0) {
             alert(`${team} doesn't play in Week ${week}.`);
             return;
         }
 
+        console.log('🎮 Calling displayGames with', teamGames.length, 'games');
         this.displayGames(teamGames, team);
     }
 
     displayGames(games, team) {
+        console.log('🎮 DisplayGames called with', games.length, 'games for team', team);
         const section = document.getElementById('predictionsSection');
         const gamesList = document.getElementById('gamesList');
         
+        console.log('🔍 Section element:', section);
+        console.log('🔍 GamesList element:', gamesList);
+        
+        if (!section || !gamesList) {
+            console.error('❌ Missing DOM elements');
+            return;
+        }
+        
         section.style.display = 'block';
         gamesList.innerHTML = '';
+        console.log('✅ Section displayed and gamesList cleared');
 
         games.forEach(game => {
             const homeData = this.teams.get(game.homeTeam);
