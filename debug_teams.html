@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Teams</title>
+</head>
+<body>
+    <h1>Teams Debug</h1>
+    <div id="teams-list"></div>
+    
+    <script src="app.js?v=debug-2025-09-01"></script>
+    <script>
+        console.log('Debug script loaded');
+        
+        // Wait for app to initialize
+        setTimeout(() => {
+            console.log('Checking teams...');
+            if (window.predictor) {
+                console.log('App found:', window.predictor);
+                console.log('Teams:', window.predictor.teams);
+                console.log('Teams length:', window.predictor.teams ? window.predictor.teams.length : 'undefined');
+                
+                const teamsDiv = document.getElementById('teams-list');
+                if (window.predictor.teams) {
+                    teamsDiv.innerHTML = `<p>Found ${window.predictor.teams.length} teams:</p><ul>`;
+                    window.predictor.teams.slice(0, 10).forEach(team => {
+                        teamsDiv.innerHTML += `<li>${team}</li>`;
+                    });
+                    teamsDiv.innerHTML += '</ul>';
+                } else {
+                    teamsDiv.innerHTML = '<p>No teams found</p>';
+                }
+            } else {
+                console.log('App not found');
+                document.getElementById('teams-list').innerHTML = '<p>App not initialized</p>';
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

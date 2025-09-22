@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-result { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        .info { background-color: #d1ecf1; border-color: #bee5eb; }
+    </style>
+</head>
+<body>
+    <h1>College Football App Test</h1>
+    <div id="results"></div>
+    
+    <script src="performance_tracker.js?v=test"></script>
+    <script src="app.js?v=test"></script>
+    <script>
+        function addResult(message, type = 'info') {
+            const div = document.createElement('div');
+            div.className = `test-result ${type}`;
+            div.innerHTML = message;
+            document.getElementById('results').appendChild(div);
+        }
+        
+        function runTests() {
+            addResult('Starting tests...', 'info');
+            
+            // Test 1: Check if PerformanceTracker is available
+            if (window.performanceTracker) {
+                addResult('✅ PerformanceTracker is available', 'success');
+            } else {
+                addResult('❌ PerformanceTracker is NOT available', 'error');
+            }
+            
+            // Test 2: Check if predictor is available
+            if (window.predictor) {
+                addResult('✅ Predictor is available', 'success');
+            } else {
+                addResult('❌ Predictor is NOT available', 'error');
+            }
+            
+            // Test 3: Check teams
+            if (window.predictor && window.predictor.teams) {
+                addResult(`✅ Teams loaded: ${window.predictor.teams.length} teams`, 'success');
+                addResult(`First 5 teams: ${window.predictor.teams.slice(0, 5).join(', ')}`, 'info');
+            } else {
+                addResult('❌ Teams NOT loaded', 'error');
+            }
+            
+            // Test 4: Check performance tracker data
+            if (window.performanceTracker) {
+                try {
+                    const seasonPerf = window.performanceTracker.calculateSeasonPerformance();
+                    addResult(`✅ Season performance calculated: ${seasonPerf.totalGames} games, ${seasonPerf.accuracy}% accuracy`, 'success');
+                } catch (error) {
+                    addResult(`❌ Error calculating season performance: ${error.message}`, 'error');
+                }
+            }
+            
+            // Test 5: Check schedule
+            if (window.predictor && window.predictor.schedule) {
+                const week1Games = window.predictor.schedule[1];
+                if (week1Games) {
+                    addResult(`✅ Week 1 schedule loaded: ${week1Games.length} games`, 'success');
+                    addResult(`First game: ${week1Games[0].home} vs ${week1Games[0].away}`, 'info');
+                } else {
+                    addResult('❌ Week 1 schedule NOT loaded', 'error');
+                }
+            }
+        }
+        
+        // Run tests after a delay to allow initialization
+        setTimeout(runTests, 3000);
+    </script>
+</body>
+</html>
