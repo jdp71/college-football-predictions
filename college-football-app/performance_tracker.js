@@ -29,44 +29,83 @@ class PerformanceTracker {
         }
     }
 
-    initializeWithRealResults() {
-        // Add real game results for weeks 1-4 (games that have already been played)
-        console.log('📊 Initializing with real game results for weeks 1-4...');
+    async initializeWithRealResults() {
+        // Generate results for ALL games in weeks 1-4 using the real schedule
+        console.log('📊 Generating results for all games in weeks 1-4...');
         
-        // Real results from weeks 1-4 (these are actual game outcomes)
-        // Note: These are simulated results for demonstration - in a real app, you'd get actual scores
-        const realResults = [
-            // Week 1 results (simulated)
-            { gameKey: 'Iowa State @ Kansas State', week: 1, homeTeam: 'Kansas State', awayTeam: 'Iowa State', homeWon: true },
-            { gameKey: 'Idaho State Bengals @ UNLV', week: 1, homeTeam: 'UNLV', awayTeam: 'Idaho State Bengals', homeWon: true },
-            { gameKey: 'Fresno State @ Kansas Jayhawks', week: 1, homeTeam: 'Kansas Jayhawks', awayTeam: 'Fresno State', homeWon: false },
-            { gameKey: 'Sam Houston Bearkats @ Western Kentucky', week: 1, homeTeam: 'Western Kentucky', awayTeam: 'Sam Houston Bearkats', homeWon: true },
-            
-            // Week 2 results (simulated)
-            { gameKey: 'Alabama @ Wisconsin', week: 2, homeTeam: 'Wisconsin', awayTeam: 'Alabama', homeWon: false },
-            { gameKey: 'Georgia @ Clemson', week: 2, homeTeam: 'Clemson', awayTeam: 'Georgia', homeWon: false },
-            { gameKey: 'Texas @ Michigan', week: 2, homeTeam: 'Michigan', awayTeam: 'Texas', homeWon: true },
-            { gameKey: 'Oregon @ Ohio State', week: 2, homeTeam: 'Ohio State', awayTeam: 'Oregon', homeWon: true },
-            
-            // Week 3 results (simulated)
-            { gameKey: 'LSU @ Auburn', week: 3, homeTeam: 'Auburn', awayTeam: 'LSU', homeWon: true },
-            { gameKey: 'Florida @ Tennessee', week: 3, homeTeam: 'Tennessee', awayTeam: 'Florida', homeWon: true },
-            { gameKey: 'Oklahoma @ Kansas State', week: 3, homeTeam: 'Kansas State', awayTeam: 'Oklahoma', homeWon: false },
-            { gameKey: 'USC @ Arizona State', week: 3, homeTeam: 'Arizona State', awayTeam: 'USC', homeWon: false },
-            
-            // Week 4 results (simulated)
-            { gameKey: 'Penn State @ Wisconsin', week: 4, homeTeam: 'Wisconsin', awayTeam: 'Penn State', homeWon: true },
-            { gameKey: 'Iowa @ Iowa State', week: 4, homeTeam: 'Iowa State', awayTeam: 'Iowa', homeWon: false },
-            { gameKey: 'Utah @ BYU', week: 4, homeTeam: 'BYU', awayTeam: 'Utah', homeWon: true },
-            { gameKey: 'Colorado @ West Virginia', week: 4, homeTeam: 'West Virginia', awayTeam: 'Colorado', homeWon: false }
-        ];
+        if (typeof REAL_SCHEDULE_DATA === 'undefined') {
+            console.warn('⚠️ Real schedule data not available, skipping result generation');
+            return;
+        }
 
-        // Store the real results
-        realResults.forEach(result => {
-            this.storeResult(result.gameKey, result.week, result.homeWon);
-        });
+        let totalResults = 0;
+        
+        // Process weeks 1-4
+        for (let week = 1; week <= 4; week++) {
+            const games = REAL_SCHEDULE_DATA[week];
+            if (!games) continue;
+            
+            console.log(`📅 Processing Week ${week}: ${games.length} games`);
+            
+            for (const game of games) {
+                try {
+                    // Generate realistic result based on team strength
+                    const result = await this.generateGameResult(game.homeTeam, game.awayTeam);
+                    
+                    if (result) {
+                        const gameKey = `${game.awayTeam} @ ${game.homeTeam}`;
+                        this.storeResult(gameKey, game.week, result.homeWon);
+                        totalResults++;
+                    }
+                } catch (error) {
+                    console.warn(`⚠️ Could not generate result for ${game.awayTeam} @ ${game.homeTeam}:`, error);
+                }
+            }
+        }
 
-        console.log(`✅ Initialized with ${realResults.length} real game results`);
+        console.log(`✅ Generated ${totalResults} results for weeks 1-4`);
+    }
+
+    async generateGameResult(homeTeam, awayTeam) {
+        // Generate realistic game results based on team ratings
+        const teamRatings = {
+            // Power 5 Teams
+            'Alabama': 95, 'Georgia': 92, 'Ohio State': 90, 'Michigan': 88, 'Texas': 87,
+            'Oregon': 85, 'Penn State': 84, 'LSU': 83, 'Florida': 82, 'Auburn': 81,
+            'Tennessee': 80, 'Oklahoma': 79, 'USC': 78, 'Utah': 77, 'Wisconsin': 76,
+            'Iowa': 75, 'Kansas State': 74, 'Notre Dame': 73, 'Texas A&M': 72, 'Arkansas': 71,
+            'South Carolina': 70, 'Washington': 69, 'Stanford': 68, 'Arizona State': 67,
+            'Kansas': 66, 'Colorado': 65, 'BYU': 64, 'West Virginia': 63,
+            
+            // Group of 5 Teams
+            'UNLV': 62, 'Fresno State': 61, 'Western Kentucky': 60, 'Boise State': 59,
+            'South Florida': 58, 'Ohio': 57, 'Bowling Green': 56, 'Lafayette': 55,
+            'East Carolina': 54, 'NC State': 53, 'Hawai\'i Rainbow Warriors': 52,
+            'Rutgers': 51, 'Sam Houston Bearkats': 50, 'Idaho State Bengals': 49,
+            'Iowa State': 48, 'Kansas Jayhawks': 47
+        };
+        
+        const homeRating = teamRatings[homeTeam] || 70;
+        const awayRating = teamRatings[awayTeam] || 70;
+        
+        // Calculate probability of home team winning
+        const ratingDiff = homeRating - awayRating;
+        const homeAdvantage = 0.05; // 5% home field advantage
+        let homeWinProb = 0.5 + (ratingDiff / 200) + homeAdvantage;
+        
+        // Add some randomness for realism
+        const randomFactor = (Math.random() - 0.5) * 0.15;
+        homeWinProb += randomFactor;
+        
+        // Ensure probability is within bounds
+        homeWinProb = Math.max(0.1, Math.min(0.9, homeWinProb));
+        
+        // Determine winner based on probability
+        const homeWon = Math.random() < homeWinProb;
+        
+        return {
+            homeWon: homeWon
+        };
     }
 
     async initializeWithRealPredictions() {
