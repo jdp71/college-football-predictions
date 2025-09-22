@@ -3,10 +3,24 @@ class PerformanceTracker {
     constructor() {
         this.predictions = new Map();
         this.results = new Map();
+        
+        // Clear old fake data and start fresh
+        this.clearOldFakeData();
         this.loadFromStorage();
         
         // Don't initialize with sample data - track real predictions only
         console.log('📊 Performance tracker initialized - will track real predictions');
+    }
+
+    clearOldFakeData() {
+        // Clear localStorage to remove old fake data
+        try {
+            localStorage.removeItem('cfb_predictions');
+            localStorage.removeItem('cfb_results');
+            console.log('🗑️ Cleared old fake data from localStorage');
+        } catch (error) {
+            console.warn('Could not clear localStorage:', error);
+        }
     }
 
     initializeWithSampleData() {
