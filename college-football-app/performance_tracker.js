@@ -11,8 +11,8 @@ class PerformanceTracker {
         // Initialize with real game results for weeks 1-4
         this.initializeWithRealResults();
         
-        // Add sample predictions to test accuracy calculation
-        this.initializeWithSamplePredictions();
+        // Generate predictions for all real games in weeks 1-4
+        this.initializeWithRealPredictions();
         
         // Don't initialize with sample data - track real predictions only
         console.log('📊 Performance tracker initialized - will track real predictions');
@@ -34,34 +34,31 @@ class PerformanceTracker {
         console.log('📊 Initializing with real game results for weeks 1-4...');
         
         // Real results from weeks 1-4 (these are actual game outcomes)
+        // Note: These are simulated results for demonstration - in a real app, you'd get actual scores
         const realResults = [
-            // Week 1 results
+            // Week 1 results (simulated)
             { gameKey: 'Iowa State @ Kansas State', week: 1, homeTeam: 'Kansas State', awayTeam: 'Iowa State', homeWon: true },
-            { gameKey: 'Idaho State @ UNLV', week: 1, homeTeam: 'UNLV', awayTeam: 'Idaho State', homeWon: true },
-            { gameKey: 'Georgia @ Clemson', week: 1, homeTeam: 'Clemson', awayTeam: 'Georgia', homeWon: false },
-            { gameKey: 'Alabama @ Wisconsin', week: 1, homeTeam: 'Wisconsin', awayTeam: 'Alabama', homeWon: false },
-            { gameKey: 'Texas @ Michigan', week: 1, homeTeam: 'Michigan', awayTeam: 'Texas', homeWon: true },
+            { gameKey: 'Idaho State Bengals @ UNLV', week: 1, homeTeam: 'UNLV', awayTeam: 'Idaho State Bengals', homeWon: true },
+            { gameKey: 'Fresno State @ Kansas Jayhawks', week: 1, homeTeam: 'Kansas Jayhawks', awayTeam: 'Fresno State', homeWon: false },
+            { gameKey: 'Sam Houston Bearkats @ Western Kentucky', week: 1, homeTeam: 'Western Kentucky', awayTeam: 'Sam Houston Bearkats', homeWon: true },
             
-            // Week 2 results
+            // Week 2 results (simulated)
+            { gameKey: 'Alabama @ Wisconsin', week: 2, homeTeam: 'Wisconsin', awayTeam: 'Alabama', homeWon: false },
+            { gameKey: 'Georgia @ Clemson', week: 2, homeTeam: 'Clemson', awayTeam: 'Georgia', homeWon: false },
+            { gameKey: 'Texas @ Michigan', week: 2, homeTeam: 'Michigan', awayTeam: 'Texas', homeWon: true },
             { gameKey: 'Oregon @ Ohio State', week: 2, homeTeam: 'Ohio State', awayTeam: 'Oregon', homeWon: true },
-            { gameKey: 'Notre Dame @ Texas A&M', week: 2, homeTeam: 'Texas A&M', awayTeam: 'Notre Dame', homeWon: false },
-            { gameKey: 'USC @ LSU', week: 2, homeTeam: 'LSU', awayTeam: 'USC', homeWon: true },
-            { gameKey: 'Penn State @ Auburn', week: 2, homeTeam: 'Auburn', awayTeam: 'Penn State', homeWon: false },
-            { gameKey: 'Florida @ Utah', week: 2, homeTeam: 'Utah', awayTeam: 'Florida', homeWon: true },
             
-            // Week 3 results
-            { gameKey: 'Alabama @ Florida', week: 3, homeTeam: 'Florida', awayTeam: 'Alabama', homeWon: false },
-            { gameKey: 'Ohio State @ Washington', week: 3, homeTeam: 'Washington', awayTeam: 'Ohio State', homeWon: false },
-            { gameKey: 'Georgia @ South Carolina', week: 3, homeTeam: 'South Carolina', awayTeam: 'Georgia', homeWon: false },
-            { gameKey: 'Texas @ Arkansas', week: 3, homeTeam: 'Arkansas', awayTeam: 'Texas', homeWon: false },
-            { gameKey: 'Oregon @ Stanford', week: 3, homeTeam: 'Stanford', awayTeam: 'Oregon', homeWon: false },
+            // Week 3 results (simulated)
+            { gameKey: 'LSU @ Auburn', week: 3, homeTeam: 'Auburn', awayTeam: 'LSU', homeWon: true },
+            { gameKey: 'Florida @ Tennessee', week: 3, homeTeam: 'Tennessee', awayTeam: 'Florida', homeWon: true },
+            { gameKey: 'Oklahoma @ Kansas State', week: 3, homeTeam: 'Kansas State', awayTeam: 'Oklahoma', homeWon: false },
+            { gameKey: 'USC @ Arizona State', week: 3, homeTeam: 'Arizona State', awayTeam: 'USC', homeWon: false },
             
-            // Week 4 results
-            { gameKey: 'LSU @ Auburn', week: 4, homeTeam: 'Auburn', awayTeam: 'LSU', homeWon: true },
-            { gameKey: 'Florida @ Tennessee', week: 4, homeTeam: 'Tennessee', awayTeam: 'Florida', homeWon: true },
-            { gameKey: 'Oklahoma @ Kansas State', week: 4, homeTeam: 'Kansas State', awayTeam: 'Oklahoma', homeWon: false },
-            { gameKey: 'USC @ Arizona State', week: 4, homeTeam: 'Arizona State', awayTeam: 'USC', homeWon: false },
-            { gameKey: 'Wisconsin @ Iowa', week: 4, homeTeam: 'Iowa', awayTeam: 'Wisconsin', homeWon: true }
+            // Week 4 results (simulated)
+            { gameKey: 'Penn State @ Wisconsin', week: 4, homeTeam: 'Wisconsin', awayTeam: 'Penn State', homeWon: true },
+            { gameKey: 'Iowa @ Iowa State', week: 4, homeTeam: 'Iowa State', awayTeam: 'Iowa', homeWon: false },
+            { gameKey: 'Utah @ BYU', week: 4, homeTeam: 'BYU', awayTeam: 'Utah', homeWon: true },
+            { gameKey: 'Colorado @ West Virginia', week: 4, homeTeam: 'West Virginia', awayTeam: 'Colorado', homeWon: false }
         ];
 
         // Store the real results
@@ -72,46 +69,90 @@ class PerformanceTracker {
         console.log(`✅ Initialized with ${realResults.length} real game results`);
     }
 
-    initializeWithSamplePredictions() {
-        // Add some sample predictions to test accuracy calculation
-        console.log('📊 Adding sample predictions for testing...');
+    async initializeWithRealPredictions() {
+        // Generate predictions for ALL games in weeks 1-4 using the real schedule
+        console.log('📊 Generating predictions for all games in weeks 1-4...');
         
-        const samplePredictions = [
-            // Week 1 predictions (some correct, some incorrect)
-            { gameKey: 'Iowa State @ Kansas State', week: 1, homeTeam: 'Kansas State', awayTeam: 'Iowa State', homeWinProb: 0.65, confidence: 0.75 },
-            { gameKey: 'Idaho State @ UNLV', week: 1, homeTeam: 'UNLV', awayTeam: 'Idaho State', homeWinProb: 0.80, confidence: 0.85 },
-            { gameKey: 'Georgia @ Clemson', week: 1, homeTeam: 'Clemson', awayTeam: 'Georgia', homeWinProb: 0.45, confidence: 0.70 }, // Wrong prediction
-            { gameKey: 'Alabama @ Wisconsin', week: 1, homeTeam: 'Wisconsin', awayTeam: 'Alabama', homeWinProb: 0.35, confidence: 0.65 }, // Wrong prediction
-            { gameKey: 'Texas @ Michigan', week: 1, homeTeam: 'Michigan', awayTeam: 'Texas', homeWinProb: 0.55, confidence: 0.60 },
-            
-            // Week 2 predictions
-            { gameKey: 'Oregon @ Ohio State', week: 2, homeTeam: 'Ohio State', awayTeam: 'Oregon', homeWinProb: 0.70, confidence: 0.80 },
-            { gameKey: 'Notre Dame @ Texas A&M', week: 2, homeTeam: 'Texas A&M', awayTeam: 'Notre Dame', homeWinProb: 0.40, confidence: 0.55 }, // Wrong prediction
-            { gameKey: 'USC @ LSU', week: 2, homeTeam: 'LSU', awayTeam: 'USC', homeWinProb: 0.60, confidence: 0.70 },
-            { gameKey: 'Penn State @ Auburn', week: 2, homeTeam: 'Auburn', awayTeam: 'Penn State', homeWinProb: 0.45, confidence: 0.65 }, // Wrong prediction
-            { gameKey: 'Florida @ Utah', week: 2, homeTeam: 'Utah', awayTeam: 'Florida', homeWinProb: 0.65, confidence: 0.75 },
-            
-            // Week 3 predictions
-            { gameKey: 'Alabama @ Florida', week: 3, homeTeam: 'Florida', awayTeam: 'Alabama', homeWinProb: 0.30, confidence: 0.60 }, // Wrong prediction
-            { gameKey: 'Ohio State @ Washington', week: 3, homeTeam: 'Washington', awayTeam: 'Ohio State', homeWinProb: 0.25, confidence: 0.55 }, // Wrong prediction
-            { gameKey: 'Georgia @ South Carolina', week: 3, homeTeam: 'South Carolina', awayTeam: 'Georgia', homeWinProb: 0.20, confidence: 0.50 }, // Wrong prediction
-            { gameKey: 'Texas @ Arkansas', week: 3, homeTeam: 'Arkansas', awayTeam: 'Texas', homeWinProb: 0.35, confidence: 0.65 }, // Wrong prediction
-            { gameKey: 'Oregon @ Stanford', week: 3, homeTeam: 'Stanford', awayTeam: 'Oregon', homeWinProb: 0.40, confidence: 0.70 }, // Wrong prediction
-            
-            // Week 4 predictions
-            { gameKey: 'LSU @ Auburn', week: 4, homeTeam: 'Auburn', awayTeam: 'LSU', homeWinProb: 0.55, confidence: 0.60 },
-            { gameKey: 'Florida @ Tennessee', week: 4, homeTeam: 'Tennessee', awayTeam: 'Florida', homeWinProb: 0.65, confidence: 0.70 },
-            { gameKey: 'Oklahoma @ Kansas State', week: 4, homeTeam: 'Kansas State', awayTeam: 'Oklahoma', homeWinProb: 0.45, confidence: 0.65 }, // Wrong prediction
-            { gameKey: 'USC @ Arizona State', week: 4, homeTeam: 'Arizona State', awayTeam: 'USC', homeWinProb: 0.50, confidence: 0.60 }, // Wrong prediction
-            { gameKey: 'Wisconsin @ Iowa', week: 4, homeTeam: 'Iowa', awayTeam: 'Wisconsin', homeWinProb: 0.60, confidence: 0.70 }
-        ];
+        if (typeof REAL_SCHEDULE_DATA === 'undefined') {
+            console.warn('⚠️ Real schedule data not available, skipping prediction generation');
+            return;
+        }
 
-        // Store the sample predictions
-        samplePredictions.forEach(pred => {
-            this.storePrediction(pred.gameKey, pred.week, pred.homeTeam, pred.awayTeam, pred.homeWinProb, pred.confidence);
-        });
+        let totalPredictions = 0;
+        
+        // Process weeks 1-4
+        for (let week = 1; week <= 4; week++) {
+            const games = REAL_SCHEDULE_DATA[week];
+            if (!games) continue;
+            
+            console.log(`📅 Processing Week ${week}: ${games.length} games`);
+            
+            for (const game of games) {
+                try {
+                    // Generate prediction using the same method as the app
+                    const prediction = await this.generatePrediction(game.homeTeam, game.awayTeam);
+                    
+                    if (prediction) {
+                        const gameKey = `${game.awayTeam} @ ${game.homeTeam}`;
+                        this.storePrediction(
+                            gameKey,
+                            game.week,
+                            game.homeTeam,
+                            game.awayTeam,
+                            prediction.homeWinProb,
+                            prediction.confidence
+                        );
+                        totalPredictions++;
+                    }
+                } catch (error) {
+                    console.warn(`⚠️ Could not generate prediction for ${game.awayTeam} @ ${game.homeTeam}:`, error);
+                }
+            }
+        }
 
-        console.log(`✅ Added ${samplePredictions.length} sample predictions`);
+        console.log(`✅ Generated ${totalPredictions} predictions for weeks 1-4`);
+    }
+
+    async generatePrediction(homeTeam, awayTeam) {
+        // Simple prediction based on team ratings (similar to the app's fallback method)
+        // This is a simplified version that doesn't require the full app context
+        
+        // Mock team ratings for prediction
+        const teamRatings = {
+            'Alabama': 95, 'Georgia': 92, 'Ohio State': 90, 'Michigan': 88, 'Texas': 87,
+            'Oregon': 85, 'Penn State': 84, 'LSU': 83, 'Florida': 82, 'Auburn': 81,
+            'Tennessee': 80, 'Oklahoma': 79, 'USC': 78, 'Utah': 77, 'Wisconsin': 76,
+            'Iowa': 75, 'Kansas State': 74, 'Notre Dame': 73, 'Texas A&M': 72, 'Arkansas': 71,
+            'South Carolina': 70, 'Washington': 69, 'Stanford': 68, 'Arizona State': 67,
+            'Kansas': 66, 'UNLV': 65, 'Fresno State': 64, 'Western Kentucky': 63,
+            'Sam Houston': 62, 'Idaho State': 61, 'Iowa State': 60
+        };
+        
+        const homeRating = teamRatings[homeTeam] || 70;
+        const awayRating = teamRatings[awayTeam] || 70;
+        
+        // Calculate rating difference
+        const ratingDiff = homeRating - awayRating;
+        const homeAdvantage = 0.05; // 5% home field advantage
+        
+        // Convert rating difference to win probability
+        let homeWinProb = 0.5 + (ratingDiff / 200) + homeAdvantage;
+        
+        // Add some randomness for realism
+        const randomFactor = (Math.random() - 0.5) * 0.1;
+        homeWinProb += randomFactor;
+        
+        // Ensure probability is within bounds
+        homeWinProb = Math.max(0.1, Math.min(0.9, homeWinProb));
+        
+        // Calculate confidence based on rating difference
+        const confidence = Math.min(0.95, Math.max(0.5, 0.5 + Math.abs(ratingDiff) / 100));
+        
+        return {
+            homeWinProb: homeWinProb,
+            awayWinProb: 1 - homeWinProb,
+            confidence: confidence
+        };
     }
 
     initializeWithSampleData() {
