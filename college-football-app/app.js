@@ -271,7 +271,7 @@ class CollegeFootballPredictor {
         }
     }
 
-    handlePrediction() {
+    async handlePrediction() {
         console.log('🎯 Handle prediction clicked');
         const team = document.getElementById('teamSelect').value;
         const week = document.getElementById('weekSelect').value;
@@ -306,10 +306,10 @@ class CollegeFootballPredictor {
         }
 
         console.log('🎮 Calling displayGames with', teamGames.length, 'games');
-        this.displayGames(teamGames, team);
+        await this.displayGames(teamGames, team);
     }
 
-    displayGames(games, team) {
+    async displayGames(games, team) {
         console.log('🎮 DisplayGames called with', games.length, 'games for team', team);
         const section = document.getElementById('predictionsSection');
         const gamesList = document.getElementById('gamesList');
@@ -326,11 +326,11 @@ class CollegeFootballPredictor {
         gamesList.innerHTML = '';
         console.log('✅ Section displayed and gamesList cleared');
 
-        games.forEach(game => {
+        for (const game of games) {
             const homeData = this.teams.get(game.homeTeam);
             const awayData = this.teams.get(game.awayTeam);
             
-            const prediction = this.predictGame(homeData, awayData, game.homeTeam === team);
+            const prediction = await this.predictGameWithRealModel(game.homeTeam, game.awayTeam, game.homeTeam === team);
             
             const gameCard = document.createElement('div');
             gameCard.className = 'game-card';
@@ -356,7 +356,7 @@ class CollegeFootballPredictor {
                 </div>
             `;
             gamesList.appendChild(gameCard);
-        });
+        }
     }
 
     async predictGameWithRealModel(homeTeam, awayTeam, isHomeGame) {
