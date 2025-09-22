@@ -5,10 +5,8 @@ class PerformanceTracker {
         this.results = new Map();
         this.loadFromStorage();
         
-        // Initialize with sample data if empty
-        if (this.predictions.size === 0) {
-            this.initializeWithSampleData();
-        }
+        // Don't initialize with sample data - track real predictions only
+        console.log('📊 Performance tracker initialized - will track real predictions');
     }
 
     initializeWithSampleData() {
@@ -45,6 +43,7 @@ class PerformanceTracker {
             awayTeam,
             homeWinProb,
             confidence,
+            predictedWinner: homeWinProb > 0.5 ? homeTeam : awayTeam,
             timestamp: new Date().toISOString()
         };
         

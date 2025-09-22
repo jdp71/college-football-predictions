@@ -332,6 +332,17 @@ class CollegeFootballPredictor {
             
             const prediction = await this.predictGameWithRealModel(game.homeTeam, game.awayTeam, game.homeTeam === team);
             
+            // Store the prediction for tracking
+            const gameKey = `${game.awayTeam} @ ${game.homeTeam}`;
+            this.performanceTracker.storePrediction(
+                gameKey, 
+                game.week, 
+                game.homeTeam, 
+                game.awayTeam, 
+                prediction.homeWinProb, 
+                prediction.confidence
+            );
+            
             const gameCard = document.createElement('div');
             gameCard.className = 'game-card';
             gameCard.innerHTML = `
