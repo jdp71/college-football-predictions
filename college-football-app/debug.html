@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - College Football Predictor</title>
+</head>
+<body>
+    <h1>Debug Console</h1>
+    <div id="debug"></div>
+    
+    <script src="schedule_data.js"></script>
+    <script src="teams_data.js"></script>
+    <script src="performance_tracker.js"></script>
+    <script src="app.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const debug = document.getElementById('debug');
+            
+            // Check if data is loaded
+            debug.innerHTML += '<p>Checking data loading...</p>';
+            
+            if (typeof REAL_SCHEDULE_DATA !== 'undefined') {
+                debug.innerHTML += '<p>✅ REAL_SCHEDULE_DATA loaded: ' + Object.keys(REAL_SCHEDULE_DATA).length + ' weeks</p>';
+            } else {
+                debug.innerHTML += '<p>❌ REAL_SCHEDULE_DATA not loaded</p>';
+            }
+            
+            if (typeof TEAMS_DATA !== 'undefined') {
+                debug.innerHTML += '<p>✅ TEAMS_DATA loaded: ' + Object.keys(TEAMS_DATA).length + ' teams</p>';
+            } else {
+                debug.innerHTML += '<p>❌ TEAMS_DATA not loaded</p>';
+            }
+            
+            if (typeof PerformanceTracker !== 'undefined') {
+                debug.innerHTML += '<p>✅ PerformanceTracker loaded</p>';
+            } else {
+                debug.innerHTML += '<p>❌ PerformanceTracker not loaded</p>';
+            }
+            
+            if (typeof CollegeFootballPredictor !== 'undefined') {
+                debug.innerHTML += '<p>✅ CollegeFootballPredictor loaded</p>';
+                
+                // Try to create instance
+                try {
+                    const predictor = new CollegeFootballPredictor();
+                    debug.innerHTML += '<p>✅ CollegeFootballPredictor instance created</p>';
+                } catch (error) {
+                    debug.innerHTML += '<p>❌ Error creating CollegeFootballPredictor: ' + error.message + '</p>';
+                }
+            } else {
+                debug.innerHTML += '<p>❌ CollegeFootballPredictor not loaded</p>';
+            }
+        });
+    </script>
+</body>
+</html>
