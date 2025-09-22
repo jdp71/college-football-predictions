@@ -579,27 +579,29 @@ class CollegeFootballPredictor {
                         <th>Week</th>
                         <th>Game</th>
                         <th>Prediction</th>
-                        <th>Confidence</th>
                         <th>Result</th>
-                        <th>Accuracy</th>
                     </tr>
                 </thead>
                 <tbody>
         `;
 
         predictions.forEach(prediction => {
-            const accuracy = prediction.actualResult ? 
-                (prediction.predictedWinner === prediction.actualResult ? '✅' : '❌') : 
-                '⏳';
+            let resultText = 'TBD';
+            
+            if (prediction.actualResult) {
+                if (prediction.predictedWinner === prediction.actualResult) {
+                    resultText = '✅ Correct';
+                } else {
+                    resultText = '❌ Incorrect';
+                }
+            }
             
             tableHTML += `
                 <tr>
                     <td>${prediction.week}</td>
                     <td>${prediction.homeTeam} vs ${prediction.awayTeam}</td>
                     <td>${prediction.predictedWinner}</td>
-                    <td>${Math.round(prediction.confidence * 100)}%</td>
-                    <td>${prediction.actualResult || 'TBD'}</td>
-                    <td>${accuracy}</td>
+                    <td>${resultText}</td>
                 </tr>
             `;
         });
