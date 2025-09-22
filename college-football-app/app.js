@@ -361,75 +361,65 @@ class CollegeFootballPredictor {
 
     async predictGameWithRealModel(homeTeam, awayTeam, isHomeGame) {
         try {
-            // Load current season stats
-            const response = await fetch('current_season_stats.json');
-            if (!response.ok) {
-                console.warn('Current stats not available, using fallback prediction');
-                return this.predictGameFallback(homeTeam, awayTeam, isHomeGame);
-            }
-            
-            const currentStats = await response.json();
-            
-            // Get stats for both teams
-            const homeStats = currentStats[homeTeam] || this.getDefaultStats(homeTeam);
-            const awayStats = currentStats[awayTeam] || this.getDefaultStats(awayTeam);
-            
-            // Calculate prediction based on current season performance
-            const homeAdvantage = isHomeGame ? 0.05 : -0.05; // 5% home field advantage
-            
-            // Points per game advantage
-            const ppgAdvantage = (homeStats.points_per_game - awayStats.points_per_game) / 100;
-            
-            // Defense advantage (lower points allowed is better)
-            const defAdvantage = (awayStats.points_allowed_per_game - homeStats.points_allowed_per_game) / 100;
-            
-            // Total yards advantage
-            const ypgAdvantage = (homeStats.total_yards - awayStats.total_yards) / 1000;
-            
-            // Success rate advantages
-            const offSrAdvantage = (homeStats.off_success_rate - awayStats.off_success_rate) * 0.2;
-            const defSrAdvantage = (homeStats.def_success_rate - awayStats.def_success_rate) * 0.2;
-            
-            // Turnover advantage
-            const turnoverAdvantage = (awayStats.turnovers - homeStats.turnovers) * 0.05;
-            
-            // Combine all advantages
-            const totalAdvantage = ppgAdvantage + defAdvantage + ypgAdvantage + offSrAdvantage + defSrAdvantage + turnoverAdvantage;
-            
-            // Calculate win probability
-            let homeWinProb = 0.5 + homeAdvantage + totalAdvantage;
-            
-            // Add some randomness for realism
-            const randomFactor = (Math.random() - 0.5) * 0.1;
-            homeWinProb += randomFactor;
-            
-            // Ensure probability is within realistic bounds
-            homeWinProb = Math.max(0.1, Math.min(0.9, homeWinProb));
-            
-            // Calculate confidence based on stat differences
-            const statDiff = Math.abs(totalAdvantage);
-            const confidence = Math.min(0.95, Math.max(0.5, 0.5 + statDiff * 2));
-            
-            return {
-                homeWinProb: homeWinProb,
-                awayWinProb: 1 - homeWinProb,
-                confidence: confidence,
-                method: 'current_season_stats',
-                homeStats: homeStats,
-                awayStats: awayStats
-            };
+            // Use fallback prediction method (skip fetching current_season_stats.json)
+            console.log('Using fallback prediction method for', homeTeam, 'vs', awayTeam);
+            return this.predictGameFallback(homeTeam, awayTeam, isHomeGame);
             
         } catch (error) {
-            console.error('Error using real model:', error);
+            console.error('Error in predictGameWithRealModel:', error);
             return this.predictGameFallback(homeTeam, awayTeam, isHomeGame);
         }
     }
     
     predictGameFallback(homeTeam, awayTeam, isHomeGame) {
-        // Fallback to original prediction method
+        // Simple prediction based on team ratings
         const homeData = this.teams.get(homeTeam);
         const awayData = this.teams.get(awayTeam);
-        return this.predictGameWithRealModel(homeData, awayData, isHomeGame);
+        
+        if (!homeData || !awayData) {
+            console.warn('Team data not found, using default prediction');
+            return {
+                homeWinProb: 0.5,
+                awayWinProb: 0.5,
+                confidence: 0.5,
+                method: 'fallback_default',
+                homeScore: 24,
+                awayScore: 21,
+                winner: homeTeam
+            };
+        }
+        
+        // Calculate rating difference
+        const ratingDiff = homeData.overallRating - awayData.overallRating;
+        const homeAdvantage = isHomeGame ? 0.05 : -0.05; // 5% home field advantage
+        
+        // Convert rating difference to win probability
+        let homeWinProb = 0.5 + (ratingDiff / 200) + homeAdvantage;
+        
+        // Add some randomness
+        const randomFactor = (Math.random() - 0.5) * 0.1;
+        homeWinProb += randomFactor;
+        
+        // Ensure probability is within bounds
+        homeWinProb = Math.max(0.1, Math.min(0.9, homeWinProb));
+        
+        // Calculate confidence based on rating difference
+        const confidence = Math.min(0.95, Math.max(0.5, 0.5 + Math.abs(ratingDiff) / 100));
+        
+        // Generate realistic scores
+        const baseScore = 21 + Math.random() * 14; // 21-35 points
+        const homeScore = Math.round(baseScore + (homeWinProb - 0.5) * 10);
+        const awayScore = Math.round(baseScore - (homeWinProb - 0.5) * 10);
+        
+        return {
+            homeWinProb: homeWinProb,
+            awayWinProb: 1 - homeWinProb,
+            confidence: confidence,
+            method: 'fallback_ratings',
+            homeScore: Math.max(0, homeScore),
+            awayScore: Math.max(0, awayScore),
+            winner: homeWinProb > 0.5 ? homeTeam : awayTeam
+        };
     }
     
     getDefaultStats(teamName) {
@@ -445,79 +435,6 @@ class CollegeFootballPredictor {
         return conferenceDefaults[conference] || conferenceDefaults['Big Ten'];
     }
 
-    
-    async predictGameWithRealModel(homeTeam, awayTeam, isHomeGame) {
-        try {
-            // Load current season stats
-            const response = await fetch('current_season_stats.json');
-            if (!response.ok) {
-                console.warn('Current stats not available, using fallback prediction');
-                return this.predictGameFallback(homeTeam, awayTeam, isHomeGame);
-            }
-            
-            const currentStats = await response.json();
-            
-            // Get stats for both teams
-            const homeStats = currentStats[homeTeam] || this.getDefaultStats(homeTeam);
-            const awayStats = currentStats[awayTeam] || this.getDefaultStats(awayTeam);
-            
-            // Calculate prediction based on current season performance
-            const homeAdvantage = isHomeGame ? 0.05 : -0.05; // 5% home field advantage
-            
-            // Points per game advantage
-            const ppgAdvantage = (homeStats.points_per_game - awayStats.points_per_game) / 100;
-            
-            // Defense advantage (lower points allowed is better)
-            const defAdvantage = (awayStats.points_allowed_per_game - homeStats.points_allowed_per_game) / 100;
-            
-            // Total yards advantage
-            const ypgAdvantage = (homeStats.total_yards - awayStats.total_yards) / 1000;
-            
-            // Success rate advantages
-            const offSrAdvantage = (homeStats.off_success_rate - awayStats.off_success_rate) * 0.2;
-            const defSrAdvantage = (homeStats.def_success_rate - awayStats.def_success_rate) * 0.2;
-            
-            // Turnover advantage
-            const turnoverAdvantage = (awayStats.turnovers - homeStats.turnovers) * 0.05;
-            
-            // Combine all advantages
-            const totalAdvantage = ppgAdvantage + defAdvantage + ypgAdvantage + offSrAdvantage + defSrAdvantage + turnoverAdvantage;
-            
-            // Calculate win probability
-            let homeWinProb = 0.5 + homeAdvantage + totalAdvantage;
-            
-            // Add some randomness for realism
-            const randomFactor = (Math.random() - 0.5) * 0.1;
-            homeWinProb += randomFactor;
-            
-            // Ensure probability is within realistic bounds
-            homeWinProb = Math.max(0.1, Math.min(0.9, homeWinProb));
-            
-            // Calculate confidence based on stat differences
-            const statDiff = Math.abs(totalAdvantage);
-            const confidence = Math.min(0.95, Math.max(0.5, 0.5 + statDiff * 2));
-            
-            return {
-                homeWinProb: homeWinProb,
-                awayWinProb: 1 - homeWinProb,
-                confidence: confidence,
-                method: 'current_season_stats',
-                homeStats: homeStats,
-                awayStats: awayStats
-            };
-            
-        } catch (error) {
-            console.error('Error using real model:', error);
-            return this.predictGameFallback(homeTeam, awayTeam, isHomeGame);
-        }
-    }
-    
-    predictGameFallback(homeTeam, awayTeam, isHomeGame) {
-        // Fallback to original prediction method
-        const homeData = this.teams.get(homeTeam);
-        const awayData = this.teams.get(awayTeam);
-        return this.predictGameWithRealModel(homeData, awayData, isHomeGame);
-    }
     
     getDefaultStats(teamName) {
         // Default stats based on conference
