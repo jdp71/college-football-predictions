@@ -117,15 +117,22 @@ class PerformanceTracker {
         // Simple prediction based on team ratings (similar to the app's fallback method)
         // This is a simplified version that doesn't require the full app context
         
-        // Mock team ratings for prediction
+        // Comprehensive team ratings for prediction
         const teamRatings = {
+            // Power 5 Teams
             'Alabama': 95, 'Georgia': 92, 'Ohio State': 90, 'Michigan': 88, 'Texas': 87,
             'Oregon': 85, 'Penn State': 84, 'LSU': 83, 'Florida': 82, 'Auburn': 81,
             'Tennessee': 80, 'Oklahoma': 79, 'USC': 78, 'Utah': 77, 'Wisconsin': 76,
             'Iowa': 75, 'Kansas State': 74, 'Notre Dame': 73, 'Texas A&M': 72, 'Arkansas': 71,
             'South Carolina': 70, 'Washington': 69, 'Stanford': 68, 'Arizona State': 67,
-            'Kansas': 66, 'UNLV': 65, 'Fresno State': 64, 'Western Kentucky': 63,
-            'Sam Houston': 62, 'Idaho State': 61, 'Iowa State': 60
+            'Kansas': 66, 'Colorado': 65, 'BYU': 64, 'West Virginia': 63,
+            
+            // Group of 5 Teams
+            'UNLV': 62, 'Fresno State': 61, 'Western Kentucky': 60, 'Boise State': 59,
+            'South Florida': 58, 'Ohio': 57, 'Bowling Green': 56, 'Lafayette': 55,
+            'East Carolina': 54, 'NC State': 53, 'Hawai\'i Rainbow Warriors': 52,
+            'Rutgers': 51, 'Sam Houston Bearkats': 50, 'Idaho State Bengals': 49,
+            'Iowa State': 48, 'Kansas Jayhawks': 47
         };
         
         const homeRating = teamRatings[homeTeam] || 70;
@@ -145,8 +152,8 @@ class PerformanceTracker {
         // Ensure probability is within bounds
         homeWinProb = Math.max(0.1, Math.min(0.9, homeWinProb));
         
-        // Calculate confidence based on rating difference
-        const confidence = Math.min(0.95, Math.max(0.5, 0.5 + Math.abs(ratingDiff) / 100));
+        // Calculate confidence based on rating difference (more realistic range)
+        const confidence = Math.min(0.90, Math.max(0.55, 0.55 + Math.abs(ratingDiff) / 80));
         
         return {
             homeWinProb: homeWinProb,
@@ -199,18 +206,18 @@ class PerformanceTracker {
         console.log(`📊 Stored prediction: ${gameKey} - ${(homeWinProb * 100).toFixed(1)}%`);
     }
 
-    storeResult(gameKey, week, homeTeamWon) {
+    storeResult(gameKey, week, homeWon) {
         const result = {
             gameKey,
             week,
-            homeTeamWon,
+            homeWon,
             timestamp: new Date().toISOString()
         };
         
         this.results.set(gameKey, result);
         this.saveToStorage();
         
-        console.log(`📊 Stored result: ${gameKey} - Home won: ${homeTeamWon}`);
+        console.log(`📊 Stored result: ${gameKey} - Home won: ${homeWon}`);
     }
 
     calculateWeekPerformance(week) {
@@ -224,7 +231,7 @@ class PerformanceTracker {
             const result = this.results.get(prediction.gameKey);
             if (result) {
                 const predictedHomeWin = prediction.homeWinProb >= 0.5;
-                if (predictedHomeWin === result.homeTeamWon) {
+                if (predictedHomeWin === result.homeWon) {
                     correctPredictions++;
                 }
                 totalPredictions++;
@@ -247,7 +254,7 @@ class PerformanceTracker {
             const result = this.results.get(gameKey);
             if (result) {
                 const predictedHomeWin = prediction.homeWinProb >= 0.5;
-                if (predictedHomeWin === result.homeTeamWon) {
+                if (predictedHomeWin === result.homeWon) {
                     correctPredictions++;
                 }
                 totalPredictions++;

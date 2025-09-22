@@ -588,8 +588,14 @@ class CollegeFootballPredictor {
         predictions.forEach(prediction => {
             let resultText = 'TBD';
             
-            if (prediction.actualResult) {
-                if (prediction.predictedWinner === prediction.actualResult) {
+            // Get the actual result from the performance tracker
+            const actualResult = this.performanceTracker.results.get(prediction.gameKey);
+            
+            if (actualResult) {
+                const predictedHomeWin = prediction.homeWinProb > 0.5;
+                const actualHomeWin = actualResult.homeWon;
+                
+                if (predictedHomeWin === actualHomeWin) {
                     resultText = '✅ Correct';
                 } else {
                     resultText = '❌ Incorrect';
