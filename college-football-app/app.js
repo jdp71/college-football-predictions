@@ -304,7 +304,35 @@ class CollegeFootballPredictor {
             const homeData = this.teams.get(game.homeTeam);
             const awayData = this.teams.get(game.awayTeam);
             
-            const prediction = this.
+            const prediction = this.predictGame(homeData, awayData, game.homeTeam === team);
+            
+            const gameCard = document.createElement('div');
+            gameCard.className = 'game-card';
+            gameCard.innerHTML = `
+                <div class="game-header">
+                    <h3>${game.awayTeam} @ ${game.homeTeam}</h3>
+                    <span class="game-date">${game.date} - ${game.time_et}</span>
+                </div>
+                <div class="game-details">
+                    <p><strong>Location:</strong> ${game.location}</p>
+                    <p><strong>TV:</strong> ${game.tv_network}</p>
+                </div>
+                <div class="prediction-result">
+                    <div class="prediction-score">
+                        <span class="team ${prediction.winner === game.homeTeam ? 'winner' : ''}">${game.homeTeam}: ${prediction.homeScore}</span>
+                        <span class="vs">vs</span>
+                        <span class="team ${prediction.winner === game.awayTeam ? 'winner' : ''}">${game.awayTeam}: ${prediction.awayScore}</span>
+                    </div>
+                    <div class="confidence">
+                        <span class="confidence-label">Confidence:</span>
+                        <span class="confidence-value">${prediction.confidence}%</span>
+                    </div>
+                </div>
+            `;
+            gamesList.appendChild(gameCard);
+        });
+    }
+
     async predictGameWithRealModel(homeTeam, awayTeam, isHomeGame) {
         try {
             // Load current season stats
@@ -389,45 +417,6 @@ class CollegeFootballPredictor {
         
         const conference = this.getConference(teamName);
         return conferenceDefaults[conference] || conferenceDefaults['Big Ten'];
-    }
-
-            
-            const gameCard = document.createElement('div');
-            gameCard.className = 'game-card';
-            const weekLabel = game.week === 0 ? 'Week 0 (Preseason)' : `Week ${game.week}`;
-            gameCard.innerHTML = `
-                <div class="game-header">
-                    <div class="game-title">${game.homeTeam} vs ${game.awayTeam}</div>
-                    <div class="game-week">${weekLabel}</div>
-                </div>
-                <div class="game-details">
-                    <div class="team">
-                        <div class="team-name">${game.homeTeam}</div>
-                        <div class="team-record">Rating: ${homeData.overallRating}</div>
-                    </div>
-                    <div class="vs-divider">VS</div>
-                    <div class="team">
-                        <div class="team-name">${game.awayTeam}</div>
-                        <div class="team-record">Rating: ${awayData.overallRating}</div>
-                    </div>
-                </div>
-                <div class="prediction">
-                    <div class="prediction-result">
-                        <strong>${winProb > 0.5 ? game.homeTeam : game.awayTeam}</strong> 
-                        ${Math.round(Math.max(winProb, 1 - winProb) * 100)}% 
-                        (Confidence: ${Math.round(prediction.confidence * 100)}%)
-                    </div>
-                    <div class="game-info">
-                        <strong>Date:</strong> ${game.date || 'TBD'}<br>
-                        <strong>Time:</strong> ${game.time_et || 'TBD'}<br>
-                        <strong>TV:</strong> ${game.tv_network || 'TBD'}<br>
-                        ${game.notes ? `<strong>Notes:</strong> ${game.notes}` : ''}
-                    </div>
-                </div>
-            `;
-            
-            gamesList.appendChild(gameCard);
-        });
     }
 
     
