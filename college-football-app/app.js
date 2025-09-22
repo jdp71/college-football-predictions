@@ -349,9 +349,19 @@ class CollegeFootballPredictor {
                         <span class="vs">vs</span>
                         <span class="team ${prediction.winner === game.awayTeam ? 'winner' : ''}">${game.awayTeam}: ${prediction.awayScore}</span>
                     </div>
+                    <div class="win-probabilities">
+                        <div class="team-probability">
+                            <span class="team-name">${game.homeTeam}</span>
+                            <span class="win-chance">${Math.round(prediction.homeWinProb * 100)}%</span>
+                        </div>
+                        <div class="team-probability">
+                            <span class="team-name">${game.awayTeam}</span>
+                            <span class="win-chance">${Math.round(prediction.awayWinProb * 100)}%</span>
+                        </div>
+                    </div>
                     <div class="confidence">
                         <span class="confidence-label">Confidence:</span>
-                        <span class="confidence-value">${prediction.confidence}%</span>
+                        <span class="confidence-value">${Math.round(prediction.confidence * 100)}%</span>
                     </div>
                 </div>
             `;
